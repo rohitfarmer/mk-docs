@@ -16,12 +16,16 @@ cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2"
 
 Main article: http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/
 
-## Complex Heatmaps
+## Complex Heatmap
+<a href="https://jokergoo.github.io/ComplexHeatmap-reference/book/" target="_blank">Complex heatmap complete reference book</a>
+
 ### Put Text in the Cells
 ```R
 hmap <- ComplexHeatmap::Heatmap(mat, cluster_rows = TRUE, cluster_columns = TRUE,
                                 heatmap_legend_param = list(title = "Mean\nImportance"),
-                                column_split = c_breaks,
+                                column_split = c_breaks, # split columns
+                                row_split = r_breaks, # split rows 
+                                row_title_rot = 0, # rotate row title to horizontal, default is vertical
                                 cell_fun = function(j, i, x, y, width, height, fill) {
                                   if(mat_decision[i, j] == "Confirmed"){
                                     grid.text("C", x, y, gp = gpar(fontsize = 6))

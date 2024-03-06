@@ -19,7 +19,7 @@ Websites that can open in a tor browser with or without an onion address.
 - [BBC](https://www.bbcnewsd73hkzno2ini43t4gblxvycyac5aw4gnv7t2rccijh7745uqd.onion/)
 - [NYT](https://www.bbcnewsd73hkzno2ini43t4gblxvycyac5aw4gnv7t2rccijh7745uqd.onion/)
 - [NYT Wire](https://www.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion/timeswire)
-- [ProPublica](p53lf57qovyuvwsc6xnrppyply3vtqm7l6pcobkmyqsiofyeznfu5uqd.onion)
+- [ProPublica](https://p53lf57qovyuvwsc6xnrppyply3vtqm7l6pcobkmyqsiofyeznfu5uqd.onion)
 
 #### Text only websites
 - [NPR](https://text.npr.org/)
