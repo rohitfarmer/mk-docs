@@ -2,6 +2,15 @@ site_name: Documentations by Rohit Farmer
 site_url: https://docsbyrohit.netlify.app
 theme:
   name: material
+  palette:
+    scheme: slate
+    primary: orange
+    accent: indigo
+  features:
+    - navigation.path
+    - navigation.top
+    - navigation.tracking    
+    - navigation.footer
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
