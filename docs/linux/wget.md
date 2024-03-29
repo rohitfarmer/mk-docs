@@ -1,4 +1,4 @@
-# Downloading stuff Using Wget
+# Downloading Stuff Using Wget
 
 ## Recursively download all webpages and associated files within a folder heirarchy
 1. **Basic Recursive Download Command:** 
