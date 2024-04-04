@@ -1,5 +1,12 @@
 # Data Frame Manipulation
 
+## Filter
+
+### Find rows with NAs in any of the columns
+```R
+vdb_dna_seq %>% filter(if_any(everything(), is.na))
+```
+
 ## Gather and Spread
 Gather is to convert a table from wide to long-form by putting column names in a single column titled with a chosen “key” and all the values from those columns to an adjacent column title with a chosen “value”. If there are columns that should be kept the way they are then use -Name of the column of -c(vector with column names).
 ```R

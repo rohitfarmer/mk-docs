@@ -1,4 +1,21 @@
-# User management
+# Permissions and User management
+
+## Change group ownership
+
+The code below will associate a folder to a specific group.  This is helpful when you are associated with more than one groups and the default group assigned to a file you created is not for the intended group. 
+
+```bash
+chgrp -R new_group path/to/folder
+# R for recursive
+```
+
+## File permissions using chmod
+
+The code below will give read, write, and execute permissions to all the group members. A minus sign after g e.g. `g-wx` will take away write and execute permissions. 
+```bash
+chmod -R g+rwx path/to_folder
+# R is for recursive
+```
 
 ## Add a new user
 The command below will add a new user to a Linux system, create their home directory at `/home/newuser` and set the default shell to `/bin/bash`.
