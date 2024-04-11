@@ -44,3 +44,13 @@ png(filename = plot_file, width = 12 * 300, height = 14 * 300, res = 300)
 raw(hmap_1, padding = unit(c(3.5, 1, 1, 1), "cm")) # Bottom, left, top, right
 dev.off() 
 ```
+
+## Violin Plot
+A violin plot is a hybrid of a box plot and a kernel density plot, which shows peaks in the data. It is used to visualize the distribution of numerical data. Unlike a box plot that can only show summary statistics, violin plots depict summary statistics and the density of each variable.
+
+```R
+gplt <- ggplot(gpd, aes(x = visit, y = tile_count)) +
+          geom_violin() +
+          geom_jitter(shape=16, position=position_jitter(0.2)) +
+          facet_wrap(~genus, scales = "free_y") 
+```
