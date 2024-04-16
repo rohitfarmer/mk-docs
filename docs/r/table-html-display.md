@@ -15,11 +15,12 @@ ktbl <- df %>%
 
 ## Using DT datatable
 
-[More info](https://rstudio.github.io/DT/)
+- [More info](https://rstudio.github.io/DT/)
+- [Clickable hyperlinks](https://rpubs.com/erblast/369527)
 
 ```r
 library(DT)
 
 dttbl <- dfl %>%
-      datatable()
+      datatable(escape = FALSE) # Escape = FALSE to show clickable hyperlinks in cells. 
 ```
