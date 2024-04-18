@@ -43,13 +43,26 @@ cytof_mat <- cytof_m_ranks$attribute_stats %>%
 ## Mutate
 ### Mutate at
 The example below formats and round off values to six decimal places in all the columns specified by vars(). You do not need to select columns to use mutate_at(). It performs the operation on the specified columns keeping the rest of the data as it is.
+
 ```R
 manual_dat %>%  mutate_at(vars(all_of(markers)), ~ as.numeric(format(round(., 6))))
 ```
 
+### Mutate with `ifelse`
 In a dataframe conditionally replace values in all numeric columns. This was helpful in creating the p.value matrix with * for values < 0.05 for ComplexHeatmaps.
+
 ```R
 mutate(across(where(is.numeric), ~ifelse(. < 0.05, "*", "")))
+```
+
+### Mutate with `case_when`
+This function allows you to vectorise multiple if_else() statements. Each case is evaluated sequentially and the first match for each element determines the corresponding value in the output vector. If no cases match, the .default is used as a final "else" statment.
+
+`case_when()` is an R equivalent of the SQL "searched" CASE WHEN statement.
+
+```r
+dplyr::mutate("W & GLMM P Sig" = case_when(wilcox_p.value < 0.05 & glmm_p.value < 0.05 ~ 1, 
+                                          .default = 0))
 ```
 
 ### Coalesce

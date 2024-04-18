@@ -22,5 +22,10 @@ ktbl <- df %>%
 library(DT)
 
 dttbl <- dfl %>%
-      datatable(escape = FALSE) # Escape = FALSE to show clickable hyperlinks in cells. 
+         datatable(escape = FALSE, # Escape = FALSE to show clickable hyperlinks in cells.
+                   rownames = FALSE, # to remove rownames
+                   filter = 'top', # to add filter option for each column
+                   extensions = 'Buttons', # to add buttons to copy and download data as CSV and Excel files
+                   options = list(dom = 'Blfrtip', buttons = c('copy', 'csv', 'excel'))
+                  )    
 ```
