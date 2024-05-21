@@ -19,12 +19,12 @@ To create an environment at the default location or at the location specified in
 mamba create -n env-name
 ```
 
-Alternatively if you do not want to make a `.condarc` file you can create an environment at any location using `--prefix` and then create a sym link to it at `~/.conda/envs/`.
+Alternatively if you do not want to make a `.condarc` file you can create an environment at any location using `--prefix` and then create a sym link to it at `~/.conda/envs/`. ***Creating a sym link is my preferred method***
 
 ```bash
 mamba create --prefix=r43
 
-# It will create a subfolder `r43`. Here the prefix is non standard location for the environment. 
+# It will create a subfolder `r43` in the current working directory or the directory specified in .condarc. Here the prefix is non standard location for the environment. 
 ```
 
 ## Activate an environment
@@ -55,3 +55,69 @@ mamba install r=4.3
 ```bash
 mamba install r-tidyverse r-arrow r-doMC r-biocmanager r-devtools
 ```
+
+## Export an environment
+
+**Note:** activate the desired environment first before executing the commands below. Re-running this command will overwrite any previously generated file.
+
+### Export all the packages/software installed in an active environment to a YAML file
+
+```bash
+conda env export > environment.yaml
+```
+
+### Exporting an environment file across platforms
+
+If you want to make your environment file work across platforms, you can use the `conda env export --from-history` flag. This will only include packages that you’ve explicitly asked for, as opposed to including every package in your environment. This is helpful as it will resolve the dependencies based on the operating system while still installing the top level programs that you have explicitly specified. 
+
+```bash
+conda env export --from-history > environment.yaml
+```
+
+Example output
+
+```bash
+name: phip
+channels:
+  - conda-forge
+dependencies:
+  - r=4.3
+  - r-tidyverse
+  - r-arrow
+  - r-domc
+  - r-biocmanager
+  - r-devtools
+  - ca-certificates
+  - openssl
+  - bioconda::fastp
+  - bioconda::fastx_toolkit
+  - bioconda::trimmomatic
+  - python=3.9
+  - bioconda::bowtie2
+```
+
+## Restoring an environment
+Conda keeps a history of all the changes made to your environment, so you can easily "roll back" to a previous version. To list the history of each change to the current environment: `conda list --revisions`
+
+To restore environment to a previous revision: `conda install --revision=REVNUM` or `conda install --rev REVNUM`.
+
+**Note:** Replace `REVNUM` with the revision number.
+
+**Example:** If you want to restore your environment to revision 8, run `conda install --rev 8`.
+
+## Removing an environment
+To remove an environment, in your terminal window, run:
+
+```bash
+conda remove --name myenv --all
+```
+
+You may instead use `conda env remove --name myenv`.
+
+To verify that the environment was removed, in your terminal window, run:
+
+```bash
+conda info --envs
+```
+
+The environments list that displays should not show the removed environment.
