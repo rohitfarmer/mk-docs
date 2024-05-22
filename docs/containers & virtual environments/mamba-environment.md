@@ -1,18 +1,55 @@
-# R Environments Using Mamba
+# Virtual Environments Using Conda and Mamba
 
-Mamba is a package manager similar to Conda, but it's much faster. I am using it to create environments for R, especially for the HPC.
+Mamba is a package manager similar to Conda, but it's much faster. I use it to install R and Python packages in a conda environments.
 
 ## Setup
 
-By default mamba/conda create environments in the home directory at `~/.conda/envs`. On the HPC since the space in the home directory is limited create a folder `conda-envs` at a suitable location to store all the environments. 
+By default mamba/conda create environments in the home directory at `~/.conda/envs`. And since the space in the home directory on an HPC is often limited I create a folder `conda-envs` on a larger disk quota location to store all the environments. I do the same for storing caches as mentioned in the [managing conda cache section](#managing-conda-cache) below.
 
-Before we can utilize this new environment location we have to let conda know by adding it to `.condarc` file in your home directory. 
+Before we can utilize the new environment location we have to let conda know by adding it to `.condarc` file in your home directory. 
 
 ```bash
 envs_dirs: [/hpcdata/vrc/vrc1_data/douek_lab/farmerr2/conda-envs]
 ```
 
-## Create an environment and install R
+**Note:** I tried putting the envs directory in `.condarc` file, and when I activated the environment then instead of just showing the name of the environment at the prompt it showed me the entire path to the envs folder. There could be something wrong with my shell setup. So, I decided not to include `envs_dirs` in `.condarc` file, but to create a symlink from the desired location to `~/.conda/envs/` folder at the time of environment creation, as mentioned in [create an environment section](#create-an-environment).
+
+### Managing Conda Cache 
+The default location for Conda to cache files is the user's home directory, which can rapidly fill and cause issues. This behavior can be changed by setting the `pkgs_dirs` entry in the `.condarc` file or setting the `CONDA_PKGS_DIRS` environment variable. 
+
+First, to see the current cache directory, issue: `conda info`
+
+The package cache entry will display the current package cache directories. The config file entry displays the location of the user `.condarc` file. Editing/creating the `pkgs_dirs` entry in the `.condarc` file will change the cache directory:
+
+```bash
+# Open the user .condarc file. By default it is located at $HOME/.condarc.
+vim /path/to/.condarc
+
+# Edit the file to include the pkgs_dirs entry with desired cache directory:
+pkgs_dirs:
+  - /path/to/desired/cache/directory
+
+# Use conda info to confirm change:
+conda info
+```
+
+Another method to adjust the cache directory is by setting the `CONDA_PKGS_DIRS` environment variable. To do this, issue:
+
+```bash
+# Export the variable:
+export CONDA_PKGS_DIRS=/path/to/desired/cache/directory
+
+# Confirm change with conda info:
+conda info
+```
+
+### Clean conda cache
+
+```bash
+conda clean --all
+```
+
+### Create an environment
 
 To create an environment at the default location or at the location specified in the `.condarc` file.
 ```bash
@@ -27,7 +64,7 @@ mamba create --prefix=r43
 # It will create a subfolder `r43` in the current working directory or the directory specified in .condarc. Here the prefix is non standard location for the environment. 
 ```
 
-## Activate an environment
+### Activate an environment
 
 ```bash
 conda activate env-name
@@ -42,7 +79,7 @@ or
 source activate r43/
 ```
 
-## Install R in the activated environment
+## Install packages/software in an activated environment
 
 **Note:** You do not need to be in the environment file folder. The environment needs to be active to install it. 
 
