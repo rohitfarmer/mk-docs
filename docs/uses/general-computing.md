@@ -7,17 +7,19 @@
 
 ## Cross platform or web based
 
-1. **Microsoft OneNote:** for collaborative notes
-2. **[MusicBrainz Picard](https://picard.musicbrainz.org/):** a cross-platform music tagger powered by the MusicBrainz database
-3. **Obsidian:** note taking app for building a knowledgebase
-4. **[Piped.video](https://piped.video/):** a YouTube frontend
-5. **[Portable Apps](https://portableapps.com/):** small Windows applications that do not require installation
-6. **[Raindop](https://raindrop.io/)**: bookmark manager
-7. **[SimpleNote](https://simplenote.com/):** a quick note taking app
-8. **[Standard Notes](https://standardnotes.com/):** end to end encrypted note taking app 
-9. **[StartPage](https://www.startpage.com/):** Google based search engine, but privacy focused. I find it better than DuckDuckGo
-10. **[Standard Ebooks](https://standardebooks.org/):** beautifully edited public domain ebooks
-11. **[Termius](https://termius.com/):** SSH client
+1. **[HandBrake](https://handbrake.fr/):** an open source video transcoder to convert video formats
+2. **[Kdenlive](https://kdenlive.org/en/):** an open source video editor
+3. **Microsoft OneNote:** for collaborative notes
+4. **[MusicBrainz Picard](https://picard.musicbrainz.org/):** a cross-platform music tagger powered by the MusicBrainz database
+5. **Obsidian:** note taking app for building a knowledgebase
+6. **[Piped.video](https://piped.video/):** a YouTube frontend
+7. **[Portable Apps](https://portableapps.com/):** small Windows applications that do not require installation
+8. **[Raindop](https://raindrop.io/)**: bookmark manager
+9. **[SimpleNote](https://simplenote.com/):** a quick note taking app
+10. **[Standard Notes](https://standardnotes.com/):** end to end encrypted note taking app 
+11. **[StartPage](https://www.startpage.com/):** Google based search engine, but privacy focused. I find it better than DuckDuckGo
+12. **[Standard Ebooks](https://standardebooks.org/):** beautifully edited public domain ebooks
+13. **[Termius](https://termius.com/):** SSH client
 
 ## Linux
 
