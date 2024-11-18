@@ -2,6 +2,13 @@
 **For general command line help**  
 <a href="https://sqlite.org/cli.html" target="_blank">https://sqlite.org/cli.html</a>
 
+# Access shell commands
+To clear the terminal
+```sql
+.shell clear
+```
+
+
 ## Open/attach a database
 ```sql
 sqlite3 database.db
