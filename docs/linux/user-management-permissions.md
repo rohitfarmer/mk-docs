@@ -40,7 +40,7 @@ The command below set the password for the new user.
 sudo passwd newuser
 ```
 
-# List all the users that have a home directory
+## List all the users that have a home directory
 
 ```bash
 awk -F: '/\/home/ {print $1}' /etc/passwd
