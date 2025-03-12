@@ -104,7 +104,7 @@ Dot commands give you significant control over how query results are displayed:
 SELECT * FROM employees;
 ```
 
-## Quick Reference
+### Quick Reference
 
 1. **List Tables**  
    ```sql
@@ -203,6 +203,7 @@ The `WHERE` clause is an optional clause of the `SELECT` statement. It appears a
 
 **Note:** Besides the `SELECT` statement, you can use the `WHERE` clause in the `UPDATE` and `DELETE` statements.
 
+* [Notes on conditional and logical operators used with WHERE](sqlite-where.md)
 * [Tutorial on WHERE](https://www.sqlitetutorial.net/sqlite-where/)
 
 ```sql
@@ -215,7 +216,7 @@ SELECT columnName FROM tableName WHERE condition;
 SELECT DISTINCT columnName1 FROM tableName WHERE columnName2 = condition;
 ```
 
-### String functions
+## String functions
 #### Calculate length of string in a column
 ```sql
 SELECT columnName, length(columName) FROM tableName;
