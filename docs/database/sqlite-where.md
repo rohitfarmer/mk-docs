@@ -4,146 +4,151 @@ In SQLite, **conditional operators** (sometimes also referred to as comparison o
 
 ## 1. Comparison Operators
 
-1. **=** or **==**  
-   - Checks if two expressions are equal.
-   - Example:
-     ```sql
-     SELECT * 
-     FROM employees
-     WHERE department = 'Sales';
-     ```
+### = or ==  
+Checks if two expressions are equal.
 
-2. **!=** or **<>**  
-   - Checks if two expressions are not equal.
-   - Example:
-     ```sql
-     SELECT * 
-     FROM employees
-     WHERE department != 'Sales';
-     ```
-   - In SQLite, `!=` and `<>` have the same meaning.
+```sql
+SELECT * 
+FROM employees
+WHERE department = 'Sales';
+```
 
-3. **<** (Less than), **>** (Greater than), **<=** (Less than or equal to), **>=** (Greater than or equal to)  
-   - Used for numerical or lexicographical comparison.
-   - Example:
-     ```sql
-     SELECT * 
-     FROM orders
-     WHERE order_total > 1000;
-     ```
+### != or <>  
+Checks if two expressions are not equal.
 
-4. **IS** / **IS NOT**  
-   - Primarily used to compare with `NULL` or boolean-like values in SQLite.
-   - Example:
-     ```sql
-     SELECT *
-     FROM employees
-     WHERE manager_id IS NULL;
-     ```
-   - Although `=` can be used for most comparisons, `IS` more explicitly checks for identity (especially with `NULL`).
+```sql
+SELECT * 
+FROM employees
+WHERE department != 'Sales';
+```
+In SQLite, `!=` and `<>` have the same meaning.
+
+### < (Less than), > (Greater than), <= (Less than or equal to), >= (Greater than or equal to)  
+Used for numerical or lexicographical comparison.
+
+```sql
+SELECT * 
+FROM orders
+WHERE order_total > 1000;
+```
+
+### **IS** / **IS NOT**  
+Primarily used to compare with `NULL` or boolean-like values in SQLite.
+
+```sql
+SELECT *
+FROM employees
+WHERE manager_id IS NULL;
+```
+    
+Although `=` can be used for most comparisons, `IS` more explicitly checks for identity (especially with `NULL`).
 
 
 ## 2. Logical Operators
 
-1. **AND**  
-   - Combines multiple conditions. Returns true if *all* conditions are met.
-   - Example:
-     ```sql
-     SELECT *
-     FROM employees
-     WHERE department = 'Sales'
-       AND hire_date >= '2020-01-01';
-     ```
+### **AND**  
+Combines multiple conditions. Returns true if *all* conditions are met.
 
-2. **OR**  
-   - Combines multiple conditions. Returns true if *any* condition is met.
-   - Example:
-     ```sql
-     SELECT *
-     FROM employees
-     WHERE department = 'Sales'
-       OR department = 'Finance';
-     ```
+```sql
+SELECT *
+FROM employees
+WHERE department = 'Sales'
+AND hire_date >= '2020-01-01';
+```
 
-3. **NOT**  
-   - Negates a condition. Returns true if the condition is false.
-   - Example:
-     ```sql
-     SELECT *
-     FROM employees
-     WHERE NOT (department = 'Sales');
-     ```
+### **OR**  
+Combines multiple conditions. Returns true if *any* condition is met.
 
+```sql
+SELECT *
+FROM employees
+WHERE department = 'Sales'
+OR department = 'Finance';
+```
+
+### **NOT**  
+Negates a condition. Returns true if the condition is false.
+
+```sql
+SELECT *
+FROM employees
+WHERE NOT (department = 'Sales');
+```
 
 ## 3. Special Operators
 
-1. **IN / NOT IN**  
-   - Checks if a value matches any value in a given list (or subquery result).
-   - Example:
-     ```sql
-     SELECT *
-     FROM employees
-     WHERE department IN ('Sales', 'Finance', 'Engineering');
-     ```
-   - `NOT IN` checks if a value is not in the given list.
+#### **IN / NOT IN**  
+Checks if a value matches any value in a given list (or subquery result).
 
-2. **BETWEEN / NOT BETWEEN**  
-   - Checks if a value is within a given range (inclusive).
-   - Example:
-     ```sql
-     SELECT *
-     FROM orders
-     WHERE order_date BETWEEN '2021-01-01' AND '2021-12-31';
-     ```
-   - `NOT BETWEEN` excludes the specified range.
+```sql
+SELECT *
+FROM employees
+WHERE department IN ('Sales', 'Finance', 'Engineering');
+```
 
-3. **LIKE / GLOB**  
-   - Used for pattern matching in strings.
-   - **LIKE** supports simple wildcard patterns:
-     - `%` (percent) matches zero or more characters.
-     - `_` (underscore) matches exactly one character.
-   - **GLOB** uses Unix-like wildcard characters (`*`, `?`, `[`, and `]`), and is case sensitive by default.
-   - Example with LIKE:
-     ```sql
-     SELECT *
-     FROM employees
-     WHERE name LIKE 'A%';  -- names starting with 'A'
-     ```
+`NOT IN` checks if a value is not in the given list.
 
-4. **EXISTS**  
-   - Checks if a subquery returns any rows. Returns true if the subquery contains at least one row.
-   - Example:
-     ```sql
-     SELECT *
-     FROM employees e
-     WHERE EXISTS (
-       SELECT 1
-       FROM orders o
-       WHERE o.employee_id = e.id
-     );
-     ```
+#### **BETWEEN / NOT BETWEEN**  
+Checks if a value is within a given range (inclusive).
 
-5. **CASE**  
-   - Not an operator but rather an expression for conditional logic (similar to `if/else`):
-     ```sql
-     SELECT 
-       CASE
-         WHEN order_total >= 1000 THEN 'High'
-         WHEN order_total >= 500  THEN 'Medium'
-         ELSE 'Low'
-       END AS order_classification
-     FROM orders;
-     ```
+```sql
+SELECT *
+FROM orders
+WHERE order_date BETWEEN '2021-01-01' AND '2021-12-31';
+```
 
-6. **REGEXP**  
-   - SQLite does not natively include a `REGEXP` operator by default. It can be enabled with an external function. If enabled, it performs regular expression pattern matching.
-   - Usage example (assuming `REGEXP` is enabled):
-     ```sql
-     SELECT *
-     FROM employees
-     WHERE name REGEXP '^[A-Z][a-z]*$';
-     ```
+`NOT BETWEEN` excludes the specified range.
 
+#### **LIKE / GLOB**  
+Used for pattern matching in strings. 
+
+* **LIKE** supports simple wildcard patterns:
+* `%` (percent) matches zero or more characters.
+* `_` (underscore) matches exactly one character.
+* **GLOB** uses Unix-like wildcard characters (`*`, `?`, `[`, and `]`), and is case sensitive by default.
+
+```sql
+SELECT *
+FROM employees
+WHERE name LIKE 'A%';  -- names starting with 'A'
+```
+
+#### **EXISTS**  
+Checks if a subquery returns any rows. Returns true if the subquery contains at least one row.
+
+```sql
+SELECT *
+FROM employees e
+WHERE EXISTS (
+SELECT 1
+FROM orders o
+WHERE o.employee_id = e.id
+);
+```
+
+#### **CASE**  
+Not an operator but rather an expression for conditional logic (similar to `if/else`):
+
+```sql
+SELECT 
+CASE
+    WHEN order_total >= 1000 THEN 'High'
+    WHEN order_total >= 500  THEN 'Medium'
+    ELSE 'Low'
+END AS order_classification
+FROM orders;
+```
+
+#### **REGEXP**  
+
+* SQLite does not natively include a `REGEXP` operator by default. It can be enabled with an external function. If enabled, it performs regular expression pattern matching.
+* Usage example (assuming `REGEXP` is enabled):
+  
+```sql
+SELECT *
+FROM employees
+WHERE name REGEXP '^[A-Z][a-z]*$';
+```
 
 ## 4. Using Conditions in Queries
 
@@ -151,8 +156,6 @@ You typically use these operators within:
 - **WHERE** clause for filtering rows
 - **HAVING** clause for filtering groups (with aggregate functions)
 - **JOIN** conditions
-
-### Example
 
 ```sql
 SELECT employee_id, first_name, last_name
