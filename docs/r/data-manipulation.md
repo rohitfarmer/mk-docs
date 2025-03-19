@@ -60,9 +60,16 @@ This function allows you to vectorise multiple if_else() statements. Each case i
 
 `case_when()` is an R equivalent of the SQL "searched" CASE WHEN statement.
 
-```r
+```R
 dplyr::mutate("W & GLMM P Sig" = case_when(wilcox_p.value < 0.05 & glmm_p.value < 0.05 ~ 1, 
                                           .default = 0))
+```
+
+### Replace NA with 0 across the tibble
+To replace NA with 0 anywhere in the tibble. 
+
+```R
+  mutate(across(everything(), ~ replace_na(., 0)))
 ```
 
 ### Coalesce
