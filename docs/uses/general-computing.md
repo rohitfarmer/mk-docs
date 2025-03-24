@@ -4,6 +4,7 @@
 1. **LibreTube:** a YouTube forntend (install it from F-droid)
 2. **Fennec:** a FireFox based web browser (install it from F-droid)
 3. **FireFox Focus:** privacy focused web browser by Mozilla
+4. **Tasks:** Open-source To-Do Lists & Reminders
 
 ## Cross platform or web based
 
