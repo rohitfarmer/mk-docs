@@ -1,11 +1,12 @@
 # General Computing Software and Tools that I use
 
 ## Android
-1. **[Capy Reader](https://capyreader.com/):** A smallish Android RSS reader for Feedbin, FreshRSS and local feeds. It's non cloud based and so far the best I have found in terms of render quality and automatically finding RSS feed URL from the root URL. 
-2. **LibreTube:** a YouTube forntend (install it from F-droid)
-3. **Fennec:** a FireFox based web browser (install it from F-droid)
-4. **FireFox Focus:** privacy focused web browser by Mozilla
-5. **Tasks:** Open-source To-Do Lists & Reminders
+1. **[Antenna Pod](https://antennapod.org/):** AntennaPod is a podcast player that is open-source and you can subscribe to any RSS feed. AntennaPod is built by volunteers so it respects your privacy while giving you full control.
+2. **[Capy Reader](https://capyreader.com/):** A smallish Android RSS reader for Feedbin, FreshRSS and local feeds. It's non cloud based and so far the best I have found in terms of render quality and automatically finding RSS feed URL from the root URL. 
+3. **LibreTube:** a YouTube forntend (install it from F-droid)
+4. **Fennec:** a FireFox based web browser (install it from F-droid)
+5. **FireFox Focus:** privacy focused web browser by Mozilla
+6. **Tasks:** Open-source To-Do Lists & Reminders
 
 ## Cross platform or web based
 
