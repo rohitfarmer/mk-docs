@@ -100,3 +100,16 @@ gplt <- ggplot(gpd, aes(x = visit, y = tile_count)) +
           geom_jitter(shape=16, position=position_jitter(0.2)) +
           facet_wrap(~genus, scales = "free_y") 
 ```
+
+## Line graph
+A line graph with time points on the x-axis and score on the y-axis with separate line for each subject. A dashed line is also plotted to show the average across all the subjects per time point. Finally, the figure is facetted on species. `enrich_dat` contains the main figure data whiel `mean_enrich` contains the mean score values per time point and species.
+
+```R
+line_plt <- ggplot(enrich_dat, aes(x = visit, y = max_enrich_score, color = subject)) +
+        geom_line(aes(group = subject), alpha = 0.5) +         # lines for each subject
+        geom_line(data = mean_enrich, aes(x = visit, y = mean_enrich_score),   # average line
+                  color = "black", size = 1, linetype = "dashed") +
+        labs(x = "Time Point", y = "Max Enrichment Score", color = "Subject") +
+        facet_wrap( ~ species, scales = "free_y") +
+        scale_x_continuous(breaks = 1:7)
+```
