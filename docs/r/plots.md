@@ -102,7 +102,7 @@ gplt <- ggplot(gpd, aes(x = visit, y = tile_count)) +
 ```
 
 ## Line graph
-A line graph with time points on the x-axis and score on the y-axis with separate line for each subject. A dashed line is also plotted to show the average across all the subjects per time point. Finally, the figure is facetted on species. `enrich_dat` contains the main figure data whiel `mean_enrich` contains the mean score values per time point and species.
+A line graph with time points on the x-axis and score on the y-axis with separate line for each subject. A dashed line is also plotted to show the average across all the subjects per time point. Finally, the figure is facetted on species. `enrich_dat` contains the main figure data while `mean_enrich` contains the mean score values per time point and species.
 
 ```R
 line_plt <- ggplot(enrich_dat, aes(x = visit, y = max_enrich_score, color = subject)) +
