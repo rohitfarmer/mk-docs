@@ -113,3 +113,14 @@ line_plt <- ggplot(enrich_dat, aes(x = visit, y = max_enrich_score, color = subj
         facet_wrap( ~ species, scales = "free_y") +
         scale_x_continuous(breaks = 1:7)
 ```
+
+## Distribution plots
+A histogram to show the distribution along with the a vertical line on the x-axis to show the mean or in the example below a threshold.
+
+```R
+herpes_plot <- ggplot(herpes_p_dat, aes(x = log10(enrich_score))) +
+          geom_histogram() +
+          geom_vline(xintercept = log10(threshold$threshold), color = "red", linetype = "dashed", linewidth = 1) +
+          labs(x="Log10(enrichment score)", y = "Tile count across all the subjects",
+          title = paste0("Unique tiles:", nrow(herpes), "; Threshold:", round(threshold$threshold, 2),"; Log10:", round(log10(threshold$threshold),2)))
+```
