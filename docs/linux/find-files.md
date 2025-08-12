@@ -21,3 +21,9 @@ Case insensitive keyword
 ```bash
 find . -type f -iname "*keyword*"
 ```
+
+## Find and copy files to a destination folder
+
+```bash
+find . -name "*.fastq.gz" -exec cp {} /destination/folder/ \;
+```
