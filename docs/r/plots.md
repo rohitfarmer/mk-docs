@@ -91,6 +91,32 @@ draw(hmap, padding = unit(c(3.5, 1, 1, 1), "cm")) # Bottom, left, top, right
 dev.off() 
 ```
 
+### Attach a bar plot as the row annotation
+```R
+# This will create a Heatmap annotation object toe generate a bar plot as the row annotation
+# tiles_per_order is a numeric vector of tile counts in the same order as the rownames.
+# Similarly, annotations can be placed on the other three sides of the plot
+# as left, top, and bottom annotations. 
+
+row_bar_anno <- rowAnnotation("Log10(Total\nTiles)" = anno_barplot(tiles_per_order,
+                              gp = gpar(fill = colorRamp2(range(tiles_per_order), c("lightblue", "darkblue"))(tiles_per_order)),
+                              width = unit(2.5, "cm")))
+
+hmap <- Heatmap(hmat, col = color_fun,
+                na_col = "lightgrey",
+                border = TRUE, 
+                show_row_names = TRUE,  # Show row names
+                right_annotation = row_bar_anno, # Show bar plot on the right side y-axis of the plot
+                show_column_names = TRUE,  # Show column names
+                column_title_gp = gpar(fontsize = 10, fontface = "bold"),
+                row_title_rot = 0,
+                row_title_gp = gpar(fontsize = 10, fontface = "bold", col = "black", just = "right"),
+                row_gap = unit(1, "mm"),
+                heatmap_legend_param = list(at = round(seq(min(hmat, na.rm = TRUE), max(hmat, na.rm = TRUE), length.out = 10),3), # Specify the breaks
+                labels = c(round(seq(min(hmat, na.rm = TRUE), max(hmat, na.rm = TRUE), length.out = 10), 3))),
+                name = "Log10(Tile\nCount)"  # Title for the legend color bar) 
+```
+
 ## Violin plot
 A violin plot is a hybrid of a box plot and a kernel density plot, which shows peaks in the data. It is used to visualize the distribution of numerical data. Unlike a box plot that can only show summary statistics, violin plots depict summary statistics and the density of each variable.
 
