@@ -11,6 +11,13 @@ cwebp -q quality (optional) input-image.jpg -o output-image.webp
 # Typical value is around 80.
 ```
 
+Convert a jpg to webp using image magick while resizing the image to 1200px and reducing the quality to 80%. The command below will resize and convert all the .jpg files in a given folder to their corresponding webp formats.
+
+*Note: the command below requires imagemagick version >= 7*
+```bash
+magick mogrify -resize 1200x -quality 80 -format webp *.jpg
+```
+
 ## Convert an SVG to PNG format
 
 Using `convert` function from [ImageMagick](https://imagemagick.org/index.php)
