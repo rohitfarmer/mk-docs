@@ -88,3 +88,9 @@ If you do a `git pull` in the main repository it will not pull the contents of t
 ```bash
 git pull --recurse-submodule
 ```
+
+### Clone a Repository with Submodules
+
+```bash
+git clone --recurse-submodules <repo link>
+```
