@@ -89,6 +89,18 @@ If you do a `git pull` in the main repository it will not pull the contents of t
 git pull --recurse-submodule
 ```
 
+Set in configuration
+
+```bash
+git config submodule.recurse true
+```
+
+#### Pull and Merge Submodules from Remote Repo
+
+```bash
+git submodule update --remote --merge
+```
+
 ### Clone a Repository with Submodules
 
 ```bash
