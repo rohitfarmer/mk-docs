@@ -106,3 +106,73 @@ git submodule update --remote --merge
 ```bash
 git clone --recurse-submodules <repo link>
 ```
+
+Here’s the clean way to *completely* remove a git submodule from a repo.
+
+Assume the submodule lives at: `path/to/submodule`
+
+
+### Remove a Submodule
+#### 1. Deinitialize the submodule
+
+This removes the submodule’s config and staging from Git:
+
+```bash
+git submodule deinit -f path/to/submodule
+```
+
+(This cleans up entries in `.git/config`.)
+
+#### 2. Remove the submodule directory from the index
+
+This tells Git “stop tracking this thing as a submodule” and schedules its folder for deletion in the next commit:
+
+```bash
+git rm -f path/to/submodule
+```
+
+This will:
+
+* Remove the submodule entry from the index
+* Remove the corresponding section from `.gitmodules`
+* Mark the folder for deletion
+
+Don’t worry, you can still recover it from history if needed.
+
+#### 3. Remove the submodule’s internal git data
+
+Git keeps the submodule’s data under `.git/modules/`:
+
+```bash
+rm -rf .git/modules/path/to/submodule
+```
+
+(If that path doesn’t exist, you can skip this step.)
+
+#### 4. Commit the changes
+
+```bash
+git commit -m "Remove submodule path/to/submodule"
+```
+
+Now the submodule is fully removed from the parent repository.
+
+#### Variant: keep the files but not as a submodule
+
+If you want to *keep the directory contents* and just stop treating it as a submodule:
+
+```bash
+git submodule deinit -f path/to/submodule
+git rm --cached path/to/submodule        # remove from index only
+rm -rf .git/modules/path/to/submodule
+```
+
+Then manually re-add the directory as normal files (if needed):
+
+```bash
+# Make sure the files are still there; if not, restore them (e.g., from backup or previous checkout)
+git add path/to/submodule
+git commit -m "Convert submodule to regular directory"
+```
+
+
