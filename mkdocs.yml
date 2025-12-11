@@ -1,5 +1,9 @@
 site_name: Documentations by Rohit Farmer
+site_description: Rohit Farmer's cookbook-style documentation website on frequently used software and code snippets.
 site_url: https://docs.rohitfarmer.com
+site_author: Rohit Farmer
+repo_url: https://github.com/rohitfarmer/mk-docs
+repo_name: GitHub
 docs_dir: contents
 site_dir: docs
 theme:
