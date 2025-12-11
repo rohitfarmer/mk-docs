@@ -1,5 +1,7 @@
 site_name: Documentations by Rohit Farmer
 site_url: https://docs.rohitfarmer.com
+docs_dir: contents
+site_dir: docs
 theme:
   name: material
   palette:
