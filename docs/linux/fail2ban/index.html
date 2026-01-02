@@ -1254,62 +1254,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Monitor realtime activity">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#nginx-access-log" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        NGINX access log
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#monitoring-through-additional-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Monitoring through additional tools
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Monitoring through additional tools">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#quick-who-are-they-countryasn" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Quick “who are they?” (country/ASN)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#friendly-tui-report-goaccess" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Friendly TUI report (GoAccess)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -1448,6 +1392,34 @@
     
   
     Rules for Naming Files and Folders that are Cross Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nginx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NGINX
   
 
     
@@ -2629,62 +2601,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Monitor realtime activity">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#nginx-access-log" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        NGINX access log
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#monitoring-through-additional-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Monitoring through additional tools
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Monitoring through additional tools">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#quick-who-are-they-countryasn" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Quick “who are they?” (country/ASN)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#friendly-tui-report-goaccess" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Friendly TUI report (GoAccess)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -2783,27 +2699,6 @@
 </span></code></pre></div>
 <h2 id="monitor-realtime-activity">Monitor realtime activity</h2>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo<span class="w"> </span>tail<span class="w"> </span>-f<span class="w"> </span>/var/log/fail2ban.log
-</span></code></pre></div>
-<h3 id="nginx-access-log">NGINX access log</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Realtime </span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>tail<span class="w"> </span>-f<span class="w"> </span>/var/log/nginx/access.log
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># Highest count</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>awk<span class="w"> </span><span class="s1">&#39;{print $1}&#39;</span><span class="w"> </span>/var/log/nginx/access.log<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq<span class="w"> </span>-c<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-nr<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-20
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="c1"># Today</span>
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>grep<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>date<span class="w"> </span><span class="s1">&#39;+%d/%b/%Y:%H&#39;</span><span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span>/var/log/nginx/access.log<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{print $1}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq<span class="w"> </span>-c<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-nr<span class="w"> </span><span class="p">|</span><span class="w"> </span>head
-</span></code></pre></div>
-<h2 id="monitoring-through-additional-tools">Monitoring through additional tools</h2>
-<h3 id="quick-who-are-they-countryasn">Quick “who are they?” (country/ASN)</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>geoip-bin<span class="w"> </span>-y
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="c1"># Lookup top 10 IPs and their location</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>awk<span class="w"> </span><span class="s1">&#39;{print $1}&#39;</span><span class="w"> </span>/var/log/nginx/access.log<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq<span class="w"> </span>-c<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-nr<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-10<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{print $2}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-I<span class="o">{}</span><span class="w"> </span>geoiplookup<span class="w"> </span><span class="o">{}</span>
-</span></code></pre></div>
-<h3 id="friendly-tui-report-goaccess">Friendly TUI report (GoAccess)</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>goaccess<span class="w"> </span>-y
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>goaccess<span class="w"> </span>/var/log/nginx/access.log<span class="w"> </span>--log-format<span class="o">=</span>COMBINED<span class="w"> </span>--ignore-crawlers<span class="w"> </span>-a
 </span></code></pre></div>
 
 

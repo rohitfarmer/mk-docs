@@ -12,13 +12,13 @@
         <meta name="author" content="Rohit Farmer">
       
       
-        <link rel="canonical" href="https://docs.rohitfarmer.com/linux/mini-dlna-server/">
+        <link rel="canonical" href="https://docs.rohitfarmer.com/linux/nginx/">
       
       
-        <link rel="prev" href="../images/">
+        <link rel="prev" href="../naming-rules/">
       
       
-        <link rel="next" href="../naming-rules/">
+        <link rel="next" href="../package-management/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>Setup MiniDLNA Server - Documentations by Rohit Farmer</title>
+        <title>NGINX - Documentations by Rohit Farmer</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#setup-minidlna-server" class="md-skip">
+        <a href="#nginx" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Setup MiniDLNA Server
+              NGINX
             
           </span>
         </div>
@@ -1273,19 +1273,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../mini-dlna-server/" class="md-nav__link">
         
   
   
@@ -1301,7 +1292,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1339,10 +1329,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../nginx/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NGINX
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1358,6 +1375,121 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nginx-access-log-and-monitoring-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NGINX Access Log and Monitoring Tools
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="NGINX Access Log and Monitoring Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-who-are-they-countryasn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick “who are they?” (country/ASN)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#friendly-tui-report-goaccess" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Friendly TUI report (GoAccess)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#block-bad-user-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Block Bad User Agents
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Block Bad User Agents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable-the-block-on-your-website" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enable the Block on Your Website
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Enable the Block on Your Website">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#block-these-exploit-paths-in-nginx-fast-safe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Block these exploit paths in Nginx (fast + safe)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test It
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2494,6 +2626,109 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nginx-access-log-and-monitoring-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NGINX Access Log and Monitoring Tools
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="NGINX Access Log and Monitoring Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-who-are-they-countryasn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick “who are they?” (country/ASN)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#friendly-tui-report-goaccess" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Friendly TUI report (GoAccess)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#block-bad-user-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Block Bad User Agents
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Block Bad User Agents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable-the-block-on-your-website" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enable the Block on Your Website
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Enable the Block on Your Website">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#block-these-exploit-paths-in-nginx-fast-safe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Block these exploit paths in Nginx (fast + safe)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test It
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2560,16 +2795,113 @@
   
 
 
-<h1 id="setup-minidlna-server">Setup MiniDLNA Server</h1>
-<p><code>sudo apt-get install minidlna</code></p>
-<p>Now edit
-<code>sudo vi /etc/minidlna.conf</code></p>
-<p>enter the media location.
-<code>media_dir=A,/var/lib/minidlna/music</code></p>
-<p>Restart the daemon for changes to take effect.
-<code>sudo service minidlna restart</code></p>
-<p>To rebuild the database use:
-<code>sudo service minidlna force-reload</code></p>
+<h1 id="nginx">NGINX</h1>
+<p>nginx ("engine x") is an HTTP web server, reverse proxy, content cache, load balancer, TCP/UDP proxy server, and mail proxy server.</p>
+<p>Nginx official documentation: https://nginx.org/en/docs/</p>
+<h2 id="nginx-access-log-and-monitoring-tools">NGINX Access Log and Monitoring Tools</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Realtime </span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>tail<span class="w"> </span>-f<span class="w"> </span>/var/log/nginx/access.log
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Highest count</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>awk<span class="w"> </span><span class="s1">&#39;{print $1}&#39;</span><span class="w"> </span>/var/log/nginx/access.log<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq<span class="w"> </span>-c<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-nr<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-20
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># Today</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>grep<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>date<span class="w"> </span><span class="s1">&#39;+%d/%b/%Y:%H&#39;</span><span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span>/var/log/nginx/access.log<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{print $1}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq<span class="w"> </span>-c<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-nr<span class="w"> </span><span class="p">|</span><span class="w"> </span>head
+</span></code></pre></div>
+<h3 id="quick-who-are-they-countryasn">Quick “who are they?” (country/ASN)</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>geoip-bin<span class="w"> </span>-y
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># Lookup top 10 IPs and their location</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>awk<span class="w"> </span><span class="s1">&#39;{print $1}&#39;</span><span class="w"> </span>/var/log/nginx/access.log<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq<span class="w"> </span>-c<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-nr<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-10<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{print $2}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-I<span class="o">{}</span><span class="w"> </span>geoiplookup<span class="w"> </span><span class="o">{}</span>
+</span></code></pre></div>
+<h3 id="friendly-tui-report-goaccess">Friendly TUI report (GoAccess)</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>goaccess<span class="w"> </span>-y
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>goaccess<span class="w"> </span>/var/log/nginx/access.log<span class="w"> </span>--log-format<span class="o">=</span>COMBINED<span class="w"> </span>--ignore-crawlers<span class="w"> </span>-a
+</span></code></pre></div>
+<h2 id="block-bad-user-agents">Block Bad User Agents</h2>
+<p>Edit or create:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>/etc/nginx/conf.d/bot-blocks.conf
+</span></code></pre></div>
+<p>Put the following content:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>map<span class="w"> </span><span class="nv">$http_user_agent</span><span class="w"> </span><span class="nv">$block_bad_ua</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span>default<span class="w"> </span><span class="m">0</span><span class="p">;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="c1"># Old / dead Windows</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span>~*windows<span class="se">\ </span>nt<span class="o">(</span>?!<span class="se">\ </span><span class="m">10</span><span class="se">\.</span><span class="m">0</span><span class="p">|</span><span class="se">\ </span><span class="m">6</span><span class="se">\.</span><span class="m">3</span><span class="p">|</span><span class="se">\ </span><span class="m">6</span><span class="se">\.</span><span class="m">2</span><span class="p">|</span><span class="se">\ </span><span class="m">6</span><span class="se">\.</span><span class="m">1</span><span class="o">)</span><span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span>~*windows<span class="se">\ </span><span class="m">95</span><span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span>~*windows<span class="se">\ </span><span class="m">98</span><span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span>~*windows<span class="se">\ </span>me<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">    </span>~*windows<span class="se">\ </span>xp<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">    </span>~*windows<span class="se">\ </span>vista<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">    </span>~*windows<span class="se">\ </span><span class="m">2000</span><span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">    </span><span class="c1"># CLI tools</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">    </span>~*wget<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">    </span>~*curl<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">    </span>~*httpie<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="w">    </span>~*powershell<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">    </span>~*python-requests<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="w">    </span>~*python-urllib<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="w">    </span>~*perl<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="w">    </span>~*ruby<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="w">    </span>~*go-http-client<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="w">    </span>~*java<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a>
+</span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="w">    </span><span class="c1"># Scanners &amp; exploit tools</span>
+</span><span id="__span-4-26"><a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="w">    </span>~*nmap<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-27"><a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="w">    </span>~*masscan<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-28"><a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a><span class="w">    </span>~*nikto<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-29"><a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a><span class="w">    </span>~*sqlmap<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-30"><a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a><span class="w">    </span>~*acunetix<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-31"><a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a><span class="w">    </span>~*nessus<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-32"><a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a><span class="w">    </span>~*openvas<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-33"><a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a><span class="w">    </span>~*zgrab<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-34"><a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a><span class="w">    </span>~*dirbuster<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-35"><a id="__codelineno-4-35" name="__codelineno-4-35" href="#__codelineno-4-35"></a><span class="w">    </span>~*dirb<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-36"><a id="__codelineno-4-36" name="__codelineno-4-36" href="#__codelineno-4-36"></a><span class="w">    </span>~*gobuster<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-37"><a id="__codelineno-4-37" name="__codelineno-4-37" href="#__codelineno-4-37"></a><span class="w">    </span>~*wfuzz<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-38"><a id="__codelineno-4-38" name="__codelineno-4-38" href="#__codelineno-4-38"></a>
+</span><span id="__span-4-39"><a id="__codelineno-4-39" name="__codelineno-4-39" href="#__codelineno-4-39"></a><span class="w">    </span><span class="c1"># Bad crawlers</span>
+</span><span id="__span-4-40"><a id="__codelineno-4-40" name="__codelineno-4-40" href="#__codelineno-4-40"></a><span class="w">    </span>~*ahrefs<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-41"><a id="__codelineno-4-41" name="__codelineno-4-41" href="#__codelineno-4-41"></a><span class="w">    </span>~*semrush<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-42"><a id="__codelineno-4-42" name="__codelineno-4-42" href="#__codelineno-4-42"></a><span class="w">    </span>~*mj12bot<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-43"><a id="__codelineno-4-43" name="__codelineno-4-43" href="#__codelineno-4-43"></a><span class="w">    </span>~*dotbot<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-44"><a id="__codelineno-4-44" name="__codelineno-4-44" href="#__codelineno-4-44"></a><span class="w">    </span>~*serpstat<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-45"><a id="__codelineno-4-45" name="__codelineno-4-45" href="#__codelineno-4-45"></a><span class="w">    </span>~*rogerbot<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-46"><a id="__codelineno-4-46" name="__codelineno-4-46" href="#__codelineno-4-46"></a><span class="w">    </span>~*linkpadbot<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-47"><a id="__codelineno-4-47" name="__codelineno-4-47" href="#__codelineno-4-47"></a>
+</span><span id="__span-4-48"><a id="__codelineno-4-48" name="__codelineno-4-48" href="#__codelineno-4-48"></a><span class="w">    </span><span class="c1"># Generic junk</span>
+</span><span id="__span-4-49"><a id="__codelineno-4-49" name="__codelineno-4-49" href="#__codelineno-4-49"></a><span class="w">    </span>~*bot<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-50"><a id="__codelineno-4-50" name="__codelineno-4-50" href="#__codelineno-4-50"></a><span class="w">    </span>~*crawler<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-51"><a id="__codelineno-4-51" name="__codelineno-4-51" href="#__codelineno-4-51"></a><span class="w">    </span>~*scanner<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-52"><a id="__codelineno-4-52" name="__codelineno-4-52" href="#__codelineno-4-52"></a><span class="w">    </span>~*spider<span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-4-53"><a id="__codelineno-4-53" name="__codelineno-4-53" href="#__codelineno-4-53"></a><span class="o">}</span>
+</span></code></pre></div>
+<h3 id="enable-the-block-on-your-website">Enable the Block on Your Website</h3>
+<p>Edit</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>/etc/nginx/sites-available/your-site.conf
+</span></code></pre></div>
+<p>Add near the top of server {}:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>server<span class="w"> </span><span class="o">{</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">(</span><span class="nv">$block_bad_ua</span><span class="o">)</span><span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="m">444</span><span class="p">;</span><span class="w"> </span><span class="o">}</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span>...
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="o">}</span>
+</span></code></pre></div>
+<h4 id="block-these-exploit-paths-in-nginx-fast-safe">Block these exploit paths in Nginx (fast + safe)</h4>
+<p>Add this to your HTTPS server block (and optionally the HTTP one too) above your normal <code>location /</code>:</p>
+<p>Common exploit probing paths (drop immediately)</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>location<span class="w"> </span>~*<span class="w"> </span>^/<span class="o">(</span>cgi-bin<span class="p">|</span>wp-admin<span class="p">|</span>wp-login<span class="se">\.</span>php<span class="p">|</span><span class="se">\.</span>env<span class="p">|</span>phpmyadmin<span class="p">|</span>manager<span class="p">|</span>HNAP1<span class="o">)</span>/<span class="w"> </span><span class="o">{</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="m">444</span><span class="p">;</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="o">}</span>
+</span></code></pre></div>
+<h3 id="test-it">Test It</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>sudo<span class="w"> </span>nginx<span class="w"> </span>-t
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>reload<span class="w"> </span>nginx
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>curl<span class="w"> </span>-A<span class="w"> </span><span class="s2">&quot;wget&quot;</span><span class="w"> </span>http://yourdomain.com
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>curl<span class="w"> </span>-A<span class="w"> </span><span class="s2">&quot;Windows NT 4.0&quot;</span><span class="w"> </span>http://yourdomain.com
+</span></code></pre></div>
 
 
 
@@ -2605,7 +2937,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../images/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Image Manipulation in Linux and Mac">
+          <a href="../naming-rules/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Rules for Naming Files and Folders that are Cross Platform">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2615,20 +2947,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Image Manipulation in Linux and Mac
+                Rules for Naming Files and Folders that are Cross Platform
               </div>
             </div>
           </a>
         
         
           
-          <a href="../naming-rules/" class="md-footer__link md-footer__link--next" aria-label="Next: Rules for Naming Files and Folders that are Cross Platform">
+          <a href="../package-management/" class="md-footer__link md-footer__link--next" aria-label="Next: Linux Package Management">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Rules for Naming Files and Folders that are Cross Platform
+                Linux Package Management
               </div>
             </div>
             <div class="md-footer__button md-icon">
