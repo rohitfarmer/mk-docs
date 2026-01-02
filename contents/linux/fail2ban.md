@@ -43,33 +43,3 @@ sudo fail2ban-client status
 sudo tail -f /var/log/fail2ban.log
 ```
 
-### NGINX access log
-
-```bash
-# Realtime 
-tail -f /var/log/nginx/access.log
-
-# Highest count
-awk '{print $1}' /var/log/nginx/access.log | sort | uniq -c | sort -nr | head -20
-
-# Today
-grep "$(date '+%d/%b/%Y:%H')" /var/log/nginx/access.log | awk '{print $1}' | sort | uniq -c | sort -nr | head
-```
-
-## Monitoring through additional tools
-
-### Quick “who are they?” (country/ASN)
-
-```bash
-sudo apt update && sudo apt install geoip-bin -y
-
-# Lookup top 10 IPs and their location
-awk '{print $1}' /var/log/nginx/access.log | sort | uniq -c | sort -nr | head -10 | awk '{print $2}' | xargs -I{} geoiplookup {}
-```
-
-### Friendly TUI report (GoAccess)
-
-```bash
-sudo apt install goaccess -y
-goaccess /var/log/nginx/access.log --log-format=COMBINED --ignore-crawlers -a
-```
