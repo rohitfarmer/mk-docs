@@ -1249,7 +1249,46 @@
   <a href="#monitor-realtime-activity" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Monitor realtime activity
+        Monitor Realtime Activity
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Monitor Realtime Activity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sshd-specific-fail2ban-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SSHD Specific Fail2Ban Actions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strong-setup-for-sshd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strong Setup for SSHD
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strong-setup-for-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strong Setup for NGINX
       
     </span>
   </a>
@@ -2596,7 +2635,46 @@
   <a href="#monitor-realtime-activity" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Monitor realtime activity
+        Monitor Realtime Activity
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Monitor Realtime Activity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sshd-specific-fail2ban-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SSHD Specific Fail2Ban Actions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strong-setup-for-sshd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strong Setup for SSHD
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strong-setup-for-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strong Setup for NGINX
       
     </span>
   </a>
@@ -2697,8 +2775,56 @@
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>fail2ban
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>sudo<span class="w"> </span>fail2ban-client<span class="w"> </span>status
 </span></code></pre></div>
-<h2 id="monitor-realtime-activity">Monitor realtime activity</h2>
+<h2 id="monitor-realtime-activity">Monitor Realtime Activity</h2>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo<span class="w"> </span>tail<span class="w"> </span>-f<span class="w"> </span>/var/log/fail2ban.log
+</span></code></pre></div>
+<h3 id="sshd-specific-fail2ban-actions">SSHD Specific Fail2Ban Actions</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>tail<span class="w"> </span>-f<span class="w"> </span>/var/log/fail2ban.log<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>--line-buffered<span class="w"> </span>-i<span class="w"> </span>nginx
+</span></code></pre></div>
+<h2 id="strong-setup-for-sshd">Strong Setup for SSHD</h2>
+<p>Create or edit <code>/etc/fail2ban/jail.local</code>:</p>
+<p>The settings below will ban an IP permanently after 3 failed <code>ssh</code> login attempts within a 10-minute window. </p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="o">[</span>sshd<span class="o">]</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="c1"># To use more aggressive sshd modes set filter parameter &quot;mode&quot; in jail.local:</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1"># normal (default), ddos, extra or aggressive (combines all).</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="c1"># See &quot;tests/files/logs/sshd&quot; or &quot;filter.d/sshd.conf&quot; for usage example and details.</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="nv">mode</span><span class="w">   </span><span class="o">=</span><span class="w"> </span>aggressive
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="nv">port</span><span class="w">    </span><span class="o">=</span><span class="w"> </span>ssh
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="nv">logpath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>%<span class="o">(</span>sshd_log<span class="o">)</span>s
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="nv">backend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>%<span class="o">(</span>sshd_backend<span class="o">)</span>s
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="nv">findtime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">600</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="nv">maxretry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="nv">bantime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>-1
+</span></code></pre></div>
+<h2 id="strong-setup-for-nginx">Strong Setup for NGINX</h2>
+<p>The settings below will ban an IP for a week after 5 failed tries within a 10-minute window.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="o">[</span>nginx-limit-req<span class="o">]</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nv">enabled</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="nv">port</span><span class="w">    </span><span class="o">=</span><span class="w"> </span>http,https
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="nv">logpath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>%<span class="o">(</span>nginx_error_log<span class="o">)</span>s
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="nv">findtime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">600</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="nv">maxretry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="nv">bantime</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="m">604800</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="o">[</span>nginx-botsearch<span class="o">]</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="nv">enabled</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="nv">port</span><span class="w">     </span><span class="o">=</span><span class="w"> </span>http,https
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="nv">logpath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>%<span class="o">(</span>nginx_access_log<span class="o">)</span>s
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="nv">findtime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">600</span>
+</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="nv">maxretry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span>
+</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="nv">bantime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">604800</span>
+</span><span id="__span-7-18"><a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>
+</span><span id="__span-7-19"><a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="o">[</span>nginx-bad-request<span class="o">]</span>
+</span><span id="__span-7-20"><a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>
+</span><span id="__span-7-21"><a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="nv">enabled</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span>
+</span><span id="__span-7-22"><a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="nv">port</span><span class="w">    </span><span class="o">=</span><span class="w"> </span>http,https
+</span><span id="__span-7-23"><a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a><span class="nv">logpath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>%<span class="o">(</span>nginx_access_log<span class="o">)</span>s
+</span><span id="__span-7-24"><a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="nv">findtime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">600</span>
+</span><span id="__span-7-25"><a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a><span class="nv">maxretry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span>
+</span><span id="__span-7-26"><a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a><span class="nv">bantime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">604800</span>
 </span></code></pre></div>
 
 
