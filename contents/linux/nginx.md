@@ -17,6 +17,12 @@ awk '{print $1}' /var/log/nginx/access.log | sort | uniq -c | sort -nr | head -2
 grep "$(date '+%d/%b/%Y:%H')" /var/log/nginx/access.log | awk '{print $1}' | sort | uniq -c | sort -nr | head
 ```
 
+### NGINX Specific Fail2Ban Actions
+
+```bash
+sudo tail -f /var/log/fail2ban.log | grep --line-buffered -i nginx
+```
+
 ### Quick “who are they?” (country/ASN)
 
 ```bash
