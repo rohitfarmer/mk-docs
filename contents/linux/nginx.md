@@ -113,7 +113,7 @@ map $http_user_agent $block_bad_ua {
     ~*chatgpt-user 1;
     ~*ccbot 1;
     ~*anthropic 1;
-    ~*claudebot 1;
+    ~*claudebot 1; 
     ~*bytespider 1;
     ~*commoncrawl 1;
 
