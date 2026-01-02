@@ -88,6 +88,15 @@ map $http_user_agent $block_bad_ua {
     ~*gobuster 1;
     ~*wfuzz 1;
 
+    # Add common scanner libraries
+    ~*fasthttp 1;
+    ~*go-http-client 1;
+    ~*python-requests 1;~~~~
+    ~*aiohttp 1;
+    ~*okhttp 1;
+    ~*scrapy 1;
+    ~*zgrab 1;
+
     # Bad crawlers
     ~*ahrefs 1;
     ~*semrush 1;
@@ -96,6 +105,17 @@ map $http_user_agent $block_bad_ua {
     ~*serpstat 1;
     ~*rogerbot 1;
     ~*linkpadbot 1;
+
+    # AI / LLM scrapers
+    ~*amazonbot 1;
+    ~*gptbot 1;
+    ~*chatgpt 1;
+    ~*chatgpt-user 1;
+    ~*ccbot 1;
+    ~*anthropic 1;
+    ~*claudebot 1;
+    ~*bytespider 1;
+    ~*commoncrawl 1;
 
     # Generic junk
     ~*bot 1;
