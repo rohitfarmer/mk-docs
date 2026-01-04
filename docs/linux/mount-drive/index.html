@@ -12,13 +12,13 @@
         <meta name="author" content="Rohit Farmer">
       
       
-        <link rel="canonical" href="https://docs.rohitfarmer.com/linux/file-compression/">
+        <link rel="canonical" href="https://docs.rohitfarmer.com/linux/mount-drive/">
       
       
-        <link rel="prev" href="../fail2ban/">
+        <link rel="prev" href="../mini-dlna-server/">
       
       
-        <link rel="next" href="../find-files/">
+        <link rel="next" href="../naming-rules/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>File Compression - Documentations by Rohit Farmer</title>
+        <title>Mount External Drive - Documentations by Rohit Farmer</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#file-compression" class="md-skip">
+        <a href="#mount-external-drive" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              File Compression
+              Mount External Drive
             
           </span>
         </div>
@@ -1189,37 +1189,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    File Compression
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../file-compression/" class="md-nav__link">
         
   
   
@@ -1235,37 +1208,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#create-tar-archives" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Create TAR Archives
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1359,10 +1301,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../mount-drive/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mount External Drive
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1378,6 +1347,203 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#identify-the-external-hdd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Identify the external HDD
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-mount-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create the mount point
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-a-manual-mount-important" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test a manual mount (important)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Test a manual mount (important)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#if-the-drive-is-ext4-best-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If the drive is ext4 (best case)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fix-ownership-for-write-access-without-sudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fix ownership (for write access without sudo)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#make-it-persistent-auto-mount-at-boot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Make it persistent (auto-mount at boot)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Make it persistent (auto-mount at boot)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-the-uuid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get the UUID
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-etcfstab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edit /etc/fstab
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-one-of-the-following-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add one of the following lines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ext4-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EXT4 (recommended)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ntfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NTFS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exfat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        exFAT
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-fstab-safely-do-not-reboot-yet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test fstab safely (do NOT reboot yet)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verify-readwrite-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verify read/write access
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-pitfalls-mint-users-hit-these" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common pitfalls (Mint users hit these)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2605,10 +2771,176 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#create-tar-archives" class="md-nav__link">
+  <a href="#identify-the-external-hdd" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Create TAR Archives
+        Identify the external HDD
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-mount-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create the mount point
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-a-manual-mount-important" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test a manual mount (important)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Test a manual mount (important)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#if-the-drive-is-ext4-best-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If the drive is ext4 (best case)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fix-ownership-for-write-access-without-sudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fix ownership (for write access without sudo)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#make-it-persistent-auto-mount-at-boot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Make it persistent (auto-mount at boot)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Make it persistent (auto-mount at boot)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-the-uuid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get the UUID
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-etcfstab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edit /etc/fstab
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-one-of-the-following-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add one of the following lines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ext4-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EXT4 (recommended)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ntfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NTFS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exfat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        exFAT
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-fstab-safely-do-not-reboot-yet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test fstab safely (do NOT reboot yet)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verify-readwrite-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verify read/write access
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-pitfalls-mint-users-hit-these" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common pitfalls (Mint users hit these)
       
     </span>
   </a>
@@ -2683,9 +3015,86 @@
   
 
 
-<h1 id="file-compression">File Compression</h1>
-<h2 id="create-tar-archives">Create TAR Archives</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>tar<span class="w"> </span>--exclude-vcs<span class="w"> </span>--exclude-backups<span class="w"> </span>--exclude<span class="o">=</span>._*<span class="w"> </span>--exclude<span class="o">=</span><span class="s1">&#39;Flow_15c&#39;</span><span class="w"> </span>--exclude<span class="o">=</span><span class="s1">&#39;h5n1_3.6_new_enet.sif&#39;</span><span class="w"> </span>--exclude<span class="o">=</span>temp*<span class="w"> </span>-zcvf<span class="w"> </span>h5n1_july_26_2022.tar.gz<span class="w"> </span>h5n1
+<h1 id="mount-external-drive">Mount External Drive</h1>
+<p>To mount an external HDD <strong>read/write</strong> at <code>/mnt/gdrive10tb</code> on <strong>Linux Mint</strong> (works the same on Ubuntu/Debian).</p>
+<h2 id="identify-the-external-hdd">Identify the external HDD</h2>
+<p>Plug in the drive, then run:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>lsblk<span class="w"> </span>-f
+</span></code></pre></div>
+<p>You’ll see something like:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sdb
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>└─sdb1 ext4   GDRIVE10TB  a1b2c3d4-...
+</span></code></pre></div>
+<p>Take note of:</p>
+<ul>
+<li><strong>Device</strong>: <code>/dev/sdb1</code></li>
+<li><strong>Filesystem</strong>: <code>ext4</code>, <code>ntfs</code>, or <code>exfat</code></li>
+<li><strong>UUID</strong> (recommended for fstab)</li>
+</ul>
+<h2 id="create-the-mount-point">Create the mount point</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/mnt/gdrive10tb
+</span></code></pre></div>
+<h2 id="test-a-manual-mount-important">Test a manual mount (important)</h2>
+<h3 id="if-the-drive-is-ext4-best-case">If the drive is <strong>ext4</strong> (best case)</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>mount<span class="w"> </span>/dev/sdb1<span class="w"> </span>/mnt/gdrive10tb
+</span></code></pre></div>
+<p>Check:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>mount<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>gdrive10tb
+</span></code></pre></div>
+<h2 id="fix-ownership-for-write-access-without-sudo">Fix ownership (for write access without sudo)</h2>
+<p>If you mounted successfully but can only write as root:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span><span class="nv">$USER</span>:<span class="nv">$USER</span><span class="w"> </span>/mnt/gdrive10tb
+</span></code></pre></div>
+<p>Test:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>touch<span class="w"> </span>/mnt/gdrive10tb/testfile
+</span></code></pre></div>
+<h2 id="make-it-persistent-auto-mount-at-boot">Make it persistent (auto-mount at boot)</h2>
+<h3 id="get-the-uuid">Get the UUID</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>blkid<span class="w"> </span>/dev/sdb1<span class="w"> </span><span class="c1"># or use lsblk -f</span>
+</span></code></pre></div>
+<p>Example output:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>UUID=&quot;a1b2c3d4-5678&quot; TYPE=&quot;ext4&quot;
+</span></code></pre></div>
+<h3 id="edit-etcfstab">Edit <code>/etc/fstab</code></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sudo<span class="w"> </span>vim<span class="w"> </span>/etc/fstab
+</span></code></pre></div>
+<h3 id="add-one-of-the-following-lines">Add one of the following lines</h3>
+<h3 id="ext4-recommended">EXT4 (recommended)</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>UUID=a1b2c3d4-5678  /mnt/gdrive10tb  ext4  defaults,noatime  0  2
+</span></code></pre></div>
+<h3 id="ntfs">NTFS</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>UUID=a1b2c3d4-5678  /mnt/gdrive10tb  ntfs-3g  rw,uid=1000,gid=1000,noatime  0  0
+</span></code></pre></div>
+<h3 id="exfat">exFAT</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>UUID=a1b2c3d4-5678  /mnt/gdrive10tb  exfat  rw,uid=1000,gid=1000,noatime  0  0
+</span></code></pre></div>
+<p>(<code>uid=1000</code> is your normal user on Linux Mint.)</p>
+<h2 id="test-fstab-safely-do-not-reboot-yet">Test fstab safely (do NOT reboot yet)</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>sudo<span class="w"> </span>mount<span class="w"> </span>-a
+</span></code></pre></div>
+<h2 id="verify-readwrite-access">Verify read/write access</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>df<span class="w"> </span>-h<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>gdrive10tb
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>touch<span class="w"> </span>/mnt/gdrive10tb/works.txt
+</span></code></pre></div>
+<h2 id="common-pitfalls-mint-users-hit-these">Common pitfalls (Mint users hit these)</h2>
+<ul>
+<li><strong>NTFS drive mounted read-only</strong>
+  → Windows Fast Startup wasn’t disabled
+  Fix in Windows:</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>Control Panel → Power Options → Disable Fast Startup
+</span></code></pre></div>
+<ul>
+<li>
+<p><strong>Permission denied after reboot</strong>
+  → You forgot <code>uid=</code> / <code>gid=</code> on NTFS/exFAT</p>
+</li>
+<li>
+<p><strong>Drive not present at boot</strong>
+  → Add <code>nofail</code> to fstab:</p>
+</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>defaults,nofail
 </span></code></pre></div>
 
 
@@ -2722,7 +3131,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../fail2ban/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Fail2Ban">
+          <a href="../mini-dlna-server/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Setup MiniDLNA Server">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2732,20 +3141,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Fail2Ban
+                Setup MiniDLNA Server
               </div>
             </div>
           </a>
         
         
           
-          <a href="../find-files/" class="md-footer__link md-footer__link--next" aria-label="Next: Find Files and Folders">
+          <a href="../naming-rules/" class="md-footer__link md-footer__link--next" aria-label="Next: Rules for Naming Files and Folders that are Cross Platform">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Find Files and Folders
+                Rules for Naming Files and Folders that are Cross Platform
               </div>
             </div>
             <div class="md-footer__button md-icon">
