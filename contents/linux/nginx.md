@@ -1,8 +1,237 @@
-# NGINX
+# NGINX Web Server
 
 nginx ("engine x") is an HTTP web server, reverse proxy, content cache, load balancer, TCP/UDP proxy server, and mail proxy server.
 
 Nginx official documentation: https://nginx.org/en/docs/
+
+## Setup NGINX
+
+For a website severved from `/var/www/example.com/`
+
+```bash
+sudo apt update
+sudo apt install nginx -y
+
+# After installation, confirm it’s running:
+
+systemctl status nginx
+```
+
+### Create the Web Root Directory
+
+If you haven’t already:
+
+```bash
+sudo mkdir -p /var/www/example.com
+```
+
+Add a test index file:
+
+```bash
+echo "<h1>Welcome to example.com</h1>" | sudo tee /var/www/example.com/index.html
+```
+
+### Set Permissions
+
+Give ownership to your user (assume your user is yourusername):
+
+```bash
+sudo chown -R yourusername:yourusername /var/www/example.com
+
+# Set proper permissions:
+
+sudo chmod -R 755 /var/www
+```
+
+### Create an Nginx Server Block
+
+Create the config file:
+
+```bash
+sudo nano /etc/nginx/sites-available/example.com
+```
+
+Paste this configuration:
+
+```bash
+server {
+    listen 80;
+    listen [::]:80;
+
+    server_name example.com www.example.com;
+
+    root /var/www/example.com;
+    index index.html index.htm;
+
+    access_log /var/log/nginx/example.com.access.log;
+    error_log /var/log/nginx/example.com.error.log;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+```
+
+Save and exit.
+
+### Enable the Server Block
+
+Create a symlink from sites-available to sites-enabled:
+
+```bash
+sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/
+```
+
+Test nginx configuration:
+
+```bash
+sudo nginx -t
+```
+
+If you see syntax is ok and test is successful, reload nginx:
+
+```bash
+sudo systemctl reload nginx
+```
+
+### Disable the Default Server Block (optional, recommended)
+
+The default site may conflict with yours. Disable it:
+
+```bash
+sudo rm /etc/nginx/sites-enabled/default
+sudo systemctl reload nginx
+```
+
+### Adjust Firewall (if UFW is enabled)
+
+Check if UFW is installed:
+
+```bash
+sudo ufw status
+```
+
+If UFW is active, allow Nginx:
+
+```bash
+sudo ufw allow 'Nginx Full'
+sudo ufw reload
+```
+
+### Add HTTPS
+
+If you have a domain pointing to the server, install Certbot:
+
+```bash
+sudo apt install certbot python3-certbot-nginx -y
+```
+
+Run:
+
+```bash
+sudo certbot --nginx -d example.com -d www.example.com
+```
+
+Certbot will automatically modify the Nginx config for SSL.
+
+### Quick Files Summary
+
+| Path                                     | Description                 |
+| ---------------------------------------- | --------------------------- |
+| `/var/www/example.com`                   | Your website root directory |
+| `/etc/nginx/sites-available/example.com` | Your nginx config file      |
+| `/etc/nginx/sites-enabled/example.com`   | Symlink enabled config      |
+| `/var/log/nginx/`                        | Access and error logs       |
+
+
+### Troubleshooting Tips
+If 403 Forbidden:
+
+* Permission issue → ensure directory is owned by correct user
+* Check folder has execute permissions:
+
+```bash
+sudo chmod 755 /var/www/example.com
+```
+
+If 404 Not Found:
+
+* Confirm your index.html file exists
+* Check server block root path is correct
+
+```bash
+Run nginx -t and reload
+```
+
+## Add Support for PHP
+
+### Install PHP-FPM & Extensions
+
+Install PHP, PHP-FPM, and some common extensions:
+
+```bash
+sudo apt update
+sudo apt install php-fpm php-mysql php-cli php-curl php-xml php-mbstring -y
+```
+
+Check PHP-FPM is running:
+
+```bash
+systemctl status php-fpm
+```
+
+On some Debian versions, the service may be named php8.2-fpm or similar:
+
+```bash
+systemctl status php8.2-fpm
+```
+
+### Create Nginx Server Block for Static + PHP
+
+Edit or create:
+
+```bash
+sudo nano /etc/nginx/sites-available/example.com
+```
+
+Use this config:
+
+```bash
+server {
+    listen 80;
+    listen [::]:80;
+
+    server_name example.com www.example.com;
+
+    root /var/www/example.com;
+    index index.php index.html index.htm;
+
+    access_log /var/log/nginx/example.com.access.log;
+    error_log /var/log/nginx/example.com.error.log;
+
+    # Serve static files directly
+    location / {
+        try_files $uri $uri/ /index.php?$args;
+    }
+
+    # Pass PHP scripts to PHP-FPM
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+
+        # Adjust socket path if needed:
+        fastcgi_pass unix:/run/php/php-fpm.sock;
+        # or on some systems:
+        # fastcgi_pass unix:/run/php/php8.2-fpm.sock;
+    }
+
+    # Deny access to .ht* files (leftovers from Apache setups)
+    location ~ /\.ht {
+        deny all;
+    }
+}
+```
+
+**NOTE:** All the other steps are the same as mentioned in the general NGINX setup above.
 
 ## NGINX Access Log and Monitoring Tools
 
@@ -37,6 +266,21 @@ awk '{print $1}' /var/log/nginx/access.log | sort | uniq -c | sort -nr | head -1
 ```bash
 sudo apt install goaccess -y
 goaccess /var/log/nginx/access.log --log-format=COMBINED --ignore-crawlers -a
+```
+
+### Calcualte Number of Hits from a Specific Country
+
+```bash
+sudo apt update
+sudo apt install geoip-bin geoip-database
+
+awk '{print $1}' /var/log/nginx/access.log | sort | uniq -c | sort -nr > /tmp/ip_counts.txt
+
+while read count ip; do
+    if geoiplookup "$ip" | grep -q "Singapore"; then
+        echo "$count $ip"
+    fi
+done < /tmp/ip_counts.txt
 ```
 
 ## Block Bad User Agents
