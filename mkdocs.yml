@@ -45,3 +45,72 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+
+nav:
+  - index.md
+  - AI-ML:
+      - ai-ml/ollama.md
+  - BASH:
+      - bash/basic-tutorial.md
+  - Bioinformatics:
+      - bioinformatics/blast.md
+      - bioinformatics/taxonomy.md
+  - Containers & Virtual Environments:
+      - containers/build-singularity.md
+      - containers/docker.md
+      - containers/mamba-environment.md
+      - containers/nvim-singularity.md
+  - Database:
+      - database/sqlite-where.md
+      - database/sqlite.md
+  - Editors:
+      - editors/nvimr-r-ide.md
+  - HPC:
+      - hpc/locus.md
+      - hpc/skyline.md
+  - IRC:
+      - irc/irc.md
+      - irc/weechat.md
+  - Linux:
+      - linux/audio-video.md
+      - linux/fail2ban.md
+      - linux/file-compression.md
+      - linux/find-files.md
+      - linux/images.md
+      - linux/mini-dlna-server.md
+      - linux/mount-drive.md
+      - linux/naming-rules.md
+      - linux/nginx.md
+      - linux/package-management.md
+      - linux/rsync.md
+      - linux/screen.md
+      - linux/system-monitoring.md
+      - linux/user-management-permissions.md
+      - linux/wget.md
+      - linux/xrdp.md
+  - Molecular Modelling:
+      - molecular-modelling/gromacs.md
+  - Python:
+      - python/environments.md
+      - python/web-server.md
+  - R:
+      - r/data-manipulation.md
+      - r/files-folders.md
+      - r/machine-learning.md
+      - r/non-dataframe-manipulations.md
+      - r/parallel-processing.md
+      - r/plots.md
+      - r/table-html-display.md
+  - Remote Access:
+      - remote-access/jupyter-ssh-tunneling.md
+      - remote-access/ssh-setup.md
+  - Tor:
+      - tor/tor.md
+  - Uses:
+      - uses/general-computing.md
+  - Version Control:
+      - vcs/git-github.md
+  - Writing:
+      - writing/capitalization-titles-headings.md
+      - writing/lists.md
+  

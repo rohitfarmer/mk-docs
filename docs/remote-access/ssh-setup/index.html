@@ -12,31 +12,31 @@
         <meta name="author" content="Rohit Farmer">
       
       
-        <link rel="canonical" href="https://docs.rohitfarmer.com/irc/">
+        <link rel="canonical" href="https://docs.rohitfarmer.com/remote-access/ssh-setup/">
       
       
-        <link rel="prev" href="../hpc/skyline/">
+        <link rel="prev" href="../jupyter-ssh-tunneling/">
       
       
-        <link rel="next" href="irc-reference/">
+        <link rel="next" href="../../tor/tor/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>Internet Relay Chat - Documentations by Rohit Farmer</title>
+        <title>SSH Setup - Documentations by Rohit Farmer</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -55,7 +55,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#internet-relay-chat" class="md-skip">
+        <a href="#ssh-setup" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Documentations by Rohit Farmer" class="md-header__button md-logo" aria-label="Documentations by Rohit Farmer" data-md-component="logo">
+    <a href="../.." title="Documentations by Rohit Farmer" class="md-header__button md-logo" aria-label="Documentations by Rohit Farmer" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Internet Relay Chat
+              SSH Setup
             
           </span>
         </div>
@@ -232,7 +232,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Documentations by Rohit Farmer" class="md-nav__button md-logo" aria-label="Documentations by Rohit Farmer" data-md-component="logo">
+    <a href="../.." title="Documentations by Rohit Farmer" class="md-nav__button md-logo" aria-label="Documentations by Rohit Farmer" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -262,7 +262,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -307,7 +307,7 @@
   <span class="md-ellipsis">
     
   
-    Bash
+    AI-ML
   
 
     
@@ -323,7 +323,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Bash
+    AI-ML
   
 
           </label>
@@ -336,14 +336,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../Bash/basic-tutorial/" class="md-nav__link">
+      <a href="../../ai-ml/ollama/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    A Tutorial on Shell Scripting
+    Ollama with Open WebUI
   
 
     
@@ -389,7 +389,7 @@
   <span class="md-ellipsis">
     
   
-    Bioinformatics
+    BASH
   
 
     
@@ -405,7 +405,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Bioinformatics
+    BASH
   
 
           </label>
@@ -418,42 +418,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../bioinformatics/blast/" class="md-nav__link">
+      <a href="../../bash/basic-tutorial/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Local BLAST
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../bioinformatics/taxonomy/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Fetch Taxonomic Information from the NCBI Taxonomy Database
+    A Tutorial on Shell Scripting
   
 
     
@@ -499,7 +471,7 @@
   <span class="md-ellipsis">
     
   
-    Containers & virtual environments
+    Bioinformatics
   
 
     
@@ -515,7 +487,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Containers & virtual environments
+    Bioinformatics
   
 
           </label>
@@ -528,14 +500,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../containers%20%26%20virtual%20environments/build-singularity/" class="md-nav__link">
+      <a href="../../bioinformatics/blast/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Building a Singularity Container for Machine Learning, Data Science, &amp; Chemistry
+    Local BLAST
   
 
     
@@ -556,70 +528,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../containers%20%26%20virtual%20environments/docker/" class="md-nav__link">
+      <a href="../../bioinformatics/taxonomy/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Docker Cookbook
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../containers%20%26%20virtual%20environments/mamba-environment/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Virtual Environments Using Conda and Mamba
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../containers%20%26%20virtual%20environments/nvim-singularity/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Run Neovim/VIM &amp; Jupyter inside a Singularity Container for R Programming
+    Fetch Taxonomic Information from the NCBI Taxonomy Database
   
 
     
@@ -665,7 +581,7 @@
   <span class="md-ellipsis">
     
   
-    Database
+    Containers & Virtual Environments
   
 
     
@@ -681,7 +597,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Database
+    Containers & Virtual Environments
   
 
           </label>
@@ -694,14 +610,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../database/sqlite-where/" class="md-nav__link">
+      <a href="../../containers/build-singularity/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    SQLite Conditional and Logical Operators
+    Building a Singularity Container for Machine Learning, Data Science, &amp; Chemistry
   
 
     
@@ -722,14 +638,70 @@
   
   
     <li class="md-nav__item">
-      <a href="../database/sqlite/" class="md-nav__link">
+      <a href="../../containers/docker/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    SQLite
+    Docker Cookbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../containers/mamba-environment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Virtual Environments Using Conda and Mamba
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../containers/nvim-singularity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Run Neovim/VIM &amp; Jupyter inside a Singularity Container for R Programming
   
 
     
@@ -775,7 +747,7 @@
   <span class="md-ellipsis">
     
   
-    Editors
+    Database
   
 
     
@@ -791,7 +763,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Editors
+    Database
   
 
           </label>
@@ -804,14 +776,42 @@
   
   
     <li class="md-nav__item">
-      <a href="../editors/nvimr-r-ide/" class="md-nav__link">
+      <a href="../../database/sqlite-where/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    How to use Neovim or VIM Editor as an IDE for R
+    SQLite Conditional and Logical Operators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../database/sqlite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SQLite
   
 
     
@@ -857,7 +857,7 @@
   <span class="md-ellipsis">
     
   
-    Hpc
+    Editors
   
 
     
@@ -873,7 +873,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Hpc
+    Editors
   
 
           </label>
@@ -886,7 +886,89 @@
   
   
     <li class="md-nav__item">
-      <a href="../hpc/locus/" class="md-nav__link">
+      <a href="../../editors/nvimr-r-ide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How to use Neovim or VIM Editor as an IDE for R
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HPC
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    HPC
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hpc/locus/" class="md-nav__link">
         
   
   
@@ -914,7 +996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hpc/skyline/" class="md-nav__link">
+      <a href="../../hpc/skyline/" class="md-nav__link">
         
   
   
@@ -922,204 +1004,6 @@
     
   
     Skyline
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Irc
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Irc
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Internet Relay Chat
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Internet Relay Chat
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#dalnet" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Dalnet
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="irc-reference/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    IRC Reference
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="weechat/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Commands to configure Weechat IRC client
   
 
     
@@ -1165,7 +1049,7 @@
   <span class="md-ellipsis">
     
   
-    Linux
+    IRC
   
 
     
@@ -1181,7 +1065,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Linux
+    IRC
   
 
           </label>
@@ -1194,14 +1078,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../linux/audio-video/" class="md-nav__link">
+      <a href="../../irc/irc/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Audio Video Editing
+    Internet Relay Chat
   
 
     
@@ -1222,406 +1106,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../linux/fail2ban/" class="md-nav__link">
+      <a href="../../irc/weechat/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Fail2Ban
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../linux/file-compression/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    File Compression
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../linux/find-files/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Find Files and Folders
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../linux/images/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Image Manipulation in Linux and Mac
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../linux/mini-dlna-server/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Setup MiniDLNA Server
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../linux/mount-drive/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Mount External Drive
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../linux/naming-rules/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Rules for Naming Files and Folders that are Cross Platform
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../linux/nginx/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    NGINX Web Server
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../linux/package-management/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Linux Package Management
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../linux/rsync/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Syncing Stuff Using rsync
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../linux/screen/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Screen
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../linux/system-monitoring/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Linux System Monitoring
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../linux/user-management-permissions/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Permissions and User management
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../linux/wget/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Downloading Stuff Using Wget
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../linux/xrdp/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    xRDP
+    Commands to configure Weechat IRC client
   
 
     
@@ -1667,7 +1159,7 @@
   <span class="md-ellipsis">
     
   
-    Molecular modelling
+    Linux
   
 
     
@@ -1683,7 +1175,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Molecular modelling
+    Linux
   
 
           </label>
@@ -1696,14 +1188,434 @@
   
   
     <li class="md-nav__item">
-      <a href="../molecular%20modelling/gromacs/" class="md-nav__link">
+      <a href="../../linux/audio-video/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Gromacs
+    Audio Video Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/fail2ban/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fail2Ban
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/file-compression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    File Compression
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/find-files/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Find Files and Folders
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/images/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Image Manipulation in Linux and Mac
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/mini-dlna-server/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setup MiniDLNA Server
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/mount-drive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mount External Drive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/naming-rules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rules for Naming Files and Folders that are Cross Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/nginx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NGINX Web Server
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/package-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Package Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/rsync/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Syncing Stuff Using rsync
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/screen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Screen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/system-monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux System Monitoring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/user-management-permissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Permissions and User management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/wget/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Downloading Stuff Using Wget
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/xrdp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    xRDP
   
 
     
@@ -1749,7 +1661,7 @@
   <span class="md-ellipsis">
     
   
-    Python
+    Molecular Modelling
   
 
     
@@ -1765,7 +1677,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Python
+    Molecular Modelling
   
 
           </label>
@@ -1778,42 +1690,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/environments/" class="md-nav__link">
+      <a href="../../molecular-modelling/gromacs/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Python Virtual Environments
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../python/web-server/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Start a Web Server To Serve Local Pages
+    Gromacs
   
 
     
@@ -1859,7 +1743,7 @@
   <span class="md-ellipsis">
     
   
-    R
+    Python
   
 
     
@@ -1875,7 +1759,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    R
+    Python
   
 
           </label>
@@ -1888,14 +1772,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../r/" class="md-nav__link">
+      <a href="../../python/environments/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    R Programming Cookbook
+    Python Virtual Environments
   
 
     
@@ -1916,182 +1800,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../r/data-manipulation/" class="md-nav__link">
+      <a href="../../python/web-server/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Data Frame Manipulation
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../r/files-folders/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Files and Folders
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../r/machine-learning/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Machine Learning
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../r/non-dataframe-manipulations/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Non Data Frame Related Manipulations
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../r/parallel-processing/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Parallel Processing
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../r/plots/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Plots
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../r/table-html-display/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Display Tables in HTML Reports
+    Start a Web Server To Serve Local Pages
   
 
     
@@ -2137,7 +1853,7 @@
   <span class="md-ellipsis">
     
   
-    Remote access
+    R
   
 
     
@@ -2153,7 +1869,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Remote access
+    R
   
 
           </label>
@@ -2166,14 +1882,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../remote%20access/jupyter-ssh-tunneling/" class="md-nav__link">
+      <a href="../../r/data-manipulation/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Jupyter Over Tunneling
+    Data Frame Manipulation
   
 
     
@@ -2194,14 +1910,154 @@
   
   
     <li class="md-nav__item">
-      <a href="../remote%20access/ssh-setup/" class="md-nav__link">
+      <a href="../../r/files-folders/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    SSH Setup
+    Files and Folders
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../r/machine-learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Machine Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../r/non-dataframe-manipulations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Non Data Frame Related Manipulations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../r/parallel-processing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parallel Processing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../r/plots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../r/table-html-display/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Display Tables in HTML Reports
   
 
     
@@ -2226,18 +2082,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" checked>
         
           
           <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
@@ -2247,7 +2105,7 @@
   <span class="md-ellipsis">
     
   
-    Tor
+    Remote Access
   
 
     
@@ -2258,12 +2116,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_14">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Tor
+    Remote Access
   
 
           </label>
@@ -2276,14 +2134,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../tor/tor/" class="md-nav__link">
+      <a href="../jupyter-ssh-tunneling/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Tor
+    Jupyter Over Tunneling
   
 
     
@@ -2292,6 +2150,153 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SSH Setup
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SSH Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#to-generate-an-ssh-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        To generate an SSH key
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="To generate an SSH key">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#to-transfer-an-ssh-key-to-the-remote-computer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        To transfer an SSH key to the remote computer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-key-to-ssh-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add key to ssh agent
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Config file
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#allow-password-login-a-gcp-instance-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Allow password login a GCP instance user
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sshfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SSHFS
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2329,7 +2334,7 @@
   <span class="md-ellipsis">
     
   
-    Uses
+    Tor
   
 
     
@@ -2345,7 +2350,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Uses
+    Tor
   
 
           </label>
@@ -2358,14 +2363,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../uses/general-computing/" class="md-nav__link">
+      <a href="../../tor/tor/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    General Computing Software and Tools that I use
+    Tor
   
 
     
@@ -2411,7 +2416,7 @@
   <span class="md-ellipsis">
     
   
-    Vcs
+    Uses
   
 
     
@@ -2427,7 +2432,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Vcs
+    Uses
   
 
           </label>
@@ -2440,14 +2445,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../vcs/git-github/" class="md-nav__link">
+      <a href="../../uses/general-computing/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Git and GitHub
+    General Computing Software and Tools that I use
   
 
     
@@ -2493,7 +2498,7 @@
   <span class="md-ellipsis">
     
   
-    Writing
+    Version Control
   
 
     
@@ -2506,6 +2511,88 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_17_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_17">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Version Control
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vcs/git-github/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git and GitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_18" >
+        
+          
+          <label class="md-nav__link" for="__nav_18" id="__nav_18_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Writing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_18_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_18">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2522,7 +2609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../writing/capitalization-titles-headings/" class="md-nav__link">
+      <a href="../../writing/capitalization-titles-headings/" class="md-nav__link">
         
   
   
@@ -2550,7 +2637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../writing/lists/" class="md-nav__link">
+      <a href="../../writing/lists/" class="md-nav__link">
         
   
   
@@ -2605,10 +2692,71 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#dalnet" class="md-nav__link">
+  <a href="#to-generate-an-ssh-key" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Dalnet
+        To generate an SSH key
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="To generate an SSH key">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#to-transfer-an-ssh-key-to-the-remote-computer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        To transfer an SSH key to the remote computer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-key-to-ssh-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add key to ssh agent
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Config file
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#allow-password-login-a-gcp-instance-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Allow password login a GCP instance user
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sshfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SSHFS
       
     </span>
   </a>
@@ -2640,7 +2788,7 @@
   
   
     <li class="md-path__item">
-      <a href=".." class="md-path__link">
+      <a href="../.." class="md-path__link">
         
   <span class="md-ellipsis">
     Home
@@ -2658,10 +2806,10 @@
     
     
       <li class="md-path__item">
-        <a href="./" class="md-path__link">
+        <a href="../jupyter-ssh-tunneling/" class="md-path__link">
           
   <span class="md-ellipsis">
-    Irc
+    Remote Access
   </span>
 
         </a>
@@ -2683,14 +2831,59 @@
   
 
 
-<h1 id="internet-relay-chat">Internet Relay Chat</h1>
-<p>Internet Relay Chat (IRC) is a text-based chat system for instant messaging. IRC is designed for group communication in discussion forums, called channels, but also allows one-on-one communication via private messages as well as chat and data transfer, including file sharing.</p>
-<p>Internet Relay Chat is implemented as an application layer protocol to facilitate communication in the form of text. The chat process works on a client–server networking model. Users connect, using a client—which may be a web app, a standalone desktop program, or embedded into part of a larger program—to an IRC server, which may be part of a larger IRC network. Examples of programs used to connect include Mibbit, IRCCloud, KiwiIRC, and mIRC.</p>
-<h2 id="dalnet">Dalnet</h2>
-<p>Link to docs: <a href="http://docs.dal.net/docs/chanserv.html">http://docs.dal.net/docs/chanserv.html</a></p>
-<p>SSH connection to Dal Net: <code>/connect -ssl punch.dal.net 6697</code></p>
-<p>Identify nick name on dal net: <code>/msg NickServ@services.dal.net IDENTIFY password</code></p>
-<p>Change or set channel topic: <code>/topic &lt;channel&gt; &lt;topic&gt;</code></p>
+<h1 id="ssh-setup">SSH Setup</h1>
+<p>SSH is a secure protocol used as the primary means of connecting to Linux servers remotely. It provides a text-based interface by spawning a remote shell. After connecting, all commands you type in your local terminal are sent to the remote server and executed there.</p>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys">SSH Essentials: Working with SSH Servers, Clients, and Keys</a></li>
+</ul>
+<h2 id="to-generate-an-ssh-key">To generate an SSH key</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ssh-keygen
+</span></code></pre></div>
+<h3 id="to-transfer-an-ssh-key-to-the-remote-computer">To transfer an SSH key to the remote computer</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ssh-copy-id<span class="w"> </span>-i<span class="w"> </span>~/.ssh/mykey<span class="w"> </span>user@host
+</span></code></pre></div>
+<h3 id="add-key-to-ssh-agent">Add key to ssh agent</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>GitHub<span class="w"> </span>Error
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>For<span class="w"> </span>error:
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>ERROR:<span class="w"> </span>Repository<span class="w"> </span>not<span class="w"> </span>found.
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>fatal:<span class="w"> </span>Could<span class="w"> </span>not<span class="w"> </span><span class="nb">read</span><span class="w"> </span>from<span class="w"> </span>remote<span class="w"> </span>repository.
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>Please<span class="w"> </span>make<span class="w"> </span>sure<span class="w"> </span>you<span class="w"> </span>have<span class="w"> </span>the<span class="w"> </span>correct<span class="w"> </span>access<span class="w"> </span>rights
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>and<span class="w"> </span>the<span class="w"> </span>repository<span class="w"> </span>exists.
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>ssh-add<span class="w"> </span>~/.ssh/mykey
+</span></code></pre></div>
+<h2 id="config-file">Config file</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Host<span class="w"> </span>*
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">     </span>ServerAliveInterval<span class="w"> </span><span class="m">120</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>Host<span class="w"> </span>&lt;nick<span class="w"> </span>name<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>host&gt;
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">     </span>Hostname<span class="w"> </span>&lt;host<span class="w"> </span>address&gt;
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">     </span>User<span class="w"> </span>&lt;user<span class="w"> </span>name&gt;
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">     </span>IdentityFile<span class="w"> </span>~/.ssh/
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">     </span>ForwardX11<span class="w"> </span>yes
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">     </span>ForwardX11Trusted<span class="w"> </span>yes
+</span></code></pre></div>
+<p><strong>Note: Always make sure to change .ssh directory permission to 600.</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>chmod<span class="w"> </span>-R<span class="w"> </span><span class="m">600</span><span class="w"> </span>~/.ssh/
+</span></code></pre></div></p>
+<h2 id="allow-password-login-a-gcp-instance-user">Allow password login a GCP instance user</h2>
+<p>This is to enable password login to a non-sudo/root user on a Google cloud instance.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>vi<span class="w"> </span>/etc/ssh/sshd_config
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>Then,<span class="w"> </span>change<span class="w"> </span>the<span class="w"> </span>line:<span class="w"> </span>PasswordAuthentication<span class="w"> </span>no<span class="w"> </span>to<span class="w"> </span>PasswordAuthentication<span class="w"> </span>yes
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>sudo<span class="w"> </span>service<span class="w"> </span>ssh<span class="w"> </span>restart
+</span></code></pre></div>
+<h2 id="sshfs">SSHFS</h2>
+<p>In computing, SSHFS (SSH Filesystem) is a filesystem client to mount and interact with directories and files located on a remote server or workstation over a normal ssh connection. The client interacts with the remote file system via the SSH File Transfer Protocol (SFTP), a network protocol providing file access, file transfer, and file management functionality over any reliable data stream that was designed as an extension of the Secure Shell protocol (SSH) version 2.0.</p>
+<ul>
+<li><a href="https://github.com/libfuse/sshfs">https://github.com/libfuse/sshfs</a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-use-sshfs-to-mount-remote-file-systems-over-ssh">How To Use SSHFS to Mount Remote File Systems Over SSH</a></li>
+</ul>
+<p>To mount create a mount point (directory) </p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sshfs<span class="w"> </span>user@host:/folder/to/mount/<span class="w"> </span>mount/point
+</span></code></pre></div>
 
 
 
@@ -2726,7 +2919,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../hpc/skyline/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Skyline">
+          <a href="../jupyter-ssh-tunneling/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Jupyter Over Tunneling">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2736,20 +2929,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Skyline
+                Jupyter Over Tunneling
               </div>
             </div>
           </a>
         
         
           
-          <a href="irc-reference/" class="md-footer__link md-footer__link--next" aria-label="Next: IRC Reference">
+          <a href="../../tor/tor/" class="md-footer__link md-footer__link--next" aria-label="Next: Tor">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                IRC Reference
+                Tor
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2786,10 +2979,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.path", "navigation.top", "navigation.tracking", "navigation.footer", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.path", "navigation.top", "navigation.tracking", "navigation.footer", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
