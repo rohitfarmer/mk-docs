@@ -2,6 +2,14 @@
 
 Mamba is a package manager similar to Conda, but it's much faster. I use it to install R and Python packages in a conda environments.
 
+## Install Mamba/Conda usingn Miniforge
+
+```bash
+curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+
+bash Miniforge3-$(uname)-$(uname -m).sh
+```
+
 ## Setup
 
 By default mamba/conda create environments in the home directory at `~/.conda/envs`. And since the space in the home directory on an HPC is often limited I create a folder `conda-envs` on a larger disk quota location to store all the environments. I do the same for storing caches as mentioned in the [managing conda cache section](#managing-conda-cache) below.

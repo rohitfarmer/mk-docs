@@ -56,10 +56,10 @@ nav:
       - bioinformatics/blast.md
       - bioinformatics/taxonomy.md
   - Containers & Virtual Environments:
-      - containers/build-singularity.md
       - containers/docker.md
       - containers/mamba-environment.md
       - containers/nvim-singularity.md
+      - containers/build-singularity.md
   - Database:
       - database/sqlite-where.md
       - database/sqlite.md

@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://docs.rohitfarmer.com/containers/docker/">
       
       
-        <link rel="prev" href="../build-singularity/">
+        <link rel="prev" href="../../bioinformatics/taxonomy/">
       
       
         <link rel="next" href="../mamba-environment/">
@@ -29,7 +29,7 @@
     
     
       
-        <title>Docker Cookbook - Documentations by Rohit Farmer</title>
+        <title>Docker Tutorial - Documentations by Rohit Farmer</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#docker-cookbook" class="md-skip">
+        <a href="#docker-tutorial" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Docker Cookbook
+              Docker Tutorial
             
           </span>
         </div>
@@ -609,34 +609,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../build-singularity/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Building a Singularity Container for Machine Learning, Data Science, &amp; Chemistry
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -656,7 +628,7 @@
   <span class="md-ellipsis">
     
   
-    Docker Cookbook
+    Docker Tutorial
   
 
     
@@ -674,7 +646,7 @@
   <span class="md-ellipsis">
     
   
-    Docker Cookbook
+    Docker Tutorial
   
 
     
@@ -700,22 +672,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#listing" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Listing
+        Introduction
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Listing">
+    <nav class="md-nav" aria-label="Introduction">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#list-all-the-running-containers" class="md-nav__link">
+  <a href="#what-is-docker" class="md-nav__link">
     <span class="md-ellipsis">
       
-        List all the running containers
+        What is Docker?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-use-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why use Docker?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-for-further-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources for Further Learning:
       
     </span>
   </a>
@@ -728,22 +722,149 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#deleting" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Deleting
+        Installation
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Deleting">
+    <nav class="md-nav" aria-label="Installation">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#delete-docker-images" class="md-nav__link">
+  <a href="#a-mac-installation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Delete Docker images
+        A. Mac Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-linux-installation-ubuntudebian" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Linux Installation (Ubuntu/Debian)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Concepts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#essential-docker-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Essential Docker Commands
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Essential Docker Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#searching-for-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Searching for Images
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pulling-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pulling Images
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listing-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listing Images
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-containers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running Containers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-containers-in-detached-mode-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running Containers in Detached Mode (Background)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-an-image-interactively" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Run an Image Interactively
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listing-running-containers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listing Running Containers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listing-all-containers-running-stopped" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listing All Containers (Running &amp; Stopped)
       
     </span>
   </a>
@@ -754,7 +875,73 @@
   <a href="#list-all-the-downloadedcreated-docker-images" class="md-nav__link">
     <span class="md-ellipsis">
       
-        List all the downloaded/created Docker images
+        List all the Downloaded/Created Docker Images
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopping-a-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stopping a Container
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-a-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Removing a Container
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-an-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Removing an Image
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#port-mapping-publishing-ports" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Port Mapping (Publishing Ports)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#volume-mounting-persisting-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Volume Mounting (Persisting Data)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-your-first-dockerfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating Your First Dockerfile
       
     </span>
   </a>
@@ -767,22 +954,50 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#running" class="md-nav__link">
+  <a href="#examples" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Running
+        Examples
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Running">
+    <nav class="md-nav" aria-label="Examples">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#run-an-image-interactively" class="md-nav__link">
+  <a href="#run-r-studio-server" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Run an image interactively
+        Run R Studio server
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tldr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TL;DR
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TL;DR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#docker-build-vs-docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Docker Build vs. Docker Compose
       
     </span>
   </a>
@@ -790,10 +1005,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#run-rstudio-server" class="md-nav__link">
+  <a href="#docker-file-template" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Run RStudio server
+        Docker File Template
       
     </span>
   </a>
@@ -857,6 +1072,34 @@
     
   
     Run Neovim/VIM &amp; Jupyter inside a Singularity Container for R Programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../build-singularity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Building a Singularity Container for Machine Learning, Data Science, &amp; Chemistry
   
 
     
@@ -2726,22 +2969,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#listing" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Listing
+        Introduction
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Listing">
+    <nav class="md-nav" aria-label="Introduction">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#list-all-the-running-containers" class="md-nav__link">
+  <a href="#what-is-docker" class="md-nav__link">
     <span class="md-ellipsis">
       
-        List all the running containers
+        What is Docker?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-use-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why use Docker?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-for-further-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources for Further Learning:
       
     </span>
   </a>
@@ -2754,22 +3019,149 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#deleting" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Deleting
+        Installation
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Deleting">
+    <nav class="md-nav" aria-label="Installation">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#delete-docker-images" class="md-nav__link">
+  <a href="#a-mac-installation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Delete Docker images
+        A. Mac Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-linux-installation-ubuntudebian" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Linux Installation (Ubuntu/Debian)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Concepts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#essential-docker-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Essential Docker Commands
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Essential Docker Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#searching-for-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Searching for Images
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pulling-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pulling Images
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listing-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listing Images
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-containers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running Containers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-containers-in-detached-mode-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running Containers in Detached Mode (Background)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-an-image-interactively" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Run an Image Interactively
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listing-running-containers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listing Running Containers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listing-all-containers-running-stopped" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listing All Containers (Running &amp; Stopped)
       
     </span>
   </a>
@@ -2780,7 +3172,73 @@
   <a href="#list-all-the-downloadedcreated-docker-images" class="md-nav__link">
     <span class="md-ellipsis">
       
-        List all the downloaded/created Docker images
+        List all the Downloaded/Created Docker Images
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopping-a-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stopping a Container
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-a-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Removing a Container
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-an-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Removing an Image
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#port-mapping-publishing-ports" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Port Mapping (Publishing Ports)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#volume-mounting-persisting-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Volume Mounting (Persisting Data)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-your-first-dockerfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating Your First Dockerfile
       
     </span>
   </a>
@@ -2793,22 +3251,50 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#running" class="md-nav__link">
+  <a href="#examples" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Running
+        Examples
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Running">
+    <nav class="md-nav" aria-label="Examples">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#run-an-image-interactively" class="md-nav__link">
+  <a href="#run-r-studio-server" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Run an image interactively
+        Run R Studio server
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tldr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TL;DR
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TL;DR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#docker-build-vs-docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Docker Build vs. Docker Compose
       
     </span>
   </a>
@@ -2816,10 +3302,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#run-rstudio-server" class="md-nav__link">
+  <a href="#docker-file-template" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Run RStudio server
+        Docker File Template
       
     </span>
   </a>
@@ -2874,7 +3360,7 @@
     
     
       <li class="md-path__item">
-        <a href="../build-singularity/" class="md-path__link">
+        <a href="./" class="md-path__link">
           
   <span class="md-ellipsis">
     Containers & Virtual Environments
@@ -2899,33 +3385,367 @@
   
 
 
-<h1 id="docker-cookbook">Docker Cookbook</h1>
-<h2 id="listing">Listing</h2>
-<h3 id="list-all-the-running-containers">List all the running containers</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a># Shows both runnning and stopped containers
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>docker ps -a
+<h1 id="docker-tutorial">Docker Tutorial</h1>
+<p>This tutorial will guide you through the basics of Docker, covering installation on both Mac and Linux, core concepts, and essential commands to get you building and running containers.</p>
+<h2 id="introduction">Introduction</h2>
+<h3 id="what-is-docker">What is Docker?</h3>
+<p>Docker is a platform that allows you to package, distribute, and run applications in isolated environments called containers. Think of containers as lightweight virtual machines. They share the host OS kernel but have their own filesystem, processes, network, and resource limitations.  This allows for consistent execution across different environments (development, testing, production) and simplifies deployment.</p>
+<h3 id="why-use-docker">Why use Docker?</h3>
+<ul>
+<li><strong>Consistency:</strong>  "Works on my machine" is a common developer problem. Docker solves this by ensuring the same environment for development, testing, and production.</li>
+<li><strong>Portability:</strong> Easily move applications between different machines and environments.</li>
+<li><strong>Isolation:</strong> Containers isolate applications, preventing conflicts and increasing security.</li>
+<li><strong>Resource Efficiency:</strong> Containers are lightweight compared to virtual machines, using fewer resources.</li>
+<li><strong>Faster Deployment:</strong> Build, ship, and run applications quickly.</li>
+</ul>
+<h3 id="resources-for-further-learning">Resources for Further Learning:</h3>
+<ul>
+<li><strong>Official Docker Documentation:</strong> <a href="https://docs.docker.com/">https://docs.docker.com/</a></li>
+<li><strong>Docker Hub:</strong> <a href="https://hub.docker.com/">https://hub.docker.com/</a></li>
+<li><strong>Docker Tutorial for Beginners:</strong> <a href="https://www.freecodecamp.org/news/docker-tutorial-for-beginners-getting-started-with-containers/">https://www.freecodecamp.org/news/docker-tutorial-for-beginners-getting-started-with-containers/</a></li>
+</ul>
+<h2 id="installation">Installation</h2>
+<h3 id="a-mac-installation">A. Mac Installation</h3>
+<ol>
+<li><strong>Download Docker Desktop for Mac:</strong> Go to <a href="https://www.docker.com/products/docker-desktop/">https://www.docker.com/products/docker-desktop/</a> and download the appropriate installer for your Mac's architecture (Intel or Apple Silicon).</li>
+<li><strong>Installation:</strong> Double-click the downloaded <code>.dmg</code> file and follow the on-screen instructions. You'll likely need to grant permissions and enter your administrator password.</li>
+<li><strong>Start Docker Desktop:</strong> After installation, Docker Desktop should launch automatically.  If not, find it in your Applications folder and start it.</li>
+<li><strong>Verification:</strong> Open a terminal and run <code>docker --version</code>. You should see the Docker version information.  You may also need to log into Docker Hub (a public registry for images) if prompted.</li>
+</ol>
+<h3 id="b-linux-installation-ubuntudebian">B. Linux Installation (Ubuntu/Debian)</h3>
+<ol>
+<li>
+<p><strong>Update Package List:</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</span></code></pre></div></p>
+</li>
+<li>
+<p><strong>Install Docker:</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>docker.ce<span class="w"> </span>docker-compose
 </span></code></pre></div>
-<h2 id="deleting">Deleting</h2>
-<h3 id="delete-docker-images">Delete Docker images</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker rmi image
+(You might need to add the Docker repository first.  See the official Docker documentation for detailed instructions specific to your distribution: <a href="https://docs.docker.com/engine/install/ubuntu/">https://docs.docker.com/engine/install/ubuntu/</a>)</p>
+</li>
+<li>
+<p><strong>Start Docker Service:</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>docker
+</span></code></pre></div></p>
+</li>
+<li>
+<p><strong>Enable Docker on Boot:</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>docker
+</span></code></pre></div></p>
+</li>
+<li>
+<p><strong>Add User to Docker Group:</strong> This allows you to run Docker commands without <code>sudo</code>.
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>docker<span class="w"> </span><span class="nv">$USER</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>newgrp<span class="w"> </span>docker<span class="w">  </span><span class="c1"># Apply the group change to your current session</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p><strong>Verification:</strong> Open a terminal and run <code>docker --version</code>. You should see the Docker version information.</p>
+</li>
+</ol>
+<h2 id="core-concepts">Core Concepts</h2>
+<ul>
+<li><strong>Images:</strong> Read-only templates containing the application code, libraries, tools, dependencies, and other files needed to run an application. Think of them like blueprints.</li>
+<li><strong>Containers:</strong>  Runnable instances of an image. They are isolated, executable packages that include everything needed to run a piece of software.  Think of them as the actual machines built from the blueprints.</li>
+<li><strong>Docker Hub:</strong>  A public registry for storing and sharing Docker images.  (Like GitHub for code).  You can pull pre-built images from Docker Hub or push your own.</li>
+<li><strong>Dockerfile:</strong> A text file containing instructions for building a Docker image.</li>
+</ul>
+<h2 id="essential-docker-commands">Essential Docker Commands</h2>
+<h3 id="searching-for-images">Searching for Images</h3>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>docker<span class="w"> </span>search<span class="w"> </span>&lt;keyword&gt;
 </span></code></pre></div>
-<h3 id="list-all-the-downloadedcreated-docker-images">List all the downloaded/created Docker images</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker image ls
+Example: <code>docker search ubuntu</code>  This will show images related to Ubuntu on Docker Hub.</p>
+<h3 id="pulling-images">Pulling Images</h3>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>docker<span class="w"> </span>pull<span class="w"> </span>&lt;image_name&gt;:&lt;tag&gt;
 </span></code></pre></div>
-<h2 id="running">Running</h2>
-<h3 id="run-an-image-interactively">Run an image interactively</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a># Runs the latest version
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>docker run -ti --rm rocker/r-ver R
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a># Runs the specified version
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>docker run -ti --rm rocker/r-ver:4.1.2 R
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a># ti flag is to run interactively
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a># rm to remove the container once the session is closed
+Example: <code>docker pull ubuntu:latest</code>  This downloads the latest Ubuntu image from Docker Hub.  <code>latest</code> is the default tag; you can specify a version (e.g., <code>ubuntu:20.04</code>).</p>
+<h3 id="listing-images">Listing Images</h3>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>docker<span class="w"> </span>images
 </span></code></pre></div>
-<h3 id="run-rstudio-server">Run RStudio server</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>docker run -d --name rstudio -p 80:8787 rocker/rstudio
+This displays all locally stored Docker images.</p>
+<h3 id="running-containers">Running Containers</h3>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>docker<span class="w"> </span>run<span class="w"> </span>&lt;image_name&gt;:&lt;tag&gt;
 </span></code></pre></div>
+Example: <code>docker run ubuntu:latest</code> This starts a new container based on the Ubuntu image.  You'll typically be dropped into a shell within the container.</p>
+<h3 id="running-containers-in-detached-mode-background">Running Containers in Detached Mode (Background)</h3>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>&lt;image_name&gt;:&lt;tag&gt;
+</span></code></pre></div>
+The <code>-d</code> flag runs the container in the background.</p>
+<h3 id="run-an-image-interactively">Run an Image Interactively</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-ti<span class="w"> </span>--rm<span class="w"> </span>rocker/r-ver<span class="w"> </span>R
+</span></code></pre></div>
+<h3 id="listing-running-containers">Listing Running Containers</h3>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>docker<span class="w"> </span>ps
+</span></code></pre></div>
+This displays currently running containers.</p>
+<h3 id="listing-all-containers-running-stopped">Listing All Containers (Running &amp; Stopped)</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>docker<span class="w"> </span>ps<span class="w"> </span>-a
+</span></code></pre></div>
+<h3 id="list-all-the-downloadedcreated-docker-images">List all the Downloaded/Created Docker Images</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>docker<span class="w"> </span>image<span class="w"> </span>ls
+</span></code></pre></div>
+<h3 id="stopping-a-container">Stopping a Container</h3>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>docker<span class="w"> </span>stop<span class="w"> </span>&lt;container_id&gt;
+</span></code></pre></div>
+Find the <code>container_id</code> from <code>docker ps</code>.</p>
+<h3 id="removing-a-container">Removing a Container</h3>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>docker<span class="w"> </span>rm<span class="w"> </span>&lt;container_id&gt;
+</span></code></pre></div>
+You need to stop the container before removing it.</p>
+<h3 id="removing-an-image">Removing an Image</h3>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>docker<span class="w"> </span>rmi<span class="w"> </span>&lt;image_id&gt;
+</span></code></pre></div>
+Find the <code>image_id</code> from <code>docker images</code>. You can't remove an image if it's being used by a container.</p>
+<h3 id="port-mapping-publishing-ports">Port Mapping (Publishing Ports)</h3>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span>&lt;host_port&gt;:&lt;container_port&gt;<span class="w"> </span>&lt;image_name&gt;:&lt;tag&gt;
+</span></code></pre></div>
+This maps a port on your host machine to a port inside the container. For example, <code>-p 8080:80</code> maps port 8080 on your host to port 80 inside the container.</p>
+<h3 id="volume-mounting-persisting-data">Volume Mounting (Persisting Data)</h3>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-v<span class="w"> </span>&lt;host_path&gt;:&lt;container_path&gt;<span class="w"> </span>&lt;image_name&gt;:&lt;tag&gt;
+</span></code></pre></div>
+This mounts a directory on your host machine to a directory inside the container.  Changes made to the directory inside the container will be reflected on your host, and vice-versa. Useful for data persistence.</p>
+<h3 id="creating-your-first-dockerfile">Creating Your First Dockerfile</h3>
+<p>Let's create a simple Dockerfile for a Python application.</p>
+<ol>
+<li><strong>Create a directory for your application:</strong></li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>mkdir<span class="w"> </span>my-python-app
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="nb">cd</span><span class="w"> </span>my-python-app
+</span></code></pre></div>
+<ol>
+<li><strong>Create a Python script (app.py):</strong></li>
+</ol>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, Docker!&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<ol>
+<li><strong>Create a Dockerfile in the same directory:</strong></li>
+</ol>
+<div class="language-dockerfile highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="k">FROM</span><span class="w"> </span><span class="s">python:3.9-slim-buster</span><span class="w">  </span><span class="c"># Base image (Python 3.9)</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app  # Set the working directory inside the container</span>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="k">COPY</span><span class="w"> </span>app.py<span class="w"> </span>.<span class="w">  </span>#<span class="w"> </span>Copy<span class="w"> </span>the<span class="w"> </span>Python<span class="w"> </span>script<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>container
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>
+</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;python&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;app.py&quot;</span><span class="p">]</span><span class="w">  </span>#<span class="w"> </span>Command<span class="w"> </span>to<span class="w"> </span>run<span class="w"> </span>when<span class="w"> </span>the<span class="w"> </span>container<span class="w"> </span>starts
+</span></code></pre></div>
+<ol>
+<li><strong>Build the Image:</strong></li>
+</ol>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>my-python-app<span class="w"> </span>.
+</span></code></pre></div>
+The <code>-t</code> flag tags the image with a name (<code>my-python-app</code>). The <code>.</code> indicates that the Dockerfile is in the current directory.</p>
+<ol>
+<li><strong>Run the Container:</strong></li>
+</ol>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>docker<span class="w"> </span>run<span class="w"> </span>my-python-app
+</span></code></pre></div>
+You should see "Hello, Docker!" printed in the terminal.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="run-r-studio-server">Run R Studio server</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>docker run -d --name rstudio -p 80:8787 rocker/rstudio
+</span></code></pre></div>
+<h2 id="tldr">TL;DR</h2>
+<h3 id="docker-build-vs-docker-compose">Docker Build vs. Docker Compose</h3>
+<p><strong><code>docker build</code></strong></p>
+<ul>
+<li><strong>Purpose:</strong> <code>docker build</code> is used to create Docker <em>images</em> from a <code>Dockerfile</code>.  It's the fundamental command for packaging your application and its dependencies into a self-contained, reproducible unit.</li>
+<li><strong>Scope:</strong>  Focuses on building a <em>single</em> image. The <code>Dockerfile</code> contains instructions for how to assemble the image, layer by layer.</li>
+<li><strong>Input:</strong> Takes a <code>Dockerfile</code> and a <em>context</em> (usually a directory).  The context contains the files that the <code>Dockerfile</code> needs to build the image.</li>
+<li><strong>Output:</strong> A Docker image (identified by an image ID and potentially a tag).</li>
+<li><strong>Complexity:</strong> Best for relatively simple applications or when you only need to build and manage a single image.</li>
+<li><strong>Example:</strong>  <code>docker build -t my-app .</code> (Builds an image tagged <code>my-app</code> using the <code>Dockerfile</code> in the current directory).</li>
+</ul>
+<p><strong><code>docker compose</code></strong></p>
+<ul>
+<li><strong>Purpose:</strong> <code>docker compose</code> is used to define and manage <em>multi-container</em> Docker applications. It allows you to orchestrate multiple related services (each running in its own container) as a single unit.</li>
+<li><strong>Scope:</strong>  Manages an entire application stack – multiple containers, their networks, volumes, and dependencies.</li>
+<li><strong>Input:</strong> Takes a <code>docker-compose.yml</code> (or <code>docker-compose.yaml</code>) file.  This file defines the services that make up your application, how they're built (if needed), how they're linked together, and how they're exposed to the outside world.</li>
+<li><strong>Output:</strong>  Starts, stops, and manages the entire application stack defined in the <code>docker-compose.yml</code> file.</li>
+<li><strong>Complexity:</strong> Ideal for complex applications composed of multiple interacting services (e.g., a web application with a database, a message queue, and a caching service).  It simplifies the process of deploying and managing these interconnected services.</li>
+<li><strong>Example:</strong>  <code>docker compose up</code> (Starts all the services defined in the <code>docker-compose.yml</code> file).</li>
+</ul>
+<p><strong>Here's an analogy to help illustrate:</strong></p>
+<ul>
+<li><strong><code>docker build</code> is like building a single Lego brick.</strong> You follow the instructions (Dockerfile) to create that one brick.</li>
+<li><strong><code>docker compose</code> is like building a Lego castle.</strong> You have multiple bricks (images), and <code>docker compose</code> helps you assemble them all together according to a blueprint (docker-compose.yml) to create the complete structure.</li>
+</ul>
+<p><strong>Here's a table summarizing the key differences:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th><code>docker build</code></th>
+<th><code>docker compose</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Purpose</strong></td>
+<td>Build a single Docker image</td>
+<td>Orchestrate multi-container apps</td>
+</tr>
+<tr>
+<td><strong>Input</strong></td>
+<td><code>Dockerfile</code></td>
+<td><code>docker-compose.yml</code></td>
+</tr>
+<tr>
+<td><strong>Scope</strong></td>
+<td>Single image</td>
+<td>Multiple containers/services</td>
+</tr>
+<tr>
+<td><strong>Complexity</strong></td>
+<td>Simple applications</td>
+<td>Complex applications</td>
+</tr>
+<tr>
+<td><strong>Output</strong></td>
+<td>Docker image</td>
+<td>Running application stack</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Do they work together?</strong></p>
+<p>Yes!  Often, you'll use both. </p>
+<ol>
+<li>You'll use <code>docker build</code> to create the images for each service in your application.</li>
+<li>Then, you'll use <code>docker compose</code> to define how those images are used to create and connect the containers that make up your application.</li>
+</ol>
+<p>In your <code>docker-compose.yml</code>, you can specify that a service should be built from a <code>Dockerfile</code> using the <code>build</code> directive. This means <code>docker compose</code> will internally use <code>docker build</code> as part of its process.</p>
+<p><strong>In short:</strong></p>
+<ul>
+<li>Use <code>docker build</code> to create individual images.</li>
+<li>Use <code>docker compose</code> to define and manage applications composed of multiple containers built from those images.</li>
+</ul>
+<h3 id="docker-file-template">Docker File Template</h3>
+<p>Here's a Dockerfile template that strikes a balance between being comprehensive enough for most projects.</p>
+<div class="language-dockerfile highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="c"># Use an official base image.  Choose based on your language/framework.</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="k">FROM</span><span class="w"> </span><span class="s">ubuntu:latest</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="c"># Maintainer information (optional)</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="k">MAINTAINER</span><span class="w"> </span><span class="s">Your Name &lt;your.email@example.com&gt;</span>
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>
+</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="c"># Install system dependencies. Update before installing.</span>
+</span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a><span class="k">RUN</span><span class="w"> </span>apt-get<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-25-9"><a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a><span class="w">    </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>--no-install-recommends<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-25-10"><a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a><span class="w">    </span>python3<span class="w"> </span>python3-pip<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-25-11"><a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a><span class="w">    </span>curl<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-25-12"><a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a><span class="w">    </span>wget<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-25-13"><a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a><span class="w">    </span>git<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-25-14"><a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a><span class="w">    </span>vim<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-25-15"><a id="__codelineno-25-15" name="__codelineno-25-15" href="#__codelineno-25-15"></a><span class="w">    </span><span class="o">&amp;&amp;</span><span class="w"> </span>rm<span class="w"> </span>-rf<span class="w"> </span>/var/lib/apt/lists/*
+</span><span id="__span-25-16"><a id="__codelineno-25-16" name="__codelineno-25-16" href="#__codelineno-25-16"></a>
+</span><span id="__span-25-17"><a id="__codelineno-25-17" name="__codelineno-25-17" href="#__codelineno-25-17"></a><span class="c"># Set the working directory inside the container</span>
+</span><span id="__span-25-18"><a id="__codelineno-25-18" name="__codelineno-25-18" href="#__codelineno-25-18"></a><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+</span><span id="__span-25-19"><a id="__codelineno-25-19" name="__codelineno-25-19" href="#__codelineno-25-19"></a>
+</span><span id="__span-25-20"><a id="__codelineno-25-20" name="__codelineno-25-20" href="#__codelineno-25-20"></a><span class="c"># Copy application requirements (e.g., requirements.txt for Python)</span>
+</span><span id="__span-25-21"><a id="__codelineno-25-21" name="__codelineno-25-21" href="#__codelineno-25-21"></a><span class="k">COPY</span><span class="w"> </span>requirements.txt<span class="w"> </span>.
+</span><span id="__span-25-22"><a id="__codelineno-25-22" name="__codelineno-25-22" href="#__codelineno-25-22"></a>
+</span><span id="__span-25-23"><a id="__codelineno-25-23" name="__codelineno-25-23" href="#__codelineno-25-23"></a><span class="c"># Install application dependencies</span>
+</span><span id="__span-25-24"><a id="__codelineno-25-24" name="__codelineno-25-24" href="#__codelineno-25-24"></a><span class="k">RUN</span><span class="w"> </span>pip3<span class="w"> </span>install<span class="w"> </span>--no-cache-dir<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</span><span id="__span-25-25"><a id="__codelineno-25-25" name="__codelineno-25-25" href="#__codelineno-25-25"></a>
+</span><span id="__span-25-26"><a id="__codelineno-25-26" name="__codelineno-25-26" href="#__codelineno-25-26"></a><span class="c"># Copy the application code into the container</span>
+</span><span id="__span-25-27"><a id="__codelineno-25-27" name="__codelineno-25-27" href="#__codelineno-25-27"></a><span class="k">COPY</span><span class="w"> </span>.<span class="w"> </span>.
+</span><span id="__span-25-28"><a id="__codelineno-25-28" name="__codelineno-25-28" href="#__codelineno-25-28"></a>
+</span><span id="__span-25-29"><a id="__codelineno-25-29" name="__codelineno-25-29" href="#__codelineno-25-29"></a><span class="c"># Expose the port your application listens on</span>
+</span><span id="__span-25-30"><a id="__codelineno-25-30" name="__codelineno-25-30" href="#__codelineno-25-30"></a><span class="k">EXPOSE</span><span class="w"> </span><span class="s">8000</span>
+</span><span id="__span-25-31"><a id="__codelineno-25-31" name="__codelineno-25-31" href="#__codelineno-25-31"></a>
+</span><span id="__span-25-32"><a id="__codelineno-25-32" name="__codelineno-25-32" href="#__codelineno-25-32"></a><span class="c"># Define the command to run when the container starts</span>
+</span><span id="__span-25-33"><a id="__codelineno-25-33" name="__codelineno-25-33" href="#__codelineno-25-33"></a><span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;python3&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;app.py&quot;</span><span class="p">]</span>
+</span></code></pre></div>
+<p><strong>Explanation of each section:</strong></p>
+<ol>
+<li><strong><code>FROM ubuntu:latest</code></strong></li>
+<li><strong>Purpose:</strong> Specifies the base image for your Docker image.  This is the starting point.</li>
+<li>
+<p><strong><code>ubuntu:latest</code></strong>:  Uses the latest version of the Ubuntu image from Docker Hub.  You would change this to the appropriate base image for your application (e.g., <code>python:3.9-slim-buster</code>, <code>node:16</code>, <code>openjdk:11</code>).  Choosing a "slim" or "alpine" base image can reduce the image size, but may require more manual dependency installation.</p>
+</li>
+<li>
+<p><strong><code>MAINTAINER Your Name &lt;your.email@example.com&gt;</code></strong></p>
+</li>
+<li>
+<p><strong>Purpose:</strong>  Provides contact information for the maintainer of the image. This is optional but good practice.  (Deprecated in favor of <code>LABEL maintainer="..."</code>)</p>
+</li>
+<li>
+<p><strong><code>RUN apt-get update &amp;&amp; apt-get install -y --no-install-recommends ...</code></strong></p>
+</li>
+<li><strong>Purpose:</strong>  Executes commands <em>during the image build process</em>.  This is where you install system-level dependencies needed by your application.</li>
+<li><strong><code>apt-get update</code></strong>: Updates the package lists for upgrades and new packages.</li>
+<li><strong><code>apt-get install -y --no-install-recommends ...</code></strong>: Installs the specified packages.<ul>
+<li><code>-y</code>:  Automatically answers "yes" to any prompts during installation.</li>
+<li><code>--no-install-recommends</code>: Avoids installing recommended (but not strictly required) packages, reducing image size.</li>
+</ul>
+</li>
+<li><strong><code>&amp;&amp;</code></strong>: Chains multiple commands together.  This is more efficient because it creates fewer layers in the image.</li>
+<li>
+<p><strong><code>rm -rf /var/lib/apt/lists/*</code></strong>:  Cleans up the APT package lists after installation.  This significantly reduces the image size.</p>
+</li>
+<li>
+<p><strong><code>WORKDIR /app</code></strong></p>
+</li>
+<li><strong>Purpose:</strong> Sets the working directory inside the container. All subsequent <code>RUN</code>, <code>COPY</code>, <code>ADD</code>, <code>CMD</code>, and <code>ENTRYPOINT</code> instructions will be executed relative to this directory.</li>
+<li>
+<p><strong><code>/app</code></strong>:  A common convention is to use <code>/app</code> as the working directory.</p>
+</li>
+<li>
+<p><strong><code>COPY requirements.txt .</code></strong></p>
+</li>
+<li><strong>Purpose:</strong> Copies files from your host machine (the build context) to the container's filesystem.</li>
+<li><strong><code>requirements.txt</code></strong>:  The name of your dependency file (e.g., <code>requirements.txt</code> for Python, <code>package.json</code> for Node.js).  Copying this <em>before</em> copying the application code allows Docker to cache the dependency installation step. If your application code changes but your dependencies don't, Docker can reuse the cached layer, making builds faster.</li>
+<li>
+<p><strong><code>.</code></strong>: The destination directory within the container (the current working directory, <code>/app</code>).</p>
+</li>
+<li>
+<p><strong><code>RUN pip3 install --no-cache-dir -r requirements.txt</code></strong></p>
+</li>
+<li><strong>Purpose:</strong> Installs the application's dependencies within the container.</li>
+<li>
+<p><strong><code>pip3 install --no-cache-dir -r requirements.txt</code></strong>: Uses <code>pip</code> to install the dependencies listed in <code>requirements.txt</code>.</p>
+<ul>
+<li><code>--no-cache-dir</code>:  Disables the caching of downloaded packages, reducing image size.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>COPY . .</code></strong></p>
+</li>
+<li>
+<p><strong>Purpose:</strong> Copies all the files and directories from the build context (your project directory) to the working directory (<code>/app</code>) in the container.  Be careful with this.  Don't copy unnecessary files (e.g., <code>.git</code> directory, large media files) to keep the image size down. Use a <code>.dockerignore</code> file (see below) to exclude files.</p>
+</li>
+<li>
+<p><strong><code>EXPOSE 8000</code></strong></p>
+</li>
+<li>
+<p><strong>Purpose:</strong>  Informs Docker that the container listens on the specified network ports at runtime.  This is metadata, and doesn't actually publish the port. You still need to use the <code>-p</code> flag when running the container to map the port to the host.</p>
+</li>
+<li>
+<p><strong><code>CMD ["python3", "app.py"]</code></strong></p>
+</li>
+<li><strong>Purpose:</strong> Specifies the command to run when the container starts. This is the main process that will keep the container running.</li>
+<li><strong><code>["python3", "app.py"]</code></strong>:  The command to execute. This is the preferred way to specify the command because it avoids shell invocation and potential issues with signal handling.</li>
+</ol>
+<p><strong>Important considerations:</strong></p>
+<ul>
+<li>
+<p><strong><code>.dockerignore</code> file:</strong> Create a <code>.dockerignore</code> file in the same directory as your <code>Dockerfile</code> to exclude files and directories from being copied to the image. This reduces the image size and improves build performance.  Common things to ignore:  <code>.git</code>, <code>node_modules</code>, <code>venv</code>, <code>__pycache__</code>, log files, etc.</p>
+</li>
+<li>
+<p><strong>Image size:</strong> Keep your image size as small as possible by:</p>
+<ul>
+<li>Using a minimal base image (e.g., alpine).</li>
+<li>Removing unnecessary files and directories.</li>
+<li>Using multi-stage builds (advanced).</li>
+</ul>
+</li>
+<li>
+<p><strong>Caching:</strong>  Order your <code>Dockerfile</code> instructions carefully to leverage Docker's caching mechanism.  Put frequently changing instructions later in the file.</p>
+</li>
+<li>
+<p><strong>Security:</strong> Be mindful of security best practices when building your images.  Avoid running processes as root, and keep your base images up to date.</p>
+</li>
+</ul>
 
 
 
@@ -2961,7 +3781,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../build-singularity/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Building a Singularity Container for Machine Learning, Data Science, &amp;amp; Chemistry">
+          <a href="../../bioinformatics/taxonomy/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Fetch Taxonomic Information from the NCBI Taxonomy Database">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2971,7 +3791,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Building a Singularity Container for Machine Learning, Data Science, &amp; Chemistry
+                Fetch Taxonomic Information from the NCBI Taxonomy Database
               </div>
             </div>
           </a>
