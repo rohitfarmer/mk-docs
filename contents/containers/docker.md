@@ -40,7 +40,7 @@ sudo apt update
 
 2. **Install Docker:**
 ```bash
-sudo apt install docker.ce docker-compose
+sudo apt install docker.io docker-compose
 ```
 (You might need to add the Docker repository first.  See the official Docker documentation for detailed instructions specific to your distribution: [https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/))
 
