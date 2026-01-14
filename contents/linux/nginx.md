@@ -297,7 +297,7 @@ Put the following content:
 map $http_user_agent $block_bad_ua {
     default 0;
 
-    # Old / dead Windows
+    # Known malicious OS junk
     ~*windows\ nt(?!\ 10\.0|\ 6\.3|\ 6\.2|\ 6\.1) 1;
     ~*windows\ 95 1;
     ~*windows\ 98 1;
@@ -306,9 +306,7 @@ map $http_user_agent $block_bad_ua {
     ~*windows\ vista 1;
     ~*windows\ 2000 1;
 
-    # CLI tools
-    ~*wget 1;
-    ~*curl 1;
+    # CLI tools (safe to block)
     ~*httpie 1;
     ~*powershell 1;
     ~*python-requests 1;
@@ -316,9 +314,11 @@ map $http_user_agent $block_bad_ua {
     ~*perl 1;
     ~*ruby 1;
     ~*go-http-client 1;
-    ~*java 1;
+    ~*aiohttp 1;
+    ~*okhttp 1;
+    ~*scrapy 1;
 
-    # Scanners & exploit tools
+    # Exploit scanners (safe)
     ~*nmap 1;
     ~*masscan 1;
     ~*nikto 1;
@@ -332,16 +332,7 @@ map $http_user_agent $block_bad_ua {
     ~*gobuster 1;
     ~*wfuzz 1;
 
-    # Add common scanner libraries
-    ~*fasthttp 1;
-    ~*go-http-client 1;
-    ~*python-requests 1;~~~~
-    ~*aiohttp 1;
-    ~*okhttp 1;
-    ~*scrapy 1;
-    ~*zgrab 1;
-
-    # Bad crawlers
+    # Bad crawlers - SEO scrapers (safe to block)
     ~*ahrefs 1;
     ~*semrush 1;
     ~*mj12bot 1;
@@ -350,23 +341,17 @@ map $http_user_agent $block_bad_ua {
     ~*rogerbot 1;
     ~*linkpadbot 1;
 
-    # AI / LLM scrapers
+    # AI / LLM scrapers (OK to block)
     ~*amazonbot 1;
     ~*gptbot 1;
     ~*chatgpt 1;
     ~*chatgpt-user 1;
     ~*ccbot 1;
     ~*anthropic 1;
-    ~*claudebot 1; 
+    ~*claudebot 1;
     ~*bytespider 1;
-    ~*commoncrawl 1;
-
-    # Generic junk
-    ~*bot 1;
-    ~*crawler 1;
-    ~*scanner 1;
-    ~*spider 1;
-}
+    ~*commoncrawl 1;                                                                         
+} 
 ```
 
 ### Enable the Block on Your Website
