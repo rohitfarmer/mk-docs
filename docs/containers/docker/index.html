@@ -3421,7 +3421,7 @@
 </li>
 <li>
 <p><strong>Install Docker:</strong>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>docker.io<span class="w"> </span>docker-compose
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>docker.io<span class="w"> </span>docker-compose<span class="w"> </span>docker-buildx
 </span></code></pre></div>
 (You might need to add the Docker repository first.  See the official Docker documentation for detailed instructions specific to your distribution: <a href="https://docs.docker.com/engine/install/ubuntu/">https://docs.docker.com/engine/install/ubuntu/</a>)</p>
 </li>
@@ -3497,7 +3497,7 @@ You need to stop the container before removing it.</p>
 <h3 id="removing-an-image">Removing an Image</h3>
 <p><div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>docker<span class="w"> </span>rmi<span class="w"> </span>&lt;image_id&gt;
 </span></code></pre></div>
-Find the <code>image_id</code> from <code>docker images</code>. You can't remove an image if it's being used by a container.</p>
+Find the <code>image_id</code> from <code>docker images</code>. You can't remove an image if it's being used by a container, even if the conainer is stopped. So, first remove the container using <code>docker rm</code> then delete the image. </p>
 <h3 id="port-mapping-publishing-ports">Port Mapping (Publishing Ports)</h3>
 <p><div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span>&lt;host_port&gt;:&lt;container_port&gt;<span class="w"> </span>&lt;image_name&gt;:&lt;tag&gt;
 </span></code></pre></div>
@@ -3506,8 +3506,8 @@ This maps a port on your host machine to a port inside the container. For exampl
 <p><div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-v<span class="w"> </span>&lt;host_path&gt;:&lt;container_path&gt;<span class="w"> </span>&lt;image_name&gt;:&lt;tag&gt;
 </span></code></pre></div>
 This mounts a directory on your host machine to a directory inside the container.  Changes made to the directory inside the container will be reflected on your host, and vice-versa. Useful for data persistence.</p>
-<h3 id="creating-your-first-dockerfile">Creating Your First Dockerfile</h3>
-<p>Let's create a simple Dockerfile for a Python application.</p>
+<h3 id="creating-your-first-dockerfile">Creating Your First <code>Dockerfile</code></h3>
+<p>Let's create a simple <code>Dockerfile</code> for a Python application.</p>
 <ol>
 <li><strong>Create a directory for your application:</strong></li>
 </ol>
@@ -3520,15 +3520,19 @@ This mounts a directory on your host machine to a directory inside the container
 <div class="language-python highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, Docker!&quot;</span><span class="p">)</span>
 </span></code></pre></div>
 <ol>
-<li><strong>Create a Dockerfile in the same directory:</strong></li>
+<li><strong>Create a <code>Dockerfile</code> in the same directory:</strong></li>
 </ol>
-<div class="language-dockerfile highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="k">FROM</span><span class="w"> </span><span class="s">python:3.9-slim-buster</span><span class="w">  </span><span class="c"># Base image (Python 3.9)</span>
-</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>
-</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app  # Set the working directory inside the container</span>
-</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>
-</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="k">COPY</span><span class="w"> </span>app.py<span class="w"> </span>.<span class="w">  </span>#<span class="w"> </span>Copy<span class="w"> </span>the<span class="w"> </span>Python<span class="w"> </span>script<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>container
+<div class="language-dockerfile highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="c"># Base image (Python 3.9)</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="k">FROM</span><span class="w"> </span><span class="s">python:3.9-slim-buster</span><span class="w">  </span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="c"># Set the working directory inside the container</span>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app  </span>
 </span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>
-</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;python&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;app.py&quot;</span><span class="p">]</span><span class="w">  </span>#<span class="w"> </span>Command<span class="w"> </span>to<span class="w"> </span>run<span class="w"> </span>when<span class="w"> </span>the<span class="w"> </span>container<span class="w"> </span>starts
+</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="c"># Copy the Python script to the container</span>
+</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="k">COPY</span><span class="w"> </span>app.py<span class="w"> </span>.<span class="w">  </span>
+</span><span id="__span-21-9"><a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>
+</span><span id="__span-21-10"><a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a><span class="c"># Command to run when the container starts</span>
+</span><span id="__span-21-11"><a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a><span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;python&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;app.py&quot;</span><span class="p">]</span><span class="w">  </span>
 </span></code></pre></div>
 <ol>
 <li><strong>Build the Image:</strong></li>

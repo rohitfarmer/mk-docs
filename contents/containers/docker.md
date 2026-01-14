@@ -40,7 +40,7 @@ sudo apt update
 
 2. **Install Docker:**
 ```bash
-sudo apt install docker.io docker-compose
+sudo apt install docker.io docker-compose docker-buildx
 ```
 (You might need to add the Docker repository first.  See the official Docker documentation for detailed instructions specific to your distribution: [https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/))
 
@@ -151,7 +151,7 @@ You need to stop the container before removing it.
 ```bash
 docker rmi <image_id>
 ```
-Find the `image_id` from `docker images`. You can't remove an image if it's being used by a container.
+Find the `image_id` from `docker images`. You can't remove an image if it's being used by a container, even if the conainer is stopped. So, first remove the container using `docker rm` then delete the image. 
 
 ### Port Mapping (Publishing Ports)
 
@@ -167,9 +167,9 @@ docker run -v <host_path>:<container_path> <image_name>:<tag>
 ```
 This mounts a directory on your host machine to a directory inside the container.  Changes made to the directory inside the container will be reflected on your host, and vice-versa. Useful for data persistence.
 
-### Creating Your First Dockerfile
+### Creating Your First `Dockerfile`
 
-Let's create a simple Dockerfile for a Python application.
+Let's create a simple `Dockerfile` for a Python application.
 
 1. **Create a directory for your application:**
 
@@ -184,16 +184,20 @@ cd my-python-app
 print("Hello, Docker!")
 ```
 
-3. **Create a Dockerfile in the same directory:**
+3. **Create a `Dockerfile` in the same directory:**
 
 ```dockerfile
-FROM python:3.9-slim-buster  # Base image (Python 3.9)
+# Base image (Python 3.9)
+FROM python:3.9-slim-buster  
 
-WORKDIR /app  # Set the working directory inside the container
+# Set the working directory inside the container
+WORKDIR /app  
 
-COPY app.py .  # Copy the Python script to the container
+# Copy the Python script to the container
+COPY app.py .  
 
-CMD ["python", "app.py"]  # Command to run when the container starts
+# Command to run when the container starts
+CMD ["python", "app.py"]  
 ```
 
 4. **Build the Image:**
