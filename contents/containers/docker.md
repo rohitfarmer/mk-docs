@@ -96,9 +96,9 @@ This displays all locally stored Docker images.
 ### Running Containers
 
 ```bash
-docker run <image_name>:<tag>
+docker run --rm <image_name>:<tag>
 ```
-Example: `docker run ubuntu:latest` This starts a new container based on the Ubuntu image.  You'll typically be dropped into a shell within the container.
+Example: `docker run ubuntu:latest` This starts a new container based on the Ubuntu image.  You'll typically be dropped into a shell within the container. `--rm` deletes the container (not the image) after the container exits.
 
 ### Running Containers in Detached Mode (Background)
 
@@ -111,6 +111,12 @@ The `-d` flag runs the container in the background.
 
 ```bash
 docker run -ti --rm rocker/r-ver R
+```
+
+Run a container in emulation mode. For example running an amd64 (Linux) based container on an arm64 machine (MacOS). 
+
+```bash
+docker run --platform=linux/amd64 --rm -it czid czid --help
 ```
 
 ### Listing Running Containers
@@ -207,6 +213,12 @@ docker build -t my-python-app .
 ```
 The `-t` flag tags the image with a name (`my-python-app`). The `.` indicates that the Dockerfile is in the current directory.
 
+Specify the build platform. For example, if you are building the container on MacOS/Windows, but it's intended to run on a Linux machine.
+
+```bash
+docker build --platform=linux/amd64 -t czid .
+```
+
 5. **Run the Container:**
 
 ```bash
@@ -219,6 +231,23 @@ You should see "Hello, Docker!" printed in the terminal.
 ### Run R Studio server 
 ```
 docker run -d --name rstudio -p 80:8787 rocker/rstudio
+```
+
+## Push Containers to Docker Hub
+
+Tag and push the container to push to a Docker Hub repository.
+
+Note: change the tag based on the release.
+
+```bash
+docker tag czid rohitfarmer/czid:20260114
+docker push rohitfarmer/czid:20260114
+```
+
+Pull the container from Docker Hub and create a Singularity container.
+
+```bash
+singularity pull 2026-01-14-czid.sif docker://rohitfarmer/czid:20260114
 ```
 
 ## TL;DR
