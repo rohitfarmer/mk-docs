@@ -2,7 +2,7 @@
 
 Mamba is a package manager similar to Conda, but it's much faster. I use it to install R and Python packages in a conda environments.
 
-## Install Mamba/Conda usingn Miniforge
+## Install Mamba/Conda using Miniforge
 
 ```bash
 curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
