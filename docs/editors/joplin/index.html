@@ -12,13 +12,13 @@
         <meta name="author" content="Rohit Farmer">
       
       
-        <link rel="canonical" href="https://docs.rohitfarmer.com/editors/nvimr-r-ide/">
+        <link rel="canonical" href="https://docs.rohitfarmer.com/editors/joplin/">
       
       
-        <link rel="prev" href="../joplin/">
+        <link rel="prev" href="../../database/sqlite/">
       
       
-        <link rel="next" href="../../hpc/locus/">
+        <link rel="next" href="../nvimr-r-ide/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>How to use Neovim or VIM Editor as an IDE for R - Documentations by Rohit Farmer</title>
+        <title>Joplin - Documentations by Rohit Farmer</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-use-neovim-or-vim-editor-as-an-ide-for-r" class="md-skip">
+        <a href="#joplin" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How to use Neovim or VIM Editor as an IDE for R
+              Joplin
             
           </span>
         </div>
@@ -885,34 +885,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../joplin/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Joplin
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -932,7 +904,7 @@
   <span class="md-ellipsis">
     
   
-    How to use Neovim or VIM Editor as an IDE for R
+    Joplin
   
 
     
@@ -950,7 +922,7 @@
   <span class="md-ellipsis">
     
   
-    How to use Neovim or VIM Editor as an IDE for R
+    Joplin
   
 
     
@@ -976,22 +948,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#requirements" class="md-nav__link">
+  <a href="#install-and-configure-joplin-tui-via-docker" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Requirements
+        Install and Configure Joplin TUI via Docker
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Requirements">
+    <nav class="md-nav" aria-label="Install and Configure Joplin TUI via Docker">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#r-300" class="md-nav__link">
+  <a href="#build-the-image" class="md-nav__link">
     <span class="md-ellipsis">
       
-        R &gt;= 3.0.0
+        Build the Image
       
     </span>
   </a>
@@ -999,10 +971,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#neovim-020" class="md-nav__link">
+  <a href="#run-with-persistent-config-notes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Neovim &gt;= 0.2.0
+        Run with Persistent Config &amp; Notes
       
     </span>
   </a>
@@ -1010,10 +982,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#vim-81" class="md-nav__link">
+  <a href="#switching-editors-inside-joplin" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Vim &gt;= 8.1
+        Switching Editors Inside Joplin
       
     </span>
   </a>
@@ -1021,21 +993,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#plugin-manager" class="md-nav__link">
+  <a href="#configure-encryption-sync-via-dropbox" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Plugin Manager
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#plugins" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Plugins
+        Configure Encryption Sync via Dropbox
       
     </span>
   </a>
@@ -1048,43 +1009,49 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#procedure" class="md-nav__link">
+  <a href="#joplin-tui-shortcuts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Procedure
+        Joplin TUI Shortcuts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Joplin TUI Shortcuts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#to-create-new-notebook-and-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        To Create New Notebook and Notes
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#frequently-used-keyboard-shortcutscommands" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#full-help-keymap" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Frequently Used Keyboard Shortcuts/Commands
+        Full Help Keymap
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#example-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example Code
-      
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-colour-etc-to-vim-in-a-screen-session-optional" class="md-nav__link">
+  <a href="#help-output" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Add Colour etc. to VIM in a Screen Session (optional)
+        Help Output
       
     </span>
   </a>
@@ -1095,6 +1062,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nvimr-r-ide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How to use Neovim or VIM Editor as an IDE for R
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -2764,22 +2759,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#requirements" class="md-nav__link">
+  <a href="#install-and-configure-joplin-tui-via-docker" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Requirements
+        Install and Configure Joplin TUI via Docker
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Requirements">
+    <nav class="md-nav" aria-label="Install and Configure Joplin TUI via Docker">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#r-300" class="md-nav__link">
+  <a href="#build-the-image" class="md-nav__link">
     <span class="md-ellipsis">
       
-        R &gt;= 3.0.0
+        Build the Image
       
     </span>
   </a>
@@ -2787,10 +2782,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#neovim-020" class="md-nav__link">
+  <a href="#run-with-persistent-config-notes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Neovim &gt;= 0.2.0
+        Run with Persistent Config &amp; Notes
       
     </span>
   </a>
@@ -2798,10 +2793,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#vim-81" class="md-nav__link">
+  <a href="#switching-editors-inside-joplin" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Vim &gt;= 8.1
+        Switching Editors Inside Joplin
       
     </span>
   </a>
@@ -2809,21 +2804,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#plugin-manager" class="md-nav__link">
+  <a href="#configure-encryption-sync-via-dropbox" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Plugin Manager
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#plugins" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Plugins
+        Configure Encryption Sync via Dropbox
       
     </span>
   </a>
@@ -2836,43 +2820,49 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#procedure" class="md-nav__link">
+  <a href="#joplin-tui-shortcuts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Procedure
+        Joplin TUI Shortcuts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Joplin TUI Shortcuts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#to-create-new-notebook-and-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        To Create New Notebook and Notes
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#frequently-used-keyboard-shortcutscommands" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#full-help-keymap" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Frequently Used Keyboard Shortcuts/Commands
+        Full Help Keymap
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#example-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example Code
-      
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-colour-etc-to-vim-in-a-screen-session-optional" class="md-nav__link">
+  <a href="#help-output" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Add Colour etc. to VIM in a Screen Session (optional)
+        Help Output
       
     </span>
   </a>
@@ -2922,7 +2912,7 @@
     
     
       <li class="md-path__item">
-        <a href="../joplin/" class="md-path__link">
+        <a href="./" class="md-path__link">
           
   <span class="md-ellipsis">
     Editors
@@ -2947,239 +2937,115 @@
   
 
 
-<h1 id="how-to-use-neovim-or-vim-editor-as-an-ide-for-r">How to use Neovim or VIM Editor as an IDE for R</h1>
-<p>Note: This tutorial is written for Linux based systems. </p>
-<p><a href="https://raw.githubusercontent.com/jalvesaq/Nvim-R/master/doc/Nvim-R.txt" target="_blank">Nvim-R official documentation</a></p>
-<h2 id="requirements">Requirements</h2>
-<h3 id="r-300">R &gt;= 3.0.0</h3>
-<p>To install the latest version of R please flollow the download and install instructions at <a href="https://cloud.r-project.org/">https://cloud.r-project.org/</a></p>
-<h3 id="neovim-020">Neovim &gt;= 0.2.0</h3>
-<p><a href="https://neovim.io/">Neovim</a> (nvim) is the continuation and extension of Vim editor with the aim to keep the good parts of Vim and add more features. In this tutorial I will be using Neovim (nvim), however, most of the steps are equally applicable to Vim also. Please follow download and installation instructions on nvim's GitHub wiki <a href="https://github.com/neovim/neovim/wiki/Installing-Neovim">https://github.com/neovim/neovim/wiki/Installing-Neovim</a>.</p>
-<p><strong>OR</strong>  </p>
-<h3 id="vim-81">Vim &gt;= 8.1</h3>
-<p><a href="https://github.com/vim/vim">Vim</a> usually comes installed in most of the Linux based operating system. However, it may not be the latest one. Therefore, to install the latest version please download and install it from Vim's GitHub repository as mentioned below or a method that is more confortable to you.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git clone https://github.com/vim/vim.git
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>make -C vim/
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>sudo make install -C vim/
+<h1 id="joplin">Joplin</h1>
+<p>Joplin is an open-source note-taking app. It can be installed as a Desktop application on Windows, Mac, and Linux, or as a command-line Node application. Here I have instructions to install Joplin command line in a Docker container on a Linux machine that I can <code>SSH</code> to. </p>
+<h2 id="install-and-configure-joplin-tui-via-docker">Install and Configure Joplin TUI via Docker</h2>
+<p>Create a <code>Dockerfile</code> with:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Base image: current LTS Node, slim Debian</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>FROM<span class="w"> </span>node:22-slim
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Install terminal editors and basic tools</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>RUN<span class="w"> </span>apt-get<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>--no-install-recommends<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">        </span>vim<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span>nano<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span>rm<span class="w"> </span>-rf<span class="w"> </span>/var/lib/apt/lists/*
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="c1"># Install Joplin Terminal client globally</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>RUN<span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>joplin
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="c1"># Set working directory</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>WORKDIR<span class="w"> </span>/root
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="c1"># Default editor for Joplin (change to nvim or nano if you prefer)</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>ENV<span class="w"> </span><span class="nv">EDITOR</span><span class="o">=</span>vim
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>ENV<span class="w"> </span><span class="nv">VISUAL</span><span class="o">=</span>vim
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="c1"># Run Joplin TUI by default</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>ENTRYPOINT<span class="w"> </span><span class="o">[</span><span class="s2">&quot;joplin&quot;</span><span class="o">]</span>
 </span></code></pre></div>
-<h3 id="plugin-manager">Plugin Manager</h3>
-<p>There are more than one plugin manager's available for Vim that can be used to install the required plugins. In this tutorial I will be using <a href="https://github.com/junegunn/vim-plug">vim-plug</a> pluggin manager. </p>
-<h3 id="plugins">Plugins</h3>
-<p>In the end below are the plugins that we would need to convert Vim editor into a fully functional IDE for R. </p>
-<ol>
-<li>Nvim-R: <a href="https://github.com/jalvesaq/Nvim-R">https://github.com/jalvesaq/Nvim-R</a> </li>
-<li>Nvim-R is the main plugin that will add the functionality to execute R code from within the Vim editor.</li>
-<li>Ncm-R: <a href="https://github.com/gaalcaras/ncm-R">https://github.com/gaalcaras/ncm-R</a></li>
-<li>Ncm-R adds synchronous auto completion features for R.</li>
-<li>It is based on <a href="https://github.com/ncm2/ncm2">ncm2</a> and <a href="https://github.com/roxma/nvim-yarp">nvim-yarp</a> plugins. </li>
-<li>Nerd Tree: <a href="https://github.com/preservim/nerdtree">https://github.com/preservim/nerdtree</a></li>
-<li>Nerd Tree will be used to toggle file explorer in the side panel.</li>
-<li>DelimitMate: <a href="https://github.com/Raimondi/delimitMate">https://github.com/Raimondi/delimitMate</a></li>
-<li>This plug-in provides automatic closing of quotes, parenthesis, brackets, etc.</li>
-<li>Vim-monokai-tasty: <a href="https://github.com/patstockwell/vim-monokai-tasty">https://github.com/patstockwell/vim-monokai-tasty</a></li>
-<li>Monokai color scheme inspired by Sublime Text's interpretation of monokai.</li>
-<li>Lightline.vim: <a href="https://github.com/itchyny/lightline.vim">https://github.com/itchyny/lightline.vim</a></li>
-<li>Lineline.vim adds asthetic enhancements to Vim's statusline/tabline.</li>
-</ol>
-<h2 id="procedure">Procedure</h2>
-<ol>
-<li>Make sure that you have <code>R &gt;=3.0.0</code> installed. </li>
-<li>Make sure that you have <code>Neovim &gt;= 0.2.0</code> installed. </li>
-<li>
-<p>Install the <code>vim-plug</code> plugin manager.
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-</span></code></pre></div></p>
-</li>
-<li>
-<p>Install the required plugins.</p>
-</li>
-</ol>
-<p>First, create an <code>init.vim</code> file in <code>~/.config/nvim</code> folder (create the folder if it doesn't exist). This file is equivalent to a <code>.vimrc</code> file in the traditional Vim environment. To <code>init.vim</code> file start adding:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="s2">&quot; Specify a directory for plugins</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="s2">&quot;</span><span class="w"> </span>-<span class="w"> </span>Avoid<span class="w"> </span>using<span class="w"> </span>standard<span class="w"> </span>Vim<span class="w"> </span>directory<span class="w"> </span>names<span class="w"> </span>like<span class="w"> </span><span class="s1">&#39;plugin&#39;</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>call<span class="w"> </span>plug#begin<span class="o">(</span><span class="s1">&#39;~/.vim/plugged&#39;</span><span class="o">)</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="s2">&quot; List of plugins.</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="s2">&quot;</span><span class="w"> </span>Make<span class="w"> </span>sure<span class="w"> </span>you<span class="w"> </span>use<span class="w"> </span>single<span class="w"> </span>quotes
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="s2">&quot; Shorthand notation</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="s2">Plug &#39;jalvesaq/Nvim-R&#39;</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="s2">Plug &#39;ncm2/ncm2&#39;</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="s2">Plug &#39;roxma/nvim-yarp&#39;</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="s2">Plug &#39;gaalcaras/ncm-R&#39;</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="s2">Plug &#39;preservim/nerdtree&#39;</span>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="s2">Plug &#39;Raimondi/delimitMate&#39;</span>
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="s2">Plug &#39;patstockwell/vim-monokai-tasty&#39;</span>
-</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="s2">Plug &#39;itchyny/lightline.vim&#39;</span>
-</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>
-</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="s2">&quot;</span><span class="w"> </span>Initialize<span class="w"> </span>plugin<span class="w"> </span>system
-</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>call<span class="w"> </span>plug#end<span class="o">()</span>
+<h3 id="build-the-image">Build the Image</h3>
+<p>From the directory with the <code>Dockerfile</code>:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>joplin-tui<span class="w"> </span>.
 </span></code></pre></div>
-<ol>
-<li>Update and add more features to the <code>init.vim</code> file.</li>
-</ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="s2">&quot; Set a Local Leader</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="s2">&quot;</span><span class="w"> </span>With<span class="w"> </span>a<span class="w"> </span>map<span class="w"> </span>leader<span class="w"> </span>it<span class="s1">&#39;s possible to do extra key combinations</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="s1">&quot; like &lt;leader&gt;w saves the current file</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="s1">let mapleader = &quot;,&quot;</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="s1">let g:mapleader = &quot;,&quot;</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="s1">&quot; Plugin Related Settings</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="s1">&quot; NCM2</span>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="s1">autocmd BufEnter * call ncm2#enable_for_buffer()    &quot; To enable ncm2 for all buffers.</span>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="s1">set completeopt=noinsert,menuone,noselect           &quot; :help Ncm2PopupOpen for more</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="s1">                                                    &quot; information.</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="s1">&quot; NERD Tree</span>
-</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="s1">map &lt;leader&gt;nn :NERDTreeToggle&lt;CR&gt;                  &quot; Toggle NERD tree.</span>
-</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>
-</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="s1">&quot; Monokai-tasty</span>
-</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="s1">let g:vim_monokai_tasty_italic = 1                  &quot; Allow italics.</span>
-</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="s1">colorscheme vim-monokai-tasty                       &quot; Enable monokai theme.</span>
-</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>
-</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="s1">&quot; LightLine.vim </span>
-</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="s1">set laststatus=2              &quot; To tell Vim we want to see the statusline.</span>
-</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="s1">let g:lightline = {</span>
-</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="s1">   \ &#39;</span>colorscheme<span class="s1">&#39;:&#39;</span>monokai_tasty<span class="s1">&#39;,</span>
-</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="s1">   \ }</span>
-</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>
-</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>
-</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a><span class="s1">&quot; General NVIM/VIM Settings</span>
-</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>
-</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a><span class="s1">&quot; Mouse Integration</span>
-</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a><span class="s1">set mouse=i                   &quot; Enable mouse support in insert mode.</span>
-</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>
-</span><span id="__span-3-35"><a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a><span class="s1">&quot; Tabs &amp; Navigation</span>
-</span><span id="__span-3-36"><a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a><span class="s1">map &lt;leader&gt;nt :tabnew&lt;cr&gt;    &quot; To create a new tab.</span>
-</span><span id="__span-3-37"><a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a><span class="s1">map &lt;leader&gt;to :tabonly&lt;cr&gt;     &quot; To close all other tabs (show only the current tab).</span>
-</span><span id="__span-3-38"><a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a><span class="s1">map &lt;leader&gt;tc :tabclose&lt;cr&gt;    &quot; To close the current tab.</span>
-</span><span id="__span-3-39"><a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a><span class="s1">map &lt;leader&gt;tm :tabmove&lt;cr&gt;     &quot; To move the current tab to next position.</span>
-</span><span id="__span-3-40"><a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a><span class="s1">map &lt;leader&gt;tn :tabn&lt;cr&gt;        &quot; To swtich to next tab.</span>
-</span><span id="__span-3-41"><a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a><span class="s1">map &lt;leader&gt;tp :tabp&lt;cr&gt;        &quot; To switch to previous tab.</span>
-</span><span id="__span-3-42"><a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a>
-</span><span id="__span-3-43"><a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a>
-</span><span id="__span-3-44"><a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a><span class="s1">&quot; Line Numbers &amp; Indentation</span>
-</span><span id="__span-3-45"><a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a><span class="s1">set backspace=indent,eol,start  &quot; To make backscape work in all conditions.</span>
-</span><span id="__span-3-46"><a id="__codelineno-3-46" name="__codelineno-3-46" href="#__codelineno-3-46"></a><span class="s1">set ma                          &quot; To set mark a at current cursor location.</span>
-</span><span id="__span-3-47"><a id="__codelineno-3-47" name="__codelineno-3-47" href="#__codelineno-3-47"></a><span class="s1">set number                      &quot; To switch the line numbers on.</span>
-</span><span id="__span-3-48"><a id="__codelineno-3-48" name="__codelineno-3-48" href="#__codelineno-3-48"></a><span class="s1">set expandtab                   &quot; To enter spaces when tab is pressed.</span>
-</span><span id="__span-3-49"><a id="__codelineno-3-49" name="__codelineno-3-49" href="#__codelineno-3-49"></a><span class="s1">set smarttab                    &quot; To use smart tabs.</span>
-</span><span id="__span-3-50"><a id="__codelineno-3-50" name="__codelineno-3-50" href="#__codelineno-3-50"></a><span class="s1">set autoindent                  &quot; To copy indentation from current line </span>
-</span><span id="__span-3-51"><a id="__codelineno-3-51" name="__codelineno-3-51" href="#__codelineno-3-51"></a><span class="s1">                                &quot; when starting a new line.</span>
-</span><span id="__span-3-52"><a id="__codelineno-3-52" name="__codelineno-3-52" href="#__codelineno-3-52"></a><span class="s1">set si                          &quot; To switch on smart indentation.</span>
-</span><span id="__span-3-53"><a id="__codelineno-3-53" name="__codelineno-3-53" href="#__codelineno-3-53"></a>
-</span><span id="__span-3-54"><a id="__codelineno-3-54" name="__codelineno-3-54" href="#__codelineno-3-54"></a>
-</span><span id="__span-3-55"><a id="__codelineno-3-55" name="__codelineno-3-55" href="#__codelineno-3-55"></a><span class="s1">&quot; Search</span>
-</span><span id="__span-3-56"><a id="__codelineno-3-56" name="__codelineno-3-56" href="#__codelineno-3-56"></a><span class="s1">set ignorecase                  &quot; To ignore case when searching.</span>
-</span><span id="__span-3-57"><a id="__codelineno-3-57" name="__codelineno-3-57" href="#__codelineno-3-57"></a><span class="s1">set smartcase                   &quot; When searching try to be smart about cases.</span>
-</span><span id="__span-3-58"><a id="__codelineno-3-58" name="__codelineno-3-58" href="#__codelineno-3-58"></a><span class="s1">set hlsearch                    &quot; To highlight search results.</span>
-</span><span id="__span-3-59"><a id="__codelineno-3-59" name="__codelineno-3-59" href="#__codelineno-3-59"></a><span class="s1">set incsearch                   &quot; To make search act like search in modern browsers.</span>
-</span><span id="__span-3-60"><a id="__codelineno-3-60" name="__codelineno-3-60" href="#__codelineno-3-60"></a><span class="s1">set magic                       &quot; For regular expressions turn magic on.</span>
-</span><span id="__span-3-61"><a id="__codelineno-3-61" name="__codelineno-3-61" href="#__codelineno-3-61"></a>
-</span><span id="__span-3-62"><a id="__codelineno-3-62" name="__codelineno-3-62" href="#__codelineno-3-62"></a>
-</span><span id="__span-3-63"><a id="__codelineno-3-63" name="__codelineno-3-63" href="#__codelineno-3-63"></a><span class="s1">&quot; Brackets</span>
-</span><span id="__span-3-64"><a id="__codelineno-3-64" name="__codelineno-3-64" href="#__codelineno-3-64"></a><span class="s1">set showmatch                   &quot; To show matching brackets when text indicator </span>
-</span><span id="__span-3-65"><a id="__codelineno-3-65" name="__codelineno-3-65" href="#__codelineno-3-65"></a><span class="s1">                                &quot; is over them.</span>
-</span><span id="__span-3-66"><a id="__codelineno-3-66" name="__codelineno-3-66" href="#__codelineno-3-66"></a><span class="s1">set mat=2                       &quot; How many tenths of a second to blink </span>
-</span><span id="__span-3-67"><a id="__codelineno-3-67" name="__codelineno-3-67" href="#__codelineno-3-67"></a><span class="s1">                                &quot; when matching brackets.</span>
-</span><span id="__span-3-68"><a id="__codelineno-3-68" name="__codelineno-3-68" href="#__codelineno-3-68"></a>
-</span><span id="__span-3-69"><a id="__codelineno-3-69" name="__codelineno-3-69" href="#__codelineno-3-69"></a>
-</span><span id="__span-3-70"><a id="__codelineno-3-70" name="__codelineno-3-70" href="#__codelineno-3-70"></a><span class="s1">&quot; Errors</span>
-</span><span id="__span-3-71"><a id="__codelineno-3-71" name="__codelineno-3-71" href="#__codelineno-3-71"></a><span class="s1">set noerrorbells                &quot; No annoying sound on errors.</span>
-</span><span id="__span-3-72"><a id="__codelineno-3-72" name="__codelineno-3-72" href="#__codelineno-3-72"></a>
-</span><span id="__span-3-73"><a id="__codelineno-3-73" name="__codelineno-3-73" href="#__codelineno-3-73"></a>
-</span><span id="__span-3-74"><a id="__codelineno-3-74" name="__codelineno-3-74" href="#__codelineno-3-74"></a><span class="s1">&quot; Color &amp; Fonts</span>
-</span><span id="__span-3-75"><a id="__codelineno-3-75" name="__codelineno-3-75" href="#__codelineno-3-75"></a><span class="s1">syntax enable                   &quot; Enable syntax highlighting.</span>
-</span><span id="__span-3-76"><a id="__codelineno-3-76" name="__codelineno-3-76" href="#__codelineno-3-76"></a><span class="s1">set encoding=utf8                &quot; Set utf8 as standard encoding and </span>
-</span><span id="__span-3-77"><a id="__codelineno-3-77" name="__codelineno-3-77" href="#__codelineno-3-77"></a><span class="s1">                                 &quot; en_US as the standard language.</span>
-</span><span id="__span-3-78"><a id="__codelineno-3-78" name="__codelineno-3-78" href="#__codelineno-3-78"></a>
-</span><span id="__span-3-79"><a id="__codelineno-3-79" name="__codelineno-3-79" href="#__codelineno-3-79"></a><span class="s1">&quot; Enable 256 colors palette in Gnome Terminal.</span>
-</span><span id="__span-3-80"><a id="__codelineno-3-80" name="__codelineno-3-80" href="#__codelineno-3-80"></a><span class="s1">if $COLORTERM == &#39;</span>gnome-terminal<span class="s1">&#39;</span>
-</span><span id="__span-3-81"><a id="__codelineno-3-81" name="__codelineno-3-81" href="#__codelineno-3-81"></a><span class="s1">    set t_Co=256</span>
-</span><span id="__span-3-82"><a id="__codelineno-3-82" name="__codelineno-3-82" href="#__codelineno-3-82"></a><span class="s1">endif</span>
-</span><span id="__span-3-83"><a id="__codelineno-3-83" name="__codelineno-3-83" href="#__codelineno-3-83"></a>
-</span><span id="__span-3-84"><a id="__codelineno-3-84" name="__codelineno-3-84" href="#__codelineno-3-84"></a><span class="s1">try</span>
-</span><span id="__span-3-85"><a id="__codelineno-3-85" name="__codelineno-3-85" href="#__codelineno-3-85"></a><span class="s1">    colorscheme desert</span>
-</span><span id="__span-3-86"><a id="__codelineno-3-86" name="__codelineno-3-86" href="#__codelineno-3-86"></a><span class="s1">catch</span>
-</span><span id="__span-3-87"><a id="__codelineno-3-87" name="__codelineno-3-87" href="#__codelineno-3-87"></a><span class="s1">endtry</span>
-</span><span id="__span-3-88"><a id="__codelineno-3-88" name="__codelineno-3-88" href="#__codelineno-3-88"></a>
-</span><span id="__span-3-89"><a id="__codelineno-3-89" name="__codelineno-3-89" href="#__codelineno-3-89"></a>
-</span><span id="__span-3-90"><a id="__codelineno-3-90" name="__codelineno-3-90" href="#__codelineno-3-90"></a><span class="s1">&quot; Files &amp; Backup</span>
-</span><span id="__span-3-91"><a id="__codelineno-3-91" name="__codelineno-3-91" href="#__codelineno-3-91"></a><span class="s1">set nobackup                     &quot; Turn off backup.</span>
-</span><span id="__span-3-92"><a id="__codelineno-3-92" name="__codelineno-3-92" href="#__codelineno-3-92"></a><span class="s1">set nowb                         &quot; Don&#39;</span>t<span class="w"> </span>backup<span class="w"> </span>before<span class="w"> </span>overwriting<span class="w"> </span>a<span class="w"> </span>file.
-</span><span id="__span-3-93"><a id="__codelineno-3-93" name="__codelineno-3-93" href="#__codelineno-3-93"></a><span class="nb">set</span><span class="w"> </span>noswapfile<span class="w">                   </span><span class="s2">&quot; Don&#39;t create a swap file.</span>
-</span><span id="__span-3-94"><a id="__codelineno-3-94" name="__codelineno-3-94" href="#__codelineno-3-94"></a><span class="s2">set ffs=unix,dos,mac             &quot;</span><span class="w"> </span>Use<span class="w"> </span>Unix<span class="w"> </span>as<span class="w"> </span>the<span class="w"> </span>standard<span class="w"> </span>file<span class="w"> </span>type.
-</span><span id="__span-3-95"><a id="__codelineno-3-95" name="__codelineno-3-95" href="#__codelineno-3-95"></a>
-</span><span id="__span-3-96"><a id="__codelineno-3-96" name="__codelineno-3-96" href="#__codelineno-3-96"></a>
-</span><span id="__span-3-97"><a id="__codelineno-3-97" name="__codelineno-3-97" href="#__codelineno-3-97"></a><span class="s2">&quot; Return to last edit position when opening files</span>
-</span><span id="__span-3-98"><a id="__codelineno-3-98" name="__codelineno-3-98" href="#__codelineno-3-98"></a><span class="s2">au BufReadPost * if line(&quot;</span><span class="s1">&#39;\&quot;&quot;) &gt; 1 &amp;&amp; line(&quot;&#39;</span><span class="se">\&quot;</span><span class="s2">&quot;) &lt;= line(&quot;$&quot;) | exe &quot;</span>normal!<span class="w"> </span>g<span class="err">&#39;</span><span class="se">\&quot;</span><span class="s2">&quot; | endif</span>
+<h3 id="run-with-persistent-config-notes">Run with Persistent Config &amp; Notes</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-it<span class="w"> </span>--name<span class="w"> </span>joplin-tui<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span>-v<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/.config/joplin:/root/.config/joplin&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span>-v<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/.joplin:/root/.joplin&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span>joplin-tui
 </span></code></pre></div>
-<h2 id="frequently-used-keyboard-shortcutscommands">Frequently Used Keyboard Shortcuts/Commands</h2>
-<p>Note: The commands below are according to the <code>init.vim</code> settings mentioned in this Gist.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Nvim-R</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="se">\r</span>f<span class="w">               </span><span class="s2">&quot; Connect to R console.</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="s2">\rq               &quot;</span><span class="w"> </span>Quit<span class="w"> </span>R<span class="w"> </span>console.
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="se">\r</span>o<span class="w">               </span><span class="s2">&quot; Open object bowser.</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="s2">\d                &quot;</span><span class="w"> </span>Execute<span class="w"> </span>current<span class="w"> </span>line<span class="w"> </span>of<span class="w"> </span>code<span class="w"> </span>and<span class="w"> </span>move<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>next<span class="w"> </span>line.
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="se">\s</span>s<span class="w">               </span><span class="s2">&quot; Execute a block of selected code.</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="s2">\aa               &quot;</span><span class="w"> </span>Execute<span class="w"> </span>the<span class="w"> </span>entire<span class="w"> </span>script.<span class="w"> </span>This<span class="w"> </span>is<span class="w"> </span>equivalent<span class="w"> </span>to<span class="w"> </span>source<span class="o">()</span>.
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="se">\x</span>x<span class="w">               </span><span class="s2">&quot; Toggle comment in an R script.</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="s2"># NERDTree</span>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="s2">,nn               &quot;</span><span class="w"> </span>Toggle<span class="w"> </span>NERDTree.
+<p>Next time, reuse the same container:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>docker<span class="w"> </span>start<span class="w"> </span>-ai<span class="w"> </span>joplin-tui
 </span></code></pre></div>
-<h2 id="example-code">Example Code</h2>
-<div class="language-r highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nf">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="c1"># \rf               &quot; Connect to R console.</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># \rq               &quot; Quit R console.</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># \ro               &quot; Open object bowser.</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="c1"># \d \ss \aa        &quot; Execution modes. </span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1"># ?help</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="c1"># ,nn               &quot; NERDTree.</span>
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="c1"># ,nt, tp, tn       &quot; Tab navigation.</span>
+<h3 id="switching-editors-inside-joplin">Switching Editors Inside Joplin</h3>
+<p>Inside the Joplin TUI you can set which editor it uses:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>:config<span class="w"> </span>editor<span class="w"> </span>vim
+</span></code></pre></div>
+<h3 id="configure-encryption-sync-via-dropbox">Configure Encryption Sync via Dropbox</h3>
+<p>I already have encryption and <code>sync</code> setup via Dropbox on my Desktop and Mobile apps therefore I think it was easier to do it on the command line. </p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Enable encryption</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="c1"># It will ask for a master password</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>:e2ee<span class="w"> </span><span class="nb">enable</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1"># Set Dropbox as sync target:</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>:config<span class="w"> </span>sync.target<span class="w"> </span><span class="m">7</span>
 </span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>
-</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="nf">theme_set</span><span class="p">(</span><span class="nf">theme_bw</span><span class="p">())</span>
-</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="nf">data</span><span class="p">(</span><span class="s">&quot;midwest&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">package</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;ggplot2&quot;</span><span class="p">)</span>
-</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>
-</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="n">gg</span><span class="w">  </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">ggplot</span><span class="p">(</span><span class="n">midwest</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">area</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">poptotal</span><span class="p">))</span><span class="w"> </span><span class="o">+</span>
-</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="w">        </span><span class="nf">geom_point</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">state</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">popdensity</span><span class="p">))</span><span class="w"> </span><span class="o">+</span>
-</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="w">        </span><span class="nf">geom_smooth</span><span class="p">(</span><span class="n">method</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;loess&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">se</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">F</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
-</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="w">        </span><span class="nf">xlim</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">0.1</span><span class="p">))</span><span class="w"> </span><span class="o">+</span>
-</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="w">        </span><span class="nf">ylim</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">500000</span><span class="p">))</span><span class="w"> </span><span class="o">+</span>
-</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="w">        </span><span class="nf">labs</span><span class="p">(</span><span class="n">subtitle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Area Vs Population&quot;</span><span class="p">,</span>
-</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="w">             </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Population&quot;</span><span class="p">,</span>
-</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="w">             </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Area&quot;</span><span class="p">,</span>
-</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="w">             </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Scatterplot&quot;</span><span class="p">,</span>
-</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="w">             </span><span class="n">caption</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Source: midwest&quot;</span><span class="p">)</span>
-</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a>
-</span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a><span class="nf">plot</span><span class="p">(</span><span class="n">gg</span><span class="p">)</span><span class="w"> </span><span class="c1"># Opens an external window with the plot.</span>
-</span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>
-</span><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a><span class="n">midwest</span><span class="o">$</span><span class="n">county</span><span class="w"> </span><span class="c1"># To show synchronous auto completion. </span>
-</span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a>
-</span><span id="__span-5-28"><a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a><span class="nf">View</span><span class="p">(</span><span class="n">midwest</span><span class="p">)</span><span class="w"> </span><span class="c1"># Opens an external window to display a portion of the tibble.</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="c1"># Start sync:</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>:sync
 </span></code></pre></div>
-<h2 id="add-colour-etc-to-vim-in-a-screen-session-optional">Add Colour etc. to VIM in a Screen Session (optional)</h2>
-<p>Add these lines to <code>~/.screenrc</code> file.
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Use 256 colors</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>attrcolor<span class="w"> </span>b<span class="w"> </span><span class="s2">&quot;.I&quot;</span><span class="w">    </span><span class="c1"># allow bold colors - necessary for some reason</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>termcapinfo<span class="w"> </span>xterm<span class="w"> </span><span class="s1">&#39;Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm&#39;</span><span class="w">   </span><span class="c1"># tell screen how to set colors. AB = background, AF=foreground</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>defbce<span class="w"> </span>on<span class="w">    </span><span class="c1"># use current bg color for erased chars]]&#39;</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="c1"># Informative statusbar</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>hardstatus<span class="w"> </span>off
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>hardstatus<span class="w"> </span>alwayslastline
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>hardstatus<span class="w"> </span>string<span class="w"> </span><span class="s1">&#39;%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W} %c %{g}]&#39;</span>
-</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
-</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="c1"># Use X scrolling mechanism</span>
-</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>termcapinfo<span class="w"> </span>xterm*<span class="w"> </span>ti@:te@
-</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>
-</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="c1"># Fix for residual editor text</span>
-</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>altscreen<span class="w"> </span>on
+<ul>
+<li>Joplin shows an authorization URL — copy/paste it in your host browser.</li>
+<li>Grant permission in Dropbox and copy the string generated by Dropbox to Joplin.</li>
+<li>Joplin resumes syncing automatically.</li>
+</ul>
+<h2 id="joplin-tui-shortcuts">Joplin TUI Shortcuts</h2>
+<h3 id="to-create-new-notebook-and-notes">To Create New Notebook and Notes</h3>
+<p><code>mn</code> or <code>:mknote</code> to create a new note.
+<code>mb</code> or <code>:mkbook</code> to create a new notebook.</p>
+<h3 id="full-help-keymap">Full Help Keymap</h3>
+<p>For information on how to customise the shortcuts please visit https://joplinapp.org/help/apps/terminal#shortcuts</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>:<span class="w">                 </span>enter_command_line_mode<span class="w">         </span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>TAB<span class="w">               </span>focus_next
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>SHIFT_TA<span class="w">          </span>focus_previous<span class="w">     </span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>UP<span class="w">                </span>move_up<span class="w"> </span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>DOWN<span class="w">              </span>move_down
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>PAGE_UP<span class="w">           </span>page_up
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>PAGE_DOWN<span class="w">         </span>page_down
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>ENTER<span class="w">             </span>activate
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>DELETE,<span class="w"> </span>BACKSPACE<span class="w"> </span>delete
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>n<span class="w">                 </span>next_link
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>b<span class="w">                 </span>previous_link
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>o<span class="w">                 </span>open_link<span class="w">  </span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="o">(</span>SPACE<span class="o">)</span><span class="w">           </span>todo<span class="w"> </span>toggle<span class="w"> </span><span class="nv">$n</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>tc<span class="w">                </span>toggle_console<span class="w"> </span>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>tm<span class="w">                </span>toggle_metadata<span class="w"> </span>
+</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>ti<span class="w">                </span>toggle_ids<span class="w"> </span>
+</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>r<span class="w">                 </span>restore<span class="w"> </span><span class="nv">$n</span><span class="w"> </span>
+</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>/<span class="w">                 </span>search<span class="w"> </span><span class="s2">&quot;&quot;</span>
+</span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>mn<span class="w">                </span>mknote<span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"> </span>
+</span><span id="__span-6-20"><a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a>mt<span class="w">                </span>mktodo<span class="w"> </span><span class="s2">&quot;&quot;</span>
+</span><span id="__span-6-21"><a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a>mb<span class="w">                </span>mkbook<span class="w"> </span><span class="s2">&quot;&quot;</span>
+</span><span id="__span-6-22"><a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a>yn<span class="w">                </span>cp<span class="w"> </span><span class="nv">$n</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+</span><span id="__span-6-23"><a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a>dn<span class="w">                </span>mv<span class="w"> </span><span class="nv">$n</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+</span><span id="__span-6-24"><a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a>z<span class="w">                 </span>toggle_folder_collapse<span class="w">  </span>
+</span></code></pre></div>
+<h2 id="help-output">Help Output</h2>
+<p>The possible commands are:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>attach,<span class="w"> </span>batch,<span class="w"> </span>cat,<span class="w"> </span>config,<span class="w"> </span>cp,<span class="w"> </span><span class="k">done</span>,<span class="w"> </span>e2ee,<span class="w"> </span>edit,<span class="w"> </span>exit,<span class="w"> </span>export,<span class="w"> </span>geoloc,<span class="w"> </span>help,<span class="w"> </span>import,<span class="w"> </span>ls,<span class="w"> </span>mkbook,<span class="w"> </span>mknote,<span class="w"> </span>mktodo,<span class="w"> </span>mv,<span class="w"> </span>ren,<span class="w"> </span>restore,<span class="w"> </span>rmbook,<span class="w"> </span>rmnote,<span class="w"> </span>search,<span class="w"> </span>server,<span class="w"> </span>set,<span class="w"> </span>share,<span class="w"> </span>status,<span class="w"> </span>sync,<span class="w"> </span>tag,<span class="w"> </span>todo,<span class="w"> </span>undone,<span class="w"> </span>version
 </span></code></pre></div></p>
+<ul>
+<li>In any command, a note or notebook can be referred to by title or ID, or using the shortcuts <code>$n</code> or <code>$b</code> for, respectively, the currently selected note or
+notebook. <code>$c</code> can be used to refer to the currently selected item.</li>
+<li>To move from one pane to another, press Tab or Shift+Tab.</li>
+<li>Use the arrows and page up/down to scroll the lists and text areas (including this console).</li>
+<li>To maximise/minimise the console, press "tc".                                         </li>
+<li>To enter command line mode, press ":"                                         </li>
+<li>To exit command line mode, press ESCAPE                   </li>
+<li>For the list of keyboard shortcuts and config options, type <code>help keymap</code>                 </li>
+</ul>
 
 
 
@@ -3215,7 +3081,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../joplin/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Joplin">
+          <a href="../../database/sqlite/" class="md-footer__link md-footer__link--prev" aria-label="Previous: SQLite">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -3225,20 +3091,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Joplin
+                SQLite
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../hpc/locus/" class="md-footer__link md-footer__link--next" aria-label="Next: Locus">
+          <a href="../nvimr-r-ide/" class="md-footer__link md-footer__link--next" aria-label="Next: How to use Neovim or VIM Editor as an IDE for R">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Locus
+                How to use Neovim or VIM Editor as an IDE for R
               </div>
             </div>
             <div class="md-footer__button md-icon">

@@ -64,6 +64,7 @@ nav:
       - database/sqlite-where.md
       - database/sqlite.md
   - Editors:
+      - editors/joplin.md
       - editors/nvimr-r-ide.md
   - HPC:
       - hpc/locus.md
