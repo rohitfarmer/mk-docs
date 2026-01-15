@@ -1026,6 +1026,45 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#difference-between-a-container-and-an-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Difference Between a Container and an Image
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Difference Between a Container and an Image">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#docker-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Docker Image
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Docker Container
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3334,6 +3373,45 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#difference-between-a-container-and-an-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Difference Between a Container and an Image
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Difference Between a Container and an Image">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#docker-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Docker Image
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Docker Container
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3787,6 +3865,80 @@ You should see "Hello, Docker!" printed in the terminal.</p>
 <p><strong>Security:</strong> Be mindful of security best practices when building your images.  Avoid running processes as root, and keep your base images up to date.</p>
 </li>
 </ul>
+<h3 id="difference-between-a-container-and-an-image">Difference Between a Container and an Image</h3>
+<h4 id="docker-image">Docker Image</h4>
+<ul>
+<li><strong>Think of it as a blueprint or a template.</strong>  An image is a read-only template with instructions for creating a Docker container.  It contains the application code, runtime, system tools, system libraries, settings, and everything else needed to run a piece of software.</li>
+<li><strong>Layered Filesystem:</strong> Docker images are built from a series of read-only layers. Each layer represents an instruction in the <code>Dockerfile</code> (the file that defines how to build the image). This layering makes images efficient – changes only require rebuilding the affected layers, and layers can be shared between images.</li>
+<li><strong>Immutable:</strong> Images themselves don't change.  They are like snapshots.  Once built, an image remains constant.</li>
+<li><strong>Stored in a Registry:</strong> Images are typically stored in a Docker registry (like Docker Hub, a private registry, or cloud provider registries).  This allows you to share and distribute your applications easily.</li>
+<li><strong>Example:</strong>  Imagine you want to run a web application based on Ubuntu, with Node.js and your application code installed. The image would contain the Ubuntu operating system, the Node.js runtime, your application's source code, and any necessary dependencies.</li>
+</ul>
+<h4 id="docker-container">Docker Container</h4>
+<ul>
+<li><strong>Think of it as a running instance of an image.</strong> A container is a runnable instance of a Docker image.  You can start, stop, and delete containers.</li>
+<li><strong>Mutable (with a writable layer):</strong>  When you run an image, Docker creates a container.  The container adds a thin, writable layer <em>on top</em> of the read-only image layers.  Any changes you make inside the container (e.g., creating files, modifying configurations) are written to this writable layer.</li>
+<li><strong>Isolated:</strong> Containers provide a level of isolation from the host operating system and from other containers. This means they have their own process space, file system, and network interfaces. This isolation contributes to security and portability.</li>
+<li><strong>Ephemeral (typically):</strong> While the writable layer persists for the lifetime of the container, containers are often designed to be disposable.  If a container is stopped and deleted, the changes in the writable layer are lost (unless you use volumes – see below).</li>
+<li><strong>Example:</strong>  You take the image described above (Ubuntu + Node.js + your app) and "run" it.  This creates a container. The container is now a running process that's executing your Node.js application.</li>
+</ul>
+<p><strong>Here's a simple analogy:</strong></p>
+<ul>
+<li><strong>Image:</strong> A class in object-oriented programming.  It's a definition of what something <em>is</em>.</li>
+<li><strong>Container:</strong> An object created from that class.  It's a specific <em>instance</em> of the definition, and it's running and doing something.</li>
+</ul>
+<p><strong>Key Differences Summarized in a Table:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Docker Image</th>
+<th>Docker Container</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nature</strong></td>
+<td>Read-only template</td>
+<td>Runnable instance of an image</td>
+</tr>
+<tr>
+<td><strong>State</strong></td>
+<td>Static, immutable</td>
+<td>Dynamic, mutable</td>
+</tr>
+<tr>
+<td><strong>Storage</strong></td>
+<td>Stored in a registry</td>
+<td>Runs on the host OS</td>
+</tr>
+<tr>
+<td><strong>Creation</strong></td>
+<td>Built from a <code>Dockerfile</code></td>
+<td>Created from an image</td>
+</tr>
+<tr>
+<td><strong>Purpose</strong></td>
+<td>Packaging application &amp; deps</td>
+<td>Running the application</td>
+</tr>
+<tr>
+<td><strong>Layers</strong></td>
+<td>Multiple read-only layers</td>
+<td>Read-only layers + writable layer</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Volumes (Important Note):</strong></p>
+<p>Docker volumes provide a way to persist data generated by a container even after the container is stopped or deleted.  Volumes are not part of the container's writable layer; they are stored separately on the host machine or in a managed storage service.  This is essential for data that needs to survive the container's lifecycle (e.g., databases, user uploads).</p>
+<p><strong>In a typical workflow:</strong></p>
+<ol>
+<li><strong>You build a Docker image:</strong>  Using a <code>Dockerfile</code>, you define how to create an image with your application and its dependencies.</li>
+<li><strong>You run the image to create a container:</strong>  <code>docker run &lt;image_name&gt;</code> starts a new container based on that image.</li>
+<li><strong>The container runs your application.</strong></li>
+<li><strong>You can have multiple containers running from the same image:</strong> Each container is isolated from the others.</li>
+<li><strong>When the container is no longer needed, you can stop and remove it.</strong></li>
+</ol>
 
 
 
