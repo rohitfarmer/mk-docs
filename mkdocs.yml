@@ -74,6 +74,7 @@ nav:
       - irc/weechat.md
   - Linux:
       - linux/audio-video.md
+      - linux/desktop-shortcut.md
       - linux/fail2ban.md
       - linux/file-compression.md
       - linux/find-files.md

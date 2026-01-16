@@ -12,13 +12,13 @@
         <meta name="author" content="Rohit Farmer">
       
       
-        <link rel="canonical" href="https://docs.rohitfarmer.com/linux/package-management/">
+        <link rel="canonical" href="https://docs.rohitfarmer.com/linux/desktop-shortcut/">
       
       
-        <link rel="prev" href="../nginx/">
+        <link rel="prev" href="../audio-video/">
       
       
-        <link rel="next" href="../rsync/">
+        <link rel="next" href="../fail2ban/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>Linux Package Management - Documentations by Rohit Farmer</title>
+        <title>Creating a Desktop Shortcut Manually - Documentations by Rohit Farmer</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#linux-package-management" class="md-skip">
+        <a href="#creating-a-desktop-shortcut-manually" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Linux Package Management
+              Creating a Desktop Shortcut Manually
             
           </span>
         </div>
@@ -1243,10 +1243,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../desktop-shortcut/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1262,6 +1271,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1495,37 +1505,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Linux Package Management
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../package-management/" class="md-nav__link">
         
   
   
@@ -1541,76 +1524,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#apt" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Apt
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Apt">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#apt-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Apt Cache
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#install-using-dpkg" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Install Using DPKG
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#unattended-auto-upgrade" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Unattended Auto Upgrade
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2719,64 +2632,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#apt" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Apt
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Apt">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#apt-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Apt Cache
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#install-using-dpkg" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Install Using DPKG
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#unattended-auto-upgrade" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Unattended Auto Upgrade
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -2843,33 +2698,20 @@
   
 
 
-<h1 id="linux-package-management">Linux Package Management</h1>
-<h2 id="apt">Apt</h2>
-<p><em>To update and install packages.</em><br />
-<code>sudo apt-get update</code><br />
-<code>sudo apt-get upgrade</code><br />
-<code>sudo apt-get install</code><br />
-<code>sudo apt-get install vsftpd=2.3.5-3ubuntu1</code> # Install specific version of the package.<br />
-<code>sudo apt-get remove vsftpd</code> # Remove package without removing configuration.<br />
-<code>sudo apt-get purge vsftpd</code> # Completely remove package along with its configuration.<br />
-<code>sudo apt-get remove --purge vsftpd</code> # Can combine both remove and purge.<br />
-<code>sudo apt-get clean</code> # Delete downloaded .deb files.<br />
-<code>sudo apt-get autoclean</code> # Delete all .deb files.<br />
-<code>sudo apt-get check</code> # Check for broken dependencies.  </p>
-<h3 id="apt-cache">Apt Cache</h3>
-<p><em>To query apt package list.</em><br />
-<code>apt-cache pkgnames</code> # List all available packages.<br />
-<code>apt-cache search vsftpd</code> # Search for a particular package.<br />
-<code>apt-cache pkgnames vsftpd</code> # List all the packages starting with a particular name.<br />
-<code>apt-cache show netcat</code> # Check package information.<br />
-<code>apt-cache showpkg vsftpd</code> # Check dependencies of a particular package.  </p>
-<h2 id="install-using-dpkg">Install Using DPKG</h2>
-<p><code>sudo dpkg -i package_with_unsatisfied_dependencies.deb</code><br />
-<code>sudo apt-get -f install</code>  </p>
-<h2 id="unattended-auto-upgrade">Unattended Auto Upgrade</h2>
-<p><code>sudo apt-get install unattended-upgrades</code><br />
-<code>sudo dpkg-reconfigure unattended-upgrades</code><br />
-https://help.ubuntu.com/lts/serverguide/automatic-updates.html  </p>
+<h1 id="creating-a-desktop-shortcut-manually">Creating a Desktop Shortcut Manually</h1>
+<p>You can reate a shortcut manually by creating a <code>.desktop</code> file. Here’s how:</p>
+<p>Create a New File <code>~/Desktop/myapp.desktop</code> with the following content:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="o">[</span>Desktop<span class="w"> </span>Entry<span class="o">]</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nv">Version</span><span class="o">=</span><span class="m">1</span>.0
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nv">Name</span><span class="o">=</span>My<span class="w"> </span>Application
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nv">Exec</span><span class="o">=</span>/path/to/application
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nv">Icon</span><span class="o">=</span>/path/to/icon.png
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nv">Type</span><span class="o">=</span>Application
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nv">Terminal</span><span class="o">=</span><span class="nb">false</span>
+</span></code></pre></div>
+<p>Make It Executable:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>chmod<span class="w"> </span>+x<span class="w"> </span>~/Desktop/myapp.desktop
+</span></code></pre></div>
 
 
 
@@ -2905,7 +2747,7 @@ https://help.ubuntu.com/lts/serverguide/automatic-updates.html  </p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../nginx/" class="md-footer__link md-footer__link--prev" aria-label="Previous: NGINX Web Server">
+          <a href="../audio-video/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Audio Video Editing">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2915,20 +2757,20 @@ https://help.ubuntu.com/lts/serverguide/automatic-updates.html  </p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                NGINX Web Server
+                Audio Video Editing
               </div>
             </div>
           </a>
         
         
           
-          <a href="../rsync/" class="md-footer__link md-footer__link--next" aria-label="Next: Syncing Stuff Using rsync">
+          <a href="../fail2ban/" class="md-footer__link md-footer__link--next" aria-label="Next: Fail2Ban">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Syncing Stuff Using rsync
+                Fail2Ban
               </div>
             </div>
             <div class="md-footer__button md-icon">
