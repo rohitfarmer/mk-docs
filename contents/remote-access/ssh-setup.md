@@ -46,6 +46,31 @@ Host <nick name of the host>
 chmod -R 600 ~/.ssh/
 ```
 
+## SSH Log Monitoring
+
+SSH auth failures are logged here `/var/log/auth.log`
+
+The following should give you only ssh related log lines:
+
+```bash
+grep 'sshd' /var/log/auth.log
+```
+To be on the safe side, get the last few hundred lines and then search (because if the log file is too large, grep on the whole file would consume more system resources, not to mention will take longer to run)
+
+View sshd entries in the last 500 lines of the log:
+
+```bash
+tail -n 500 /var/log/auth.log | grep 'sshd'
+```
+
+or to follow the log output as you test:
+
+```bash
+tail -f -n 500 /var/log/auth.log | grep 'sshd'
+```
+
+**NOTE:** for monitoring SSHD related `fail2ban` (if it's active) realtime activity check out [Linux/Fail2Ban](../linux/fail2ban.md#monitor-realtime-activity) page.
+
 ## Allow password login a GCP instance user
 This is to enable password login to a non-sudo/root user on a Google cloud instance.
 

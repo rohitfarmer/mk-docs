@@ -46,7 +46,7 @@ sudo tail -f /var/log/fail2ban.log
 ### SSHD Specific Fail2Ban Actions
 
 ```bash
-sudo tail -f /var/log/fail2ban.log | grep --line-buffered -i nginx
+sudo tail -f /var/log/fail2ban.log | grep --line-buffered -i sshd
 ```
 
 ## Strong Setup for SSHD
