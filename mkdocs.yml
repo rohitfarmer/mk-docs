@@ -94,6 +94,8 @@ nav:
       - molecular-modelling/gromacs.md
   - Python:
       - python/getting-back-to-python.md
+      - python/numpy.md
+      - python/pandas.md
       - python/environments.md
       - python/web-server.md
   - R:

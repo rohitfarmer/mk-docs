@@ -601,7 +601,7 @@ u.role
 
 ---
 
-## 7. Methods that return values
+## Methods that return values
 
 ```python
 class Rectangle:
@@ -620,7 +620,7 @@ r.area()
 
 ---
 
-## 8. Classes and data structures
+## Classes and data structures
 
 Objects often **wrap dictionaries or lists**.
 
@@ -638,7 +638,7 @@ class Cart:
 
 ---
 
-## 9. When NOT to use classes
+## When NOT to use classes
 
 Don’t use a class if:
 
@@ -650,7 +650,7 @@ Many Python programs are mostly **functions + dicts**.
 
 ---
 
-## 10. A common beginner mistake
+## A common beginner mistake
 
 ❌ Doing too much in one class
 
@@ -670,7 +670,7 @@ class Processor: ...
 
 ---
 
-## 11. `__str__`: Make objects readable
+## `__str__`: Make objects readable
 
 ```python
 class User:
@@ -687,7 +687,7 @@ print(User("Ada"))
 
 ---
 
-## 12. Very light inheritance (optional)
+## Very light inheritance (optional)
 
 Use inheritance only when there is a **true “is-a” relationship**.
 
@@ -709,7 +709,7 @@ If this feels unnecessary — skip it. Many Python codebases barely use inherita
 
 ---
 
-## 13. Classes vs functions — quick rule
+## Classes vs functions — quick rule
 
 | Use case                           | Prefer   |
 | ---------------------------------- | -------- |
@@ -718,7 +718,7 @@ If this feels unnecessary — skip it. Many Python codebases barely use inherita
 | Data with behavior                 | Class    |
 | Stateless logic                    | Function |
 
-## 14. The shape of real class-based code
+## The shape of real class-based code
 
 ```python
 class FileReader:
