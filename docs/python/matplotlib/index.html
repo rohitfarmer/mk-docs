@@ -12,13 +12,13 @@
         <meta name="author" content="Rohit Farmer">
       
       
-        <link rel="canonical" href="https://docs.rohitfarmer.com/molecular-modelling/gromacs/">
+        <link rel="canonical" href="https://docs.rohitfarmer.com/python/matplotlib/">
       
       
-        <link rel="prev" href="../../linux/xrdp/">
+        <link rel="prev" href="../pandas/">
       
       
-        <link rel="next" href="../../python/getting-back-to-python/">
+        <link rel="next" href="../environments/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>Gromacs - Documentations by Rohit Farmer</title>
+        <title>Matplotlib in Practice - Documentations by Rohit Farmer</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gromacs" class="md-skip">
+        <a href="#matplotlib-in-practice" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Gromacs
+              Matplotlib in Practice
             
           </span>
         </div>
@@ -1696,20 +1696,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
         
           
           <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
@@ -1730,7 +1728,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1745,37 +1743,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Gromacs
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../molecular-modelling/gromacs/" class="md-nav__link">
         
   
   
@@ -1791,224 +1762,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#steps-to-carry-out-an-explicit-solvent-simulation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Steps to carry out an explicit solvent simulation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#restart-crash-run" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Restart Crash Run
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#energy-calculation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Energy calculation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#radius-of-gyration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Radius of Gyration
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rmsd-calculation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        RMSD Calculation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rmsf-calculation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        RMSF Calculation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#parallel-run" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Parallel Run
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#extending-finished-run" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Extending finished run
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#trajectory-concatanate" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Trajectory concatanate
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#box-centering" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Box centering
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fit-the-tragectory-to-the-initial-structure-to-avoid-pbc-effects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Fit the tragectory to the initial structure to avoid PBC effects
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#making-index-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Making index file
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#measure-distance-between-atoms-overtime" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Measure distance between atoms overtime
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#essential-dynamics-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Essential Dynamics Analysis
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#trj_cavity-v1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        trj_cavity v1
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sasa-calculation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SASA calculation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hydrogen-bond" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hydrogen Bond
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#clustering" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Clustering
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2025,18 +1778,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked>
         
           
           <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
@@ -2057,7 +1812,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2075,7 +1830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/getting-back-to-python/" class="md-nav__link">
+      <a href="../getting-back-to-python/" class="md-nav__link">
         
   
   
@@ -2103,7 +1858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/numpy/" class="md-nav__link">
+      <a href="../numpy/" class="md-nav__link">
         
   
   
@@ -2131,7 +1886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/pandas/" class="md-nav__link">
+      <a href="../pandas/" class="md-nav__link">
         
   
   
@@ -2156,10 +1911,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../python/matplotlib/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matplotlib in Practice
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2175,6 +1957,257 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-matplotlib-is-and-what-it-isnt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Matplotlib is (and what it isn’t)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-core-mental-model-very-important" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The core mental model (very important)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importing-matplotlib-standard-way" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importing Matplotlib (standard way)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-first-plot-line-plot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Your first plot (line plot)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-explicit-recommended-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The explicit (recommended) approach
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#labeling-your-plot-always-do-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Labeling your plot (always do this)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#styling-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Styling lines
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-lines-on-the-same-axes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multiple lines on the same axes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scatter-plots-x-vs-y-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scatter plots (x vs y points)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bar-plots-categorical-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bar plots (categorical data)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#histograms-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histograms (distributions)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plotting-pandas-data-very-common" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plotting pandas data (very common)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-subplots-one-figure-many-axes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multiple subplots (one figure, many axes)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controlling-figure-size-and-resolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Controlling figure size and resolution
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#axis-limits-and-scales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Axis limits and scales
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ticks-and-formatting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ticks and formatting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#annotations-and-text" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annotations and text
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saving-figures-very-important" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Saving figures (very important)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-realistic-end-to-end-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A realistic end-to-end example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-matplotlib-mistakes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Matplotlib mistakes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-most-important-mindset-shift" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The most important mindset shift
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2187,7 +2220,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/environments/" class="md-nav__link">
+      <a href="../environments/" class="md-nav__link">
         
   
   
@@ -2215,7 +2248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/web-server/" class="md-nav__link">
+      <a href="../web-server/" class="md-nav__link">
         
   
   
@@ -2986,10 +3019,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#steps-to-carry-out-an-explicit-solvent-simulation" class="md-nav__link">
+  <a href="#what-matplotlib-is-and-what-it-isnt" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Steps to carry out an explicit solvent simulation
+        What Matplotlib is (and what it isn’t)
       
     </span>
   </a>
@@ -2997,10 +3030,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#restart-crash-run" class="md-nav__link">
+  <a href="#the-core-mental-model-very-important" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Restart Crash Run
+        The core mental model (very important)
       
     </span>
   </a>
@@ -3008,10 +3041,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#energy-calculation" class="md-nav__link">
+  <a href="#importing-matplotlib-standard-way" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Energy calculation
+        Importing Matplotlib (standard way)
       
     </span>
   </a>
@@ -3019,10 +3052,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#radius-of-gyration" class="md-nav__link">
+  <a href="#your-first-plot-line-plot" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Radius of Gyration
+        Your first plot (line plot)
       
     </span>
   </a>
@@ -3030,10 +3063,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#rmsd-calculation" class="md-nav__link">
+  <a href="#the-explicit-recommended-approach" class="md-nav__link">
     <span class="md-ellipsis">
       
-        RMSD Calculation
+        The explicit (recommended) approach
       
     </span>
   </a>
@@ -3041,10 +3074,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#rmsf-calculation" class="md-nav__link">
+  <a href="#labeling-your-plot-always-do-this" class="md-nav__link">
     <span class="md-ellipsis">
       
-        RMSF Calculation
+        Labeling your plot (always do this)
       
     </span>
   </a>
@@ -3052,10 +3085,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#parallel-run" class="md-nav__link">
+  <a href="#styling-lines" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Parallel Run
+        Styling lines
       
     </span>
   </a>
@@ -3063,10 +3096,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#extending-finished-run" class="md-nav__link">
+  <a href="#multiple-lines-on-the-same-axes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Extending finished run
+        Multiple lines on the same axes
       
     </span>
   </a>
@@ -3074,10 +3107,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#trajectory-concatanate" class="md-nav__link">
+  <a href="#scatter-plots-x-vs-y-points" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Trajectory concatanate
+        Scatter plots (x vs y points)
       
     </span>
   </a>
@@ -3085,10 +3118,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#box-centering" class="md-nav__link">
+  <a href="#bar-plots-categorical-data" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Box centering
+        Bar plots (categorical data)
       
     </span>
   </a>
@@ -3096,10 +3129,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#fit-the-tragectory-to-the-initial-structure-to-avoid-pbc-effects" class="md-nav__link">
+  <a href="#histograms-distributions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Fit the tragectory to the initial structure to avoid PBC effects
+        Histograms (distributions)
       
     </span>
   </a>
@@ -3107,10 +3140,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#making-index-file" class="md-nav__link">
+  <a href="#plotting-pandas-data-very-common" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Making index file
+        Plotting pandas data (very common)
       
     </span>
   </a>
@@ -3118,10 +3151,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#measure-distance-between-atoms-overtime" class="md-nav__link">
+  <a href="#multiple-subplots-one-figure-many-axes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Measure distance between atoms overtime
+        Multiple subplots (one figure, many axes)
       
     </span>
   </a>
@@ -3129,10 +3162,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#essential-dynamics-analysis" class="md-nav__link">
+  <a href="#controlling-figure-size-and-resolution" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Essential Dynamics Analysis
+        Controlling figure size and resolution
       
     </span>
   </a>
@@ -3140,10 +3173,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#trj_cavity-v1" class="md-nav__link">
+  <a href="#axis-limits-and-scales" class="md-nav__link">
     <span class="md-ellipsis">
       
-        trj_cavity v1
+        Axis limits and scales
       
     </span>
   </a>
@@ -3151,10 +3184,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sasa-calculation" class="md-nav__link">
+  <a href="#ticks-and-formatting" class="md-nav__link">
     <span class="md-ellipsis">
       
-        SASA calculation
+        Ticks and formatting
       
     </span>
   </a>
@@ -3162,10 +3195,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hydrogen-bond" class="md-nav__link">
+  <a href="#annotations-and-text" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hydrogen Bond
+        Annotations and text
       
     </span>
   </a>
@@ -3173,10 +3206,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#clustering" class="md-nav__link">
+  <a href="#saving-figures-very-important" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Clustering
+        Saving figures (very important)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-realistic-end-to-end-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A realistic end-to-end example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-matplotlib-mistakes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Matplotlib mistakes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-most-important-mindset-shift" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The most important mindset shift
       
     </span>
   </a>
@@ -3226,10 +3292,10 @@
     
     
       <li class="md-path__item">
-        <a href="./" class="md-path__link">
+        <a href="../getting-back-to-python/" class="md-path__link">
           
   <span class="md-ellipsis">
-    Molecular Modelling
+    Python
   </span>
 
         </a>
@@ -3251,135 +3317,249 @@
   
 
 
-<h1 id="gromacs">Gromacs</h1>
-<p><strong>Note:</strong> The steps in this document were written for Gromacs 4. </p>
-<h2 id="steps-to-carry-out-an-explicit-solvent-simulation">Steps to carry out an explicit solvent simulation</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Convert the structure from PDB to Gromacs format</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>pdb2gmx<span class="w"> </span>-ignh<span class="w"> </span>-f<span class="w"> </span>cts1.pdb
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Build the simulation box</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>editconf<span class="w"> </span>-bt<span class="w"> </span>octahedron<span class="w"> </span>-f<span class="w"> </span>conf.gro<span class="w"> </span>-o<span class="w"> </span>box.gro<span class="w"> </span>-c<span class="w"> </span>-d<span class="w"> </span><span class="m">1</span>.0
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>genbox<span class="w"> </span>-cp<span class="w"> </span>box.gro<span class="w"> </span>-cs<span class="w"> </span>spc216.gro<span class="w"> </span>-o<span class="w"> </span>solvated.gro<span class="w"> </span>-p<span class="w"> </span>topol.top
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="c1"># Fill the box with counter ions to neutralize the overall charge</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>grompp<span class="w"> </span>-f<span class="w"> </span>ions.mdp<span class="w"> </span>-c<span class="w"> </span>solvated.gro<span class="w"> </span>-p<span class="w"> </span>topol.top<span class="w"> </span>-o<span class="w"> </span>ions.tpr
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>genion<span class="w"> </span>-s<span class="w"> </span>ions.tpr<span class="w"> </span>-o<span class="w"> </span>ions.gro<span class="w"> </span>-p<span class="w"> </span>topol.top<span class="w"> </span>-pname<span class="w"> </span>NA<span class="w"> </span>-np<span class="w"> </span><span class="m">1</span><span class="w"> </span>-nname<span class="w"> </span>CL<span class="w"> </span>-nn<span class="w"> </span><span class="m">8</span><span class="w"> </span>-g<span class="w"> </span>ion.log<span class="w"> </span>-neutral
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="c1"># Carry out energy minimization</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>grompp<span class="w"> </span>-f<span class="w"> </span>em.mdp<span class="w"> </span>-c<span class="w"> </span>ions.gro<span class="w">  </span>-p<span class="w"> </span>topol.top<span class="w"> </span>-o<span class="w"> </span>em.tpr
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>mdrun<span class="w"> </span>-v<span class="w"> </span>-deffnm<span class="w"> </span>em
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="c1"># Constant temperature equilibration</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>grompp<span class="w"> </span>-f<span class="w"> </span>nvt.mdp<span class="w"> </span>-c<span class="w"> </span>em.gro<span class="w"> </span>-p<span class="w"> </span>topol.top<span class="w"> </span>-o<span class="w"> </span>nvt.tpr
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>mdrun<span class="w"> </span>-v<span class="w"> </span>-deffnm<span class="w"> </span>nvt
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="c1"># Constant pressure equilibration</span>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>grompp<span class="w"> </span>-f<span class="w"> </span>npt.mdp<span class="w"> </span>-c<span class="w"> </span>nvt.gro<span class="w"> </span>-t<span class="w"> </span>nvt.cpt<span class="w"> </span>-p<span class="w"> </span>topol.top<span class="w"> </span>-o<span class="w"> </span>npt.tpr
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>mdrun<span class="w"> </span>-v<span class="w"> </span>-deffnm<span class="w"> </span>npt
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="c1"># Production MD run</span>
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>grompp<span class="w"> </span>-f<span class="w"> </span>md.mdp<span class="w"> </span>-c<span class="w"> </span>npt.gro<span class="w"> </span>-t<span class="w"> </span>npt.cpt<span class="w"> </span>-p<span class="w"> </span>topol.top<span class="w"> </span>-o<span class="w"> </span>md.tpr
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>mdrun<span class="w"> </span>-v<span class="w"> </span>-deffnm<span class="w"> </span>md
+<h1 id="matplotlib-in-practice">Matplotlib in Practice</h1>
+<p>Matplotlib is Python’s <strong>foundational plotting library</strong>. Most other plotting libraries (seaborn, pandas plotting, etc.) are built on top of it.</p>
+<h2 id="what-matplotlib-is-and-what-it-isnt">What Matplotlib is (and what it isn’t)</h2>
+<p>Matplotlib:</p>
+<ul>
+<li>Produces <strong>static plots</strong> (PNG, PDF, SVG)</li>
+<li>Gives you <strong>full control</strong> over plots</li>
+<li>Works directly with <strong>NumPy arrays</strong> and <strong>pandas Series/DataFrames</strong></li>
+</ul>
+<p>Matplotlib is not:</p>
+<ul>
+<li>Automatically “pretty”</li>
+<li>Declarative (you build plots step by step)</li>
+<li>Interactive by default (that’s a separate layer)</li>
+</ul>
+<p>Think of Matplotlib as a <strong>drawing API for data</strong>.</p>
+<h2 id="the-core-mental-model-very-important">The core mental model (very important)</h2>
+<p>Matplotlib has a <strong>hierarchy</strong>:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Figure
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w"> </span>└──<span class="w"> </span>Axes
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">      </span>├──<span class="w"> </span>Lines
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">      </span>├──<span class="w"> </span>Bars
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">      </span>├──<span class="w"> </span>Text
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">      </span>└──<span class="w"> </span>Ticks
 </span></code></pre></div>
-<h2 id="restart-crash-run">Restart Crash Run</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>g_mdrun<span class="w"> </span>-v<span class="w"> </span>-s<span class="w"> </span>run.tpr<span class="w"> </span>-cpi<span class="w"> </span>state.cpt<span class="w"> </span>-append
+<ul>
+<li><strong>Figure</strong> → the whole image (canvas)</li>
+<li><strong>Axes</strong> → a single plot (x/y area)</li>
+<li>You draw <em>on</em> Axes</li>
+</ul>
+<p>Most confusion comes from mixing these up.</p>
+<h2 id="importing-matplotlib-standard-way">Importing Matplotlib (standard way)</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 </span></code></pre></div>
-<h2 id="energy-calculation">Energy calculation</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>g_energy<span class="w"> </span>-f<span class="w"> </span>run.edr<span class="w"> </span>-o<span class="w"> </span>energy.xvg<span class="w"> </span>-b<span class="w"> </span><span class="m">0</span><span class="w"> </span>-e<span class="w"> </span><span class="m">1000</span><span class="w"> </span>-skip<span class="w"> </span><span class="m">5</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>g_energy<span class="w"> </span>-f<span class="w"> </span>md_0.edr<span class="w"> </span>-o<span class="w"> </span>md_0-energy.xvg<span class="w"> </span>-skip<span class="w"> </span><span class="m">5</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1"># for 50 ns</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>g_energy<span class="w"> </span>-f<span class="w"> </span>md_2.edr<span class="w"> </span>-o<span class="w"> </span>md_2-energy.xvg<span class="w"> </span>-b<span class="w"> </span><span class="m">0</span><span class="w"> </span>-e<span class="w"> </span><span class="m">50000</span><span class="w"> </span>-skip<span class="w"> </span><span class="m">5</span>
+<p>This <code>plt</code> interface is a <strong>state machine</strong> that keeps track of the “current” figure and axes.</p>
+<h2 id="your-first-plot-line-plot">Your first plot (line plot)</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </span></code></pre></div>
-<h2 id="radius-of-gyration">Radius of Gyration</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>g_gyrate<span class="w"> </span>-f<span class="w"> </span>run.xtc<span class="w"> </span>-s<span class="w"> </span>run.tpr<span class="w"> </span>-o<span class="w"> </span>gyrate.xvg<span class="w"> </span>-b<span class="w"> </span><span class="m">0</span><span class="w"> </span>-e<span class="w"> </span><span class="m">1000</span>
+<p>What happened:</p>
+<ul>
+<li><code>plt.plot()</code> created a figure + axes (implicitly)</li>
+<li><code>plt.show()</code> displayed it</li>
+</ul>
+<p>This is the <strong>quick-and-dirty</strong> approach.</p>
+<h2 id="the-explicit-recommended-approach">The explicit (recommended) approach</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>g_gyrate<span class="w"> </span>-f<span class="w"> </span>md_0-fit.xtc<span class="w"> </span>-s<span class="w"> </span>em.tpr<span class="w"> </span>-o<span class="w"> </span>md_0-gyrate.xvg<span class="w"> </span>-ncskip<span class="w"> </span><span class="m">5</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </span></code></pre></div>
-<h2 id="rmsd-calculation">RMSD Calculation</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>g_rms<span class="w"> </span>-s<span class="w"> </span>em.tpr<span class="w"> </span>-f<span class="w"> </span>run.xtc<span class="w"> </span>-o<span class="w"> </span>rmsd.xvg<span class="w"> </span>-b<span class="w"> </span><span class="m">0</span><span class="w"> </span>-e<span class="w"> </span><span class="m">1000</span>
+<p>Why this is better:</p>
+<ul>
+<li>You explicitly control <strong>where things are drawn</strong></li>
+<li>Required for multiple plots, customization, reuse</li>
+</ul>
+<p>Rule of thumb:</p>
+<blockquote>
+<p>Use <code>fig, ax = plt.subplots()</code> for anything non-trivial.</p>
+</blockquote>
+<h2 id="labeling-your-plot-always-do-this">Labeling your plot (always do this)</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;y = x²&quot;</span><span class="p">)</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">)</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </span></code></pre></div>
-<h2 id="rmsf-calculation">RMSF Calculation</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>g_rmsf<span class="w"> </span>-f<span class="w"> </span>run.xtc<span class="w"> </span>-s<span class="w"> </span>run.tpr<span class="w"> </span>-b<span class="w"> </span><span class="m">0</span><span class="w"> </span>-e<span class="w"> </span><span class="m">10000</span><span class="w"> </span>-o<span class="w"> </span>rmsf.xvg
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># for residue</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>g_rmsf<span class="w"> </span>-s<span class="w"> </span>em.tpr<span class="w"> </span>-f<span class="w"> </span>run.xtc<span class="w"> </span>-o<span class="w"> </span>rmsf.xvg<span class="w"> </span>-b<span class="w"> </span><span class="m">0</span><span class="w"> </span>-e<span class="w"> </span><span class="m">1000</span><span class="w"> </span>-res
+<p>A plot without labels is unfinished.</p>
+<h2 id="styling-lines">Styling lines</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>        <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>        <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>        <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;o&quot;</span><span class="p">)</span>
 </span></code></pre></div>
-<h2 id="parallel-run">Parallel Run</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>mpirun<span class="w"> </span>-np<span class="w"> </span><span class="m">5</span><span class="w"> </span>/usr/bin/mdrun_mpi<span class="w"> </span>-v<span class="w"> </span>-deffnm<span class="w"> </span>run
+<p>Common options:</p>
+<ul>
+<li><code>color</code></li>
+<li><code>linestyle</code> (<code>-</code>, <code>--</code>, <code>:</code>)</li>
+<li><code>linewidth</code></li>
+<li><code>marker</code></li>
+</ul>
+<h2 id="multiple-lines-on-the-same-axes">Multiple lines on the same axes</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;y = x&quot;</span><span class="p">)</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;y = x²&quot;</span><span class="p">)</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;y = x³&quot;</span><span class="p">)</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </span></code></pre></div>
-<h2 id="extending-finished-run">Extending finished run</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>tpbconv<span class="w"> </span>-s<span class="w"> </span>previous.tpr<span class="w"> </span>-extend<span class="w"> </span>timetoextendby<span class="w"> </span>-o<span class="w"> </span>next.tpr
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>mdrun<span class="w"> </span>-s<span class="w"> </span>next.tpr<span class="w"> </span>-cpi<span class="w"> </span>previous.cpt
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># for 50ns</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>tpbconv<span class="w"> </span>-s<span class="w"> </span>md_2-ext.tpr<span class="w"> </span>-extend<span class="w"> </span><span class="m">50000</span><span class="w"> </span>-o<span class="w"> </span>md_2-ext-150.tpr<span class="w"> </span>
+<p>Legend works by matching <code>label=</code>.</p>
+<h2 id="scatter-plots-x-vs-y-points">Scatter plots (x vs y points)</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">x</span> <span class="o">=</span> <span class="n">rng</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">y</span> <span class="o">=</span> <span class="n">rng</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </span></code></pre></div>
-<h2 id="trajectory-concatanate">Trajectory concatanate</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>trjcat<span class="w"> </span>-f<span class="w"> </span>*.trr<span class="w"> </span>-o<span class="w"> </span>fixed.trr<span class="w"> </span>
+<p>With color and size:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
 </span></code></pre></div>
-<h2 id="box-centering">Box centering</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>trjconv<span class="w"> </span>-s<span class="w"> </span>em.tpr<span class="w"> </span>-f<span class="w"> </span>nvt.trr<span class="w"> </span>-o<span class="w"> </span>md_nojump.xtc<span class="w"> </span>-pbc<span class="w"> </span>nojump<span class="w"> </span>-boxcenter<span class="w"> </span>tric
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>trjconv<span class="w"> </span>-s<span class="w"> </span>md.tpr<span class="w"> </span>-f<span class="w"> </span>md.trr<span class="w"> </span>-o<span class="w"> </span>md_nojump.xtc<span class="w"> </span>-pbc<span class="w"> </span>nojump<span class="w">  </span>-center
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>g_trjconv<span class="w"> </span>-s<span class="w"> </span>run_3.tpr<span class="w"> </span>-f<span class="w"> </span>run_3.trr<span class="w"> </span>-o<span class="w"> </span>run_3.xtc<span class="w"> </span>-pbc<span class="w"> </span>mol<span class="w"> </span>-ur<span class="w"> </span>compact<span class="w"> </span>-center
+<h2 id="bar-plots-categorical-data">Bar plots (categorical data)</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">categories</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">]</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">categories</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </span></code></pre></div>
-<h2 id="fit-the-tragectory-to-the-initial-structure-to-avoid-pbc-effects">Fit the tragectory to the initial structure to avoid PBC effects</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>trjconv<span class="w"> </span>-s<span class="w"> </span>run.tpr<span class="w"> </span>-f<span class="w"> </span>run.xtc<span class="w"> </span>-o<span class="w"> </span>run-fit.xtc<span class="w"> </span>-fit<span class="w"> </span>progressive
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="c1"># For Complex (first fit one complex then the other)</span>
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
-</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>trjconv<span class="w"> </span>-s<span class="w"> </span>md.tpr<span class="w"> </span>-f<span class="w"> </span>md.trr<span class="w"> </span>-o<span class="w"> </span>md_nojump.xtc<span class="w"> </span>-pbc<span class="w"> </span>nojump<span class="w">  </span>-center
-</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
-</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>trjconv<span class="w"> </span>-s<span class="w"> </span>em.tpr<span class="w"> </span>-f<span class="w"> </span>md_0-protein.xtc<span class="w"> </span>-o<span class="w"> </span>md_0-acp-fit.xtc<span class="w"> </span>-fit<span class="w"> </span>progressive<span class="w"> </span>-n<span class="w"> </span>acpIndex.ndx<span class="w"> </span>
+<p>Horizontal bars:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">ax</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">categories</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
 </span></code></pre></div>
-<h2 id="making-index-file">Making index file</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>make_ndx<span class="w"> </span>-f<span class="w"> </span>conf.gro<span class="w"> </span>-o<span class="w"> </span>index.ndx<span class="w">    </span>
+<h2 id="histograms-distributions">Histograms (distributions)</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">data</span> <span class="o">=</span> <span class="n">rng</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
 </span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="c1"># Choose the group and then define the residues using &amp;&amp; with the group number</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </span></code></pre></div>
-<h2 id="measure-distance-between-atoms-overtime">Measure distance between atoms overtime</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>g_dist<span class="w"> </span>-f<span class="w"> </span>md_2.xtc<span class="w"> </span>-s<span class="w"> </span>md_2.tpr<span class="w"> </span>-n<span class="w"> </span>dist.ndx<span class="w"> </span>-o<span class="w"> </span>dist_2_nointra.xvg
+<p>Common options:</p>
+<ul>
+<li><code>bins</code></li>
+<li><code>density=True</code></li>
+<li><code>alpha</code></li>
+</ul>
+<h2 id="plotting-pandas-data-very-common">Plotting pandas data (very common)</h2>
+<p>Matplotlib works directly with pandas.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>    <span class="s2">&quot;day&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Mon&quot;</span><span class="p">,</span> <span class="s2">&quot;Tue&quot;</span><span class="p">,</span> <span class="s2">&quot;Wed&quot;</span><span class="p">,</span> <span class="s2">&quot;Thu&quot;</span><span class="p">,</span> <span class="s2">&quot;Fri&quot;</span><span class="p">],</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>    <span class="s2">&quot;sales&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">]</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="p">})</span>
 </span></code></pre></div>
-<h2 id="essential-dynamics-analysis">Essential Dynamics Analysis</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>g_covar<span class="w"> </span>-s<span class="w"> </span>run.tpr<span class="w"> </span>-f<span class="w"> </span>run.xtc
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="c1"># Choose option for backbone or for protein</span>
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="c1"># the output will be in eigenval.xvg and eigenvec.trr</span>
-</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>
-</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>xmgrace<span class="w"> </span>eigenval.xvg
-</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="c1"># to visualize the number of modes contributing to the overall fluctuation</span>
-</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>
-</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>g_anaeig<span class="w"> </span>-extr<span class="w"> </span>extr_ev1.pdb<span class="w"> </span>-first<span class="w"> </span><span class="m">1</span><span class="w"> </span>-last<span class="w"> </span><span class="m">1</span><span class="w"> </span>-nframes<span class="w"> </span><span class="m">10</span><span class="w"> </span>-s<span class="w"> </span>run.tpr<span class="w"> </span>-f<span class="w"> </span>run.xtc
-</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>
-</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>pymol<span class="w"> </span>extr_ev1.pdb
-</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>
-</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="c1"># If we are interested in the time evolution of these collective coordinates during the simulation, we can project the trajectory onto these coordinates:</span>
-</span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>g_anaeig<span class="w"> </span>-proj<span class="w"> </span>-s<span class="w"> </span>run.tpr<span class="w"> </span>-f<span class="w"> </span>run.xtc
-</span><span id="__span-13-15"><a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>
-</span><span id="__span-13-16"><a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>xmgrace<span class="w"> </span>proj.xvg
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;day&quot;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;sales&quot;</span><span class="p">])</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </span></code></pre></div>
-<h2 id="trj_cavity-v1">trj_cavity v1</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>./trj_cavity<span class="w"> </span>-s<span class="w"> </span>em.tpr<span class="w"> </span>-f<span class="w"> </span>md_0-cat-fit.xtc<span class="w"> </span>-seed<span class="w"> </span><span class="m">45</span>.750<span class="w"> </span><span class="m">50</span>.943<span class="w"> </span><span class="m">30</span>.368<span class="w"> </span>-o<span class="w"> </span>md_0_cavity_max_dim5_ff1.3.pdb<span class="w"> </span>-ot<span class="w"> </span>md_0_cavity_max_dim5_ff1.3.xtc<span class="w"> </span>-ov<span class="w"> </span>md_0_volume_max_dim5_ff1.3.xvg<span class="w"> </span>-mode<span class="w"> </span>max<span class="w"> </span>-dim<span class="w"> </span><span class="m">5</span><span class="w"> </span>-ff_path<span class="w"> </span>amber99sb-ildn.ff<span class="w"> </span>-ff_radius<span class="w"> </span>-spacing<span class="w"> </span><span class="m">1</span>.3<span class="w"> </span>-cutoff<span class="w"> </span><span class="m">9</span><span class="w"> </span>-n<span class="w"> </span>index.ndx
+<p>Or via pandas’ wrapper:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">df</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;day&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;sales&quot;</span><span class="p">)</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </span></code></pre></div>
-<h2 id="sasa-calculation">SASA calculation</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="w"> </span>g_sas<span class="w"> </span>-s<span class="w"> </span>em.tpr<span class="w"> </span>-f<span class="w"> </span>md_2-cat-fit.xtc<span class="w"> </span>-n<span class="w"> </span>acyl.ndx<span class="w"> </span>-o<span class="w"> </span>md_2_sas_area.xvg<span class="w"> </span>-tv<span class="w"> </span>md_2_sas_volume.x
+<p>(Still Matplotlib underneath.)</p>
+<h2 id="multiple-subplots-one-figure-many-axes">Multiple subplots (one figure, many axes)</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </span></code></pre></div>
-<h2 id="hydrogen-bond">Hydrogen Bond</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>g_hbond<span class="w"> </span>-f<span class="w"> </span>md_1-cat.xtc<span class="w"> </span>-s<span class="w"> </span>em.tpr<span class="w"> </span>-n<span class="w"> </span>index.ndx<span class="w"> </span>-num<span class="w"> </span>sol_hbnum.xvg<span class="w"> </span>-dist<span class="w"> </span>sol_hbdist.xvg
+<p>Key points:</p>
+<ul>
+<li><code>axes</code> is an array</li>
+<li>Index it like NumPy</li>
+</ul>
+<h2 id="controlling-figure-size-and-resolution">Controlling figure size and resolution</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 </span></code></pre></div>
-<h2 id="clustering">Clustering</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>g_cluster<span class="w"> </span>-s<span class="w"> </span>em.tpr<span class="w"> </span>-f<span class="w"> </span>md_2-cat-fit-protein.xtc<span class="w"> </span>-o<span class="w"> </span>md_2-rmsd-clust.xpm<span class="w"> </span>-g<span class="w"> </span>md_2-cluster.log<span class="w"> </span>-sz<span class="w"> </span>md_2-clust-size.xvg<span class="w"> </span>-clid<span class="w"> </span>md_2-clust-id.xvg<span class="w"> </span>-cl<span class="w"> </span>md_2-clusters.pdb
+<p>Important for:</p>
+<ul>
+<li>Publications</li>
+<li>PDFs</li>
+<li>Presentations</li>
+</ul>
+<h2 id="axis-limits-and-scales">Axis limits and scales</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 </span></code></pre></div>
+<p>Log scale:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_yscale</span><span class="p">(</span><span class="s2">&quot;log&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h2 id="ticks-and-formatting">Ticks and formatting</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">])</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">([</span><span class="s2">&quot;start&quot;</span><span class="p">,</span> <span class="s2">&quot;middle&quot;</span><span class="p">,</span> <span class="s2">&quot;end&quot;</span><span class="p">])</span>
+</span></code></pre></div>
+<p>Rotate labels:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="n">plt</span><span class="o">.</span><span class="n">setp</span><span class="p">(</span><span class="n">ax</span><span class="o">.</span><span class="n">get_xticklabels</span><span class="p">(),</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+</span></code></pre></div>
+<h2 id="annotations-and-text">Annotations and text</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="s2">&quot;Important point&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Arrow annotation:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s2">&quot;Peak&quot;</span><span class="p">,</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>            <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">49</span><span class="p">),</span>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>            <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">70</span><span class="p">),</span>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>            <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-&gt;&quot;</span><span class="p">))</span>
+</span></code></pre></div>
+<h2 id="saving-figures-very-important">Saving figures (very important)</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;plot.png&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s2">&quot;tight&quot;</span><span class="p">)</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;plot.pdf&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Always save <strong>before</strong> <code>plt.show()</code> in scripts.</p>
+<h2 id="a-realistic-end-to-end-example">A realistic end-to-end example</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="n">sales</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>    <span class="s2">&quot;date&quot;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="s2">&quot;2026-01-01&quot;</span><span class="p">,</span> <span class="n">periods</span><span class="o">=</span><span class="mi">7</span><span class="p">),</span>
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>    <span class="s2">&quot;units&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">]</span>
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a><span class="p">})</span>
+</span><span id="__span-24-8"><a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>
+</span><span id="__span-24-9"><a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+</span><span id="__span-24-10"><a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a>
+</span><span id="__span-24-11"><a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a><span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">sales</span><span class="p">[</span><span class="s2">&quot;date&quot;</span><span class="p">],</span> <span class="n">sales</span><span class="p">[</span><span class="s2">&quot;units&quot;</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;o&quot;</span><span class="p">)</span>
+</span><span id="__span-24-12"><a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Daily Sales&quot;</span><span class="p">)</span>
+</span><span id="__span-24-13"><a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Date&quot;</span><span class="p">)</span>
+</span><span id="__span-24-14"><a id="__codelineno-24-14" name="__codelineno-24-14" href="#__codelineno-24-14"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Units Sold&quot;</span><span class="p">)</span>
+</span><span id="__span-24-15"><a id="__codelineno-24-15" name="__codelineno-24-15" href="#__codelineno-24-15"></a>
+</span><span id="__span-24-16"><a id="__codelineno-24-16" name="__codelineno-24-16" href="#__codelineno-24-16"></a><span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+</span><span id="__span-24-17"><a id="__codelineno-24-17" name="__codelineno-24-17" href="#__codelineno-24-17"></a><span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</span><span id="__span-24-18"><a id="__codelineno-24-18" name="__codelineno-24-18" href="#__codelineno-24-18"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p>This pattern covers <strong>most real-world plots</strong>.</p>
+<h2 id="common-matplotlib-mistakes">Common Matplotlib mistakes</h2>
+<ul>
+<li>Mixing <code>plt.plot()</code> and <code>ax.plot()</code> randomly</li>
+<li>Forgetting labels and legends</li>
+<li>Overusing defaults</li>
+<li>Fighting Matplotlib instead of learning the hierarchy</li>
+<li>Using loops when vectorized plotting works</li>
+</ul>
+<h2 id="the-most-important-mindset-shift">The most important mindset shift</h2>
+<p>Matplotlib is <strong>imperative</strong>:</p>
+<blockquote>
+<p>“Draw this, then draw that, then adjust this.”</p>
+</blockquote>
 
 
 
@@ -3415,7 +3595,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../linux/xrdp/" class="md-footer__link md-footer__link--prev" aria-label="Previous: xRDP">
+          <a href="../pandas/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Pandas in Practice">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -3425,20 +3605,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                xRDP
+                Pandas in Practice
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../python/getting-back-to-python/" class="md-footer__link md-footer__link--next" aria-label="Next: Getting Back to Python">
+          <a href="../environments/" class="md-footer__link md-footer__link--next" aria-label="Next: Python Virtual Environments">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Getting Back to Python
+                Python Virtual Environments
               </div>
             </div>
             <div class="md-footer__button md-icon">

@@ -96,6 +96,7 @@ nav:
       - python/getting-back-to-python.md
       - python/numpy.md
       - python/pandas.md
+      - python/matplotlib.md
       - python/environments.md
       - python/web-server.md
   - R:
