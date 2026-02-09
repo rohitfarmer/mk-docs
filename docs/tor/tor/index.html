@@ -2482,6 +2482,78 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#serve-a-website-on-tor-network-with-an-onion-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Serve a website on Tor network with an Onion URL
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Serve a website on Tor network with an Onion URL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-tor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install Tor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-a-v3-onion-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configure a v3 onion service
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-an-nginx-listener-only-on-localhost8080" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add an Nginx listener only on localhost:8080
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#two-common-problems-quick-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Two common problems (quick fixes)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2837,6 +2909,78 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#serve-a-website-on-tor-network-with-an-onion-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Serve a website on Tor network with an Onion URL
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Serve a website on Tor network with an Onion URL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-tor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install Tor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-a-v3-onion-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configure a v3 onion service
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-an-nginx-listener-only-on-localhost8080" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add an Nginx listener only on localhost:8080
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#two-common-problems-quick-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Two common problems (quick fixes)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2912,6 +3056,77 @@
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">source</span><span class="w"> </span>torsocks<span class="w"> </span>on<span class="w"> </span><span class="c1">#everything in this particular shell will be routed through tor</span>
 </span></code></pre></div>
+<h2 id="serve-a-website-on-tor-network-with-an-onion-url">Serve a website on Tor network with an Onion URL</h2>
+<h3 id="install-tor">Install Tor</h3>
+<p>Debian/Ubuntu:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>tor
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>tor
+</span></code></pre></div>
+<h3 id="configure-a-v3-onion-service">Configure a v3 onion service</h3>
+<p>Edit Tor config:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/tor/torrc
+</span></code></pre></div>
+<p>Add:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>HiddenServiceDir /var/lib/tor/yourwebsite_onion/
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>HiddenServiceVersion 3
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>HiddenServicePort 80 127.0.0.1:8080
+</span></code></pre></div>
+<p>Fix permissions + restart Tor:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/var/lib/tor/yourwebsite_onion
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>debian-tor:debian-tor<span class="w"> </span>/var/lib/tor/yourwebsite_onion
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">700</span><span class="w"> </span>/var/lib/tor/yourwebsite_onion
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>tor
+</span></code></pre></div>
+<p>Get your onion address:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>cat<span class="w"> </span>/var/lib/tor/yourwebsite_onion/hostname
+</span></code></pre></div>
+<p>That value is your <code>xxxxxxxx....onion</code>.</p>
+<h3 id="add-an-nginx-listener-only-on-localhost8080">Add an Nginx listener only on localhost:8080</h3>
+<p>Create a new Nginx config (separate from your 443 certbot one):</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/nginx/sites-available/rohitfarmer-onion.conf
+</span></code></pre></div>
+<p>Paste:</p>
+<div class="language-nginx highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">server</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="n">127.0.0.1</span><span class="p">:</span><span class="mi">8080</span><span class="p">;</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="s">[::1]:8080</span><span class="p">;</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="kn">root</span><span class="w"> </span><span class="s">/path/to/yourwebsite.com</span><span class="p">;</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">    </span><span class="kn">index</span><span class="w"> </span><span class="s">index.html</span><span class="p">;</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">yourwebsite.com</span><span class="w"> </span><span class="s">www.yourwebsite.com</span><span class="p">;</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">    </span><span class="kn">add_header</span><span class="w"> </span><span class="s">Onion-Location</span><span class="w"> </span><span class="s">&quot;http://sdfjslkdfjslkdf.onion</span><span class="nv">$request_uri&quot;</span><span class="w"> </span><span class="s">always</span><span class="p">;</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">    </span><span class="c1">#location ~* ^/(cgi-bin|wp-admin|wp-login\.php|\.env|phpmyadmin|manager|HNAP1)/ { return 444; }</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">/</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kn">try_files</span><span class="w"> </span><span class="nv">$uri</span><span class="w"> </span><span class="nv">$uri/</span><span class="w"> </span><span class="p">=</span><span class="mi">404</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">\.php$</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="w">        </span><span class="kn">include</span><span class="w"> </span><span class="s">snippets/fastcgi-php.conf</span><span class="p">;</span>
+</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="w">        </span><span class="kn">fastcgi_pass</span><span class="w"> </span><span class="s">unix:/run/php/php8.2-fpm.sock</span><span class="p">;</span>
+</span><span id="__span-7-18"><a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-7-19"><a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>
+</span><span id="__span-7-20"><a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">/\.ht</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kn">deny</span><span class="w"> </span><span class="s">all</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-7-21"><a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>
+</span><span id="__span-7-22"><a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="w">    </span><span class="kn">access_log</span><span class="w"> </span><span class="no">off</span><span class="p">;</span>
+</span><span id="__span-7-23"><a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Enable + reload:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/etc/nginx/sites-available/yourwebsite-onion.conf<span class="w"> </span>/etc/nginx/sites-enabled/
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>sudo<span class="w"> </span>nginx<span class="w"> </span>-t
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>reload<span class="w"> </span>nginx
+</span></code></pre></div>
+<h3 id="test">Test</h3>
+<p>From a machine with Tor Browser, open the onion URL you got from the <code>hostname</code> file.</p>
+<p>On the VM you can also sanity-check the local backend:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>curl<span class="w"> </span>-I<span class="w"> </span>http://127.0.0.1:8080/
+</span></code></pre></div>
+<h3 id="two-common-problems-quick-fixes">Two common problems (quick fixes)</h3>
+<ul>
+<li>If your HTML hardcodes <code>https://yourwebsite.com/...</code> for assets/links, onion visitors will get sent to clearnet. Prefer relative URLs (<code>/css/site.css</code>) where possible.</li>
+<li>Don’t add redirects in the onion server block that force <code>https://yourwebsite.com</code>.</li>
+</ul>
 
 
 
