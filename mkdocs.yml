@@ -112,6 +112,7 @@ nav:
       - remote-access/ssh-setup.md
   - Tor:
       - tor/tor.md
+      - tor/tor-friendly-websites.md
   - Uses:
       - uses/general-computing.md
   - Version Control:
