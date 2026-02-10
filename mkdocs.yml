@@ -63,8 +63,8 @@ nav:
       - containers/nvim-singularity.md
       - containers/build-singularity.md
   - Database:
-      - database/sqlite-where.md
       - database/sqlite.md
+      - database/sqlite-where.md
   - Editors:
       - editors/joplin.md
       - editors/nvimr-r-ide.md
@@ -114,7 +114,7 @@ nav:
       - remote-access/ssh-setup.md
   - Tor:
       - tor/tor.md
-      - tor/tor-friendly-websites.md
+      - tor/how-to-access-websites-on-the-tor-network.md
   - Uses:
       - uses/general-computing.md
   - Version Control:
