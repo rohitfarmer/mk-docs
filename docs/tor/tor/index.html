@@ -269,7 +269,7 @@
   <span class="md-ellipsis">
     
   
-    Home
+    Documentations by Rohit Farmer
   
 
     
@@ -2475,7 +2475,7 @@
   <a href="#to-route-everything-running-in-a-shell-through-tor" class="md-nav__link">
     <span class="md-ellipsis">
       
-        To route everything running in a shell through tor
+        To route everything running in a shell through Tor
       
     </span>
   </a>
@@ -2483,15 +2483,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#serve-a-website-on-tor-network-with-an-onion-url" class="md-nav__link">
+  <a href="#serve-a-website-on-tor-network-with-a-onion-url" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Serve a website on Tor network with an Onion URL
+        Serve a website on Tor network with a .onion URL
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Serve a website on Tor network with an Onion URL">
+    <nav class="md-nav" aria-label="Serve a website on Tor network with a .onion URL">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2902,7 +2902,7 @@
   <a href="#to-route-everything-running-in-a-shell-through-tor" class="md-nav__link">
     <span class="md-ellipsis">
       
-        To route everything running in a shell through tor
+        To route everything running in a shell through Tor
       
     </span>
   </a>
@@ -2910,15 +2910,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#serve-a-website-on-tor-network-with-an-onion-url" class="md-nav__link">
+  <a href="#serve-a-website-on-tor-network-with-a-onion-url" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Serve a website on Tor network with an Onion URL
+        Serve a website on Tor network with a .onion URL
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Serve a website on Tor network with an Onion URL">
+    <nav class="md-nav" aria-label="Serve a website on Tor network with a .onion URL">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3009,7 +3009,7 @@
       <a href="../.." class="md-path__link">
         
   <span class="md-ellipsis">
-    Home
+    Documentations by Rohit Farmer
   </span>
 
       </a>
@@ -3050,13 +3050,18 @@
 
 
 <h1 id="tor">Tor</h1>
-<h2 id="to-route-everything-running-in-a-shell-through-tor">To route everything running in a shell through tor</h2>
+<p>Tor (short for The Onion Router) is a privacy-focused network designed to let people access the internet without easily revealing who they are or where they are connecting from. Instead of sending traffic directly from your computer to a website, Tor routes it through multiple volunteer-run servers (called relays) around the world. Each relay only knows the step immediately before and after it, not the full path—hence the “onion” metaphor, with layers of encryption peeled away at each hop. This design makes it extremely difficult for any single observer, such as an ISP, network administrator, or local surveillance system, to link a user’s identity with the sites they visit. Tor also supports onion services (addresses ending in .onion), where both the user and the website remain hidden from each other while still communicating securely.</p>
+<p>The advantages of using Tor are strongest in areas of privacy, censorship resistance, and anonymity. For users, Tor helps protect against tracking, profiling, and location-based surveillance, and it enables access to information that may be blocked or filtered in certain regions. For website operators, onion services allow content to be published without exposing the server’s IP address, reducing the risk of targeted attacks and enabling access even when the public internet is restricted. Because Tor onion services provide built-in end-to-end encryption and authentication, they can offer secure communication without relying on traditional certificate authorities. Together, these properties make Tor a valuable tool for journalists, researchers, activists, and anyone who values privacy and open access to information on the internet.</p>
+<blockquote>
+<p><strong>Attention:</strong> The documentation presented under the Tor category is intended exclusively for educational, hobbyist, and research purposes. It represents personal notes and experiences and is not suitable as guidance for individuals in vulnerable or high-risk situations.</p>
+</blockquote>
+<h2 id="to-route-everything-running-in-a-shell-through-tor">To route everything running in a shell through Tor</h2>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>install<span class="w"> </span>tor
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>install<span class="w"> </span>torsocks
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">source</span><span class="w"> </span>torsocks<span class="w"> </span>on<span class="w"> </span><span class="c1">#everything in this particular shell will be routed through tor</span>
 </span></code></pre></div>
-<h2 id="serve-a-website-on-tor-network-with-an-onion-url">Serve a website on Tor network with an Onion URL</h2>
+<h2 id="serve-a-website-on-tor-network-with-a-onion-url">Serve a website on Tor network with a <code>.onion</code> URL</h2>
 <h3 id="install-tor">Install Tor</h3>
 <p>Debian/Ubuntu:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
@@ -3200,6 +3205,10 @@
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2018-2026 Rohit Farmer. Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+    </div>
   
   
     Made with

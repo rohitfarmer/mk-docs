@@ -1,10 +1,13 @@
 # Tor friendly websites
 Websites that can open in a tor browser with or without an onion address. 
 
+## My website with `.onion` address
+- [Rohit Farmer](http://7eufinpff72b7ziin4d46b5afh6a7la2mb4ievknde2tjrdjlukiyqyd.onion/)
+
 ## YouTube alternative
 - [Piped.video](http://piped2bbch4xslbl2ckr6k62q56kon56ffowxaqzy42ai22a4sash3ad.onion/trending)
 
-## News websites with tor address
+## News websites with `.onion` address
 - [BBC](https://www.bbcnewsd73hkzno2ini43t4gblxvycyac5aw4gnv7t2rccijh7745uqd.onion/)
 - [NYT](https://www.bbcnewsd73hkzno2ini43t4gblxvycyac5aw4gnv7t2rccijh7745uqd.onion/)
 - [NYT Wire](https://www.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion/timeswire)
