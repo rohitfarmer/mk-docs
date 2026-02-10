@@ -1,4 +1,4 @@
-# Documentations by Rohit Farmer
+# Home
 
 > I basically wrote the code and the specs and documentation for how the client and server talked to each other. - Tim Berners-Lee
 
