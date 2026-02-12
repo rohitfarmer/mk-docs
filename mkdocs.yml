@@ -122,4 +122,6 @@ nav:
   - Writing:
       - writing/capitalization-titles-headings.md
       - writing/lists.md
+  - WebRTC:
+      - webrtc/jitsi.md
   
