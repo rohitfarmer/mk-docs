@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Local BLAST
 
 ## Install local BALST in a Conda environment

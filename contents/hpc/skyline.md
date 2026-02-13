@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Skyline
 
 These are my quick notes and not the offical Skyline documentation. The commands below may or may not work for you. Please visit the official documentation website for any latest updates and instructions at [https://skyline.niaid.nih.gov/](https://skyline.niaid.nih.gov/).

@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Git and GitHub
 
 ## Configure your Git username/email

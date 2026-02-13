@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # File Compression
 
 ## Create TAR Archives

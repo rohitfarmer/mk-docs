@@ -70,7 +70,6 @@ nav:
       - editors/joplin.md
       - editors/nvimr-r-ide.md
   - HPC:
-      - hpc/locus.md
       - hpc/skyline.md
   - IRC:
       - irc/irc.md

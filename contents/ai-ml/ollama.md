@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Ollama with Open WebUI
 
 Ollama is an open-source platform designed to run large language models locally. It allows users to generate text, assist with coding, and create content privately and securely on their own devices. 

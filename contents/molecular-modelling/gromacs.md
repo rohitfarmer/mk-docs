@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Gromacs
 
 **Note:** The steps in this document were written for Gromacs 4. 

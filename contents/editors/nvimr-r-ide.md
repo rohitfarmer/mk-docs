@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # How to use Neovim or VIM Editor as an IDE for R
 Note: This tutorial is written for Linux based systems. 
 

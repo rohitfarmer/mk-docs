@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Docker Tutorial
 
 This tutorial will guide you through the basics of Docker, covering installation on both Mac and Linux, core concepts, and essential commands to get you building and running containers.

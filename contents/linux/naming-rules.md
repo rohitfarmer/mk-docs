@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Rules for Naming Files and Folders that are Cross Platform
 
 Use styles that are internationally recognized, easy to read by a human eye, and require fewer finger movements on the keyboard, for example, using lowercase letters that eliminate the shift key.

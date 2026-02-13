@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Matplotlib in Practice
 
 Matplotlib is Python’s **foundational plotting library**. Most other plotting libraries (seaborn, pandas plotting, etc.) are built on top of it.

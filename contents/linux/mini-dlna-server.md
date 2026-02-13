@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Setup MiniDLNA Server
 `sudo apt-get install minidlna`
 

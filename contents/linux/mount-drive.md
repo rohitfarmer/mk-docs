@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Mount External Drive
 
 To mount an external HDD **read/write** at `/mnt/gdrive10tb` on **Linux Mint** (works the same on Ubuntu/Debian).

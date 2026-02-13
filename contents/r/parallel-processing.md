@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Parallel Processing
 ## doMC
 ```r

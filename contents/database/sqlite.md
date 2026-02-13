@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # SQLite
 
 SQLite (often pronounced "sequel-light") is a lightweight, self-contained, serverless database engine widely used in applications that need a simple yet powerful way to store and query data. Unlike traditional client-server databases (e.g., PostgreSQL, MySQL), SQLite doesn’t require a separate database server process. Instead, it reads and writes directly to ordinary files on the filesystem.

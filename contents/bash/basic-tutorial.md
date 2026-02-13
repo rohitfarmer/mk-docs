@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # A Tutorial on Shell Scripting
 
 Below is a step-by-step tutorial on Bash shell scripting. It starts with basic concepts and gradually moves on to more advanced topics and best practices. By the end, you should have a solid understanding of how to create and run scripts in a Linux/Unix environment, and how to write shell scripts to automate tasks.

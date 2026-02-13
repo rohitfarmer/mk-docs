@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # NumPy in Practice
 
 ## Why NumPy exists (revisited, but concretely)

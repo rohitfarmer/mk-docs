@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Plots
 ## Colorblind-friendly palette
 ```{r}

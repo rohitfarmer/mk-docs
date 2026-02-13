@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Building a Singularity Container for Machine Learning, Data Science, & Chemistry
 
 ## Learning Objectives

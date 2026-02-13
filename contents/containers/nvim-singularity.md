@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Run Neovim/VIM & Jupyter inside a Singularity Container for R Programming
 
 **Video tutorial at: https://youtu.be/j63OKiLpUec**

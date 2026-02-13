@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Capitalization in Titles and Headings
 Published on December 22, 2015 by Sarah Vinz. Revised on June 20, 2022.
 https://www.scribbr.com/academic-writing/capitalization-titles-headings/

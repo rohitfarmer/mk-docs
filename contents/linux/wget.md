@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Downloading Stuff Using Wget
 
 ## Recursively download all webpages and associated files within a folder heirarchy

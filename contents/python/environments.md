@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Python Virtual Environments
 
 Create isolated python environment per project with all the packages needed for that particular project. Commands copied from [https://realpython.com/python-virtual-environments-a-primer/](https://realpython.com/python-virtual-environments-a-primer/).

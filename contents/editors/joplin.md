@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Joplin
 
 Joplin is an open-source note-taking app. It can be installed as a Desktop application on Windows, Mac, and Linux, or as a command-line Node application. Here I have instructions to install Joplin command line in a Docker container on a Linux machine that I can `SSH` to. 

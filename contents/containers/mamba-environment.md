@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Virtual Environments Using Conda and Mamba
 
 Mamba is a package manager similar to Conda, but it's much faster. I use it to install R and Python packages in a conda environments.

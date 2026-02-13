@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # xRDP
 
 Connect to a remote Linux server from a Windows machine using xRDP to get an interactive GUI. 

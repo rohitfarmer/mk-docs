@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # How to Access Websites on the Tor Network
 
 > Attention: The documentation presented under the Tor category is intended exclusively for educational, hobbyist, and research purposes. It represents personal notes and experiences and is not suitable as guidance for individuals in vulnerable or high-risk situations.

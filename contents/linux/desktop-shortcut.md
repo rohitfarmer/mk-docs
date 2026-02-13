@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Creating a Desktop Shortcut Manually
 
 You can reate a shortcut manually by creating a `.desktop` file. Here’s how:

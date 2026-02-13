@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Display Tables in HTML Reports
 
 ## Using kableExtra

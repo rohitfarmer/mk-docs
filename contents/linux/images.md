@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Image Manipulation in Linux and Mac
 
 ## Convert an image to WebP format

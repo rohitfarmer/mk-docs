@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Fetch Taxonomic Information from the NCBI Taxonomy Database
 There are more than one way to this in R with different packages. 
 

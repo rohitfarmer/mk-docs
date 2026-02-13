@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://docs.rohitfarmer.com/hpc/skyline/">
       
       
-        <link rel="prev" href="../locus/">
+        <link rel="prev" href="../../editors/nvimr-r-ide/">
       
       
         <link rel="next" href="../../irc/irc/">
@@ -990,34 +990,6 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../locus/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Locus
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -3178,7 +3150,7 @@
     
     
       <li class="md-path__item">
-        <a href="../locus/" class="md-path__link">
+        <a href="./" class="md-path__link">
           
   <span class="md-ellipsis">
     HPC
@@ -3241,10 +3213,68 @@
 
 
 
+  
+  
 
 
 
 
+
+
+  <h2 id="__comments">Comments</h2>
+  <!-- Insert generated snippet here -->
+   <script src="https://giscus.app/client.js"
+        data-repo="rohitfarmer/rohitfarmer-com-comments"
+        data-repo-id="R_kgDOQ-g51g"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOQ-g51s4C1P-D"
+        data-mapping="url"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 
                 
               </article>
@@ -3269,7 +3299,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../locus/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Locus">
+          <a href="../../editors/nvimr-r-ide/" class="md-footer__link md-footer__link--prev" aria-label="Previous: How to use Neovim or VIM Editor as an IDE for R">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -3279,7 +3309,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Locus
+                How to use Neovim or VIM Editor as an IDE for R
               </div>
             </div>
           </a>

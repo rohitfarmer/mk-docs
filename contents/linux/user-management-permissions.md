@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Permissions and User management
 
 ## Change group ownership

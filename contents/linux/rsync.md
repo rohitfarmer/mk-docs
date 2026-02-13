@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Syncing Stuff Using rsync
 
 ## Tutorials

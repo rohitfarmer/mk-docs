@@ -1,5 +1,10 @@
+---
+comments: true
+---
+
 # Lists: Bullets, Numbers, Capitalization, Punctuation
-https://editorsmanual.com/articles/lists/
+
+[https://editorsmanual.com/articles/lists/](https://editorsmanual.com/articles/lists/)
 
 ## Summary
 A list may be vertical or horizontal. A vertical list is often introduced by a complete sentence followed by a colon.

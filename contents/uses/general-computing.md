@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # General Computing Software and Tools that I use
 
 ## Android

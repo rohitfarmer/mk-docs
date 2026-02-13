@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Getting Back to Python
 
 This tutorial assumes you already learned Python once. You’re not starting from zero — you’re rebuilding fluency.

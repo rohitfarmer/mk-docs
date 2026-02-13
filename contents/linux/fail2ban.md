@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Fail2Ban
 
 ## Setup

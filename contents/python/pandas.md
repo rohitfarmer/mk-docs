@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Pandas in Practice 
 
 Pandas is the go-to Python library for **working with tabular data** (think spreadsheets, CSVs, SQL tables). If NumPy is “arrays,” pandas is “tables with labels,” plus a ton of tools for cleaning, reshaping, and summarizing data.

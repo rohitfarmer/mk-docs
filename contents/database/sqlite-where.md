@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # SQLite Conditional and Logical Operators
 
 In SQLite, **conditional operators** (sometimes also referred to as comparison operators or logical operators) are used in SQL statements to filter records or perform logical checks. Below is an overview of the most common conditional operators and expressions you will encounter in SQLite, along with brief explanations.

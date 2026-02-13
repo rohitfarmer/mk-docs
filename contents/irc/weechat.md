@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Commands to configure Weechat IRC client
 
 ## Access servers and channels

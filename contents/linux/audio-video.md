@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Audio Video Editing 
 
 ## To Remove EXIF Information from an Image
