@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Jitsi
 
 [Jitsi](https://jitsi.org/) is an open‑source suite of real‑time communication tools that enables secure, browser‑based audio‑video conferencing, screen sharing, and instant messaging. Built on the [WebRTC (Web Real‑Time Communications)](https://webrtc.org/) standard, Jitsi lets participants join a meeting directly from a web browser or mobile app without the need for plugins, downloads, or proprietary client software.
@@ -17,24 +21,47 @@ Because it is open source and runs on standard web technologies, Jitsi is widely
 
 A bigger list is available at [https://framatalk.org/abc/en/info](https://framatalk.org/abc/en/info).
 
-*Note: I am not sure which one of these are still operational.*
+> Note: I don't know which one of these is still operational. I also don't know how secure these servers are - I found them through a Google search. Use them at your own discretion. Also, I believe many of these servers are run by volunteers, so please don't abuse the system. Let it be a resource available for everyone.
 
+I have organized them by country of origin based on their domain names. 
+
+### .Net
 * [https://meet.greenhost.net](https://meet.greenhost.net/)
 * [https://talk.greenhost.net](https://talk.greenhost.net)
+* [https://freejitsi01.netcup.net/](https://freejitsi01.netcup.net/)
+* [https://jitsi.sixtopia.net/](https://jitsi.sixtopia.net/)
+* [https://meet.guifi.net/](https://meet.guifi.net/)
+
+### .Org
 * [https://calls.disroot.org](https://calls.disroot.org/)
+* [https://meet.systemli.org/](https://meet.systemli.org/)
 * [https://meet.mayfirst.org](https://meet.mayfirst.org)
 * [https://framatalk.org](https://framatalk.org)
 * [https://visio.colibris-outilslibres.org/](https://visio.colibris-outilslibres.org/)
+* [https://meet.waag.org/](https://meet.waag.org/)
+* [https://meet.no42.org/](https://meet.no42.org/)
+
+### Austria
+* [https://easyconference.uibk.ac.at/](https://easyconference.uibk.ac.at/)
+
+### France
+* [https://allo.bim.land/](https://allo.bim.land/)
 * [https://conf.underworld.fr/](https://conf.underworld.fr/)
 * [https://meet.roflcopter.fr/](https://meet.roflcopter.fr/)
-* [https://jitsi.is/](https://jitsi.is/)
-* [https://meet.waag.org/](https://meet.waag.org/)
-* [http://jitsi.random-redirect.de/](http://jitsi.random-redirect.de/)
+* [https://jitsi.hadoly.fr/](https://jitsi.hadoly.fr/)
+
+### Germany
+* [https://jitsi-01.csn.tu-chemnitz.de/](https://jitsi-01.csn.tu-chemnitz.de/)
+* [https://jitsi.dorf-post.de/](https://jitsi.dorf-post.de/)
 * [https://jitsi.fem.tu-ilmenau.de/](https://jitsi.fem.tu-ilmenau.de/)
-* [https://easyconference.uibk.ac.at/](https://easyconference.uibk.ac.at/)
+* [https://jitsi.freifunk-duesseldorf.de/](https://jitsi.freifunk-duesseldorf.de/)
+* [http://jitsi.random-redirect.de/](http://jitsi.random-redirect.de/)
 * [https://jitsi.rptu.de/](https://jitsi.rptu.de/)
 * [https://meet.linux-whv.de/](https://meet.linux-whv.de/)
 * [https://meet.in-berlin.de/](https://meet.in-berlin.de/)
-* [https://jitsi.freifunk-duesseldorf.de/](https://jitsi.freifunk-duesseldorf.de/)
+
+### Iceland
+* [https://jitsi.is/](https://jitsi.is/)
+
 
 
