@@ -10,5 +10,7 @@ Websites providing online services such as email, chat, social, etc.
 
 ## Multiple services
 * [Bienvenue sur l'Internet Montpellierain! (BIM)](https://bim.land/)
+* [CHATONS](https://www.chatons.org/en/)
 * [Disroot](https://disroot.org)
+* [Farmasoft](https://framasoft.org/en/)
 * [Systemli](https://www.systemli.org/en/)
