@@ -95,7 +95,8 @@ nav:
   - Molecular Modelling:
       - molecular-modelling/gromacs.md
   - Online Services:
-      - online-services/online-services.md
+      - online-services/multi-service-hosts.md
+      - online-services/jitsi.md
   - Python:
       - python/getting-back-to-python.md
       - python/numpy.md
@@ -121,8 +122,6 @@ nav:
       - uses/general-computing.md
   - Version Control:
       - vcs/git-github.md
-  - WebRTC:
-      - webrtc/jitsi.md
   - Writing:
       - writing/capitalization-titles-headings.md
       - writing/lists.md

@@ -2,13 +2,11 @@
 comments: true
 ---
 
-# Online Services
+# Multi Service Hosts
 
-Websites providing online services such as email, chat, social, etc.
+Websites providing multiple online services such as email, chat, social, etc.
 
 > Note: I don't know which one of these is still operational. I also don't know how secure these servers are - I found them through a Google search. Use them at your own discretion. Also, I believe some of these services are run by volunteers, so please don't abuse the system. Let it be a resource available for everyone.
-
-## Multiple services
 
 *Note: The date listed indicates when I discovered these services. On that day, most of the tools were operational.*
 
