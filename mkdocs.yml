@@ -28,9 +28,6 @@ theme:
         icon: material/toggle-switch
         name: Switch to light mode
     
-    #scheme: slate
-    #primary: orange
-    #accent: indigo
   features:
     - navigation.path
     - navigation.top
@@ -38,7 +35,23 @@ theme:
     - navigation.footer
     - content.code.copy
 
-copyright: © 2018-2026 Rohit Farmer. Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/mastodon 
+      link: https://fosstodon.org/@rohitfarmer
+    - icon: fontawesome/brands/bluesky
+      link: https://bsky.app/profile/rohitfarmer.com
+    - icon: fontawesome/brands/github
+      link: https://github.com/rohitfarmer
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/rohitfarmer
+    - icon: fontawesome/brands/reddit
+      link: https://www.reddit.com/user/rohitfarmer/
+
+copyright: 
+    © 2018-2026 Rohit Farmer. Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+    <div id="wcb" class="carbonbadge wcb-d"></div><script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
    
 markdown_extensions:
   - pymdownx.highlight:
