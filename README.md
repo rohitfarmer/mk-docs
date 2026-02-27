@@ -2,14 +2,22 @@
 
 [![](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)
 
-This repository contains both markdown files in the `content` directory to be compiled by MK Docs and the rendered website in the `docs` directory to be served by GitHub Pages.
-
 MkDocs: [https://www.mkdocs.org/](https://www.mkdocs.org/)  
 Theme used: [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
 
+## Contributions
+
+If you’d like to contribute to this repository/website, you can edit files in the `contents` directory and submit a pull request. I’ll review your changes and, if approved, rebuild the site.
+
+This repository intentionally uses a non-default structure for `Material for MkDocs`. Instead of storing Markdown files in `docs/` and the rendered site in `site/`, the source content lives in `contents/` and the compiled site is placed in `docs/` so it can be served directly by GitHub Pages. GitHub Pages looks for static files either in the repository `root` or in the `docs/` folder of the main branch, which is why this layout is used. I'm aware that GitHub Actions could automate builds and deploy from a separate branch, but I prefer to keep things simple and avoid the extra maintenance overhead.
+
+You’re also welcome to send suggestions or content by email at [rohit@rohitfarmer.com](mailto:rohit@rohitfarmer.com).
+
+**Please note:** while contributions are appreciated, this site primarily serves as a personal reference, so I aim to keep the setup straightforward and easy for me to maintain. I may decline proposals that significantly change the build system or hosting approach if they add complexity. Otherwise, feel free to explore and use the content under the CC BY 4.0 license.
+
 ## To Build the Site Locally
 
-To render the website using `mkdocs`, execute the `build-site.sh` shell script. It first runs `mkdocs` to build the website in the `docs` directory and then copies `.nojekyll` file to the `docs` folder. 
+To render the website using `mkdocs`, execute the `build-site.sh` shell script. It first runs `mkdocs` to build the website and then copies `.nojekyll` file to the `docs` folder. 
 
 ```bash
 bash build-site.sh
@@ -19,10 +27,6 @@ bash build-site.sh
 ```bash
 mkdocs serve
 ```
-
-## Contributions
-
-If you want to contribute to this repository/website, you can edit the content in the `contents` directory and send me a pull request to incorporate changes and recompile the website. You can also send me your suggestions or content by email at [rohit@rohitfarmer.com](mailto:rohit@rohitfarmer.com). Please note that although I welcome your contributions, I maintain this website as a quick go-to for my personal needs and therefore try to keep it as straightforward as possible for me to maintain. I may decline your request to modify the build system or the hosting platform, if it is not easy for me to maintain. Otherwise, please lurk around and use the content to your heart's desire under CC BY 4.0 license. 
 
 ## Changelog
 
