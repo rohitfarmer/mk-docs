@@ -26,6 +26,11 @@ comments: true
 # Title
 
 ```
+
+### Math Equations
+
+Math equations are rendered by `KaTex` JavaScript. Please see the format here [https://squidfunk.github.io/mkdocs-material/reference/math/#usage](https://squidfunk.github.io/mkdocs-material/reference/math/#usage).
+
 ## To Build the Site Locally
 
 To render the website using `mkdocs`, execute the `build-site.sh` shell script. It first runs `mkdocs` to build the website and then copies `.nojekyll` file to the `docs` folder. 
