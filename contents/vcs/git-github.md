@@ -179,7 +179,7 @@ git add path/to/submodule
 git commit -m "Convert submodule to regular directory"
 ```
 
-## Download All GitHub Repositories Using `gh` CLI
+## Clone All GitHub Repositories Using `gh` CLI
 
 ### Install GitHub CLI 
 
@@ -212,7 +212,9 @@ while read repo; do
 done
 ```
 
-### Pull all the Cloned Repositories
+## Pull all Cloned Repositories in a Folder
+
+Execute the shell script below to pull all the cloned repositories in a folder. 
 
 ```bash
 #!/usr/bin/env bash

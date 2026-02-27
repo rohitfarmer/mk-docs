@@ -2974,15 +2974,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#download-all-github-repositories-using-gh-cli" class="md-nav__link">
+  <a href="#clone-all-github-repositories-using-gh-cli" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Download All GitHub Repositories Using gh CLI
+        Clone All GitHub Repositories Using gh CLI
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Download All GitHub Repositories Using gh CLI">
+    <nav class="md-nav" aria-label="Clone All GitHub Repositories Using gh CLI">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3018,19 +3018,19 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#pull-all-the-cloned-repositories" class="md-nav__link">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pull-all-cloned-repositories-in-a-folder" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Pull all the Cloned Repositories
+        Pull all Cloned Repositories in a Folder
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -3415,15 +3415,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#download-all-github-repositories-using-gh-cli" class="md-nav__link">
+  <a href="#clone-all-github-repositories-using-gh-cli" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Download All GitHub Repositories Using gh CLI
+        Clone All GitHub Repositories Using gh CLI
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Download All GitHub Repositories Using gh CLI">
+    <nav class="md-nav" aria-label="Clone All GitHub Repositories Using gh CLI">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3459,19 +3459,19 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#pull-all-the-cloned-repositories" class="md-nav__link">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pull-all-cloned-repositories-in-a-folder" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Pull all the Cloned Repositories
+        Pull all Cloned Repositories in a Folder
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -3655,7 +3655,7 @@ To set your global username/email configuration:</p>
 </span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>git<span class="w"> </span>add<span class="w"> </span>path/to/submodule
 </span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Convert submodule to regular directory&quot;</span>
 </span></code></pre></div>
-<h2 id="download-all-github-repositories-using-gh-cli">Download All GitHub Repositories Using <code>gh</code> CLI</h2>
+<h2 id="clone-all-github-repositories-using-gh-cli">Clone All GitHub Repositories Using <code>gh</code> CLI</h2>
 <h3 id="install-github-cli">Install GitHub CLI</h3>
 <p>On Debian/Ubuntu:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>gh
@@ -3673,7 +3673,8 @@ To set your global username/email configuration:</p>
 </span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="w">    </span>git<span class="w"> </span>clone<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$repo</span><span class="s2">&quot;</span>
 </span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="k">done</span>
 </span></code></pre></div>
-<h3 id="pull-all-the-cloned-repositories">Pull all the Cloned Repositories</h3>
+<h2 id="pull-all-cloned-repositories-in-a-folder">Pull all Cloned Repositories in a Folder</h2>
+<p>Execute the shell script below to pull all the cloned repositories in a folder. </p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="ch">#!/usr/bin/env bash</span>
 </span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>
 </span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="nb">set</span><span class="w"> </span>-euo<span class="w"> </span>pipefail
