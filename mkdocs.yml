@@ -49,6 +49,14 @@ extra:
     - icon: fontawesome/brands/reddit
       link: https://www.reddit.com/user/rohitfarmer/
 
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
+
 copyright: 
     © 2018-2026 Rohit Farmer. Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
    
@@ -60,6 +68,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
 
 nav:
   - index.md
@@ -78,6 +88,8 @@ nav:
   - Database:
       - database/sqlite.md
       - database/sqlite-where.md
+  - Data Science:
+      - data-science/classification-performance-metrics.md
   - Editors:
       - editors/joplin.md
       - editors/nvimr-r-ide.md
@@ -124,6 +136,7 @@ nav:
       - r/parallel-processing.md
       - r/plots.md
       - r/table-html-display.md
+      - r/list-of-r-packages-data-science.md
   - Remote Access:
       - remote-access/jupyter-ssh-tunneling.md
       - remote-access/ssh-setup.md

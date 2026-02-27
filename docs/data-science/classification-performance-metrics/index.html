@@ -12,13 +12,13 @@
         <meta name="author" content="Rohit Farmer">
       
       
-        <link rel="canonical" href="https://docs.rohitfarmer.com/ai-ml/ollama/">
+        <link rel="canonical" href="https://docs.rohitfarmer.com/data-science/classification-performance-metrics/">
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../../database/sqlite-where/">
       
       
-        <link rel="next" href="../../bash/basic-tutorial/">
+        <link rel="next" href="../../editors/joplin/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>Ollama with Open WebUI - Documentations by Rohit Farmer</title>
+        <title>Classification Model Performance Metric - Documentations by Rohit Farmer</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ollama-with-open-webui" class="md-skip">
+        <a href="#classification-model-performance-metric" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Ollama with Open WebUI
+              Classification Model Performance Metric
             
           </span>
         </div>
@@ -288,20 +288,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -322,7 +320,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -337,37 +335,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Ollama with Open WebUI
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../ai-ml/ollama/" class="md-nav__link">
         
   
   
@@ -383,104 +354,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#install-ollama" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Install Ollama
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#run-a-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Run a Model
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#install-open-webui" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Install Open WebUI
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#models-to-use" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Models to Use
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Models to Use">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#gemma" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gemma
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Gemma">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#gemma-3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gemma 3
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -965,18 +838,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -997,7 +872,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1012,10 +887,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../data-science/classification-performance-metrics/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Classification Model Performance Metric
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1031,6 +933,216 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#precision-and-recall" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Precision and Recall
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Precision and Recall">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#precision-positive-predictive-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Precision (Positive Predictive Value)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Precision (Positive Predictive Value)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-r-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example R code
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recall-sensitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recall (Sensitivity)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recall (Sensitivity)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-r-code_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example R code
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relationship-between-precision-and-recall" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relationship Between Precision and Recall
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#balanced-accuracy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Balanced Accuracy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Balanced Accuracy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-r-code-to-calculate-balanced-accuracy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example R code to calculate balanced accuracy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f1-score" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F1 Score
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="F1 Score">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-r-code-to-calculate-f1-score" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example R code to calculate F1 score
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#matthews-correlation-coefficient" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Matthews Correlation Coefficient
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Matthews Correlation Coefficient">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-use-mcc-in-machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Use MCC in Machine Learning?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-in-machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage in Machine Learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-r-code-to-calculate-mcc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example R code to calculate MCC
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3088,67 +3200,34 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-ollama" class="md-nav__link">
+  <a href="#precision-and-recall" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Install Ollama
+        Precision and Recall
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#run-a-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Run a Model
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#install-open-webui" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Install Open WebUI
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#models-to-use" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Models to Use
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Models to Use">
+    <nav class="md-nav" aria-label="Precision and Recall">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#gemma" class="md-nav__link">
+  <a href="#precision-positive-predictive-value" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gemma
+        Precision (Positive Predictive Value)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Gemma">
+    <nav class="md-nav" aria-label="Precision (Positive Predictive Value)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#gemma-3" class="md-nav__link">
+  <a href="#example-r-code" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gemma 3
+        Example R code
       
     </span>
   </a>
@@ -3157,6 +3236,151 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recall-sensitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recall (Sensitivity)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recall (Sensitivity)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-r-code_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example R code
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relationship-between-precision-and-recall" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relationship Between Precision and Recall
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#balanced-accuracy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Balanced Accuracy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Balanced Accuracy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-r-code-to-calculate-balanced-accuracy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example R code to calculate balanced accuracy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f1-score" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F1 Score
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="F1 Score">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-r-code-to-calculate-f1-score" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example R code to calculate F1 score
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#matthews-correlation-coefficient" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Matthews Correlation Coefficient
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Matthews Correlation Coefficient">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-use-mcc-in-machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Use MCC in Machine Learning?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-in-machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage in Machine Learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-r-code-to-calculate-mcc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example R code to calculate MCC
+      
+    </span>
+  </a>
   
 </li>
         
@@ -3211,7 +3435,7 @@
         <a href="./" class="md-path__link">
           
   <span class="md-ellipsis">
-    AI-ML
+    Data Science
   </span>
 
         </a>
@@ -3233,34 +3457,136 @@
   
 
 
-<h1 id="ollama-with-open-webui">Ollama with Open WebUI</h1>
-<p>Ollama is an open-source platform designed to run large language models locally. It allows users to generate text, assist with coding, and create content privately and securely on their own devices. </p>
-<p>Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform designed to operate entirely offline. It supports various LLM runners like Ollama and OpenAI-compatible APIs, with built-in inference engine for RAG, making it a powerful AI deployment solution.</p>
+<h1 id="classification-model-performance-metric">Classification Model Performance Metric</h1>
+<h2 id="precision-and-recall">Precision and Recall</h2>
+<p>Precision and recall are two fundamental metrics used to evaluate the performance of classification models in machine learning, especially in scenarios where the distribution of classes is imbalanced or the cost of false positives and false negatives varies significantly. Understanding these metrics intuitively helps in assessing the trade-offs between identifying relevant instances and minimizing irrelevant or incorrect identifications.</p>
+<h3 id="precision-positive-predictive-value">Precision (Positive Predictive Value)</h3>
+<p><strong>Formal Definition:</strong> Precision is the ratio of true positives (relevant instances correctly identified) to the sum of true positives and false positives (irrelevant instances incorrectly identified as relevant). It answers the question, "Of all the instances the model identified as positive, how many are actually positive?"</p>
+<p>The formula for precision is:</p>
+<p>$$
+Precision=\frac{TP}{TP+FP}
+$$​</p>
+<p>Where:</p>
 <ul>
-<li><a href="https://ollama.com/">Ollama</a></li>
-<li><a href="https://github.com/ollama/ollama">Ollama GitHub</a></li>
-<li><a href="https://openwebui.com/">Open WebUI</a></li>
-<li><a href="https://github.com/open-webui/open-webui">Open WebUI GitHub</a></li>
+<li><span class="arithmatex">\(TP\)</span> is the number of true positives, i.e., the instances correctly identified as positive,</li>
+<li><span class="arithmatex">\(FP\)</span> is the number of false positives, i.e., the instances incorrectly identified as positive.</li>
 </ul>
-<h2 id="install-ollama">Install Ollama</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://ollama.com/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>sh
+<p>A high precision indicates that the model is reliable in its positive classifications, making it particularly important in scenarios where the cost of a false positive is high, such as in spam detection where legitimate emails mistakenly classified as spam (false positives) are undesirable.</p>
+<h4 id="example-r-code">Example R code</h4>
+<div class="language-R highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">library</span><span class="p">(</span><span class="n">yardstick</span><span class="p">)</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">prec</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">precision</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">truth</span><span class="p">,</span><span class="w"> </span><span class="n">estimate</span><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># data = a dataframe # truth = The column identifier for the true class results (that is a `factor`) # estimate = The column identifier for the predicted class results (that is also `factor`)</span>
 </span></code></pre></div>
-<h2 id="run-a-model">Run a Model</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ollama<span class="w"> </span>run<span class="w"> </span>gemma3
+<p><strong>Intuitive Explanation:</strong> Imagine you're fishing with a net that's designed to catch a specific type of fish. Precision measures how good your net is at catching only the type of fish you want. Every time you pull the net out of the water, you check how many of the caught fish are the type you're after. If you catch 100 fish and 90 of them are the type you wanted, your precision is 90%. The higher the precision, the better you are at catching only the fish you want, but you might be missing out on many others because you're focused on minimizing what you catch that you don't want.</p>
+<h3 id="recall-sensitivity">Recall (Sensitivity)</h3>
+<p><strong>Formal Definition:</strong> Recall is the ratio of true positives to the sum of true positives and false negatives (relevant instances incorrectly identified as irrelevant). It answers the question, "Of all the actual positive instances, how many did the model identify?"</p>
+<p>The formula for recall is:</p>
+<p>$$
+Recall=\frac{TP}{TP+FN}
+$$​</p>
+<p>Where:</p>
+<ul>
+<li><span class="arithmatex">\(FN\)</span> is the number of false negatives, i.e., the instances incorrectly identified as negative.</li>
+</ul>
+<p>A high recall indicates that the model is capable of identifying a large proportion of the positive instances, which is crucial in cases where missing a positive instance is costly, such as in disease screening where failing to identify a sick patient (a false negative) can have serious consequences.</p>
+<h4 id="example-r-code_1">Example R code</h4>
+<div class="language-R highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nf">library</span><span class="p">(</span><span class="n">yardstick</span><span class="p">)</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">prec</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">recall</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">truth</span><span class="p">,</span><span class="w"> </span><span class="n">estimate</span><span class="p">)</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># data = a dataframe # truth = The column identifier for the true class results (that is a `factor`) # estimate = The column identifier for the predicted class results (that is also `factor`)</span>
 </span></code></pre></div>
-<h2 id="install-open-webui">Install Open WebUI</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pip<span class="w"> </span>install<span class="w"> </span>open-webui
+<p><strong>Intuitive Explanation:</strong> Using the fishing analogy, recall measures how good your net is at catching all instances of the fish you're after in the entire lake. If there are 100 of your desired fish in the lake and your net catches 80 of them, your recall is 80%. A high recall means you're good at catching most of the fish you want, but you might also catch a lot of other fish you don't want (since you're not focusing on precision).</p>
+<h3 id="relationship-between-precision-and-recall">Relationship Between Precision and Recall</h3>
+<p>The relationship between precision and recall is often a trade-off. Improving precision typically reduces recall and vice versa. This trade-off is because as you become more stringent in your criteria to improve precision (catching only the fish you want), you might leave behind more of the fish you're interested in (reducing recall). Conversely, if you cast a wider net to catch more of your desired fish (improving recall), you're likely to catch more of what you don't want, reducing precision.</p>
+<p>In machine learning, this trade-off is navigated using various techniques, such as adjusting the threshold of a classifier, to find an optimal balance that suits the specific requirements of the application. The F1 score is one such metric used to find a balance, as it is the harmonic mean of precision and recall, encouraging models to balance the two metrics rather than optimizing one at the expense of the other.</p>
+<h2 id="balanced-accuracy">Balanced Accuracy</h2>
+<p>Balanced accuracy in machine learning is a metric used to evaluate the performance of classification models, particularly in situations where the classes are imbalanced. Imbalanced classes occur when the number of instances in each class is not roughly equal, leading to a scenario where a model might predict the majority class for all instances and still achieve high accuracy. This is misleading because the model's ability to correctly predict the minority class instances, which are often of greater interest, might be very poor.</p>
+<p>Balanced accuracy addresses this issue by calculating the average of recall obtained on each class. Recall, also known as sensitivity, measures the ability of the model to correctly identify all relevant instances for a given class. In the context of a binary classification problem, the formula for balanced accuracy can be expressed as:</p>
+<div class="arithmatex">\[
+Balanced Accuracy = \frac{1}{2}\lgroup\frac{TP}{TP + FN} + \frac{TN}{TN + FP}\rgroup
+\]</div>
+<p>Where:</p>
+<ul>
+<li><span class="arithmatex">\(TP\)</span> is the number of true positives (correctly predicted positive instances),</li>
+<li><span class="arithmatex">\(TN\)</span> is the number of true negatives (correctly predicted negative instances),</li>
+<li><span class="arithmatex">\(FP\)</span> is the number of false positives (incorrectly predicted as positive),</li>
+<li><span class="arithmatex">\(FN\)</span> is the number of false negatives (incorrectly predicted as negative).</li>
+</ul>
+<p>For multi-class classification problems, the balanced accuracy is generalized as the average of recall obtained on each class, which accounts for the performance of the model across all classes equally, irrespective of their size.</p>
+<p>Balanced accuracy is particularly useful because it provides a more fair evaluation of model performance across all classes, making it a valuable metric in fields like medical diagnosis, fraud detection, and any domain where the cost of false negatives is high or the class distribution is significantly skewed.</p>
+<h3 id="example-r-code-to-calculate-balanced-accuracy">Example R code to calculate balanced accuracy</h3>
+<div class="language-R highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nf">library</span><span class="p">(</span><span class="n">yardstick</span><span class="p">)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">ba</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">bal_accuracy</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">truth</span><span class="p">,</span><span class="w"> </span><span class="n">estimate</span><span class="p">)</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># data = a dataframe</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1"># truth = The column identifier for the true class results (that is a `factor`)</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c1"># estimate = The column identifier for the predicted class results (that is also `factor`)</span>
 </span></code></pre></div>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>open-webui<span class="w"> </span>serve<span class="w"> </span>--port<span class="w"> </span><span class="m">8090</span>
+<h2 id="f1-score">F1 Score</h2>
+<p>The F1 score in machine learning is a metric used to evaluate the performance of classification models, particularly in situations where the balance between precision and recall is important. It is especially useful in cases where the classes are imbalanced or when the cost of false positives and false negatives is high. The F1 score is the harmonic mean of precision and recall, providing a single measure that balances both concerns.</p>
+<p>Precision and recall are defined as follows:</p>
+<ul>
+<li><strong>Precision</strong> (also known as positive predictive value) measures the accuracy of the positive predictions made by the model, i.e., the proportion of positive identifications that were actually correct. It is defined as the number of true positives divided by the sum of true positives and false positives.</li>
+<li><strong>Recall</strong> (also known as sensitivity) measures the ability of the model to identify all relevant instances correctly, i.e., the proportion of actual positives that were identified correctly. It is defined as the number of true positives divided by the sum of true positives and false negatives.</li>
+</ul>
+<p>The formula for the F1 score is:</p>
+<div class="arithmatex">\[
+F1 = 2 \times \lgroup\frac{precision \times recall}{precision + recall}\rgroup
+\]</div>
+<p>This formula can also be expressed in terms of true positives (<span class="arithmatex">\(TP\)</span>), false positives (<span class="arithmatex">\(FP\)</span>), and false negatives (<span class="arithmatex">\(FN\)</span>) as:</p>
+<div class="arithmatex">\[
+F1 = 2 \times \lgroup\frac{TP}{2TP+FP+FN}\rgroup
+\]</div>
+<p>The F1 score ranges from 0 to 1, where 1 indicates perfect precision and recall, and 0 indicates the worst. An F1 score might be more informative than accuracy, especially in cases with an uneven class distribution. A high F1 score suggests that the classifier has a good balance between precision and recall and that it performs well across both positive and negative instances. It's particularly valuable when the costs of false positives and false negatives are critical to consider in the model evaluation.</p>
+<h3 id="example-r-code-to-calculate-f1-score">Example R code to calculate F1 score</h3>
+<div class="language-R highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nf">library</span><span class="p">(</span><span class="n">yardstick</span><span class="p">)</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">f1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">f_meas</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">truth</span><span class="p">,</span><span class="w"> </span><span class="n">estimate</span><span class="p">)</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># data = a dataframe</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1"># truth = The column identifier for the true class results (that is a `factor`)</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="c1"># estimate = The column identifier for the predicted class results (that is also `factor`)</span>
 </span></code></pre></div>
-<h2 id="models-to-use">Models to Use</h2>
-<h3 id="gemma">Gemma</h3>
-<p>Gemma is a series of open-source large language models developed by Google DeepMind. It is based on similar technologies as Gemini. </p>
-<p><a href="https://deepmind.google/models/gemma/">Gemma Website</a>
-<a href="https://github.com/google-gemini/gemma-cookbook">Gemma Cookbook</a></p>
-<h4 id="gemma-3">Gemma 3</h4>
-<p>The Gemma 3 models are multimodal—processing text and images—and feature a 128K context window with support for over 140 languages. Available in 270M, 1B, 4B, 12B, and 27B parameter sizes, they excel in tasks like question answering, summarization, and reasoning, while their compact design allows deployment on resource-limited devices.</p>
-<p><a href="https://ollama.com/library/gemma3">Gemma 3 in Ollama</a></p>
+<h2 id="matthews-correlation-coefficient">Matthews Correlation Coefficient</h2>
+<p>The Matthews Correlation Coefficient (MCC) is a metric used in machine learning to evaluate the quality of binary classifications. It provides a high-level overview of the performance of a classification model, taking into account true and false positives and negatives. Unlike simpler metrics like accuracy, the MCC is often regarded as a balanced measure that can be used even when the classes are of very different sizes.</p>
+<p>The MCC is essentially a correlation coefficient between the observed and predicted classifications; it returns a value between -1 and +1. A coefficient of +1 represents a perfect prediction, 0 indicates no better than random prediction, and -1 indicates total disagreement between prediction and observation. The formula for the MCC is:</p>
+<div class="arithmatex">\[
+MCC=\frac{(TP×TN)−(FP×FN)}{\sqrt{(TP+FP)×(TP+FN)×(TN+FP)×(TN+FN)}}
+\]</div>
+<p>Where:</p>
+<ul>
+<li><span class="arithmatex">\(TP\)</span> is the number of true positives,</li>
+<li><span class="arithmatex">\(TN\)</span> is the number of true negatives,</li>
+<li><span class="arithmatex">\(FP\)</span> is the number of false positives,</li>
+<li><span class="arithmatex">\(FN\)</span> is the number of false negatives.</li>
+</ul>
+<h3 id="why-use-mcc-in-machine-learning">Why Use MCC in Machine Learning?</h3>
+<ol>
+<li>
+<p><strong>Balanced Evaluation:</strong> The MCC takes into account all four values of the confusion matrix <span class="arithmatex">\((TP, TN, FP, FN)\)</span>, making it a balanced measure that is suitable for evaluating binary classification problems with imbalanced datasets. It does not get artificially high when the model simply predicts the majority class.</p>
+</li>
+<li>
+<p><strong>Interpretability:</strong> The value of the MCC directly corresponds to the quality of the classification. A score near +1 indicates a model that performs well across all categories, while a score near -1 indicates a model that is performing poorly. A score around 0 suggests a model that is no better than random chance, which is straightforward for interpretation.</p>
+</li>
+<li>
+<p><strong>Comprehensive:</strong> Unlike precision, recall, or F1 score, which may need to be considered together to get a full picture of a model's performance, the MCC provides a single metric that incorporates all aspects of the classification performance.</p>
+</li>
+</ol>
+<h3 id="usage-in-machine-learning">Usage in Machine Learning</h3>
+<ul>
+<li><strong>Model Evaluation:</strong> MCC is particularly useful when comparing models in binary classification tasks, especially in domains where the cost of different types of errors (false positives vs. false negatives) is significantly different, such as in medical diagnosis or fraud detection.</li>
+<li><strong>Feature Selection:</strong> It can help in selecting features by evaluating how changes in the feature set affect the overall classification performance in a balanced way.</li>
+<li><strong>Threshold Tuning:</strong> MCC can be used to find the optimal threshold for converting probabilistic predictions into binary classifications by maximizing the MCC score across different threshold values.</li>
+</ul>
+<p>Overall, the Matthews Correlation Coefficient is a powerful tool for evaluating binary classification models, providing insights into their performance that are not captured by more simplistic metrics.</p>
+<h3 id="example-r-code-to-calculate-mcc">Example R code to calculate MCC</h3>
+<div class="language-R highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nf">library</span><span class="p">(</span><span class="n">yardstick</span><span class="p">)</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">mcc_res</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">mcc</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">truth</span><span class="p">,</span><span class="w"> </span><span class="n">estimate</span><span class="p">)</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># data = a dataframe</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="c1"># truth = The column identifier for the true class results (that is a `factor`)</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c1"># estimate = The column identifier for the predicted class results (that is also `factor`)</span>
+</span></code></pre></div>
 
 
 
@@ -3268,68 +3594,10 @@
 
 
 
-  
-  
 
 
 
 
-
-
-  <h2 id="__comments">Comments</h2>
-  <!-- Insert generated snippet here -->
-   <script src="https://giscus.app/client.js"
-        data-repo="rohitfarmer/rohitfarmer-com-comments"
-        data-repo-id="R_kgDOQ-g51g"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOQ-g51s4C1P-D"
-        data-mapping="title"
-        data-strict="1"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-</script>
-
-  <!-- Synchronize Giscus theme with palette -->
-  <script>
-    var giscus = document.querySelector("script[src*=giscus]")
-
-    // Set palette on initial load
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object") {
-      var theme = palette.color.scheme === "slate"
-        ? "transparent_dark"
-        : "light"
-
-      // Instruct Giscus to set theme
-      giscus.setAttribute("data-theme", theme) 
-    }
-
-    // Register event handlers after documented loaded
-    document.addEventListener("DOMContentLoaded", function() {
-      var ref = document.querySelector("[data-md-component=palette]")
-      ref.addEventListener("change", function() {
-        var palette = __md_get("__palette")
-        if (palette && typeof palette.color === "object") {
-          var theme = palette.color.scheme === "slate"
-            ? "transparent_dark"
-            : "light"
-
-          // Instruct Giscus to change theme
-          var frame = document.querySelector(".giscus-frame")
-          frame.contentWindow.postMessage(
-            { giscus: { setConfig: { theme } } },
-            "https://giscus.app"
-          )
-        }
-      })
-    })
-  </script>
 
                 
               </article>
@@ -3354,7 +3622,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+          <a href="../../database/sqlite-where/" class="md-footer__link md-footer__link--prev" aria-label="Previous: SQLite Conditional and Logical Operators">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -3364,20 +3632,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Home
+                SQLite Conditional and Logical Operators
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../bash/basic-tutorial/" class="md-footer__link md-footer__link--next" aria-label="Next: A Tutorial on Shell Scripting">
+          <a href="../../editors/joplin/" class="md-footer__link md-footer__link--next" aria-label="Next: Joplin">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                A Tutorial on Shell Scripting
+                Joplin
               </div>
             </div>
             <div class="md-footer__button md-icon">

@@ -1,0 +1,4312 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Rohit Farmer's cookbook-style documentation website on frequently used software and code snippets.">
+      
+      
+        <meta name="author" content="Rohit Farmer">
+      
+      
+        <link rel="canonical" href="https://docs.rohitfarmer.com/r/list-of-r-packages-data-science/">
+      
+      
+        <link rel="prev" href="../table-html-display/">
+      
+      
+        <link rel="next" href="../../remote-access/jupyter-ssh-tunneling/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>A Comprehensive List of R Packages for Data Science - Documentations by Rohit Farmer</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#a-comprehensive-list-of-r-packages-for-data-science" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Documentations by Rohit Farmer" class="md-header__button md-logo" aria-label="Documentations by Rohit Farmer" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentations by Rohit Farmer
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              A Comprehensive List of R Packages for Data Science
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/rohitfarmer/mk-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Documentations by Rohit Farmer" class="md-nav__button md-logo" aria-label="Documentations by Rohit Farmer" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Documentations by Rohit Farmer
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/rohitfarmer/mk-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI-ML
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AI-ML
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-ml/ollama/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ollama with Open WebUI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BASH
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    BASH
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bash/basic-tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A Tutorial on Shell Scripting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bioinformatics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bioinformatics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bioinformatics/blast/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Local BLAST
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bioinformatics/taxonomy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fetch Taxonomic Information from the NCBI Taxonomy Database
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Containers & Virtual Environments
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Containers & Virtual Environments
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../containers/docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker Tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../containers/mamba-environment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Virtual Environments Using Conda and Mamba
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../containers/nvim-singularity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Run Neovim/VIM &amp; Jupyter inside a Singularity Container for R Programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../containers/build-singularity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Building a Singularity Container for Machine Learning, Data Science, &amp; Chemistry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Database
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Database
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../database/sqlite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SQLite
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../database/sqlite-where/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SQLite Conditional and Logical Operators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-science/classification-performance-metrics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Classification Model Performance Metric
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Editors
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Editors
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../editors/joplin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Joplin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../editors/nvimr-r-ide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How to use Neovim or VIM Editor as an IDE for R
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HPC
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    HPC
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hpc/skyline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Skyline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IRC
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    IRC
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../irc/irc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Internet Relay Chat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../irc/weechat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commands to configure Weechat IRC client
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Linux
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/audio-video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Video Editing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/desktop-shortcut/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Creating a Desktop Shortcut Manually
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/fail2ban/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fail2Ban
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/file-compression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    File Compression
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/find-files/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Find Files and Folders
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/images/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Image Manipulation in Linux and Mac
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/mini-dlna-server/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setup MiniDLNA Server
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/mount-drive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mount External Drive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/naming-rules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rules for Naming Files and Folders that are Cross Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/nginx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NGINX Web Server
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/package-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Package Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/rsync/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Syncing Stuff Using rsync
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/screen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Screen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/system-monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux System Monitoring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/user-management-permissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Permissions and User management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/wget/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Downloading Stuff Using Wget
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/xrdp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    xRDP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Molecular Modelling
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Molecular Modelling
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../molecular-modelling/gromacs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gromacs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Online Services
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Online Services
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../online-services/multi-service-hosts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multi Service Hosts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../online-services/jitsi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jitsi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/getting-back-to-python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Back to Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/numpy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NumPy in Practice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/pandas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pandas in Practice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/matplotlib/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matplotlib in Practice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/environments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Virtual Environments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/web-server/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Start a Web Server To Serve Local Pages
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    R
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_15">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    R
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-manipulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Frame Manipulation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../files-folders/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Files and Folders
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../machine-learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Machine Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../non-dataframe-manipulations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Non Data Frame Related Manipulations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../parallel-processing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parallel Processing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../table-html-display/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Display Tables in HTML Reports
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A Comprehensive List of R Packages for Data Science
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A Comprehensive List of R Packages for Data Science
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-wrangling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Wrangling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#natural-language-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Natural Language Processing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#statistical-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Statistical Learning
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#casual-inference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Casual Inference
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#meta-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Meta Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hypothesis-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hypothesis Testing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Power Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#factorsurvey-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Factor/Survey Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time-series-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Time Series Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#survival-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Survival Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#robust-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Robust Statistics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anomaly-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anomaly Detection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feature-engineeringselection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Engineering/Selection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distance-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distance Metrics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dimension-reduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dimension Reduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unsupervised-learning-clustering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unsupervised Learning / Clustering
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#semi-supervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semi-Supervised Learning
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supervised-learning-general-machine-learning-deep-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supervised Learning (General Machine Learning) / Deep Learning
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-imbalance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Class Imbalance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Graph Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optimization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imputations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imputations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simulations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bioinformatics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bioinformatics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datasets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DataSets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#developer-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Developer Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard-interactive-viz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dashboard / Interactive Viz
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parallel-computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parallel Computing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#io" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilityweb-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utility/Web Service
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Remote Access
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Remote Access
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../remote-access/jupyter-ssh-tunneling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jupyter Over Tunneling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../remote-access/ssh-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SSH Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_17" >
+        
+          
+          <label class="md-nav__link" for="__nav_17" id="__nav_17_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tor
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_17_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_17">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tor
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tor/tor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tor/how-to-access-websites-on-the-tor-network/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How to Access Websites on the Tor Network
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_18" >
+        
+          
+          <label class="md-nav__link" for="__nav_18" id="__nav_18_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uses
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_18_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_18">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Uses
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uses/general-computing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General Computing Software and Tools that I use
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_19" >
+        
+          
+          <label class="md-nav__link" for="__nav_19" id="__nav_19_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Version Control
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_19_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_19">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Version Control
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vcs/git-github/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git and GitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_20" >
+        
+          
+          <label class="md-nav__link" for="__nav_20" id="__nav_20_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Writing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_20_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_20">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Writing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../writing/capitalization-titles-headings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitalization in Titles and Headings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../writing/lists/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lists: Bullets, Numbers, Capitalization, Punctuation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-wrangling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Wrangling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#natural-language-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Natural Language Processing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#statistical-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Statistical Learning
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#casual-inference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Casual Inference
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#meta-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Meta Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hypothesis-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hypothesis Testing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Power Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#factorsurvey-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Factor/Survey Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time-series-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Time Series Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#survival-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Survival Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#robust-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Robust Statistics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anomaly-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anomaly Detection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feature-engineeringselection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Engineering/Selection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distance-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distance Metrics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dimension-reduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dimension Reduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unsupervised-learning-clustering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unsupervised Learning / Clustering
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#semi-supervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semi-Supervised Learning
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supervised-learning-general-machine-learning-deep-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supervised Learning (General Machine Learning) / Deep Learning
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-imbalance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Class Imbalance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Graph Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optimization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imputations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imputations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simulations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bioinformatics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bioinformatics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datasets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DataSets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#developer-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Developer Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard-interactive-viz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dashboard / Interactive Viz
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parallel-computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parallel Computing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#io" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilityweb-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utility/Web Service
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../data-manipulation/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    R
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="a-comprehensive-list-of-r-packages-for-data-science">A Comprehensive List of R Packages for Data Science</h1>
+<h2 id="data-wrangling">Data Wrangling</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/tidyverse/index.html"><strong>tidyverse</strong></a>: I believe this should be bundled with R now. Actually if you are not using it for data wrangling you are probably doing something wrong (or you are super old school). It comes with a bundle of rich tools such as dplyr (transform, filter, aggregate), tidyr (long / wide table conversion), <a href="https://cran.r-project.org/web/packages/purrr/index.html">purrr</a> (functional programming package), tibble (supercharged dataframes), etc.</li>
+<li><a href="https://cran.r-project.org/web/packages/janitor/index.html"><strong>janitor</strong></a>: a great tool for data cleaning, works nicely with tidyverse.</li>
+<li><a href="https://cran.r-project.org/web/packages/seplyr/index.html"><strong>seplyr</strong></a>: a handy companion package for dplyr, adding some shortcuts such as group summary functions. You may always implement yourselves but here’s lazy person’s choice.</li>
+<li><strong>datastructures</strong>: what’s missing in R is out-of-box data structures like hashset and hashmap. Rest assured, there’s always a package for it.</li>
+</ul>
+<h2 id="visualization">Visualization</h2>
+<ul>
+<li><a href="https://ggplot2.tidyverse.org/"><strong>ggplot2</strong></a>: The plotting package you should be using, period. Python has a <a href="https://github.com/has2k1/plotnine">plotnine</a> binding as well. Sometimes you may question yourself why you need 10 lines of code to generate a line plot whereas you may just open the file in excel and make one, other times you will feel grateful that you can compose anything without banging your head to the screen. The learning curve is definitely steep if you are new, but well worth the investment.</li>
+<li><a href="https://cran.r-project.org/web/packages/DataExplorer/index.html"><strong>DataExplorer</strong></a>: An easy to use package to generate ggplot-verse plots of data diagnostics, such as missing data / feature, etc. I use some shortcut functions for quick data validations.</li>
+<li><a href="https://cran.r-project.org/web/packages/ggrepel/index.html"><strong>ggrepel</strong></a>: This is a drop-in replacement for geom_text, if you have a massive number of labels and don’t want all the texts to overlap. It may take a long time to run for large datasets but the results will be much more visually pleasant.</li>
+<li><a href="https://cran.r-project.org/web/packages/ggfortify/index.html"><strong>ggfortify</strong></a>: Diagnostics / visualization plots for various statistical models.</li>
+<li><a href="https://cran.r-project.org/web/packages/sjPlot/index.html"><strong>sjPlot</strong></a>: Comes with a slew of neat diagnostic plots for statistical modeling. I especially like it’s built on ggplot so you can easily to tweak the look and feel to be consistent with other ggplot-verse plots. <a href="https://cran.r-project.org/web/packages/jtools/index.html">jtools</a> / <a href="https://cran.r-project.org/web/packages/interplot/index.html">interplot</a> contains some nice functions to plot interaction effects. <a href="https://cran.r-project.org/web/packages/ggdistribute/index.html">ggdistribute</a> contains functions to plot posterior distributions.</li>
+<li><a href="https://cran.r-project.org/web/packages/coefplot/index.html"><strong>coefplot</strong></a>: Automatically plot model coefficients with confidence intervals.</li>
+<li><a href="https://cran.r-project.org/web/packages/dotwhisker/vignettes/dotwhisker-vignette.html"><strong>dotwhisker</strong></a>: Yet another awesome coefficient plot package with ggplot2.</li>
+<li><a href="https://cran.r-project.org/web/packages/gghighlight/index.html"><strong>gghighlight</strong></a>: Very useful if you have multiple time series and would like to highlight a few while keeping the rest in the background.</li>
+<li><a href="https://cran.r-project.org/web/packages/lvplot/index.html"><strong>lvplot</strong></a>: An improved plot which works similar to boxplot but better at outliers and large datasets.</li>
+<li><a href="https://cran.r-project.org/web/packages/stargazer/index.html"><strong>stargazer</strong></a>: Generates html / latex tables from data frames which can be inserted into manuscripts. I use this to generate tables for Google docs whenever I want the table style to be more <em>classic</em>. Otherwise I go with sjPlot. There’s also <a href="https://gt.rstudio.com/"><strong>gt</strong></a><strong>.</strong></li>
+<li><a href="https://cran.r-project.org/web/packages/ggthemes/index.html"><strong>ggthemes</strong></a>, <a href="https://cran.r-project.org/web/packages/ggsci/vignettes/ggsci.html"><strong>ggsci</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/ggpubr/index.html"><strong>ggpubr</strong></a><strong>,</strong> <a href="https://github.com/hrbrmstr/ggalt"><strong>ggalt</strong></a><strong>,</strong> <a href="https://github.com/hrbrmstr/hrbrthemes"><strong>hrbrthemes</strong></a>: publication ready themes and color templates for various journals. You may even get <a href="https://cran.r-project.org/web/packages/xkcd/index.html">xkcd</a> styled plots. <a href="https://cran.r-project.org/web/packages/extrafont/index.html"><strong>extrafont</strong></a> allows you to use custom fonts in plots.</li>
+<li><a href="https://cran.r-project.org/web/packages/waffle/index.html"><strong>waffle</strong></a>: Infographics is not the always best option for data presentation but may be helpful for less data / tech savvy audience. Here’s <a href="https://www.r-bloggers.com/infographic-style-charts-using-the-r-waffle-package/">a blog post</a> with some examples.</li>
+<li><a href="https://cran.r-project.org/web/packages/corrplot/vignettes/corrplot-intro.html"><strong>corrplot</strong></a>: One-stop-shop for plotting various correlations in various representations.</li>
+<li><a href="https://cran.r-project.org/web/packages/alluvial/index.html"><strong>alluvial</strong></a>, <a href="https://cran.r-project.org/web/packages/ggalluvial/index.html"><strong>ggalluvial</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/riverplot/index.html"><strong>riverplot</strong></a>: ggplot packages to generate Sankey flowcharts. They are sometimes useful for visualizing complex flows, assuming your flow won’t be intertwined like noodles.</li>
+<li><a href="https://cran.r-project.org/web/packages/pheatmap/index.html"><strong>pheatmap</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/ggdendro/index.html"><strong>ggdendro</strong></a><strong>:</strong> Package to plot heatmaps.</li>
+<li><a href="https://cran.r-project.org/web/packages/lattice/index.html"><strong>lattice</strong></a>, <a href="https://cran.r-project.org/web/packages/plotrix/index.html"><strong>plotrix</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/gplots/index.html"><strong>gplots</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/plotly/index.html"><strong>plotly</strong></a>: Various plotting functions not in the ggplot universe.</li>
+<li><a href="https://cran.r-project.org/web/packages/ggmap/index.html"><strong>ggmap</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/mapview/index.html"><strong>mapview</strong></a>, <a href="https://cran.r-project.org/web/packages/leaflet/index.html"><strong>leaflet</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/sp/index.html"><strong>sp</strong></a>: Packages to generate geo-spatial visualizations functions.</li>
+<li><a href="https://github.com/thomasp85/patchwork"><strong>patchwork</strong></a>, <a href="https://cran.r-project.org/web/packages/gridExtra/index.html"><strong>gridExtra</strong></a>: These packages work well for stitching multiple ggplots together. I personally prefer patchwork since the syntax is more natural and gg-ish.</li>
+<li><a href="https://cran.r-project.org/web/packages/classifierplots/classifierplots.pdf"><strong>classifierplots</strong></a>: Contains various neat diagnostics plots for classifiers.</li>
+<li><a href="https://github.com/IndrajeetPatil/ggstatsplot"><strong>ggstatsplot</strong></a>: A new package for automatic statistical plots.</li>
+<li><a href="https://github.com/alastairrushworth/inspectdf"><strong>inspectdf</strong></a>: A very nice function to explore categorical variables.</li>
+<li><a href="https://cran.r-project.org/web/packages/effects/index.html"><strong>effects</strong></a>: A really nice package to illustrate model effects.</li>
+<li><a href="https://cran.r-project.org/web/packages/radarBoxplot/index.html"><strong>radarBoxplot</strong></a><strong>:</strong> This plot library generates Radar typed plot (similar to those in-game statistics, and can be useful to compare multi-variate data)</li>
+<li><a href="https://cran.r-project.org/web/packages/prettyB/index.html"><strong>prettyB</strong></a>: Prettier base plotting packages, drop-in replacement</li>
+<li><a href="https://cran.r-project.org/web/packages/ggPMX/index.html"><strong>ggPMX</strong></a>: ‘ggplot’ based tools to Facilitate Diagnostic Plots for NLME Models</li>
+<li><a href="https://github.com/hrbrmstr/ggchicklet"><strong>ggchicklet</strong></a>: Interesting and useful package for horizontal stacked bars</li>
+<li><a href="https://cran.r-project.org/web/packages/ggpointdensity/index.html"><strong>ggpointdensity</strong></a>: density plot + scatter plot</li>
+<li><a href="https://github.com/WinVector/WVPlots"><strong>WVPlots</strong></a>: Some commonly used ggplots</li>
+</ul>
+<h2 id="natural-language-processing">Natural Language Processing</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/formattable/index.html"><strong>formattable</strong></a>: Package to provide a nice suite of functions to facilitate formatting such as numbers, percentages, etc.</li>
+<li><a href="https://cran.r-project.org/web/packages/scales/index.html"><strong>scales</strong></a>: A new R package to to aid/prettify ggplot scales, which can be quite annoying and tedious to tweak. I rely this lib to generate log scale ticks (<a href="http://www.sthda.com/english/wiki/ggplot2-axis-scales-and-transformations">example link</a>).</li>
+<li><a href="https://cran.r-project.org/web/packages/stringr/vignettes/stringr.html"><strong>stringr</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/stringi/index.html"><strong>stringi</strong></a>: A nice suite of string manipulation functions. String processing in R is generally not pleasant, and these are good to rescue.</li>
+<li><a href="https://cran.r-project.org/web/packages/RKEA/index.html"><strong>RKEA</strong></a>: An R interface for KEA (Key Phrase Extraction), this is a good partner lib for other more comprehensive NLP packages such as topicmodels.</li>
+<li><a href="https://github.com/ufal/udpipe"><strong>udpipe</strong></a>: Trainable tokenization pipelines.</li>
+<li><a href="https://cran.r-project.org/web/packages/stringdist/index.html"><strong>stringdist</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/fuzzywuzzyR/index.html"><strong>fuzzywuzzyR</strong></a>: Fuzzy/ approximate string matching and string distance functions.</li>
+<li><a href="https://github.com/dgrtwo/fuzzyjoin"><strong>fuzzyjoin</strong></a><strong>: A</strong>n interesting concept — this is an extension to the dply join methods to add fuzzy joins functions for tables. Can be handy but use with caution since the behavior may not be predictable.</li>
+<li><a href="https://cran.r-project.org/web/packages/topicmodels/index.html"><strong>topicmodels</strong></a>: A performant topic modeling package.</li>
+<li><a href="https://cran.r-project.org/web/packages/formatR/index.html"><strong>formatR</strong></a>: Can be used to batch format multiple R source codes if you are not using an IDE with built in auto-format function.</li>
+<li><a href="https://github.com/jimhester/lintr"><strong>lintr</strong></a><strong>:</strong> Code linting for R sources.</li>
+<li><a href="https://cran.r-project.org/web/packages/SentimentAnalysis/index.html"><strong>SentimentAnalysis</strong></a>: This is a similar package to python’s Vader, if you’d like to have a quick sentiment analysis with multiple methods.</li>
+</ul>
+<h2 id="statistical-learning">Statistical Learning</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/modelr/index.html"><strong>modelr</strong></a>: A streamlined modeling interface to normalize several commonly used modeling frameworks.</li>
+<li><a href="https://cran.r-project.org/web/packages/broom/index.html"><strong>broom</strong></a>: Very handy package to convert modeling objects into more consumable data frames for batch reporting, persistence or visualization.</li>
+<li><a href="https://cran.r-project.org/web/packages/fmsb/index.html"><strong>fmsb</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/Mcomp/index.html"><strong>Mcomp</strong></a>: This is the companion package to a book <em>Practices of Medical and Health Data Analysis using R</em>. The book is about 10 years old but some data are useful for trying out various statistical / ML methods. Mcomp contains some time series data to play with.</li>
+<li><a href="https://cran.r-project.org/web/packages/Hmisc/index.html"><strong>Hmisc</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/rcompanion/index.html"><strong>rcompanion</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/e1071/index.html"><strong>e1071</strong></a><strong>:</strong> Excellent utility packages for various statistical analysis, such as sample size / power calculation, computing pseudo R², various statistical tests, etc.</li>
+<li><a href="https://cran.r-project.org/web/packages/vegan/index.html"><strong>vegan</strong></a>: Statistical methods for ecologists.</li>
+<li><a href="https://cran.r-project.org/web/packages/fit.models/index.html"><strong>fit.models</strong></a>: This package is similar to <em>caret</em> in such a way that it standardizes the interface for various parametric / nonparametric model fitting and comparisons.</li>
+<li><a href="https://arxiv.org/abs/1801.09661"><strong>oem</strong></a>: Apackage developed to specifically tackle big tall data (small p, very large N, an example is the <a href="https://www.kaggle.com/c/talkingdata-adtracking-fraud-detection">kaggle Talking Data</a>) regression problems.</li>
+<li><a href="https://cran.r-project.org/web/packages/BeSS/BeSS.pdf"><strong>BeSS</strong></a>: Abest subset selection algorithm, can be used along with the standard AIC / BIC based model selection procedures.</li>
+<li><a href="https://cran.r-project.org/web/packages/quantreg/index.html"><strong>quantreg</strong></a>: Package w/ quantile regression functions.</li>
+<li><a href="https://cran.r-project.org/web/packages/lavaan/index.html"><strong>lavaan</strong></a><strong>:</strong> Latent variable analysis and structural equation modeling [<a href="http://lavaan.ugent.be/">link</a>].</li>
+<li><a href="https://cran.r-project.org/web/packages/lme4/index.html"><strong>lme4</strong></a>: This package is great for fitting linear and generalized mixed-effects models.</li>
+<li><a href="https://cran.r-project.org/web/packages/uplift/index.html"><strong>uplift</strong></a>: Uplift modeling to optimize for the ROI of a particular treatment, but identifying the best subset of targets [<a href="https://en.wikipedia.org/wiki/Uplift_modelling">link</a>].</li>
+<li><a href="https://cran.r-project.org/web/packages/arm/index.html"><strong>arm</strong></a>: Companion to the book <em>Data Analysis Using Regression and Multilevel/Hierarchical Models.</em> Contains handy methods for hierarchical modeling.</li>
+<li><a href="https://cran.r-project.org/web/packages/smooth/index.html"><strong>smooth</strong></a>: Curve smoothing and time series forecasting.</li>
+<li><a href="https://cran.r-project.org/web/packages/extRemes/index.html"><strong>extRemes</strong></a>: Package for extreme / long tail value statistics, <a href="https://cran.r-project.org/web/packages/lax/index.html"><strong>lax</strong></a>: Loglikelihood Adjustment for Extreme Value Models</li>
+<li><a href="https://cran.r-project.org/web/packages/MixtureInf/index.html"><strong>MixtureInf</strong></a>: Maximum Likelihood Estimate (MLE) methods.</li>
+<li><a href="https://cran.r-project.org/web/packages/SGB/index.html"><strong>SGB</strong></a>: Simplicial Generalized Beta Regression</li>
+<li><a href="https://cran.r-project.org/web/packages/PLNmodels/index.html"><strong>PLNModels</strong></a><strong>:</strong> Poisson Lognoarmal Models</li>
+<li><a href="https://cran.r-project.org/web/packages/multinomineq/index.html"><strong>multinomineq</strong></a>: Bayesian Inference for Multinomial Models with Inequality Constraints</li>
+<li><a href="https://cran.r-project.org/web/packages/rms/index.html"><strong>rms</strong></a>: This is a companion package to Regression Modeling Strategies book, and offers a slew of methods for regression analysis.</li>
+<li><a href="https://cran.r-project.org/web/packages/emmeans/index.html"><strong>emmeans</strong></a>: The least square marginal means.</li>
+<li><a href="https://cran.r-project.org/web/packages/cotram/index.html"><strong>cotram</strong></a>: Count transormation models</li>
+<li><a href="https://github.com/easystats"><strong>easystats</strong></a>: Libraries make it easy to run statistical analysis</li>
+<li><a href="https://github.com/easystats/parameters"><strong>parameters</strong></a>: package that makes it super easy to extract parameters</li>
+</ul>
+<h2 id="casual-inference">Casual Inference</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/MatchIt/index.html"><strong>MatchIt</strong></a>: A great package for propensity scoring matching. It has some quirks and data extraction from results may not be very intuitive.</li>
+<li><a href="https://google.github.io/CausalImpact/"><strong>CausalImpact</strong></a>: Google’s package for quick estimation, usually this is my first attempt to analyze any causal inference analysis.</li>
+<li><a href="https://cran.r-project.org/web/packages/causaleffect/index.html"><strong>causaleffect</strong></a>: Casual inferences. I haven’t checked this package in detail and it looks very promising.</li>
+<li><a href="https://cran.r-project.org/web/packages/CompareCausalNetworks/index.html"><strong>CompareCausalNetworks</strong></a><strong>: T</strong>his is the <em>caret</em> for causal networks, a unified interface to tap into many causal network frameworks.</li>
+<li><a href="https://cran.r-project.org/web/packages/rdd/index.html"><strong>rdd</strong></a>: This package contains everything you need for <a href="https://en.wikipedia.org/wiki/Regression_discontinuity_design">regression discontinuity analysis</a>.</li>
+<li><a href="https://cran.r-project.org/web/packages/mediation/index.html"><strong>mediation</strong></a>: Apackage developed for <a href="https://www.mailman.columbia.edu/research/population-health-methods/causal-mediation">causal mediation analysis</a>. Uber has an excellent blog on such analysis [<a href="https://eng.uber.com/mediation-modeling/">link</a>]. This frame work can estimate the average treatment effect w &amp; w/o the presence of a proposed mediator.</li>
+</ul>
+<h2 id="meta-analysis">Meta Analysis</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/meta/index.html"><strong>meta</strong></a>, <a href="https://cran.r-project.org/web/packages/metafor/index.html"><strong>metafor</strong></a>: Starting packages for basic meta analysis, such as fitting fixed / random effect models for binary / continuous outcomes.</li>
+<li><a href="https://cran.r-project.org/web/packages/forestmodel/index.html"><strong>forestmodel</strong></a><strong>,</strong> <a href="https://cran.rstudio.com/web/packages/metaviz/index.html"><strong>metaviz</strong></a>: The built-in forest plotting functions for meta/metafor were not upgraded to ggplot universe yet. These packages do the facelifting and the resultant plots can be updated with ggplot functions such as changing captions, stitching with other plots, etc. I wrote a even better forest plot functions which I will share in another blog post.</li>
+<li><a href="https://cran.r-project.org/web/packages/vcov/index.html"><strong>vcov</strong></a>: Faster methods to extract variance — covariance matrices. This can be used in many contexts but can be handy for multvariate meta analysis.</li>
+<li><a href="https://cran.r-project.org/web/packages/bayesmeta/index.html"><strong>bayesmeta</strong></a>, <a href="https://cran.r-project.org/web/packages/CPBayes/index.html"><strong>CPBayes</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/bmeta/index.html"><strong>bmeta</strong></a>: Certainly there will be Bayesian counterparts for meta analysis. I haven’t checked these in detail but probably will do more as I dig deeper into Bayesian inference.</li>
+<li><a href="https://cran.r-project.org/web/packages/netmeta/netmeta.pdf"><strong>netmeta</strong></a>: A package for network meta analysis. Network meta analysis is a methodology to combine multiple studies and infer treatment effects between groups which were never compared directly.</li>
+<li><a href="https://github.com/wwiecek/baggr"><strong>baggr</strong></a>: Hierarchical Bayesian Meta Analysis with Stan (can choose none, partial and full pooling)</li>
+</ul>
+<h2 id="hypothesis-testing">Hypothesis Testing</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/diptest/index.html"><strong>diptest</strong></a>: dip test of multi-modality / mixture distribution.</li>
+<li><a href="https://cran.r-project.org/web/packages/normtest/index.html"><strong>normtest</strong></a>: Contains many handy tests of normality, skewness, kurtosis, etc, using Monte Carlo simulations, a good addition to <a href="https://stat.ethz.ch/R-manual/R-devel/library/stats/html/shapiro.test.html"><strong>base::shapiro.test</strong></a>: Shapiro-Wilk test of Normality.</li>
+<li><a href="https://cran.r-project.org/web/packages/seqtest/index.html"><strong>seqtest</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/SPRT/index.html"><strong>SPRT</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/ldbounds/index.html"><strong>ldbounds</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/gsDesign/index.html"><strong>gsDesign</strong></a><strong>:</strong> These are the packages for sequential testing — computing bounds w/ various methods. I plan to write a comprehensive blog about this subject area.</li>
+<li><a href="https://cran.r-project.org/web/packages/lmtest/index.html"><strong>lmtest</strong></a>: Hypothesis testing for linear regression models.</li>
+<li><a href="https://cran.r-project.org/web/packages/mhtboot/index.html"><strong>mhtboot</strong></a>: Multiple hypothesis testing correction.</li>
+<li><a href="https://cran.r-project.org/web/packages/wBoot/index.html"><strong>wBoot</strong></a>: Bootstrap methods as alternatives to hypothesis testing.</li>
+<li><a href="https://cran.r-project.org/web/packages/coin/index.html"><strong>coin</strong></a>: Permutation test framework.</li>
+<li><a href="https://cran.r-project.org/web/packages/resample/index.html"><strong>resample</strong></a><strong>:</strong> Resampling methods which can be used along with many hypothesis testing frameworks.</li>
+<li><a href="https://cran.r-project.org/web/packages/binom/index.html"><strong>binom</strong></a>: Provide additional binomial confidence intervals since the standard estimation may not work well for rare events, heterogeneous p, etc.</li>
+<li><a href="https://cran.r-project.org/web/packages/DescTools/index.html"><strong>DescTools</strong></a>: Lazy person’s tools for descriptive statistics.</li>
+<li><a href="https://cran.r-project.org/web/packages/tolerance/index.html"><strong>tolerance</strong></a><strong>:</strong> To think about the hypothesis testing in a different way — given alpha and percentage of recovery, what’s the lower bound and upper bound of data we may recover from a particular probability distribution? This package does the trick for all the common distributions.</li>
+<li><a href="https://cran.r-project.org/web/packages/BSDA/BSDA.pdf"><strong>BSDA</strong></a><strong>:</strong> Companion for Book <em>Basic Statistics and Data Analysis</em>, contains many interesting datasets and auxiliary hypothesis testing functions (such as computing z-test from summary statistics v.s. raw data, although it’s pretty easy to roll your own).</li>
+<li><a href="https://cran.r-project.org/web/packages/WRS2/index.html"><strong>WRS2</strong></a>: A collection of robust statistical modeling / testing methods;</li>
+<li><a href="https://cran.r-project.org/web/packages/bayesAB/index.html"><strong>bayesAB</strong></a>: THE bayesian hypothesis testing package you want to use. This is an awesome package developed by <a href="http://fportman.com/blog/">Frank Portman</a>.</li>
+<li><a href="https://cran.r-project.org/web/packages/rstanarm/index.html"><strong>rstanarm</strong></a><strong>:</strong> Bayesian Applied Regression Modeling — can be used for Bayesian hypothesis testing in a modeling framework.</li>
+<li><a href="https://cran.r-project.org/web/packages/Hotelling/index.html"><strong>hotelling</strong></a>: A package for Hotelling’s T² test.</li>
+<li><a href="https://cran.r-project.org/web/packages/BayesFactor/index.html"><strong>BayesFactor</strong></a>: Compute Bayes Factor for common experiment designs.</li>
+<li><a href="https://cran.r-project.org/web/packages/infer/index.html"><strong>infer</strong></a>: Tidyverse way of inference package.</li>
+<li><a href="https://cran.r-project.org/web/packages/pvaluefunctions/index.html"><strong>pvaluefunctions</strong></a>: Creates confidence distributions and p-value functions</li>
+<li><a href="https://cran.r-project.org/web/packages/Monte.Carlo.se/index.html"><strong>Monte.Carlo.se</strong></a>: Monte Carlo standard errors</li>
+<li><a href="https://cran.r-project.org/web/packages/bamlss/index.html"><strong>bamlss</strong></a>: Bayesian Additive Models or Location, Scale and Shape</li>
+<li><a href="https://github.com/ShanaScogin/BayesPostEst"><strong>BayesPostEst</strong></a>: Bayes postestimation quantities after estimating Bayesian regression models with MCMC</li>
+</ul>
+<h2 id="power-analysis">Power Analysis</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/pwr/index.html"><strong>pwr</strong></a>: Basic functions for power analysis. Compute any of <em>sample size</em>, <em>power</em>, <em>effect size</em>, <em>alpha</em> from the 3 other parameters.</li>
+<li><a href="https://cran.r-project.org/web/packages/samplesize/index.html"><strong>samplesize</strong></a>: Similar to <em>pwr</em> but can compute sample size for nonparametric Wilcoxon Test as well.</li>
+<li><a href="https://cran.r-project.org/web/packages/powerAnalysis/powerAnalysis.pdf"><strong>powerAnalysis</strong></a>: An older package also does the trick.</li>
+<li><a href="https://cran.r-project.org/web/packages/simr/index.html"><strong>simr</strong></a>: Using simulation based approach for power analysis</li>
+<li><a href="https://cran.r-project.org/web/packages/effsize/index.html"><strong>effsize</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/compute.es/index.html"><strong>compute.es</strong></a>: Very handy packages to compute various effect size measures (Cohen d, etc.).</li>
+</ul>
+<h2 id="factorsurvey-analysis">Factor/Survey Analysis</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/survey/index.html"><strong>survey</strong></a>: Name is very self-explanatory.</li>
+<li><a href="https://cran.r-project.org/web/packages/SDaA/index.html"><strong>SDaA</strong></a>: Sampling, Design and Analysis</li>
+<li><a href="https://cran.r-project.org/web/packages/FactoMineR/index.html"><strong>FactoMineR</strong></a><strong>:</strong> Multivariate factor analysis, with Multiple Correspondence Analysis (MCA)</li>
+<li><a href="https://cran.r-project.org/web/packages/ade4/index.html"><strong>ade4</strong></a>: Analysis of ecological data / environmental sciences w/ survey methods.</li>
+<li><a href="https://cran.r-project.org/web/packages/ca/index.html"><strong>Ca</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/homals/index.html"><strong>homals</strong></a>: Various correspondence analysis methods.</li>
+</ul>
+<h2 id="time-series-analysis">Time Series Analysis</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/jmotif/index.html"><strong>jmotif</strong></a>: Provides a comprehensive suite of symbolic transformation functions such as SAX (<a href="https://jmotif.github.io/sax-vsm_site/morea/algorithm/SAX.html">Symbolic Aggregation Approximation</a>) to convert continuous time-series data into discrete string sequences, which can then be fed into a variety of feature engineering functions</li>
+<li><a href="https://cran.r-project.org/web/packages/seewave/index.html"><strong>seewave</strong></a>: Package for sound analysis, also offers SAX transformations</li>
+<li><a href="https://cran.r-project.org/web/packages/prophet/index.html"><strong>prophet</strong></a>: Facebook’s time series analysis package, including forecasting and change point detection. Also comes in Python.</li>
+<li><a href="https://cran.r-project.org/web/packages/imputeTS/index.html"><strong>imputeTS</strong></a><strong>:</strong> Imputation methods designed specifically for time series data.</li>
+<li><a href="https://cran.r-project.org/web/packages/anytime/index.html"><strong>anytime</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/timeDate/index.html"><strong>timeDate</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/lubridate/index.html"><strong>lubridate</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/hms/index.html"><strong>hms</strong></a>: We all know time format conversion is a universal pain. These packages are there for the rescue.</li>
+<li><a href="https://cran.r-project.org/web/packages/fma/index.html"><strong>fma</strong></a>: Time series datasets you may play with.</li>
+<li><a href="https://cran.r-project.org/web/packages/timereg/index.html"><strong>timereg</strong></a>: Regression models for survival / time series data</li>
+<li><a href="https://cran.r-project.org/web/packages/forecast/index.html"><strong>forecast</strong></a>: Forecasting functions for ts / linear models.</li>
+<li><a href="https://cran.r-project.org/web/packages/TSA/index.html"><strong>TSA</strong></a>: General Time Series analysis accompanying the book <em>Time Series Analysis with Applications in R</em></li>
+<li><a href="https://cran.r-project.org/web/packages/astsa/index.html"><strong>astsa</strong></a>: Applied statistical time series analysis.</li>
+<li><strong>spetral</strong>.<a href="https://cran.r-project.org/web/packages/spectral.methods/index.html"><strong>methods</strong></a>: Spectral decomposition of Time Series data</li>
+<li><a href="https://cran.r-project.org/web/packages/pracma/index.html"><strong>pracma</strong></a>: Practical Numeric Math Functions.</li>
+<li><a href="https://cran.r-project.org/web/packages/changepoint/index.html"><strong>changepoint</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/cpm/index.html"><strong>cpm</strong></a>: Methods for change point / anomaly detection.</li>
+<li><a href="https://cran.r-project.org/web/packages/bcp/index.html"><strong>bcp</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/ecp/index.html"><strong>ecp</strong></a>: Bayesian / Nonparametric methods for change point detection.</li>
+<li><a href="https://cran.r-project.org/web/packages/TSclust/index.html"><strong>TSClust</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/dtwclust/index.html"><strong>dtwclust</strong></a>: Specific methods developed for time series data clustering.</li>
+<li><a href="https://github.com/business-science/anomalize"><strong>anomalize</strong></a>: Automatic detection of anomalies in timeseries data</li>
+</ul>
+<h2 id="survival-analysis">Survival Analysis</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/survival/index.html"><strong>survival</strong></a>: Survival analysis toolkit. Contains everything you need to begin such as Cox Hazard models.</li>
+</ul>
+<h2 id="robust-statistics">Robust Statistics</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/robust/index.html"><strong>robust</strong></a>, <a href="https://cran.r-project.org/web/packages/robustbase/index.html"><strong>robustbase</strong></a>: Robust methods to overcome univariate / multidimensional outliers and generate more stable models / estimates.</li>
+</ul>
+<h2 id="anomaly-detection">Anomaly Detection</h2>
+<ul>
+<li><a href="https://github.com/twitter/AnomalyDetection"><strong>twitter/AnomalyDetection</strong></a>: This package hasn’t been updated for years but seems still working. I would welcome recommendations on anomaly detection methods.</li>
+</ul>
+<h2 id="feature-engineeringselection">Feature Engineering/Selection</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/forcats/index.html"><strong>forcats</strong></a>: Tools for categorical variable transformations.</li>
+<li><a href="https://cran.r-project.org/web/packages/Boruta/index.html"><strong>Boruta</strong></a>: Method for feature selection based on permutation of importance measures.</li>
+<li><a href="https://cran.r-project.org/web/packages/MXM/index.html"><strong>MXM</strong></a>: Feature selection methods w/ Bayesian networks.</li>
+<li><a href="https://cran.r-project.org/web/packages/fscaret/index.html"><strong>fscaret</strong></a>: Automated feature selection from caret.</li>
+<li><a href="https://cran.r-project.org/web/packages/EFS/index.html"><strong>EFS</strong></a>: Feature selection using ensemble methods.</li>
+<li><a href="https://www.rdocumentation.org/packages/mltools/versions/0.3.5/topics/one_hot"><strong>one_hot</strong></a>, <a href="https://cran.r-project.org/web/packages/onehot/onehot.pdf"><strong>onehot</strong></a>: Handy shortcuts to onehot encoding of categorical variables.</li>
+<li><a href="https://cran.r-project.org/web/packages/SelectBoost/SelectBoost.pdf"><strong>SelectBoost</strong></a>: Select boost for feature selection.</li>
+<li><a href="https://cran.r-project.org/web/packages/flashlight/index.html"><strong>flashlight</strong></a>: package on exploration of features in blackboxy algo</li>
+</ul>
+<h2 id="distance-metrics">Distance Metrics</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/proxy/index.html"><strong>proxy</strong></a>: Distance functions can be scattered around many R packages with various function signatures, which makes it hard to hot-swap. This package normalizes distance definitions and make it convenient to define any custom distance function.</li>
+<li><a href="https://cran.r-project.org/web/packages/parallelDist/index.html"><strong>parallelDist</strong></a>: Compute distance matrix on very large datasets (&gt;5000 rows) can very time consuming on a local machine; this package allows to compute distances in parallel which can dramatically reduce computation time, tested up to 20X speed boost.</li>
+<li><a href="https://cran.r-project.org/web/packages/philentropy/index.html"><strong>philentropy</strong></a>: Similarity distances between probability functions.</li>
+<li><a href="https://cran.r-project.org/web/packages/wCorr/wCorr.pdf"><strong>wCorr</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/weights/index.html"><strong>weights</strong></a>: Weighted statistics such as correlations.</li>
+<li><a href="https://cran.r-project.org/web/packages/distances/index.html"><strong>distances</strong></a>: Various distance metrics which can be used for ML / stat modeling.</li>
+<li><a href="https://cran.r-project.org/web/packages/gower/index.html"><strong>gower</strong></a>: Gower’s distance between records, often used in survey analysis with mixed numeric / categorical responses.</li>
+</ul>
+<h2 id="dimension-reduction">Dimension Reduction</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/Rtsne/index.html"><strong>Rtsne</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/tsne/index.html"><strong>tsne</strong></a>: T-sne implementation in R.</li>
+<li><a href="https://cran.r-project.org/web/packages/gmodels/index.html"><strong>gmodels</strong></a>: fast.prcomp: A fast version of PCA.</li>
+<li><a href="https://cran.r-project.org/web/packages/umap/index.html"><strong>umap</strong></a>: With tutorial <a href="https://cran.r-project.org/web/packages/umap/vignettes/umap.html">here</a>, dimension reduction methodology.</li>
+<li><a href="https://cran.r-project.org/web/packages/smacof/index.html"><strong>smacof</strong></a>: A comprehensive package for Multi-dimensional scaling, as a nice addition to <a href="https://stat.ethz.ch/R-manual/R-devel/library/MASS/html/isoMDS.html"><strong>MASS::isoMDS</strong></a></li>
+<li><a href="https://github.com/elbamos/largeVis"><strong>largeViz</strong></a>: Large data visualization with dimension reduction.</li>
+<li><a href="https://bioconductor.org/packages/release/bioc/html/RDRToolbox.html"><strong>RDRToolbox</strong></a>: Dimension reduction w/ isomap and LLE with a unified framework.</li>
+</ul>
+<h2 id="unsupervised-learning-clustering">Unsupervised Learning / Clustering</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/mclust/index.html"><strong>mclust</strong></a>: Model Based clustering approach using Gaussian Mixtures. It automatically decides the optimal number of clusters based on maximum likelihood. Here’s a <a href="https://cran.r-project.org/web/packages/mclust/vignettes/mclust.html">starter’s tutorial</a>.</li>
+<li><a href="https://cran.r-project.org/web/packages/fastcluster/index.html"><strong>fastcluster</strong></a>: A drop in method to replace the built in hierarchical clustering with massive performance boost. Clustering on thousands of data points take less than a couple of seconds.</li>
+<li><a href="https://cran.r-project.org/web/packages/flashClust/index.html"><strong>flashClust</strong></a>: Another implementation of fast hierarchical clustering.</li>
+<li><a href="https://cran.r-project.org/web/packages/NMF/index.html"><strong>NMF</strong></a>: Package of non-negative matrix factorization. This is a very useful technique to find compressed versions of smaller matrices which can be multiplied to approximate the source matrix, while holding all values positive (additive). Frequently used in clustering / image processing. [<a href="https://www.nature.com/articles/44565">Nature Paper</a>]</li>
+<li><a href="https://cran.r-project.org/web/packages/cluster/index.html"><strong>cluster</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/fpc/index.html"><strong>fpc</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/clue/index.html"><strong>clue</strong></a>: A suite of methods for cluster analysis and validation.</li>
+<li><a href="https://cran.r-project.org/web/packages/pvclust/index.html"><strong>pvclust</strong></a>: Using bootstrap to estimate the uncertainty in hierarchical clustering and search optimal cuts.</li>
+<li><a href="https://cran.r-project.org/web/packages/fastICA/index.html"><strong>fastICA</strong></a>: Fast method for independent component analysis (ICA). A good <a href="https://www.quora.com/What-is-the-difference-between-PCA-and-ICA">Quora post</a> explains the difference between PCA and ICA.</li>
+<li><a href="https://cran.r-project.org/web/packages/EMCluster/index.html"><strong>EMCluster</strong></a>: Model based clustering w/ finite mixture Gaussian Distribution. In short words, it assumes the data was generated from a multivariate Gaussian distribution and tries to estimate the optimal number of clusters and cluster membership w/ EM algorithm.</li>
+<li><a href="https://cran.r-project.org/web/packages/clues/index.html"><strong>clues</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/clusterSim/index.html"><strong>clusterSim</strong></a>: Automatic clustering methods to identify number of clusters, with diagnostics plots.</li>
+<li><a href="https://cran.r-project.org/web/packages/RSKC/index.html"><strong>RSKC</strong></a>: Robust K-means clustering algo for sparse data.</li>
+<li><a href="https://cran.r-project.org/web/packages/dendextend/vignettes/introduction.html"><strong>dendextend</strong></a>: Advanced dendrogram drawing methods.</li>
+<li>factoextra</li>
+<li><a href="https://cran.r-project.org/web/packages/NbClust/index.html"><strong>NbClust</strong></a>: A really nice package to identify the optimal number of clusters — can provide ~ 30 metrics simultaneously.</li>
+<li><a href="https://www.rdocumentation.org/packages/clValid/versions/0.6-6"><strong>clValid</strong></a>: Compute a variety of cluster quality metrics, such as <a href="https://en.wikipedia.org/wiki/Dunn_index">Dunn index</a>.</li>
+<li><a href="https://cran.r-project.org/web/packages/clustertend/index.html"><strong>clustertend</strong></a>: Hopkin’s cluster tendency — you may apply clustering algorithm to any dataset but it doesn’t mean the result is meaningful. Specifically, the data need to contain some sort of clustering structure and Hopkin’s index is a good measure with permutation tests.</li>
+<li><a href="https://cran.r-project.org/web/packages/dbscan/index.html"><strong>dbscan</strong></a>: Density based clustering methods [<a href="https://en.wikipedia.org/wiki/DBSCAN">wiki</a>], may be able to solve when traditional distance based methods fail to work.</li>
+<li><a href="https://cran.r-project.org/web/packages/CluMix/index.html"><strong>cluMix</strong></a><strong>:</strong> Clustering subjects with mixed data types, distances can be computed using gower’s distance. Alternatively, you may use <a href="https://cran.r-project.org/web/packages/gower/vignettes/intro.html">gower</a> to compute the distance and then feed to preferred clustering algorithms.</li>
+<li><a href="https://cran.r-project.org/web/packages/apcluster/index.html"><strong>apcluster</strong></a>: Affinity propagation clustering — similar to label propagation, the closeness are passed via similarity networks.</li>
+<li><a href="https://cran.r-project.org/web/packages/OTclust/index.html"><strong>OTclust</strong></a>: Mean Parition, Uncertainty Assessment and Cluster Validations</li>
+<li><a href="https://cran.r-project.org/web/packages/Spectrum/index.html"><strong>Spectrum</strong></a>: Fast spectrum clustering algorithm</li>
+</ul>
+<h2 id="semi-supervised-learning">Semi-Supervised Learning</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/SSL/index.html"><strong>SSL</strong></a><strong>,</strong> <a href="https://arxiv.org/abs/1612.07993"><strong>RSSL</strong></a>: These packages provide semi-supervised learning methods using partially labeled data.</li>
+</ul>
+<h2 id="supervised-learning-general-machine-learning-deep-learning">Supervised Learning (General Machine Learning) / Deep Learning</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/caret/index.html"><strong>caret</strong></a>: The R equivalent to scikit learn: feature processing, train / test split, cross validation, model performance metrics … you name it.</li>
+<li><a href="https://cran.r-project.org/web/packages/mlbench/index.html"><strong>mlbench</strong></a>: ML benchmark datasets and functions.</li>
+<li><a href="https://cran.r-project.org/web/packages/xgboost/index.html"><strong>xgboost</strong></a>: The well-known Kaggle winning algorithm. As a matter of fact this is almost the universal choice for high performance production level models. Fast, easy to use, easy to deploy.</li>
+<li><a href="https://cran.r-project.org/web/packages/modelr/index.html"><strong>modelr</strong></a>: An initiative to make modeling syntax more interoperable with the tidyverse.</li>
+<li><a href="https://cran.r-project.org/web/packages/recipes/index.html"><strong>recipes</strong></a>: Auxiliary packages for design matrices.</li>
+<li><a href="https://cran.r-project.org/web/packages/mlr/index.html"><strong>mlr</strong></a>: Similar to caret, this is a universal framework for model training.</li>
+<li><a href="https://cran.r-project.org/web/packages/h2o/index.html"><strong>h2o</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/mltools/index.html"><strong>mltools</strong></a>: A distributed machine learning framework, with a community version and a commercial version that includes a AutoML implementation.</li>
+<li><a href="https://keras.rstudio.com/"><strong>rstudio/keras</strong></a>: Keras implementation in R, go Deep Learning!</li>
+<li><a href="https://github.com/jaredhuling/fastglm"><strong>fastglm</strong></a>, <a href="https://cran.r-project.org/web/packages/speedglm/speedglm.pdf"><strong>speedglm</strong></a>: faster version of GLM libraries.</li>
+<li><a href="https://cran.r-project.org/web/packages/iml/index.html"><strong>iml</strong></a>: interpretable machine learning: <a href="https://christophm.github.io/interpretable-ml-book/agnostic.html">Book</a></li>
+<li><a href="https://github.com/tidymodels/tidymodels"><strong>tidymodels</strong></a>: tidymodels: a collection of tidyverse style machine learning / statistical modeling package.</li>
+<li><a href="https://cran.r-project.org/web/packages/SHAPforxgboost/index.html"><strong>SHAPforxgboost</strong></a>: shap values diagnostics for xgboost</li>
+</ul>
+<h2 id="class-imbalance">Class Imbalance</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/smotefamily/index.html"><strong>smotefamily</strong></a><strong>:</strong> Synthetic oversampling methods for class imbalance problems.</li>
+<li><a href="https://cran.r-project.org/web/packages/MatchIt/MatchIt.pdf"><strong>MatchIt</strong></a>: Mentioned in causal inference, I feel this package also worthy of another nomination here to generate samples with balanced covariates.</li>
+<li><a href="https://cran.r-project.org/web/packages/upclass/index.html"><strong>upclass</strong></a>: Recently archived by CRAN, this is another package to synthesize minority samples.</li>
+</ul>
+<h2 id="graph-analysis">Graph Analysis</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/igraph/index.html"><strong>igraph</strong></a>: The most comprehensive graph library for R — summary statistics, distances, community structure, clustering, visualization layout algos — you name it! Must have.</li>
+<li><a href="https://cran.r-project.org/web/packages/qgraph/index.html"><strong>qgraph</strong></a>: Contains various methods for graph data viz.</li>
+<li><strong>network</strong>: a companion package for igraph</li>
+<li><strong>tidygraph</strong>: A tidyverse based visualization package</li>
+<li><strong>ggraph</strong>: ggplot based network viz</li>
+<li><strong>visNetwork:</strong> some way to visualize networks</li>
+<li><strong>networkD3:</strong> D3 based networks</li>
+</ul>
+<h2 id="optimization">Optimization</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/BB/index.html"><strong>BB</strong></a>: Solving large systems of linear and nonlinear equations. Very fast and handy.</li>
+</ul>
+<h2 id="imputations">Imputations</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/VIM/VIM.pdf"><strong>VIM</strong></a>: Visualization and Imputation of missing values. Swiss-knife package.</li>
+<li><a href="https://cran.r-project.org/web/packages/mice/mice.pdf"><strong>mice</strong></a><strong>,</strong> <a href="https://cran.r-project.org/web/packages/Amelia/Amelia.pdf"><strong>Amelia</strong></a>: Methods for multivariate imputation. The idea is to borrow as much <em>neighbor</em> data as possible to improve imputation accuracy.</li>
+<li><a href="https://stat.ethz.ch/education/semesters/ss2012/ams/paper/missForest_1.2.pdf"><strong>missForest</strong></a>: One of the model based approach — we can use missing value as the response variable and fit a model with the rest of variables, and hence make imputations.</li>
+<li><a href="https://github.com/cran/mi"><strong>mi</strong></a><strong>,</strong> <a href="https://github.com/cran/mitools"><strong>mitools</strong></a>: Some older packages for missing value imputation.</li>
+</ul>
+<h2 id="simulations">Simulations</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/randomizeR/index.html"><strong>randomizeR</strong></a>: Randomization for clinical trials.</li>
+<li><a href="https://www.r-bloggers.com/introducing-the-montecarlo-package/"><strong>MonteCarlo</strong></a>: Name explains it, a package for MonteCarlo simulation.</li>
+</ul>
+<h2 id="bioinformatics">Bioinformatics</h2>
+<ul>
+<li><a href="http://bioconductor.org/packages/release/bioc/html/paircompviz.html"><strong>paircompviz</strong></a><strong>:</strong> A bioconductor package for visualizing multiple testing comparisons.</li>
+<li><a href="https://bioconductor.org/packages/release/bioc/html/msa.html"><strong>msa</strong></a>: Multiple sequence alignment procedures for DNA/RNA/Protein sequence alignment. The transition matrix maybe redefined for custom sequence typed data.</li>
+<li><a href="http://bioconductor.org/packages/release/bioc/html/Biostrings.html"><strong>Biostrings</strong></a><strong>:</strong> Efficient library for Biological Strings, it may be extended to custom character sets.</li>
+</ul>
+<h2 id="datasets">DataSets</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/gender/index.html"><strong>gender</strong></a>: Guesstimate gender from <em>English</em> names, producing probabilities</li>
+<li><a href="https://cran.r-project.org/web/packages/babynames/index.html"><strong>babynames</strong></a>: U.S. babynames over years from census data. I used this package to understand time-varying name popularity when I was trying to name my daughter</li>
+<li><a href="https://cran.r-project.org/web/packages/gcookbook/index.html"><strong>gcookbook</strong></a>: This package contains data for the book <a href="http://shop.oreilly.com/product/0636920023135.do"><em>R Graphics Cookbook</em></a><em>;</em> I found it useful for testing visualization tools and it came with a few handy utility functions out-of-the-box.</li>
+<li><a href="https://cran.r-project.org/web/packages/wbstats/index.html"><strong>wbstats</strong></a>: This packages offers programmatic access to World Bank Data, such as GDP, income, crime rate, education, demographics, at various geo-granularity</li>
+<li><a href="https://www.r-project.org/nosvn/pandoc/WDI.html"><strong>wdi</strong></a>: easy to use worldbank data</li>
+</ul>
+<h2 id="developer-tools">Developer Tools</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/wrapr/index.html"><strong>wrapr</strong></a>: this package can be used to debug pipe <strong>(%&gt;%)</strong> functions</li>
+<li><a href="https://cran.r-project.org/web/packages/validate/index.html"><strong>validate</strong></a>: this package comes with a rich set of functions to validate function arguments, can be used in the backend of web services such as <a href="https://www.rplumber.io/"><em>plumber</em></a></li>
+</ul>
+<h2 id="dashboard-interactive-viz">Dashboard / Interactive Viz</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/shiny/index.html"><strong>R/Shiny</strong></a>: I am not a big fan of shiny but it’s a handy alternative to Tableu for creating quick interactive data visualization dashboards.</li>
+<li><a href="https://cran.r-project.org/web/packages/htmlwidgets/index.html"><strong>htmlwidgets</strong></a>: A great companion to shiny, providing many interactive tools to visualize tabular / time-series / geo-spatial data</li>
+<li><a href="https://www.htmlwidgets.org/showcase_dygraphs.html"><strong>dygraphs</strong></a>: One of the best package to visualize time-series data interactively; you may plot multiple series simultaneously and decorate a variety of annotations</li>
+<li><a href="https://www.htmlwidgets.org/showcase_datatables.html"><strong>DataTables(DT)</strong></a>: A simple wrapper to convert a R dataframe into an interactive data table with sorting and filtering capabilities</li>
+<li><a href="https://www.htmlwidgets.org/showcase_leaflet.html"><strong>leaflet</strong></a>: Best package to visualize geo-spatial data although I found the integration into Jupyter notebook can be quite clumsy</li>
+<li><a href="https://cran.r-project.org/web/packages/golem/index.html"><strong>golem</strong></a>: Robust shiny applications framework</li>
+</ul>
+<h2 id="parallel-computing">Parallel Computing</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/foreach/index.html"><strong>foreach</strong></a>: Arguably the much more robust version of for loops, supports a couple of parallel processing frameworks with (<strong><em>%dopar%)</em></strong> syntax. I found it less performant than <a href="https://stat.ethz.ch/R-manual/R-devel/library/parallel/html/mclapply.html">mclapply from parallel</a> but I like its error handling and flexibility.</li>
+<li><strong>mclapply</strong>: My Go-to function now for single box parallelization if the output can be condensed in list/arrays.</li>
+<li><strong>parallel, snow</strong>: Various parallel backends can be used in mclapply / foreach.</li>
+</ul>
+<h2 id="io">IO</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/readr/index.html"><strong>readr</strong></a>: If you are still using the built in read.csv … don’t. This package is so much superior and easy to use. Can’t live without.</li>
+<li><a href="https://readxl.tidyverse.org/"><strong>readxl</strong></a>: Even i don’t have memory of last time that I worked on an Excel file (everything is Google Sheets now), knowing there’s someway to read directly from Excel is great, especially when that file contains multiple sheets.</li>
+<li><a href="https://cran.r-project.org/web/packages/jsonlite/index.html"><strong>jsonlite</strong></a>: No need to explain, you need someway to parse JSON</li>
+<li><a href="https://cran.r-project.org/web/packages/xml2/index.html"><strong>xml2</strong></a>: Though XML is becoming a thing of the past, knowing it’s still supported offers me a peace of mind.</li>
+<li><a href="https://github.com/karthik/rDrop"><strong>rDrop</strong></a>: Conveniently read file directly from Dropbox.</li>
+</ul>
+<h2 id="utilityweb-service">Utility/Web Service</h2>
+<ul>
+<li><a href="https://github.com/hadley/pryr"><strong>pryr</strong></a>: Methods to peek under the hood of R objections and functions.</li>
+<li><a href="https://cran.r-project.org/web/packages/devtools/index.html"><strong>devtools</strong></a>: Developer tools if you are into R development.</li>
+<li><a href="https://cran.r-project.org/web/packages/plumber/index.html"><strong>plumber</strong></a>, <a href="https://cran.r-project.org/web/packages/httr/index.html"><strong>httr</strong></a>: Packages for setting up http services and sending http requests.</li>
+<li><a href="https://cran.r-project.org/web/packages/glue/index.html"><strong>glue</strong></a>: A very handy tool to format string with multiple variables (equivalent to python’s string.format), I found it super handy for generating SQLs or debugging messages</li>
+<li><a href="https://cran.r-project.org/web/packages/memo/index.html"><strong>memo</strong></a>: An awesome implementation of lru cache, works great with http service such as plumber</li>
+<li><a href="https://cran.r-project.org/web/packages/reticulate/index.html"><strong>reticulate</strong></a>: Allows R to directly access python libraries and objects, if you are dual-wielding!</li>
+<li><a href="https://cran.r-project.org/web/packages/roxygen2/index.html"><strong>roxygen2</strong></a>: Generate R docs from inline annotations.</li>
+<li><strong>testthat</strong>: Unit testing package for R</li>
+<li><a href="https://yihui.name/knitr/"><strong>knitr</strong></a><strong>,</strong> <a href="https://bookdown.org/yihui/bookdown/"><strong>bookdown</strong></a>: Create HTML reports from R markdowns.</li>
+<li><a href="https://cran.r-project.org/web/packages/packrat/index.html"><strong>packrat</strong></a>: A R dependency management system.</li>
+<li><a href="https://cran.r-project.org/web/packages/IRdisplay/IRdisplay.pdf"><strong>IRdisplay</strong></a>: Used to display images / text in Jupyter with R kernel</li>
+</ul>
+<h2 id="other-resources">Other Resources</h2>
+<ul>
+<li>Automated Exploratory Data Analysis: this <a href="https://github.com/mstaniak/autoEDA-resources">github repo</a> lists many tools to expedite data exploration process.</li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://medium.com/data-science/a-comprehensive-list-of-handy-r-packages-e85dad294b3d">Originally published at Medium</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../table-html-display/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Display Tables in HTML Reports">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Display Tables in HTML Reports
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../remote-access/jupyter-ssh-tunneling/" class="md-footer__link md-footer__link--next" aria-label="Next: Jupyter Over Tunneling">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Jupyter Over Tunneling
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2018-2026 Rohit Farmer. Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+      
+    
+    
+    
+      
+      
+    
+    <a href="https://fosstodon.org/@rohitfarmer" target="_blank" rel="noopener me" title="fosstodon.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54-.6-4.6-.9-9.3-.9-13.9 85.6 20.9 158.7 9.1 178.7 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6V190.1c0-49.7-64-51.6-64 6.9v62.5H201V197c0-58.5-64-56.6-64-6.9v114.2H90.3c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://bsky.app/profile/rohitfarmer.com" target="_blank" rel="noopener" title="bsky.app" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M407.8 294.7c-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3M288 227.1c-26.1-50.7-97.1-145.2-163.1-191.8C61.6-9.4 37.5-1.7 21.6 5.5 3.3 13.8 0 41.9 0 58.4S9.1 194 15 213.9c19.5 65.7 89.1 87.9 153.2 80.7 3.3-.5 6.6-.9 10-1.4-3.3.5-6.6 1-10 1.4-93.9 14-177.3 48.2-67.9 169.9C220.6 589.1 265.1 437.8 288 361.1c22.9 76.7 49.2 222.5 185.6 103.4 102.4-103.4 28.1-156-65.8-169.9-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3 64.1 7.1 133.6-15.1 153.2-80.7C566.9 194 576 75 576 58.4s-3.3-44.7-21.6-52.9c-15.8-7.1-40-14.9-103.2 29.8C385.1 81.9 314.1 176.4 288 227.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/rohitfarmer" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/rohitfarmer" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.reddit.com/user/rohitfarmer/" target="_blank" rel="noopener" title="www.reddit.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M0 256C0 114.6 114.6 0 256 0s256 114.6 256 256-114.6 256-256 256H37.1c-13.7 0-20.5-16.5-10.9-26.2L75 437C28.7 390.7 0 326.7 0 256m349.6-102.4c23.6 0 42.7-19.1 42.7-42.7s-19.1-42.7-42.7-42.7c-20.6 0-37.8 14.6-41.8 34-34.5 3.7-61.4 33-61.4 68.4v.2c-37.5 1.6-71.8 12.3-99 29.1-10.1-7.8-22.8-12.5-36.5-12.5-33 0-59.8 26.8-59.8 59.8 0 24 14.1 44.6 34.4 54.1 2 69.4 77.6 125.2 170.6 125.2s168.7-55.9 170.6-125.3c20.2-9.6 34.1-30.2 34.1-54 0-33-26.8-59.8-59.8-59.8-13.7 0-26.3 4.6-36.4 12.4-27.4-17-62.1-27.7-100-29.1v-.2c0-25.4 18.9-46.5 43.4-49.9 4.4 18.8 21.3 32.8 41.5 32.8zm-172.5 93.3c16.7 0 29.5 17.6 28.5 39.3s-13.5 29.6-30.3 29.6-31.4-8.8-30.4-30.5S160.3 247 177 247zm190.1 38.3c1 21.7-13.7 30.5-30.4 30.5s-29.3-7.9-30.3-29.6 11.8-39.3 28.5-39.3 31.2 16.6 32.1 38.3zm-48.1 56.7c-10.3 24.6-34.6 41.9-63 41.9s-52.7-17.3-63-41.9c-1.2-2.9.8-6.2 3.9-6.5 18.4-1.9 38.3-2.9 59.1-2.9s40.7 1 59.1 2.9c3.1.3 5.1 3.6 3.9 6.5"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.path", "navigation.top", "navigation.tracking", "navigation.footer", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
