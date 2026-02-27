@@ -12,6 +12,7 @@ Websites providing multiple online services such as email, chat, social, etc.
 
 | Website | Services Provided | Date |
 |----------|------------------|------|
+| [Adminforge](https://adminforge.de/) | 75 services (everything listed here and more) | 2026-02-27 |
 | [4D2](https://4d2.org/) | 4d2.link, 4d2.sh, BBS, CryptPad, Email, Jitsi, Lemmy, Mastodon, Matrix, Vaultwarden | 2026-02-15 |
 | [Bienvenue sur l'Internet Montpellierain! (BIM)](https://bim.land/) | Agenda, CryptPad, FramaDate, Jitsi, Mastodon, Mobilizon, Pixelfed | 2026-02-15 |
 | [Calitabby Network](https://calitabby.net/) | Forgejo, Mastodon, Matrix, Nostr, PrivateBin, SearXNG | 2026-02-15 |

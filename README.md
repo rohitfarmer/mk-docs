@@ -1,5 +1,7 @@
 # Documentations by Rohit Farmer 
 
+[![](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)
+
 This repository contains both markdown files in the `content` directory to be compiled by MK Docs and the rendered website in the `docs` directory to be served by GitHub Pages.
 
 MkDocs: [https://www.mkdocs.org/](https://www.mkdocs.org/)  
@@ -12,12 +14,15 @@ To render the website using `mkdocs`, execute the `build-site.sh` shell script. 
 ```bash
 bash build-site.sh
 ```
-## To Serve the Site Locally
+### To Serve the Site Locally
 
 ```bash
-cd docs
 mkdocs serve
 ```
+
+## Contributions
+
+If you want to contribute to this repository/website, you can edit the content in the `contents` directory and send me a pull request to incorporate changes and recompile the website. You can also send me your suggestions or content by email at [rohit@rohitfarmer.com](mailto:rohit@rohitfarmer.com). Please note that although I welcome your contributions, I maintain this website as a quick go-to for my personal needs and therefore try to keep it as straightforward as possible for me to maintain. I may decline your request to modify the build system or the hosting platform, if it is not easy for me to maintain. Otherwise, please lurk around and use the content to your heart's desire under CC BY 4.0 license. 
 
 ## Changelog
 

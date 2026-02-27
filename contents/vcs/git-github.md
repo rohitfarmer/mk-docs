@@ -179,6 +179,29 @@ git add path/to/submodule
 git commit -m "Convert submodule to regular directory"
 ```
 
+## Pull all Cloned Repositories in a Folder
+
+Execute the shell script below to pull all the cloned repositories in a folder. 
+
+```bash
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+for dir in */; do
+  # Only act on directories
+  [ -d "$dir/.git" ] || continue
+
+  echo "📦 Updating repo: $dir"
+  (
+    cd "$dir"
+    git pull --ff-only
+  )
+done
+
+echo "✅ All repositories processed."
+```
+
 ## Clone All GitHub Repositories Using `gh` CLI
 
 ### Install GitHub CLI 
@@ -212,24 +235,29 @@ while read repo; do
 done
 ```
 
-## Pull all Cloned Repositories in a Folder
+### Clone new Repositories and Pull Existing
 
-Execute the shell script below to pull all the cloned repositories in a folder. 
+The script below will clone new repositories from your GitHub account and pull the existing ones in your current folder.
 
 ```bash
 #!/usr/bin/env bash
-
 set -euo pipefail
 
-for dir in */; do
-  # Only act on directories
-  [ -d "$dir/.git" ] || continue
+USER="githu-username"
 
-  echo "📦 Updating repo: $dir"
-  (
-    cd "$dir"
-    git pull --ff-only
-  )
+gh repo list "$USER" --limit 1000 --json sshUrl -q '.[].sshUrl' | \
+while read -r repo; do
+  name="$(basename -s .git "$repo")"
+
+  if [ -d "$name/.git" ]; then
+    echo "📦 Updating repo: $name"
+    git -C "$name" pull --ff-only
+  elif [ -d "$name" ]; then
+    echo "⚠️  Skipping $name (folder exists but not a git repo)"
+  else
+    echo "⬇️  Cloning repo: $name"
+    git clone "$repo"
+  fi
 done
 
 echo "✅ All repositories processed."
