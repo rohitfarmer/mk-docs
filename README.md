@@ -15,6 +15,17 @@ You’re also welcome to send suggestions or content by email at [rohit@rohitfar
 
 **Please note:** while contributions are appreciated, this site primarily serves as a personal reference, so I aim to keep the setup straightforward and easy for me to maintain. I may decline proposals that significantly change the build system or hosting approach if they add complexity. Otherwise, feel free to explore and use the content under the CC BY 4.0 license.
 
+## Markdown Template
+
+```markdown
+
+---
+comments: true
+---
+
+# Title
+
+```
 ## To Build the Site Locally
 
 To render the website using `mkdocs`, execute the `build-site.sh` shell script. It first runs `mkdocs` to build the website and then copies `.nojekyll` file to the `docs` folder. 
