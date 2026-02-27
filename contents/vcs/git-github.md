@@ -179,4 +179,57 @@ git add path/to/submodule
 git commit -m "Convert submodule to regular directory"
 ```
 
+## Download All GitHub Repositories Using `gh` CLI
+
+### Install GitHub CLI 
+
+On Debian/Ubuntu:
+
+```bash
+sudo apt install gh
+```
+
+On macOS:
+
+```bash
+brew install gh
+```
+
+### Authenticate
+
+```bash
+gh auth login
+```
+
+### Clone all Repositories
+
+Change the username in the script below to your GitHub username name. 
+
+```bash
+gh repo list username --limit 1000 --json sshUrl -q '.[].sshUrl' | \
+while read repo; do
+    git clone "$repo"
+done
+```
+
+### Pull all the Cloned Repositories
+
+```bash
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+for dir in */; do
+  # Only act on directories
+  [ -d "$dir/.git" ] || continue
+
+  echo "📦 Updating repo: $dir"
+  (
+    cd "$dir"
+    git pull --ff-only
+  )
+done
+
+echo "✅ All repositories processed."
+```
 

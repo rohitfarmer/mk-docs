@@ -2973,6 +2973,67 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#download-all-github-repositories-using-gh-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Download All GitHub Repositories Using gh CLI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Download All GitHub Repositories Using gh CLI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-github-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install GitHub CLI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authenticate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authenticate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clone-all-repositories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clone all Repositories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pull-all-the-cloned-repositories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pull all the Cloned Repositories
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3353,6 +3414,67 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#download-all-github-repositories-using-gh-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Download All GitHub Repositories Using gh CLI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Download All GitHub Repositories Using gh CLI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-github-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install GitHub CLI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authenticate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authenticate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clone-all-repositories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clone all Repositories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pull-all-the-cloned-repositories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pull all the Cloned Repositories
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3532,6 +3654,42 @@ To set your global username/email configuration:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1"># Make sure the files are still there; if not, restore them (e.g., from backup or previous checkout)</span>
 </span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>git<span class="w"> </span>add<span class="w"> </span>path/to/submodule
 </span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Convert submodule to regular directory&quot;</span>
+</span></code></pre></div>
+<h2 id="download-all-github-repositories-using-gh-cli">Download All GitHub Repositories Using <code>gh</code> CLI</h2>
+<h3 id="install-github-cli">Install GitHub CLI</h3>
+<p>On Debian/Ubuntu:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>gh
+</span></code></pre></div>
+<p>On macOS:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>brew<span class="w"> </span>install<span class="w"> </span>gh
+</span></code></pre></div>
+<h3 id="authenticate">Authenticate</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>gh<span class="w"> </span>auth<span class="w"> </span>login
+</span></code></pre></div>
+<h3 id="clone-all-repositories">Clone all Repositories</h3>
+<p>Change the username in the script below to your GitHub username name. </p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>gh<span class="w"> </span>repo<span class="w"> </span>list<span class="w"> </span>username<span class="w"> </span>--limit<span class="w"> </span><span class="m">1000</span><span class="w"> </span>--json<span class="w"> </span>sshUrl<span class="w"> </span>-q<span class="w"> </span><span class="s1">&#39;.[].sshUrl&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="k">while</span><span class="w"> </span><span class="nb">read</span><span class="w"> </span>repo<span class="p">;</span><span class="w"> </span><span class="k">do</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="w">    </span>git<span class="w"> </span>clone<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$repo</span><span class="s2">&quot;</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="k">done</span>
+</span></code></pre></div>
+<h3 id="pull-all-the-cloned-repositories">Pull all the Cloned Repositories</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="ch">#!/usr/bin/env bash</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="nb">set</span><span class="w"> </span>-euo<span class="w"> </span>pipefail
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="k">for</span><span class="w"> </span>dir<span class="w"> </span><span class="k">in</span><span class="w"> </span>*/<span class="p">;</span><span class="w"> </span><span class="k">do</span>
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="w">  </span><span class="c1"># Only act on directories</span>
+</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="w">  </span><span class="o">[</span><span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$dir</span><span class="s2">/.git&quot;</span><span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="k">continue</span>
+</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>
+</span><span id="__span-20-9"><a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a><span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;📦 Updating repo: </span><span class="nv">$dir</span><span class="s2">&quot;</span>
+</span><span id="__span-20-10"><a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="w">  </span><span class="o">(</span>
+</span><span id="__span-20-11"><a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a><span class="w">    </span><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$dir</span><span class="s2">&quot;</span>
+</span><span id="__span-20-12"><a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a><span class="w">    </span>git<span class="w"> </span>pull<span class="w"> </span>--ff-only
+</span><span id="__span-20-13"><a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a><span class="w">  </span><span class="o">)</span>
+</span><span id="__span-20-14"><a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a><span class="k">done</span>
+</span><span id="__span-20-15"><a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a>
+</span><span id="__span-20-16"><a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;✅ All repositories processed.&quot;</span>
 </span></code></pre></div>
 
 
