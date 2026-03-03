@@ -80,6 +80,7 @@ nav:
   - Bioinformatics:
       - bioinformatics/blast.md
       - bioinformatics/taxonomy.md
+      - bioinformatics/snakemake.md
   - Containers & Virtual Environments:
       - containers/docker.md
       - containers/mamba-environment.md
