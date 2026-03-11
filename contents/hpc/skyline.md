@@ -50,3 +50,61 @@ srun --ntasks 4 --pty bash
 ```
 
 `--pty:` Allocates a pseudo-terminal for interactivity.
+
+
+## Job Queue
+
+See jobs that are in the queue for a `username`.
+
+All jobs:
+
+```bash
+squeue -u username
+```
+
+Or filter by state:
+
+```bash
+squeue -u username -t PENDING
+squeue -u username -t RUNNING
+```
+
+
+## Cancel Jobs
+
+Cancel a particular job:
+
+```bash
+squeue -u username # to list all the jobs of a user and get the job_id
+scancel <job_id> 
+```
+
+Cancels all jobs of a user in the queue:
+
+```bash
+scancel -u username
+```
+
+
+### Cancel only `PENDING` jobs for a user
+
+```bash
+scancel -u username -t PENDING
+```
+
+### Cancel only `RUNNING` jobs for a user
+
+```bash
+scancel -u username -t RUNNING
+```
+
+### Cancel jobs by multiple states
+
+You can specify multiple states separated by commas:
+
+```bash
+scancel -u username -t PENDING,RUNNING
+```
+
+
+

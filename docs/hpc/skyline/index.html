@@ -1247,6 +1247,67 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#job-queue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Job Queue
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cancel-jobs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cancel Jobs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cancel Jobs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cancel-only-pending-jobs-for-a-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cancel only PENDING jobs for a user
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cancel-only-running-jobs-for-a-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cancel only RUNNING jobs for a user
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cancel-jobs-by-multiple-states" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cancel jobs by multiple states
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3193,6 +3254,67 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#job-queue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Job Queue
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cancel-jobs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cancel Jobs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cancel Jobs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cancel-only-pending-jobs-for-a-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cancel only PENDING jobs for a user
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cancel-only-running-jobs-for-a-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cancel only RUNNING jobs for a user
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cancel-jobs-by-multiple-states" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cancel jobs by multiple states
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3292,6 +3414,33 @@
 </span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>srun<span class="w"> </span>--ntasks<span class="w"> </span><span class="m">4</span><span class="w"> </span>--pty<span class="w"> </span>bash
 </span></code></pre></div>
 <p><code>--pty:</code> Allocates a pseudo-terminal for interactivity.</p>
+<h2 id="job-queue">Job Queue</h2>
+<p>See jobs that are in the queue for a <code>username</code>.</p>
+<p>All jobs:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>squeue<span class="w"> </span>-u<span class="w"> </span>username
+</span></code></pre></div>
+<p>Or filter by state:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>squeue<span class="w"> </span>-u<span class="w"> </span>username<span class="w"> </span>-t<span class="w"> </span>PENDING
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>squeue<span class="w"> </span>-u<span class="w"> </span>username<span class="w"> </span>-t<span class="w"> </span>RUNNING
+</span></code></pre></div>
+<h2 id="cancel-jobs">Cancel Jobs</h2>
+<p>Cancel a particular job:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>squeue<span class="w"> </span>-u<span class="w"> </span>username<span class="w"> </span><span class="c1"># to list all the jobs of a user and get the job_id</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>scancel<span class="w"> </span>&lt;job_id&gt;<span class="w"> </span>
+</span></code></pre></div>
+<p>Cancels all jobs of a user in the queue:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>scancel<span class="w"> </span>-u<span class="w"> </span>username
+</span></code></pre></div>
+<h3 id="cancel-only-pending-jobs-for-a-user">Cancel only <code>PENDING</code> jobs for a user</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>scancel<span class="w"> </span>-u<span class="w"> </span>username<span class="w"> </span>-t<span class="w"> </span>PENDING
+</span></code></pre></div>
+<h3 id="cancel-only-running-jobs-for-a-user">Cancel only <code>RUNNING</code> jobs for a user</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>scancel<span class="w"> </span>-u<span class="w"> </span>username<span class="w"> </span>-t<span class="w"> </span>RUNNING
+</span></code></pre></div>
+<h3 id="cancel-jobs-by-multiple-states">Cancel jobs by multiple states</h3>
+<p>You can specify multiple states separated by commas:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>scancel<span class="w"> </span>-u<span class="w"> </span>username<span class="w"> </span>-t<span class="w"> </span>PENDING,RUNNING
+</span></code></pre></div>
 
 
 
