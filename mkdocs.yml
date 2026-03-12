@@ -96,6 +96,12 @@ nav:
       - editors/nvimr-r-ide.md
   - HPC:
       - hpc/skyline.md
+  - Immunology:
+      - immunology/b-cells.md
+      - immunology/antibodies.md
+      - immunology/sample-types.md
+      - immunology/techniques.md
+
   - IRC:
       - irc/irc.md
       - irc/weechat.md
