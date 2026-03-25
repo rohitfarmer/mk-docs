@@ -1,3 +1,3 @@
-mkdocs build
+zensical build
 
 cp contents/.nojekyll docs/
