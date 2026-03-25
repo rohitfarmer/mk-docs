@@ -12,13 +12,13 @@
         <meta name="author" content="Rohit Farmer">
       
       
-        <link rel="canonical" href="https://docs.rohitfarmer.com/database/sqlite-where/">
+        <link rel="canonical" href="https://docs.rohitfarmer.com/bioinformatics/sequencing-methods/">
       
       
-        <link rel="prev" href="../sqlite/">
+        <link rel="prev" href="../snakemake/">
       
       
-        <link rel="next" href="../../data-science/classification-performance-metrics/">
+        <link rel="next" href="../../containers/docker/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>SQLite Conditional and Logical Operators - Documentations by Rohit Farmer</title>
+        <title>Next Generation Sequencing Methods - Documentations by Rohit Farmer</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sqlite-conditional-and-logical-operators" class="md-skip">
+        <a href="#next-generation-sequencing-methods" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              SQLite Conditional and Logical Operators
+              Next Generation Sequencing Methods
             
           </span>
         </div>
@@ -452,18 +452,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -484,7 +486,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -502,7 +504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../bioinformatics/blast/" class="md-nav__link">
+      <a href="../blast/" class="md-nav__link">
         
   
   
@@ -530,7 +532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../bioinformatics/taxonomy/" class="md-nav__link">
+      <a href="../taxonomy/" class="md-nav__link">
         
   
   
@@ -558,7 +560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../bioinformatics/snakemake/" class="md-nav__link">
+      <a href="../snakemake/" class="md-nav__link">
         
   
   
@@ -583,10 +585,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../bioinformatics/sequencing-methods/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Next Generation Sequencing Methods
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -602,6 +631,142 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#illumina-sequencing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Illumina Sequencing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Illumina Sequencing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fragmenting-the-dna-and-adding-adapters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fragmenting the DNA and Adding Adapters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attaching-fragments-to-the-flow-cell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attaching Fragments to the Flow Cell
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cluster-generation-signal-amplification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cluster Generation (Signal Amplification)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequencing-by-synthesis-base-incorporation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sequencing by Synthesis (Base Incorporation)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imaging-and-base-identification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imaging and Base Identification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-the-block-and-repeating-the-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Removing the Block and Repeating the Cycle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-output-and-sequence-reconstruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Output and Sequence Reconstruction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#big-picture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Big Picture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#youtube-videos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        YouTube Videos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -784,20 +949,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -818,7 +981,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -836,7 +999,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sqlite/" class="md-nav__link">
+      <a href="../../database/sqlite/" class="md-nav__link">
         
   
   
@@ -861,37 +1024,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    SQLite Conditional and Logical Operators
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../database/sqlite-where/" class="md-nav__link">
         
   
   
@@ -907,242 +1043,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-comparison-operators" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Comparison Operators
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Comparison Operators">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#or" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        = or ==
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#or_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        != or &lt;&gt;
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#less-than-greater-than-less-than-or-equal-to-greater-than-or-equal-to" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        &lt; (Less than), &gt; (Greater than), &lt;= (Less than or equal to), &gt;= (Greater than or equal to)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#is-is-not" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        IS / IS NOT
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-logical-operators" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Logical Operators
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Logical Operators">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#and" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        AND
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#or_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        OR
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#not" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        NOT
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-special-operators" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Special Operators
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Special Operators">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#in-not-in" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        IN / NOT IN
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#between-not-between" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        BETWEEN / NOT BETWEEN
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#like-glob" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        LIKE / GLOB
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#exists" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        EXISTS
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#case" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        CASE
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#regexp" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        REGEXP
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-using-conditions-in-queries" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Using Conditions in Queries
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-points-and-tips" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key Points and Tips
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3448,22 +3348,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-comparison-operators" class="md-nav__link">
+  <a href="#illumina-sequencing" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Comparison Operators
+        Illumina Sequencing
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. Comparison Operators">
+    <nav class="md-nav" aria-label="Illumina Sequencing">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#or" class="md-nav__link">
+  <a href="#fragmenting-the-dna-and-adding-adapters" class="md-nav__link">
     <span class="md-ellipsis">
       
-        = or ==
+        Fragmenting the DNA and Adding Adapters
       
     </span>
   </a>
@@ -3471,10 +3371,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#or_1" class="md-nav__link">
+  <a href="#attaching-fragments-to-the-flow-cell" class="md-nav__link">
     <span class="md-ellipsis">
       
-        != or &lt;&gt;
+        Attaching Fragments to the Flow Cell
       
     </span>
   </a>
@@ -3482,10 +3382,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#less-than-greater-than-less-than-or-equal-to-greater-than-or-equal-to" class="md-nav__link">
+  <a href="#cluster-generation-signal-amplification" class="md-nav__link">
     <span class="md-ellipsis">
       
-        &lt; (Less than), &gt; (Greater than), &lt;= (Less than or equal to), &gt;= (Greater than or equal to)
+        Cluster Generation (Signal Amplification)
       
     </span>
   </a>
@@ -3493,10 +3393,65 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#is-is-not" class="md-nav__link">
+  <a href="#sequencing-by-synthesis-base-incorporation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        IS / IS NOT
+        Sequencing by Synthesis (Base Incorporation)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imaging-and-base-identification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imaging and Base Identification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-the-block-and-repeating-the-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Removing the Block and Repeating the Cycle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-output-and-sequence-reconstruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Output and Sequence Reconstruction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#big-picture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Big Picture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#youtube-videos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        YouTube Videos
       
     </span>
   </a>
@@ -3505,161 +3460,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-logical-operators" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Logical Operators
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Logical Operators">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#and" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        AND
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#or_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        OR
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#not" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        NOT
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-special-operators" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Special Operators
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Special Operators">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#in-not-in" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        IN / NOT IN
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#between-not-between" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        BETWEEN / NOT BETWEEN
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#like-glob" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        LIKE / GLOB
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#exists" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        EXISTS
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#case" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        CASE
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#regexp" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        REGEXP
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-using-conditions-in-queries" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Using Conditions in Queries
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-points-and-tips" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key Points and Tips
-      
-    </span>
-  </a>
   
 </li>
       
@@ -3706,10 +3506,10 @@
     
     
       <li class="md-path__item">
-        <a href="../sqlite/" class="md-path__link">
+        <a href="../blast/" class="md-path__link">
           
   <span class="md-ellipsis">
-    Database
+    Bioinformatics
   </span>
 
         </a>
@@ -3731,148 +3531,38 @@
   
 
 
-<h1 id="sqlite-conditional-and-logical-operators">SQLite Conditional and Logical Operators</h1>
-<p>In SQLite, <strong>conditional operators</strong> (sometimes also referred to as comparison operators or logical operators) are used in SQL statements to filter records or perform logical checks. Below is an overview of the most common conditional operators and expressions you will encounter in SQLite, along with brief explanations.</p>
-<h2 id="1-comparison-operators">1. Comparison Operators</h2>
-<h3 id="or">= or ==</h3>
-<p>Checks if two expressions are equal.</p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">employees</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">department</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Sales&#39;</span><span class="p">;</span>
-</span></code></pre></div>
-<h3 id="or_1">!= or &lt;&gt;</h3>
-<p>Checks if two expressions are not equal.</p>
-<p><div class="language-sql highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">employees</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">department</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s1">&#39;Sales&#39;</span><span class="p">;</span>
-</span></code></pre></div>
-In SQLite, <code>!=</code> and <code>&lt;&gt;</code> have the same meaning.</p>
-<h3 id="less-than-greater-than-less-than-or-equal-to-greater-than-or-equal-to">&lt; (Less than), &gt; (Greater than), &lt;= (Less than or equal to), &gt;= (Greater than or equal to)</h3>
-<p>Used for numerical or lexicographical comparison.</p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">orders</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">order_total</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1000</span><span class="p">;</span>
-</span></code></pre></div>
-<h3 id="is-is-not"><strong>IS</strong> / <strong>IS NOT</strong></h3>
-<p>Primarily used to compare with <code>NULL</code> or boolean-like values in SQLite.</p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">employees</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">manager_id</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NULL</span><span class="p">;</span>
-</span></code></pre></div>
-<p>Although <code>=</code> can be used for most comparisons, <code>IS</code> more explicitly checks for identity (especially with <code>NULL</code>).</p>
-<h2 id="2-logical-operators">2. Logical Operators</h2>
-<h3 id="and"><strong>AND</strong></h3>
-<p>Combines multiple conditions. Returns true if <em>all</em> conditions are met.</p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">employees</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">department</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Sales&#39;</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">AND</span><span class="w"> </span><span class="n">hire_date</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="s1">&#39;2020-01-01&#39;</span><span class="p">;</span>
-</span></code></pre></div>
-<h3 id="or_2"><strong>OR</strong></h3>
-<p>Combines multiple conditions. Returns true if <em>any</em> condition is met.</p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">employees</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">department</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Sales&#39;</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="k">OR</span><span class="w"> </span><span class="n">department</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Finance&#39;</span><span class="p">;</span>
-</span></code></pre></div>
-<h3 id="not"><strong>NOT</strong></h3>
-<p>Negates a condition. Returns true if the condition is false.</p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">employees</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">WHERE</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="p">(</span><span class="n">department</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Sales&#39;</span><span class="p">);</span>
-</span></code></pre></div>
-<h2 id="3-special-operators">3. Special Operators</h2>
-<h4 id="in-not-in"><strong>IN / NOT IN</strong></h4>
-<p>Checks if a value matches any value in a given list (or subquery result).</p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">employees</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">department</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;Sales&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Finance&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Engineering&#39;</span><span class="p">);</span>
-</span></code></pre></div>
-<p><code>NOT IN</code> checks if a value is not in the given list.</p>
-<h4 id="between-not-between"><strong>BETWEEN / NOT BETWEEN</strong></h4>
-<p>Checks if a value is within a given range (inclusive).</p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">orders</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">order_date</span><span class="w"> </span><span class="k">BETWEEN</span><span class="w"> </span><span class="s1">&#39;2021-01-01&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="s1">&#39;2021-12-31&#39;</span><span class="p">;</span>
-</span></code></pre></div>
-<p><code>NOT BETWEEN</code> excludes the specified range.</p>
-<h4 id="like-glob"><strong>LIKE / GLOB</strong></h4>
-<p>Used for pattern matching in strings. </p>
-<ul>
-<li><strong>LIKE</strong> supports simple wildcard patterns:</li>
-<li><code>%</code> (percent) matches zero or more characters.</li>
-<li><code>_</code> (underscore) matches exactly one character.</li>
-<li><strong>GLOB</strong> uses Unix-like wildcard characters (<code>*</code>, <code>?</code>, <code>[</code>, and <code>]</code>), and is case sensitive by default.</li>
-</ul>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">employees</span>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;A%&#39;</span><span class="p">;</span><span class="w">  </span><span class="c1">-- names starting with &#39;A&#39;</span>
-</span></code></pre></div>
-<h4 id="exists"><strong>EXISTS</strong></h4>
-<p>Checks if a subquery returns any rows. Returns true if the subquery contains at least one row.</p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">employees</span><span class="w"> </span><span class="n">e</span>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="k">WHERE</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="p">(</span>
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="k">SELECT</span><span class="w"> </span><span class="mi">1</span>
-</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="k">FROM</span><span class="w"> </span><span class="n">orders</span><span class="w"> </span><span class="n">o</span>
-</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">o</span><span class="p">.</span><span class="n">employee_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">id</span>
-</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="p">);</span>
-</span></code></pre></div>
-<h4 id="case"><strong>CASE</strong></h4>
-<p>Not an operator but rather an expression for conditional logic (similar to <code>if/else</code>):</p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">SELECT</span><span class="w"> </span>
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="k">CASE</span>
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">    </span><span class="k">WHEN</span><span class="w"> </span><span class="n">order_total</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">1000</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="s1">&#39;High&#39;</span>
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">    </span><span class="k">WHEN</span><span class="w"> </span><span class="n">order_total</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">500</span><span class="w">  </span><span class="k">THEN</span><span class="w"> </span><span class="s1">&#39;Medium&#39;</span>
-</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">    </span><span class="k">ELSE</span><span class="w"> </span><span class="s1">&#39;Low&#39;</span>
-</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="k">END</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">order_classification</span>
-</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="k">FROM</span><span class="w"> </span><span class="n">orders</span><span class="p">;</span>
-</span></code></pre></div>
-<h4 id="regexp"><strong>REGEXP</strong></h4>
-<ul>
-<li>SQLite does not natively include a <code>REGEXP</code> operator by default. It can be enabled with an external function. If enabled, it performs regular expression pattern matching.</li>
-<li>Usage example (assuming <code>REGEXP</code> is enabled):</li>
-</ul>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">employees</span>
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="n">REGEXP</span><span class="w"> </span><span class="s1">&#39;^[A-Z][a-z]*$&#39;</span><span class="p">;</span>
-</span></code></pre></div>
-<h2 id="4-using-conditions-in-queries">4. Using Conditions in Queries</h2>
-<p>You typically use these operators within:
-- <strong>WHERE</strong> clause for filtering rows
-- <strong>HAVING</strong> clause for filtering groups (with aggregate functions)
-- <strong>JOIN</strong> conditions</p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">employee_id</span><span class="p">,</span><span class="w"> </span><span class="n">first_name</span><span class="p">,</span><span class="w"> </span><span class="n">last_name</span>
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">employees</span>
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">department</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Sales&#39;</span>
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">  </span><span class="k">AND</span><span class="w"> </span><span class="n">salary</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">50000</span>
-</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">  </span><span class="k">AND</span><span class="w"> </span><span class="n">hire_date</span><span class="w"> </span><span class="k">BETWEEN</span><span class="w"> </span><span class="s1">&#39;2020-01-01&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="s1">&#39;2021-01-01&#39;</span><span class="p">;</span>
-</span></code></pre></div>
-<p>This query returns all employees in the <code>Sales</code> department whose salary exceeds <code>50,000</code> and who were hired in the specified date range.</p>
-<h2 id="key-points-and-tips">Key Points and Tips</h2>
-<ol>
-<li><strong>Handling NULL values</strong>  </li>
-<li>Remember that <code>NULL</code> in SQL is neither equal nor unequal to other values. Use <code>IS NULL</code> or <code>IS NOT NULL</code> to check for <code>NULL</code>.</li>
-<li>
-<p>Comparisons using <code>= NULL</code> or <code>!= NULL</code> will not work as expected.</p>
-</li>
-<li>
-<p><strong>Case Sensitivity</strong>  </p>
-</li>
-<li>
-<p>String comparisons can be case-insensitive depending on the collation settings. By default, <code>LIKE</code> is case-insensitive for ASCII characters. <code>GLOB</code> is case sensitive unless you apply certain collation modifiers.</p>
-</li>
-<li>
-<p><strong>Performance Considerations</strong>  </p>
-</li>
-<li>
-<p>For large data sets, be mindful of how you combine logical operations and use indexes to speed up queries. For example, indexing a column can help queries with <code>WHERE</code> conditions on that column.</p>
-</li>
-<li>
-<p><strong>Short-Circuit Evaluation</strong>  </p>
-</li>
-<li>In many SQL engines, logical operators (AND/OR) evaluate conditions from left to right, short-circuiting when the result is known. However, relying on short-circuit behavior can be non-portable—so it’s better to write queries that don’t depend on order of evaluation.</li>
-</ol>
+<h1 id="next-generation-sequencing-methods">Next Generation Sequencing Methods</h1>
+<h2 id="illumina-sequencing">Illumina Sequencing</h2>
+<p>Illumina sequencing is a high-throughput DNA sequencing technology based on a method known as sequencing by synthesis, in which the sequence of a DNA molecule is determined by detecting the identity of nucleotides as they are incorporated into a growing complementary strand. It relies on cyclic incorporation of fluorescently labeled, reversibly terminated nucleotides, allowing each base addition to be recorded one at a time across millions of DNA fragments in parallel. This approach enables highly accurate, massively parallel sequencing of short DNA reads, making it one of the most widely used platforms for genomic, transcriptomic, and epigenomic analysis.</p>
+<h3 id="fragmenting-the-dna-and-adding-adapters">Fragmenting the DNA and Adding Adapters</h3>
+<p>DNA, in its native form, is extremely long—far longer than what this technology can read in a single pass. To make it manageable, it is broken into many short fragments. This also enables parallel processing, since each fragment can be read independently. Fragmentation is typically done by physically shearing the DNA (using sonication or acoustic energy) or by enzymatically cutting it into smaller pieces. Typical Illumina library fragment sizes are ~200–500 base pairs, with ~300–400 bp being very common for standard sequencing workflows.</p>
+<p>Short, known DNA sequences (called adapters) are added to both ends of every fragment. These adapters do not carry biological information of interest; instead, they act as standardized attachment points. Because every fragment now has the same adapter sequences, they can all interact with the sequencing system in a uniform way.</p>
+<h3 id="attaching-fragments-to-the-flow-cell">Attaching Fragments to the Flow Cell</h3>
+<p>The fragments are introduced to a glass surface called a <strong>flow cell</strong>. This surface is coated with short DNA sequences that are complementary to the adapters. Through normal base-pairing interactions (hybridization), each fragment binds to the surface via its adapters.</p>
+<p>The flow cell is not just a passive surface—it is engineered with microscopic channels that allow sequencing reagents to flow evenly across it during each step of the process. It is also divided into separate lanes, which act like independent compartments. Each lane can hold a different sample or library, allowing multiple samples to be sequenced at the same time while keeping their data separate. This design supports high-throughput processing and efficient use of the instrument.</p>
+<p>At this stage, each fragment is still a <strong>single DNA molecule</strong> fixed at a specific location on the flow cell. On its own, it produces far <strong>too little signal</strong> to be detected, which is why the next step—amplification—is necessary.</p>
+<h3 id="cluster-generation-signal-amplification">Cluster Generation (Signal Amplification)</h3>
+<p>Each bound DNA fragment is locally amplified into a cluster of identical copies. The fragment bends over and hybridizes to nearby surface-bound sequences, allowing it to be copied. Repeating this process many times produces a <strong>dense cluster of identical DNA strands</strong>, all originating from the same initial fragment and all located in a small physical area.</p>
+<p>This step is crucial because it <strong>amplifies the signal</strong>. <em>Instead of trying to detect a single molecule, the system now observes thousands of identical copies acting in synchrony, producing a signal strong enough to measure optically.</em></p>
+<h3 id="sequencing-by-synthesis-base-incorporation">Sequencing by Synthesis (Base Incorporation)</h3>
+<p>Sequencing begins by building a new DNA strand along each template strand. This follows the natural rules of DNA replication: each base added is complementary to the template (A pairs with T, C with G).</p>
+<p>The nucleotides used here are specially modified. Each of the four bases carries a <strong>distinct fluorescent label</strong> (a specific color) and a <strong>reversible blocking group</strong>. The blocking group ensures that only one base can be added at a time, which is essential for accurately tracking the sequence.</p>
+<p>During each cycle, one nucleotide is incorporated into each growing strand.</p>
+<h3 id="imaging-and-base-identification">Imaging and Base Identification</h3>
+<p>After a single base is added, the flow cell is imaged. Each cluster emits a fluorescent signal corresponding to the base that was just incorporated. Because all DNA strands within a cluster are identical and synchronized, they all incorporate the same base in that cycle, producing a uniform color signal.</p>
+<p>This allows the system to determine which base (A, C, G, or T) was added at that specific position for every cluster.</p>
+<h3 id="removing-the-block-and-repeating-the-cycle">Removing the Block and Repeating the Cycle</h3>
+<p>Once imaging is complete, the fluorescent label and the blocking group are <strong>chemically removed</strong>. This restores the ability of the DNA strand to accept another nucleotide.</p>
+<p>The cycle then repeats: a new base is added, the flow cell is imaged, and the block is removed again. By repeating this process over many cycles, the sequence is read one base at a time.</p>
+<h3 id="data-output-and-sequence-reconstruction">Data Output and Sequence Reconstruction</h3>
+<p>Over successive cycles, each cluster produces a sequence of color signals. These signals are translated into a string of DNA bases, representing the sequence of the original fragment.</p>
+<p>Because millions of clusters are sequenced simultaneously, the result is a massive collection of short DNA sequences, often called <strong>"reads."</strong> These reads can then be aligned to a reference genome or assembled computationally to reconstruct longer sequences, depending on the goal of the experiment.</p>
+<h3 id="big-picture">Big Picture</h3>
+<p>Illumina sequencing works by slowing DNA replication down into discrete, observable steps. Fragmentation makes the DNA manageable, adapters standardize how fragments are handled, clustering amplifies the signal, and reversible chemistry allows one base to be read at a time. The entire process turns DNA synthesis into something that can be watched, recorded, and translated into sequence information.</p>
+<h3 id="youtube-videos">YouTube Videos</h3>
+<iframe width="100%" height="415" src="https://www.youtube.com/embed/fCd6B5HRaZ8?si=LKzLn5DkNfCzWMrQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="100%" height="415" src="https://www.youtube.com/embed/WKAUtJQ69n8?si=hY1s8aaw21Wib7Tj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
@@ -3880,68 +3570,10 @@ In SQLite, <code>!=</code> and <code>&lt;&gt;</code> have the same meaning.</p>
 
 
 
-  
-  
 
 
 
 
-
-
-  <h2 id="__comments">Comments</h2>
-  <!-- Insert generated snippet here -->
-   <script src="https://giscus.app/client.js"
-        data-repo="rohitfarmer/rohitfarmer-com-comments"
-        data-repo-id="R_kgDOQ-g51g"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOQ-g51s4C1P-D"
-        data-mapping="title"
-        data-strict="1"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-</script>
-
-  <!-- Synchronize Giscus theme with palette -->
-  <script>
-    var giscus = document.querySelector("script[src*=giscus]")
-
-    // Set palette on initial load
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object") {
-      var theme = palette.color.scheme === "slate"
-        ? "transparent_dark"
-        : "light"
-
-      // Instruct Giscus to set theme
-      giscus.setAttribute("data-theme", theme) 
-    }
-
-    // Register event handlers after documented loaded
-    document.addEventListener("DOMContentLoaded", function() {
-      var ref = document.querySelector("[data-md-component=palette]")
-      ref.addEventListener("change", function() {
-        var palette = __md_get("__palette")
-        if (palette && typeof palette.color === "object") {
-          var theme = palette.color.scheme === "slate"
-            ? "transparent_dark"
-            : "light"
-
-          // Instruct Giscus to change theme
-          var frame = document.querySelector(".giscus-frame")
-          frame.contentWindow.postMessage(
-            { giscus: { setConfig: { theme } } },
-            "https://giscus.app"
-          )
-        }
-      })
-    })
-  </script>
 
                 
               </article>
@@ -3966,7 +3598,7 @@ In SQLite, <code>!=</code> and <code>&lt;&gt;</code> have the same meaning.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../sqlite/" class="md-footer__link md-footer__link--prev" aria-label="Previous: SQLite">
+          <a href="../snakemake/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Snakemake">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -3976,20 +3608,20 @@ In SQLite, <code>!=</code> and <code>&lt;&gt;</code> have the same meaning.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                SQLite
+                Snakemake
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../data-science/classification-performance-metrics/" class="md-footer__link md-footer__link--next" aria-label="Next: Classification Model Performance Metric">
+          <a href="../../containers/docker/" class="md-footer__link md-footer__link--next" aria-label="Next: Docker Tutorial">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Classification Model Performance Metric
+                Docker Tutorial
               </div>
             </div>
             <div class="md-footer__button md-icon">
