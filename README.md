@@ -41,11 +41,12 @@ bash build-site.sh
 ### To Serve the Site Locally
 
 ```bash
-mkdocs serve
+zensical serve
 ```
 
 ## Changelog
 
-2025-12-11: The website nomore was built and served by Netlify. This was the tutorial to set up an automatic build and serve by Netlify [https://www.starfallprojects.co.uk/projects/deploy-host-docs/deploy-mkdocs-material-netlify/](https://www.starfallprojects.co.uk/projects/deploy-host-docs/deploy-mkdocs-material-netlify/) that I used in the past. 
-
-The last commit with the previous structure: [26c9652542f19aac11a5c7202a5ec6d857eba187](https://github.com/rohitfarmer/mk-docs/tree/26c9652542f19aac11a5c7202a5ec6d857eba187)
+* 2026-03-25: The build engine has migrated from Mkdocs to [Zensical](https://zensical.org/). The project still uses the `mkdocs.yml` configuration file, which I'll gradually convert to `zensical.toml`.  
+    * The last commit with Mkdocs website: [9bc99db93be75572091916e6896c25a0b811ceb3](https://github.com/rohitfarmer/mk-docs/tree/9bc99db93be75572091916e6896c25a0b811ceb3)
+* 2025-12-11: The website nomore was built and served by Netlify. This was the tutorial to set up an automatic build and serve by Netlify [https://www.starfallprojects.co.uk/projects/deploy-host-docs/deploy-mkdocs-material-netlify/](https://www.starfallprojects.co.uk/projects/deploy-host-docs/deploy-mkdocs-material-netlify/) that I used in the past. 
+    * The last commit with the previous structure: [26c9652542f19aac11a5c7202a5ec6d857eba187](https://github.com/rohitfarmer/mk-docs/tree/26c9652542f19aac11a5c7202a5ec6d857eba187)
