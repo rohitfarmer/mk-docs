@@ -130,6 +130,7 @@ nav:
   - Online Services:
       - online-services/multi-service-hosts.md
       - online-services/jitsi.md
+      - online-services/file-sharing.md
   - Python:
       - python/getting-back-to-python.md
       - python/numpy.md
