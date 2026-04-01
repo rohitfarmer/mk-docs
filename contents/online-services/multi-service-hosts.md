@@ -20,6 +20,7 @@ Websites providing multiple online services such as email, chat, social, etc.
 | [Disroot](https://disroot.org) | Akkoma, CryptPad, Email, Etherpad, Forgejo, Jitsi, Lemmy, LibreTranslate, Lufi, Mumble, NextCloud, PrivateBin, SearXNG, Vaultwarden, XMPP | 2026-02-15 |
 | [Exarius](https://exarius.org/) | CryptPad, File Sharing, Git, Matrix, NextCloud, Search | 2026-02-15 |
 | [Farmasoft](https://framasoft.org/en/) | Various services (see https://degooglisons-internet.org/en/) | 2026-02-15 |
+| Holm Servers | [Mastodon](https://holm.community), [Matrix](https://holm.chat), [PixelFed](https://holm.photo), [PeerTube](https://holm.video), [Loops](https://loops.holm.video) | 2026-04-01 |
 | [IMAGISPHE](https://imagisphe.re/) | Bitwarden, FreshRSS, Gitea, IT-Tools, Lemmy, Liteshort, Mastodon, Matrix, PrivateBin, PsiTransfer, RSS-Bridge, Wallabag, Ytdl | 2026-02-15 |
 | [Pub.solar](https://pub.solar/) | Forgejo/git, Mailman, Mastodon, Matrix, Nextcloud, SearXNG, Wiki | 2026-02-15 |
 | [RollenspielMonster](https://rollenspiel.monster/) | authentik, BookStack, Firefly III, Flohmarkt, Forgejo, Friendica, FreshRSS, Framadate, Jitsi, Lemmy, LinkStack, Linkwarden, Mastodon, Matrix, Mumble, Nextcloud, ntfy, PrivateBin, Teamspeak, Vaultwarden, Vikunja, Wallabag, Writefreely | 2026-02-15 |
