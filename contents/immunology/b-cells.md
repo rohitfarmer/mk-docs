@@ -134,3 +134,7 @@ It allows the immune system to produce highly specific antibodies that recognize
 Because processes such as somatic hypermutation involve changes to DNA, they must be tightly controlled. If this process becomes abnormal, it can lead to autoimmune diseases or B cell cancers such as lymphoma.
 
 Overall, the B cell immune response is a highly organized system that allows the body to adapt and improve its defense against pathogens over time.
+
+## Further Reading
+
+* [Sarah A. Althwaiqeb, Adegbenro O. Fakoya, and Bruno Bordoni. Histology, B-Cell Lymphocyte, STAT Pearls](https://web.archive.org/web/20260401144035/https://www.ncbi.nlm.nih.gov/books/NBK560905/)
