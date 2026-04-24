@@ -131,17 +131,19 @@ mpirun -np 5 /usr/bin/mdrun_mpi -v -deffnm run
 
 ## Extending finished run
 ```bash
-tpbconv -s previous.tpr -extend timetoextendby -o next.tpr
-mdrun -s next.tpr -cpi previous.cpt
+# Extend by 10 ns
+gmx convert-tpr -s md_0_10.tpr -o md_0_20.tpr -extend 10000
 
-# for 50ns
-tpbconv -s md_2-ext.tpr -extend 50000 -o md_2-ext-150.tpr 
+# This will generate a separate trajectory. Use -append to continue appending the previous trajectory.
+gmx mdrun -s md_0_20.tpr -cpi md_0_10.cpt -deffnm md_0_20 -noappend
 ```
+
+**Npte:** `-deffnm` with the same name as the previous checkpoint and with `-append` will continue writing to the same trajectory as the checkpoint. To generate a different set of trajectory files use a different `-deffnm` with `-noappend`.
 
 ## Trajectory concatanate
 
 ```bash
-trjcat -f *.trr -o fixed.trr 
+gmx trjcat -f *.xtc -o fixed.xtc 
 ```
 
 ## Remove periodic jumps and center the protein
