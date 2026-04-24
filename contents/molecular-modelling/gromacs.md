@@ -144,28 +144,26 @@ tpbconv -s md_2-ext.tpr -extend 50000 -o md_2-ext-150.tpr
 trjcat -f *.trr -o fixed.trr 
 ```
 
-## Box centering
+## Remove periodic jumps and center the protein
+
+`-pbc nojump` makes the trajectory continuous by putting atoms back across the box, while `-center` recenters the system and `-pbc mol` keeps molecules whole in the box; `-ur compact` is useful for compact visualization of truncated octahedron / rhombic dodecahedron boxes. The manual also notes that not every combination works perfectly in one call, so doing it in **two passes** is often the cleanest approach.
 
 ```bash
-gmx trjconv -s md_0_10.tpr -f md_0_10.xtc -o md_0_10_noPBC.xtc -pbc mol -center
+# 1) Remove periodic jumps, making the trajectory continuous
+gmx trjconv -s md.tpr -f md.xtc -o md_nojump.xtc -pbc nojump
 
-trjconv -s em.tpr -f nvt.trr -o md_nojump.xtc -pbc nojump -boxcenter tric
-
-trjconv -s md.tpr -f md.trr -o md_nojump.xtc -pbc nojump  -center
-
-g_trjconv -s run_3.tpr -f run_3.trr -o run_3.xtc -pbc mol -ur compact -center
+# 2) Center the protein and keep molecules whole
+gmx trjconv -s md.tpr -f md_nojump.xtc -o md_center.xtc -center -pbc mol -ur compact
 ```
 
-## Fit the tragectory to the initial structure to avoid PBC effects
+**Note:** For the first, I choose the whole system as output and for the second, I choose the protein to be centered and then the whole system as output.
+
+If you also want the protein orientation fixed, add `-fit rot+trans` in a separate pass.
+
+## Fit the tragectory to the initial structure and use an index
 
 ```bash
-trjconv -s run.tpr -f run.xtc -o run-fit.xtc -fit progressive
-
-# For Complex (first fit one complex then the other)
-
-trjconv -s md.tpr -f md.trr -o md_nojump.xtc -pbc nojump  -center
-
-trjconv -s em.tpr -f md_0-protein.xtc -o md_0-acp-fit.xtc -fit progressive -n acpIndex.ndx 
+gmx trjconv -s em.tpr -f md_0-protein.xtc -o md_0-acp-fit.xtc -fit progressive -n acpIndex.ndx 
 ```
 
 ## Making index file

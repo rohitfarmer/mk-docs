@@ -17,9 +17,7 @@ ai-hpcsubmit2.niaid.nih.gov
 
 ### Web ~ Thinlinc
 
-```
-https://hpcthinlinc.niaid.nih.gov/
-```
+[https://hpcthinlinc.niaid.nih.gov/](https://hpcthinlinc.niaid.nih.gov/)
 
 ## Running Jobs
 

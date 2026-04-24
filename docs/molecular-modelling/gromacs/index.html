@@ -2269,10 +2269,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#box-centering" class="md-nav__link">
+  <a href="#remove-periodic-jumps-and-center-the-protein" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Box centering
+        Remove periodic jumps and center the protein
       
     </span>
   </a>
@@ -2280,10 +2280,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#fit-the-tragectory-to-the-initial-structure-to-avoid-pbc-effects" class="md-nav__link">
+  <a href="#fit-the-tragectory-to-the-initial-structure-and-use-an-index" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Fit the tragectory to the initial structure to avoid PBC effects
+        Fit the tragectory to the initial structure and use an index
       
     </span>
   </a>
@@ -3819,10 +3819,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#box-centering" class="md-nav__link">
+  <a href="#remove-periodic-jumps-and-center-the-protein" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Box centering
+        Remove periodic jumps and center the protein
       
     </span>
   </a>
@@ -3830,10 +3830,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#fit-the-tragectory-to-the-initial-structure-to-avoid-pbc-effects" class="md-nav__link">
+  <a href="#fit-the-tragectory-to-the-initial-structure-and-use-an-index" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Fit the tragectory to the initial structure to avoid PBC effects
+        Fit the tragectory to the initial structure and use an index
       
     </span>
   </a>
@@ -4144,23 +4144,18 @@ When prompted, choose group 13 "SOL" for embedding ions. You do not want to repl
 <h2 id="trajectory-concatanate">Trajectory concatanate</h2>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>trjcat<span class="w"> </span>-f<span class="w"> </span>*.trr<span class="w"> </span>-o<span class="w"> </span>fixed.trr<span class="w"> </span>
 </span></code></pre></div>
-<h2 id="box-centering">Box centering</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>gmx<span class="w"> </span>trjconv<span class="w"> </span>-s<span class="w"> </span>md_0_10.tpr<span class="w"> </span>-f<span class="w"> </span>md_0_10.xtc<span class="w"> </span>-o<span class="w"> </span>md_0_10_noPBC.xtc<span class="w"> </span>-pbc<span class="w"> </span>mol<span class="w"> </span>-center
-</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>
-</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>trjconv<span class="w"> </span>-s<span class="w"> </span>em.tpr<span class="w"> </span>-f<span class="w"> </span>nvt.trr<span class="w"> </span>-o<span class="w"> </span>md_nojump.xtc<span class="w"> </span>-pbc<span class="w"> </span>nojump<span class="w"> </span>-boxcenter<span class="w"> </span>tric
-</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>
-</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>trjconv<span class="w"> </span>-s<span class="w"> </span>md.tpr<span class="w"> </span>-f<span class="w"> </span>md.trr<span class="w"> </span>-o<span class="w"> </span>md_nojump.xtc<span class="w"> </span>-pbc<span class="w"> </span>nojump<span class="w">  </span>-center
-</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>
-</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>g_trjconv<span class="w"> </span>-s<span class="w"> </span>run_3.tpr<span class="w"> </span>-f<span class="w"> </span>run_3.trr<span class="w"> </span>-o<span class="w"> </span>run_3.xtc<span class="w"> </span>-pbc<span class="w"> </span>mol<span class="w"> </span>-ur<span class="w"> </span>compact<span class="w"> </span>-center
+<h2 id="remove-periodic-jumps-and-center-the-protein">Remove periodic jumps and center the protein</h2>
+<p><code>-pbc nojump</code> makes the trajectory continuous by putting atoms back across the box, while <code>-center</code> recenters the system and <code>-pbc mol</code> keeps molecules whole in the box; <code>-ur compact</code> is useful for compact visualization of truncated octahedron / rhombic dodecahedron boxes. The manual also notes that not every combination works perfectly in one call, so doing it in <strong>two passes</strong> is often the cleanest approach.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c1"># 1) Remove periodic jumps, making the trajectory continuous</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>gmx<span class="w"> </span>trjconv<span class="w"> </span>-s<span class="w"> </span>md.tpr<span class="w"> </span>-f<span class="w"> </span>md.xtc<span class="w"> </span>-o<span class="w"> </span>md_nojump.xtc<span class="w"> </span>-pbc<span class="w"> </span>nojump
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="c1"># 2) Center the protein and keep molecules whole</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>gmx<span class="w"> </span>trjconv<span class="w"> </span>-s<span class="w"> </span>md.tpr<span class="w"> </span>-f<span class="w"> </span>md_nojump.xtc<span class="w"> </span>-o<span class="w"> </span>md_center.xtc<span class="w"> </span>-center<span class="w"> </span>-pbc<span class="w"> </span>mol<span class="w"> </span>-ur<span class="w"> </span>compact
 </span></code></pre></div>
-<h2 id="fit-the-tragectory-to-the-initial-structure-to-avoid-pbc-effects">Fit the tragectory to the initial structure to avoid PBC effects</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>trjconv<span class="w"> </span>-s<span class="w"> </span>run.tpr<span class="w"> </span>-f<span class="w"> </span>run.xtc<span class="w"> </span>-o<span class="w"> </span>run-fit.xtc<span class="w"> </span>-fit<span class="w"> </span>progressive
-</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>
-</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="c1"># For Complex (first fit one complex then the other)</span>
-</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>
-</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>trjconv<span class="w"> </span>-s<span class="w"> </span>md.tpr<span class="w"> </span>-f<span class="w"> </span>md.trr<span class="w"> </span>-o<span class="w"> </span>md_nojump.xtc<span class="w"> </span>-pbc<span class="w"> </span>nojump<span class="w">  </span>-center
-</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>
-</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>trjconv<span class="w"> </span>-s<span class="w"> </span>em.tpr<span class="w"> </span>-f<span class="w"> </span>md_0-protein.xtc<span class="w"> </span>-o<span class="w"> </span>md_0-acp-fit.xtc<span class="w"> </span>-fit<span class="w"> </span>progressive<span class="w"> </span>-n<span class="w"> </span>acpIndex.ndx<span class="w"> </span>
+<p><strong>Note:</strong> For the first, I choose the whole system as output and for the second, I choose the protein to be centered and then the whole system as output.</p>
+<p>If you also want the protein orientation fixed, add <code>-fit rot+trans</code> in a separate pass.</p>
+<h2 id="fit-the-tragectory-to-the-initial-structure-and-use-an-index">Fit the tragectory to the initial structure and use an index</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>gmx<span class="w"> </span>trjconv<span class="w"> </span>-s<span class="w"> </span>em.tpr<span class="w"> </span>-f<span class="w"> </span>md_0-protein.xtc<span class="w"> </span>-o<span class="w"> </span>md_0-acp-fit.xtc<span class="w"> </span>-fit<span class="w"> </span>progressive<span class="w"> </span>-n<span class="w"> </span>acpIndex.ndx<span class="w"> </span>
 </span></code></pre></div>
 <h2 id="making-index-file">Making index file</h2>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>make_ndx<span class="w"> </span>-f<span class="w"> </span>conf.gro<span class="w"> </span>-o<span class="w"> </span>index.ndx<span class="w">    </span>
