@@ -2,7 +2,7 @@
 
 > I basically wrote the code and the specs and documentation for how the client and server talked to each other. - Tim Berners-Lee
 
-Welcome to my cookbook-style documentation site, where I collect frequently used software notes and practical code snippets. All documentation is written in Markdown and published using MkDocs.
+Welcome to my cookbook-style documentation site, where I collect frequently used software notes and practical code snippets. All documentation is written in Markdown and published using [Zensical](https://zensical.org/).
 
 I’m always happy to hear suggestions or collaborate — feel free to reach out at [rohit@rohitfarmer.com](mailto:rohit@rohitfarmer.com).
 
