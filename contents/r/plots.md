@@ -20,6 +20,24 @@ cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2"
 
 Main article: http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/
 
+## Ggplot themes
+
+To make background white and set the font size and face of different elements of the plot. `strip.text` corresponds to the subpanel title in a facet wrap or grid plot.
+
+```R
+theme(axis.title.x = element_text(size = 14, face = "bold"),
+      axis.title.y = element_text(size = 14, face = "bold"),
+      axis.text.x = element_text(size = 13),
+      axis.text.y = element_text(size = 13),
+      legend.title = element_text(size = 14, face = "bold"),
+      legend.text  = element_text(size = 13),
+      strip.text = element_text(size = 13, face = "bold"),
+      panel.background  = element_rect(fill = "white", color = NA),
+      plot.background   = element_rect(fill = "white", color = NA),
+      legend.background = element_rect(fill = "white", color = NA),
+      legend.key        = element_rect(fill = "white", color = NA))
+```
+
 ## Saving figures as SVG
 
 ```R
