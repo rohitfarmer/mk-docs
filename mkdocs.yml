@@ -157,6 +157,9 @@ nav:
       - uses/general-computing.md
   - Version Control:
       - vcs/git-github.md
+  - Web Development:
+      - Quarto:
+        - web-development/quarto/images.md
   - Writing:
       - writing/capitalization-titles-headings.md
       - writing/lists.md
