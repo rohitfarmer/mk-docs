@@ -121,7 +121,7 @@ nav:
       - linux/rsync.md
       - linux/screen.md
       - linux/system-monitoring.md
-      - linux/user-management-permissions.md
+      - linux/user-management.md
       - linux/wget.md
       - linux/xrdp.md
   - Molecular Modelling:

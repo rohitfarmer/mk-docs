@@ -12,7 +12,7 @@
         <meta name="author" content="Rohit Farmer">
       
       
-        <link rel="canonical" href="https://docs.rohitfarmer.com/linux/user-management-permissions/">
+        <link rel="canonical" href="https://docs.rohitfarmer.com/linux/user-management/">
       
       
         <link rel="prev" href="../system-monitoring/">
@@ -29,7 +29,7 @@
     
     
       
-        <title>Permissions and User management - Documentations by Rohit Farmer</title>
+        <title>User management - Documentations by Rohit Farmer</title>
       
     
     
@@ -87,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#permissions-and-user-management" class="md-skip">
+        <a href="#user-management" class="md-skip">
           Skip to content
         </a>
       
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Permissions and User management
+              User management
             
           </span>
         </div>
@@ -1854,7 +1854,7 @@
   <span class="md-ellipsis">
     
   
-    Permissions and User management
+    User management
   
 
     
@@ -1872,7 +1872,7 @@
   <span class="md-ellipsis">
     
   
-    Permissions and User management
+    User management
   
 
     
@@ -1897,39 +1897,6 @@
       On this page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#change-group-ownership" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Change group ownership
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#recursively-change-a-folders-ownership" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Recursively change a folder's ownership
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#file-permissions-using-chmod" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        File permissions using chmod
-      
-    </span>
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#add-a-new-user" class="md-nav__link">
@@ -3448,39 +3415,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#change-group-ownership" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Change group ownership
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#recursively-change-a-folders-ownership" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Recursively change a folder's ownership
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#file-permissions-using-chmod" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        File permissions using chmod
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#add-a-new-user" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3612,53 +3546,39 @@
   
 
 
-<h1 id="permissions-and-user-management">Permissions and User management</h1>
-<h2 id="change-group-ownership">Change group ownership</h2>
-<p>The code below will associate a folder to a specific group.  This is helpful when you are associated with more than one groups and the default group assigned to a file you created is not for the intended group. </p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>chgrp<span class="w"> </span>-R<span class="w"> </span>new_group<span class="w"> </span>path/to/folder
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1"># R for recursive</span>
-</span></code></pre></div>
-<p>Ensure the group ownership and permissions of the target directory are properly set if multiple users in the gemini group need access. For example, to make all new files inherit the gemini group:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>chmod<span class="w"> </span>g+s<span class="w"> </span>/path/to/folder
-</span></code></pre></div>
-<h2 id="recursively-change-a-folders-ownership">Recursively change a folder's ownership</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>chown<span class="w"> </span>-R<span class="w"> </span>&lt;owner&gt;:&lt;group&gt;<span class="w"> </span>&lt;directory&gt;
-</span></code></pre></div>
-<h2 id="file-permissions-using-chmod">File permissions using chmod</h2>
-<p>The code below will give read, write, and execute permissions to all the group members. A minus sign after g e.g. <code>g-wx</code> will take away write and execute permissions. 
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>chmod<span class="w"> </span>-R<span class="w"> </span>g+rwx<span class="w"> </span>path/to_folder
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="c1"># R is for recursive</span>
-</span></code></pre></div></p>
+<h1 id="user-management">User management</h1>
+<p><a href="https://www.geeksforgeeks.org/linux-unix/user-management-in-linux/">User Management in Linux</a></p>
+<p><img alt="Linux user IDs" src="https://media.geeksforgeeks.org/wp-content/uploads/20250730100822742759/linux_user_ids.webp" /></p>
 <h2 id="add-a-new-user">Add a new user</h2>
 <p>The command below will add a new user to a Linux system, create their home directory at <code>/home/newuser</code> and set the default shell to <code>/bin/bash</code>.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo<span class="w"> </span>useradd<span class="w"> </span>-m<span class="w"> </span>-s<span class="w"> </span>/bin/bash<span class="w"> </span>newuser
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>useradd<span class="w"> </span>-m<span class="w"> </span>-s<span class="w"> </span>/bin/bash<span class="w"> </span>newuser
 </span></code></pre></div>
 <p>The command below set the password for the new user.
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>passwd<span class="w"> </span>newuser
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>passwd<span class="w"> </span>newuser
 </span></code></pre></div></p>
 <h2 id="list-all-the-users-that-have-a-home-directory">List all the users that have a home directory</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>awk<span class="w"> </span>-F:<span class="w"> </span><span class="s1">&#39;/\/home/ {print $1}&#39;</span><span class="w"> </span>/etc/passwd
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>awk<span class="w"> </span>-F:<span class="w"> </span><span class="s1">&#39;/\/home/ {print $1}&#39;</span><span class="w"> </span>/etc/passwd
 </span></code></pre></div>
 <h2 id="delete-a-user">Delete a user</h2>
 <p>The command below will delete a user without deleting their home directory.</p>
-<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo<span class="w"> </span>userdel<span class="w"> </span>newuser
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>userdel<span class="w"> </span>newuser
 </span></code></pre></div>
  To delete the home directory as well.
- <div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>sudo<span class="w"> </span>userdel<span class="w"> </span>--remove<span class="w"> </span>newuser
+ <div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo<span class="w"> </span>userdel<span class="w"> </span>--remove<span class="w"> </span>newuser
 </span></code></pre></div></p>
 <h2 id="login-as-another-user">Login as another user</h2>
 <p>To login as a newly created user</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sudo<span class="w"> </span>-u<span class="w"> </span>newuser<span class="w"> </span>bash
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="c1"># or</span>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>su<span class="w"> </span>newuser
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>-u<span class="w"> </span>newuser<span class="w"> </span>bash
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># or</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>su<span class="w"> </span>newuser
 </span></code></pre></div>
 <h2 id="list-all-the-groups-that-a-user-belong-to">List all the groups that a user belong to</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>groups<span class="w"> </span>user
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>groups<span class="w"> </span>user
 </span></code></pre></div>
 <h2 id="add-an-existing-user-to-a-group">Add an existing user to a group</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>sudo<span class="w"> </span>usermod<span class="w"> </span>-a<span class="w"> </span>-G<span class="w"> </span>groupname<span class="w"> </span>newuser
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo<span class="w"> </span>usermod<span class="w"> </span>-a<span class="w"> </span>-G<span class="w"> </span>groupname<span class="w"> </span>newuser
 </span></code></pre></div>
 
 
