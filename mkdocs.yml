@@ -112,8 +112,6 @@ nav:
       - linux/audio-video.md
       - linux/desktop-shortcut.md
       - linux/fail2ban.md
-      - linux/file-compression.md
-      - linux/find-files.md
       - linux/images.md
       - linux/mini-dlna-server.md
       - linux/mount-drive.md

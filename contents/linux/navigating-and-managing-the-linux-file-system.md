@@ -2,7 +2,7 @@
 comments: true
 ---
 
-# Basics: Navigating and Managing the Linux File System
+# Navigating and Managing the Linux File System
 
 Linux is built around a [**file system**](https://en.wikipedia.org/wiki/Unix_filesystem). Almost everything in Linux is represented as a file or directory: documents, programs, devices, logs, configuration files, disks, and even system information.
 
@@ -734,6 +734,8 @@ find /path/to/search -name "filename"
 
 Example:
 
+`~` is the home folder. Use `.` for the current folder.
+
 ```bash
 find ~ -name "notes.txt"
 ```
@@ -756,6 +758,15 @@ find ~ -type d -name "Projects"
 find ~ -type f -name "*.sh"
 ```
 
+Case sensitive keyword
+```bash
+find ~ -type f -name "*keyword*"
+```
+Case insensitive keyword
+```bash
+find ~ -type f -iname "*keyword*"
+```
+
 ### Find recently modified files
 
 Modified in the last 7 days:
@@ -776,6 +787,12 @@ Files larger than 100 MB:
 
 ```bash
 find ~ -type f -size +100M
+```
+
+### Find and copy files to a destination folder
+
+```bash
+find . -name "*.fastq.gz" -exec cp {} /destination/folder/ \;
 ```
 
 Use `find` when you do not know exactly where something is.
@@ -2034,6 +2051,8 @@ Use `bash script.sh` when you want Bash to interpret it directly.
 
 ## Compressing and Archiving Files
 
+Use archives for backups, transfers, packaging, and saving directory structures.
+
 ### Create a `.tar` archive
 
 ```bash
@@ -2074,7 +2093,11 @@ Verbose example:
 tar -czvf backup.tar.gz Documents/
 ```
 
-Use archives for backups, transfers, packaging, and saving directory structures.
+### Exclude files from the archive
+
+```bash
+tar --exclude-vcs --exclude-backups --exclude=._* --exclude='Flow_15c' --exclude='h5n1_3.6_new_enet.sif' --exclude=temp* -zcvf h5n1_july_26_2022.tar.gz h5n1
+```
 
 ## Comparing Files
 

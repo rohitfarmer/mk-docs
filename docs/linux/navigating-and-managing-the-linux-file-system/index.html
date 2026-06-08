@@ -29,7 +29,7 @@
     
     
       
-        <title>Basics: Navigating and Managing the Linux File System - Documentations by Rohit Farmer</title>
+        <title>Navigating and Managing the Linux File System - Documentations by Rohit Farmer</title>
       
     
     
@@ -87,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#basics-navigating-and-managing-the-linux-file-system" class="md-skip">
+        <a href="#navigating-and-managing-the-linux-file-system" class="md-skip">
           Skip to content
         </a>
       
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Basics: Navigating and Managing the Linux File System
+              Navigating and Managing the Linux File System
             
           </span>
         </div>
@@ -1490,7 +1490,7 @@
   <span class="md-ellipsis">
     
   
-    Basics: Navigating and Managing the Linux File System
+    Navigating and Managing the Linux File System
   
 
     
@@ -1508,7 +1508,7 @@
   <span class="md-ellipsis">
     
   
-    Basics: Navigating and Managing the Linux File System
+    Navigating and Managing the Linux File System
   
 
     
@@ -2215,6 +2215,17 @@
     <span class="md-ellipsis">
       
         Find large files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#find-and-copy-files-to-a-destination-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Find and copy files to a destination folder
       
     </span>
   </a>
@@ -3074,6 +3085,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#exclude-files-from-the-archive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exclude files from the archive
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3657,62 +3679,6 @@
     
   
     Fail2Ban
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../file-compression/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    File Compression
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../find-files/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Find Files and Folders
   
 
     
@@ -6134,6 +6100,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#find-and-copy-files-to-a-destination-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Find and copy files to a destination folder
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -6987,6 +6964,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#exclude-files-from-the-archive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exclude files from the archive
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -7556,7 +7544,7 @@
   
 
 
-<h1 id="basics-navigating-and-managing-the-linux-file-system">Basics: Navigating and Managing the Linux File System</h1>
+<h1 id="navigating-and-managing-the-linux-file-system">Navigating and Managing the Linux File System</h1>
 <p>Linux is built around a <a href="https://en.wikipedia.org/wiki/Unix_filesystem"><strong>file system</strong></a>. Almost everything in Linux is represented as a file or directory: documents, programs, devices, logs, configuration files, disks, and even system information.</p>
 <p>This tutorial covers how to navigate the Linux file system from the command line, work with files and directories, copy and move files, change permissions and groups, and understand when to use each command.</p>
 <h2 id="what-is-the-linux-file-system">What Is the Linux File System?</h2>
@@ -8020,6 +8008,7 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-87-1"><a id="__codelineno-87-1" name="__codelineno-87-1" href="#__codelineno-87-1"></a>find<span class="w"> </span>/path/to/search<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;filename&quot;</span>
 </span></code></pre></div>
 <p>Example:</p>
+<p><code>~</code> is the home folder. Use <code>.</code> for the current folder.</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-88-1"><a id="__codelineno-88-1" name="__codelineno-88-1" href="#__codelineno-88-1"></a>find<span class="w"> </span>~<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;notes.txt&quot;</span>
 </span></code></pre></div>
 <h3 id="find-files-ending-in-txt">Find files ending in <code>.txt</code></h3>
@@ -8031,106 +8020,115 @@
 <h3 id="find-files">Find files</h3>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-91-1"><a id="__codelineno-91-1" name="__codelineno-91-1" href="#__codelineno-91-1"></a>find<span class="w"> </span>~<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;*.sh&quot;</span>
 </span></code></pre></div>
+<p>Case sensitive keyword
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-92-1"><a id="__codelineno-92-1" name="__codelineno-92-1" href="#__codelineno-92-1"></a>find<span class="w"> </span>~<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;*keyword*&quot;</span>
+</span></code></pre></div>
+Case insensitive keyword
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-93-1"><a id="__codelineno-93-1" name="__codelineno-93-1" href="#__codelineno-93-1"></a>find<span class="w"> </span>~<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-iname<span class="w"> </span><span class="s2">&quot;*keyword*&quot;</span>
+</span></code></pre></div></p>
 <h3 id="find-recently-modified-files">Find recently modified files</h3>
 <p>Modified in the last 7 days:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-92-1"><a id="__codelineno-92-1" name="__codelineno-92-1" href="#__codelineno-92-1"></a>find<span class="w"> </span>~<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-mtime<span class="w"> </span>-7
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-94-1"><a id="__codelineno-94-1" name="__codelineno-94-1" href="#__codelineno-94-1"></a>find<span class="w"> </span>~<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-mtime<span class="w"> </span>-7
 </span></code></pre></div>
 <p>Modified more than 30 days ago:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-93-1"><a id="__codelineno-93-1" name="__codelineno-93-1" href="#__codelineno-93-1"></a>find<span class="w"> </span>~<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-mtime<span class="w"> </span>+30
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-95-1"><a id="__codelineno-95-1" name="__codelineno-95-1" href="#__codelineno-95-1"></a>find<span class="w"> </span>~<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-mtime<span class="w"> </span>+30
 </span></code></pre></div>
 <h3 id="find-large-files">Find large files</h3>
 <p>Files larger than 100 MB:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-94-1"><a id="__codelineno-94-1" name="__codelineno-94-1" href="#__codelineno-94-1"></a>find<span class="w"> </span>~<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-size<span class="w"> </span>+100M
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-96-1"><a id="__codelineno-96-1" name="__codelineno-96-1" href="#__codelineno-96-1"></a>find<span class="w"> </span>~<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-size<span class="w"> </span>+100M
+</span></code></pre></div>
+<h3 id="find-and-copy-files-to-a-destination-folder">Find and copy files to a destination folder</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-97-1"><a id="__codelineno-97-1" name="__codelineno-97-1" href="#__codelineno-97-1"></a>find<span class="w"> </span>.<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;*.fastq.gz&quot;</span><span class="w"> </span>-exec<span class="w"> </span>cp<span class="w"> </span><span class="o">{}</span><span class="w"> </span>/destination/folder/<span class="w"> </span><span class="se">\;</span>
 </span></code></pre></div>
 <p>Use <code>find</code> when you do not know exactly where something is.</p>
 <h2 id="searching-inside-files">Searching Inside Files</h2>
 <p>Use <code>grep</code> to search for text inside files.</p>
 <h3 id="search-in-one-file">Search in one file</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-95-1"><a id="__codelineno-95-1" name="__codelineno-95-1" href="#__codelineno-95-1"></a>grep<span class="w"> </span><span class="s2">&quot;error&quot;</span><span class="w"> </span>logfile.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-98-1"><a id="__codelineno-98-1" name="__codelineno-98-1" href="#__codelineno-98-1"></a>grep<span class="w"> </span><span class="s2">&quot;error&quot;</span><span class="w"> </span>logfile.txt
 </span></code></pre></div>
 <h3 id="case-insensitive-search">Case-insensitive search</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-96-1"><a id="__codelineno-96-1" name="__codelineno-96-1" href="#__codelineno-96-1"></a>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;error&quot;</span><span class="w"> </span>logfile.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-99-1"><a id="__codelineno-99-1" name="__codelineno-99-1" href="#__codelineno-99-1"></a>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;error&quot;</span><span class="w"> </span>logfile.txt
 </span></code></pre></div>
 <h3 id="show-line-numbers">Show line numbers</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-97-1"><a id="__codelineno-97-1" name="__codelineno-97-1" href="#__codelineno-97-1"></a>grep<span class="w"> </span>-n<span class="w"> </span><span class="s2">&quot;error&quot;</span><span class="w"> </span>logfile.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-100-1"><a id="__codelineno-100-1" name="__codelineno-100-1" href="#__codelineno-100-1"></a>grep<span class="w"> </span>-n<span class="w"> </span><span class="s2">&quot;error&quot;</span><span class="w"> </span>logfile.txt
 </span></code></pre></div>
 <h3 id="search-recursively-inside-a-directory">Search recursively inside a directory</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-98-1"><a id="__codelineno-98-1" name="__codelineno-98-1" href="#__codelineno-98-1"></a>grep<span class="w"> </span>-r<span class="w"> </span><span class="s2">&quot;database&quot;</span><span class="w"> </span>.
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-101-1"><a id="__codelineno-101-1" name="__codelineno-101-1" href="#__codelineno-101-1"></a>grep<span class="w"> </span>-r<span class="w"> </span><span class="s2">&quot;database&quot;</span><span class="w"> </span>.
 </span></code></pre></div>
 <h3 id="search-recursively-with-line-numbers">Search recursively with line numbers</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-99-1"><a id="__codelineno-99-1" name="__codelineno-99-1" href="#__codelineno-99-1"></a>grep<span class="w"> </span>-rn<span class="w"> </span><span class="s2">&quot;database&quot;</span><span class="w"> </span>.
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-102-1"><a id="__codelineno-102-1" name="__codelineno-102-1" href="#__codelineno-102-1"></a>grep<span class="w"> </span>-rn<span class="w"> </span><span class="s2">&quot;database&quot;</span><span class="w"> </span>.
 </span></code></pre></div>
 <p>Use <code>grep</code> when you know the text you are looking for but not exactly where it appears.</p>
 <h2 id="file-name-wildcards">File Name Wildcards</h2>
 <p>The shell supports wildcards.</p>
 <h3 id="match-anything">Match anything</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-100-1"><a id="__codelineno-100-1" name="__codelineno-100-1" href="#__codelineno-100-1"></a>*.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-103-1"><a id="__codelineno-103-1" name="__codelineno-103-1" href="#__codelineno-103-1"></a>*.txt
 </span></code></pre></div>
 <p>Matches:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-101-1"><a id="__codelineno-101-1" name="__codelineno-101-1" href="#__codelineno-101-1"></a>notes.txt
-</span><span id="__span-101-2"><a id="__codelineno-101-2" name="__codelineno-101-2" href="#__codelineno-101-2"></a>report.txt
-</span><span id="__span-101-3"><a id="__codelineno-101-3" name="__codelineno-101-3" href="#__codelineno-101-3"></a>todo.txt
+<div class="language-text highlight"><pre><span></span><code><span id="__span-104-1"><a id="__codelineno-104-1" name="__codelineno-104-1" href="#__codelineno-104-1"></a>notes.txt
+</span><span id="__span-104-2"><a id="__codelineno-104-2" name="__codelineno-104-2" href="#__codelineno-104-2"></a>report.txt
+</span><span id="__span-104-3"><a id="__codelineno-104-3" name="__codelineno-104-3" href="#__codelineno-104-3"></a>todo.txt
 </span></code></pre></div>
 <p>Example:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-102-1"><a id="__codelineno-102-1" name="__codelineno-102-1" href="#__codelineno-102-1"></a>ls<span class="w"> </span>*.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-105-1"><a id="__codelineno-105-1" name="__codelineno-105-1" href="#__codelineno-105-1"></a>ls<span class="w"> </span>*.txt
 </span></code></pre></div>
 <h3 id="match-one-character">Match one character</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-103-1"><a id="__codelineno-103-1" name="__codelineno-103-1" href="#__codelineno-103-1"></a>file?.txt
-</span></code></pre></div>
-<p>Matches:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-104-1"><a id="__codelineno-104-1" name="__codelineno-104-1" href="#__codelineno-104-1"></a>file1.txt
-</span><span id="__span-104-2"><a id="__codelineno-104-2" name="__codelineno-104-2" href="#__codelineno-104-2"></a>fileA.txt
-</span></code></pre></div>
-<p>But not:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-105-1"><a id="__codelineno-105-1" name="__codelineno-105-1" href="#__codelineno-105-1"></a>file10.txt
-</span></code></pre></div>
-<h3 id="match-ranges">Match ranges</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-106-1"><a id="__codelineno-106-1" name="__codelineno-106-1" href="#__codelineno-106-1"></a>file<span class="o">[</span><span class="m">1</span>-3<span class="o">]</span>.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-106-1"><a id="__codelineno-106-1" name="__codelineno-106-1" href="#__codelineno-106-1"></a>file?.txt
 </span></code></pre></div>
 <p>Matches:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-107-1"><a id="__codelineno-107-1" name="__codelineno-107-1" href="#__codelineno-107-1"></a>file1.txt
-</span><span id="__span-107-2"><a id="__codelineno-107-2" name="__codelineno-107-2" href="#__codelineno-107-2"></a>file2.txt
-</span><span id="__span-107-3"><a id="__codelineno-107-3" name="__codelineno-107-3" href="#__codelineno-107-3"></a>file3.txt
+</span><span id="__span-107-2"><a id="__codelineno-107-2" name="__codelineno-107-2" href="#__codelineno-107-2"></a>fileA.txt
+</span></code></pre></div>
+<p>But not:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-108-1"><a id="__codelineno-108-1" name="__codelineno-108-1" href="#__codelineno-108-1"></a>file10.txt
+</span></code></pre></div>
+<h3 id="match-ranges">Match ranges</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-109-1"><a id="__codelineno-109-1" name="__codelineno-109-1" href="#__codelineno-109-1"></a>file<span class="o">[</span><span class="m">1</span>-3<span class="o">]</span>.txt
+</span></code></pre></div>
+<p>Matches:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-110-1"><a id="__codelineno-110-1" name="__codelineno-110-1" href="#__codelineno-110-1"></a>file1.txt
+</span><span id="__span-110-2"><a id="__codelineno-110-2" name="__codelineno-110-2" href="#__codelineno-110-2"></a>file2.txt
+</span><span id="__span-110-3"><a id="__codelineno-110-3" name="__codelineno-110-3" href="#__codelineno-110-3"></a>file3.txt
 </span></code></pre></div>
 <p>Use wildcards when working with many files at once.</p>
 <p>Examples:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-108-1"><a id="__codelineno-108-1" name="__codelineno-108-1" href="#__codelineno-108-1"></a>cp<span class="w"> </span>*.txt<span class="w"> </span>Documents/
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-111-1"><a id="__codelineno-111-1" name="__codelineno-111-1" href="#__codelineno-111-1"></a>cp<span class="w"> </span>*.txt<span class="w"> </span>Documents/
 </span></code></pre></div>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-109-1"><a id="__codelineno-109-1" name="__codelineno-109-1" href="#__codelineno-109-1"></a>rm<span class="w"> </span>*.tmp
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-112-1"><a id="__codelineno-112-1" name="__codelineno-112-1" href="#__codelineno-112-1"></a>rm<span class="w"> </span>*.tmp
 </span></code></pre></div>
 <p>Be careful with <code>rm</code> and wildcards. Always preview first:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-110-1"><a id="__codelineno-110-1" name="__codelineno-110-1" href="#__codelineno-110-1"></a>ls<span class="w"> </span>*.tmp
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-113-1"><a id="__codelineno-113-1" name="__codelineno-113-1" href="#__codelineno-113-1"></a>ls<span class="w"> </span>*.tmp
 </span></code></pre></div>
 <p>Then delete:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-111-1"><a id="__codelineno-111-1" name="__codelineno-111-1" href="#__codelineno-111-1"></a>rm<span class="w"> </span>*.tmp
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-114-1"><a id="__codelineno-114-1" name="__codelineno-114-1" href="#__codelineno-114-1"></a>rm<span class="w"> </span>*.tmp
 </span></code></pre></div>
 <h2 id="file-extensions-in-linux">File Extensions in Linux</h2>
 <p>Linux does not rely on file extensions as strictly as Windows.</p>
 <p>A file can be executable even if it does not end in <code>.exe</code>.</p>
 <p>A shell script often ends in:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-112-1"><a id="__codelineno-112-1" name="__codelineno-112-1" href="#__codelineno-112-1"></a>.sh
+<div class="language-text highlight"><pre><span></span><code><span id="__span-115-1"><a id="__codelineno-115-1" name="__codelineno-115-1" href="#__codelineno-115-1"></a>.sh
 </span></code></pre></div>
 <p>But it does not have to.</p>
 <p>You can check a file type with:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-113-1"><a id="__codelineno-113-1" name="__codelineno-113-1" href="#__codelineno-113-1"></a>file<span class="w"> </span>filename
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-116-1"><a id="__codelineno-116-1" name="__codelineno-116-1" href="#__codelineno-116-1"></a>file<span class="w"> </span>filename
 </span></code></pre></div>
 <p>Example:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-114-1"><a id="__codelineno-114-1" name="__codelineno-114-1" href="#__codelineno-114-1"></a>file<span class="w"> </span>script.sh
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-117-1"><a id="__codelineno-117-1" name="__codelineno-117-1" href="#__codelineno-117-1"></a>file<span class="w"> </span>script.sh
 </span></code></pre></div>
 <p>Output might be:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-115-1"><a id="__codelineno-115-1" name="__codelineno-115-1" href="#__codelineno-115-1"></a>script.sh: Bourne-Again shell script, ASCII text executable
+<div class="language-text highlight"><pre><span></span><code><span id="__span-118-1"><a id="__codelineno-118-1" name="__codelineno-118-1" href="#__codelineno-118-1"></a>script.sh: Bourne-Again shell script, ASCII text executable
 </span></code></pre></div>
 <p>Use <code>file</code> when you are not sure what kind of file something is.</p>
 <h2 id="hidden-files">Hidden Files</h2>
 <p>Files or directories beginning with <code>.</code> are hidden.</p>
 <p>Examples:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-116-1"><a id="__codelineno-116-1" name="__codelineno-116-1" href="#__codelineno-116-1"></a>.bashrc
-</span><span id="__span-116-2"><a id="__codelineno-116-2" name="__codelineno-116-2" href="#__codelineno-116-2"></a>.ssh
-</span><span id="__span-116-3"><a id="__codelineno-116-3" name="__codelineno-116-3" href="#__codelineno-116-3"></a>.config
-</span><span id="__span-116-4"><a id="__codelineno-116-4" name="__codelineno-116-4" href="#__codelineno-116-4"></a>.git
+<div class="language-text highlight"><pre><span></span><code><span id="__span-119-1"><a id="__codelineno-119-1" name="__codelineno-119-1" href="#__codelineno-119-1"></a>.bashrc
+</span><span id="__span-119-2"><a id="__codelineno-119-2" name="__codelineno-119-2" href="#__codelineno-119-2"></a>.ssh
+</span><span id="__span-119-3"><a id="__codelineno-119-3" name="__codelineno-119-3" href="#__codelineno-119-3"></a>.config
+</span><span id="__span-119-4"><a id="__codelineno-119-4" name="__codelineno-119-4" href="#__codelineno-119-4"></a>.git
 </span></code></pre></div>
 <p>Show them with:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-117-1"><a id="__codelineno-117-1" name="__codelineno-117-1" href="#__codelineno-117-1"></a>ls<span class="w"> </span>-a
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-120-1"><a id="__codelineno-120-1" name="__codelineno-120-1" href="#__codelineno-120-1"></a>ls<span class="w"> </span>-a
 </span></code></pre></div>
 <p>Common hidden files:</p>
 <table>
@@ -8167,16 +8165,16 @@
 <h2 id="understanding-file-permissions">Understanding File Permissions</h2>
 <p>Linux permissions control who can read, write, or execute files.</p>
 <p>When you run:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-118-1"><a id="__codelineno-118-1" name="__codelineno-118-1" href="#__codelineno-118-1"></a>ls<span class="w"> </span>-l
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-121-1"><a id="__codelineno-121-1" name="__codelineno-121-1" href="#__codelineno-121-1"></a>ls<span class="w"> </span>-l
 </span></code></pre></div>
 <p>You might see:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-119-1"><a id="__codelineno-119-1" name="__codelineno-119-1" href="#__codelineno-119-1"></a>-rw-r--r-- 1 rohit staff 2048 Jun 8 notes.txt
+<div class="language-text highlight"><pre><span></span><code><span id="__span-122-1"><a id="__codelineno-122-1" name="__codelineno-122-1" href="#__codelineno-122-1"></a>-rw-r--r-- 1 rohit staff 2048 Jun 8 notes.txt
 </span></code></pre></div>
 <p>Focus on this part:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-120-1"><a id="__codelineno-120-1" name="__codelineno-120-1" href="#__codelineno-120-1"></a>-rw-r--r--
+<div class="language-text highlight"><pre><span></span><code><span id="__span-123-1"><a id="__codelineno-123-1" name="__codelineno-123-1" href="#__codelineno-123-1"></a>-rw-r--r--
 </span></code></pre></div>
 <p>It has 10 characters.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-121-1"><a id="__codelineno-121-1" name="__codelineno-121-1" href="#__codelineno-121-1"></a>- rw- r-- r--
+<div class="language-text highlight"><pre><span></span><code><span id="__span-124-1"><a id="__codelineno-124-1" name="__codelineno-124-1" href="#__codelineno-124-1"></a>- rw- r-- r--
 </span></code></pre></div>
 <p>Breakdown:</p>
 <table>
@@ -8229,7 +8227,7 @@
 </tbody>
 </table>
 <p>Example:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-122-1"><a id="__codelineno-122-1" name="__codelineno-122-1" href="#__codelineno-122-1"></a>drwxr-xr-x
+<div class="language-text highlight"><pre><span></span><code><span id="__span-125-1"><a id="__codelineno-125-1" name="__codelineno-125-1" href="#__codelineno-125-1"></a>drwxr-xr-x
 </span></code></pre></div>
 <p>This is a directory.</p>
 <h3 id="permission-characters">Permission characters</h3>
@@ -8261,41 +8259,41 @@
 </table>
 <p>Directory permissions are especially important.</p>
 <p>For a directory:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-123-1"><a id="__codelineno-123-1" name="__codelineno-123-1" href="#__codelineno-123-1"></a>r
+<div class="language-text highlight"><pre><span></span><code><span id="__span-126-1"><a id="__codelineno-126-1" name="__codelineno-126-1" href="#__codelineno-126-1"></a>r
 </span></code></pre></div>
 <p>lets you list names.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-124-1"><a id="__codelineno-124-1" name="__codelineno-124-1" href="#__codelineno-124-1"></a>x
+<div class="language-text highlight"><pre><span></span><code><span id="__span-127-1"><a id="__codelineno-127-1" name="__codelineno-127-1" href="#__codelineno-127-1"></a>x
 </span></code></pre></div>
 <p>lets you enter the directory.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-125-1"><a id="__codelineno-125-1" name="__codelineno-125-1" href="#__codelineno-125-1"></a>w
+<div class="language-text highlight"><pre><span></span><code><span id="__span-128-1"><a id="__codelineno-128-1" name="__codelineno-128-1" href="#__codelineno-128-1"></a>w
 </span></code></pre></div>
 <p>lets you create/delete/rename files inside, but usually requires <code>x</code> too.</p>
 <h3 id="permission-groups-owner-group-others">Permission Groups: Owner, Group, Others</h3>
 <p>Every file has:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-126-1"><a id="__codelineno-126-1" name="__codelineno-126-1" href="#__codelineno-126-1"></a>owner
-</span><span id="__span-126-2"><a id="__codelineno-126-2" name="__codelineno-126-2" href="#__codelineno-126-2"></a>group
-</span><span id="__span-126-3"><a id="__codelineno-126-3" name="__codelineno-126-3" href="#__codelineno-126-3"></a>others
+<div class="language-text highlight"><pre><span></span><code><span id="__span-129-1"><a id="__codelineno-129-1" name="__codelineno-129-1" href="#__codelineno-129-1"></a>owner
+</span><span id="__span-129-2"><a id="__codelineno-129-2" name="__codelineno-129-2" href="#__codelineno-129-2"></a>group
+</span><span id="__span-129-3"><a id="__codelineno-129-3" name="__codelineno-129-3" href="#__codelineno-129-3"></a>others
 </span></code></pre></div>
 <p>Example:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-127-1"><a id="__codelineno-127-1" name="__codelineno-127-1" href="#__codelineno-127-1"></a>ls<span class="w"> </span>-l<span class="w"> </span>notes.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-130-1"><a id="__codelineno-130-1" name="__codelineno-130-1" href="#__codelineno-130-1"></a>ls<span class="w"> </span>-l<span class="w"> </span>notes.txt
 </span></code></pre></div>
 <p>Output:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-128-1"><a id="__codelineno-128-1" name="__codelineno-128-1" href="#__codelineno-128-1"></a>-rw-r--r-- 1 rohit staff 2048 Jun 8 notes.txt
+<div class="language-text highlight"><pre><span></span><code><span id="__span-131-1"><a id="__codelineno-131-1" name="__codelineno-131-1" href="#__codelineno-131-1"></a>-rw-r--r-- 1 rohit staff 2048 Jun 8 notes.txt
 </span></code></pre></div>
 <p>Here:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-129-1"><a id="__codelineno-129-1" name="__codelineno-129-1" href="#__codelineno-129-1"></a>owner = rohit
-</span><span id="__span-129-2"><a id="__codelineno-129-2" name="__codelineno-129-2" href="#__codelineno-129-2"></a>group = staff
-</span><span id="__span-129-3"><a id="__codelineno-129-3" name="__codelineno-129-3" href="#__codelineno-129-3"></a>others = everyone else
+<div class="language-text highlight"><pre><span></span><code><span id="__span-132-1"><a id="__codelineno-132-1" name="__codelineno-132-1" href="#__codelineno-132-1"></a>owner = rohit
+</span><span id="__span-132-2"><a id="__codelineno-132-2" name="__codelineno-132-2" href="#__codelineno-132-2"></a>group = staff
+</span><span id="__span-132-3"><a id="__codelineno-132-3" name="__codelineno-132-3" href="#__codelineno-132-3"></a>others = everyone else
 </span></code></pre></div>
 <p>Permissions:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-130-1"><a id="__codelineno-130-1" name="__codelineno-130-1" href="#__codelineno-130-1"></a>rw-   owner can read and write
-</span><span id="__span-130-2"><a id="__codelineno-130-2" name="__codelineno-130-2" href="#__codelineno-130-2"></a>r--   group can read
-</span><span id="__span-130-3"><a id="__codelineno-130-3" name="__codelineno-130-3" href="#__codelineno-130-3"></a>r--   others can read
+<div class="language-text highlight"><pre><span></span><code><span id="__span-133-1"><a id="__codelineno-133-1" name="__codelineno-133-1" href="#__codelineno-133-1"></a>rw-   owner can read and write
+</span><span id="__span-133-2"><a id="__codelineno-133-2" name="__codelineno-133-2" href="#__codelineno-133-2"></a>r--   group can read
+</span><span id="__span-133-3"><a id="__codelineno-133-3" name="__codelineno-133-3" href="#__codelineno-133-3"></a>r--   others can read
 </span></code></pre></div>
 <p>Use permissions when you need to control who can read, modify, or run a file.</p>
 <h3 id="changing-permissions-with-chmod">Changing Permissions with <code>chmod</code></h3>
 <p>Use <code>chmod</code> to change file permissions.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-131-1"><a id="__codelineno-131-1" name="__codelineno-131-1" href="#__codelineno-131-1"></a>chmod<span class="w"> </span>permissions<span class="w"> </span>filename
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-134-1"><a id="__codelineno-134-1" name="__codelineno-134-1" href="#__codelineno-134-1"></a>chmod<span class="w"> </span>permissions<span class="w"> </span>filename
 </span></code></pre></div>
 <p>There are two common styles:</p>
 <ol>
@@ -8355,37 +8353,37 @@
 </tbody>
 </table>
 <h3 id="add-execute-permission-for-the-owner">Add execute permission for the owner</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-132-1"><a id="__codelineno-132-1" name="__codelineno-132-1" href="#__codelineno-132-1"></a>chmod<span class="w"> </span>u+x<span class="w"> </span>script.sh
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-135-1"><a id="__codelineno-135-1" name="__codelineno-135-1" href="#__codelineno-135-1"></a>chmod<span class="w"> </span>u+x<span class="w"> </span>script.sh
 </span></code></pre></div>
 <p>Use this when making a script executable by you.</p>
 <p>Example:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-133-1"><a id="__codelineno-133-1" name="__codelineno-133-1" href="#__codelineno-133-1"></a>./script.sh
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-136-1"><a id="__codelineno-136-1" name="__codelineno-136-1" href="#__codelineno-136-1"></a>./script.sh
 </span></code></pre></div>
 <p>If you get:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-134-1"><a id="__codelineno-134-1" name="__codelineno-134-1" href="#__codelineno-134-1"></a>Permission denied
+<div class="language-text highlight"><pre><span></span><code><span id="__span-137-1"><a id="__codelineno-137-1" name="__codelineno-137-1" href="#__codelineno-137-1"></a>Permission denied
 </span></code></pre></div>
 <p>Then run:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-135-1"><a id="__codelineno-135-1" name="__codelineno-135-1" href="#__codelineno-135-1"></a>chmod<span class="w"> </span>u+x<span class="w"> </span>script.sh
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-138-1"><a id="__codelineno-138-1" name="__codelineno-138-1" href="#__codelineno-138-1"></a>chmod<span class="w"> </span>u+x<span class="w"> </span>script.sh
 </span></code></pre></div>
 <h3 id="remove-write-permission-from-others">Remove write permission from others</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-136-1"><a id="__codelineno-136-1" name="__codelineno-136-1" href="#__codelineno-136-1"></a>chmod<span class="w"> </span>o-w<span class="w"> </span>file.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-139-1"><a id="__codelineno-139-1" name="__codelineno-139-1" href="#__codelineno-139-1"></a>chmod<span class="w"> </span>o-w<span class="w"> </span>file.txt
 </span></code></pre></div>
 <p>Use this when you do not want other users modifying a file.</p>
 <h3 id="give-group-write-permission">Give group write permission</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-137-1"><a id="__codelineno-137-1" name="__codelineno-137-1" href="#__codelineno-137-1"></a>chmod<span class="w"> </span>g+w<span class="w"> </span>shared.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-140-1"><a id="__codelineno-140-1" name="__codelineno-140-1" href="#__codelineno-140-1"></a>chmod<span class="w"> </span>g+w<span class="w"> </span>shared.txt
 </span></code></pre></div>
 <p>Use this when people in the file’s group should be able to edit it.</p>
 <h3 id="give-everyone-read-permission">Give everyone read permission</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-138-1"><a id="__codelineno-138-1" name="__codelineno-138-1" href="#__codelineno-138-1"></a>chmod<span class="w"> </span>a+r<span class="w"> </span>file.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-141-1"><a id="__codelineno-141-1" name="__codelineno-141-1" href="#__codelineno-141-1"></a>chmod<span class="w"> </span>a+r<span class="w"> </span>file.txt
 </span></code></pre></div>
 <p>Use this when all users need to read a file.</p>
 <h3 id="set-exact-permissions">Set exact permissions</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-139-1"><a id="__codelineno-139-1" name="__codelineno-139-1" href="#__codelineno-139-1"></a>chmod<span class="w"> </span><span class="nv">u</span><span class="o">=</span>rw,g<span class="o">=</span>r,o<span class="o">=</span><span class="w"> </span>file.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-142-1"><a id="__codelineno-142-1" name="__codelineno-142-1" href="#__codelineno-142-1"></a>chmod<span class="w"> </span><span class="nv">u</span><span class="o">=</span>rw,g<span class="o">=</span>r,o<span class="o">=</span><span class="w"> </span>file.txt
 </span></code></pre></div>
 <p>This means:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-140-1"><a id="__codelineno-140-1" name="__codelineno-140-1" href="#__codelineno-140-1"></a>owner: read/write
-</span><span id="__span-140-2"><a id="__codelineno-140-2" name="__codelineno-140-2" href="#__codelineno-140-2"></a>group: read
-</span><span id="__span-140-3"><a id="__codelineno-140-3" name="__codelineno-140-3" href="#__codelineno-140-3"></a>others: no permissions
+<div class="language-text highlight"><pre><span></span><code><span id="__span-143-1"><a id="__codelineno-143-1" name="__codelineno-143-1" href="#__codelineno-143-1"></a>owner: read/write
+</span><span id="__span-143-2"><a id="__codelineno-143-2" name="__codelineno-143-2" href="#__codelineno-143-2"></a>group: read
+</span><span id="__span-143-3"><a id="__codelineno-143-3" name="__codelineno-143-3" href="#__codelineno-143-3"></a>others: no permissions
 </span></code></pre></div>
 <h3 id="numeric-chmod">Numeric <code>chmod</code></h3>
 <p>Permissions also have numbers:</p>
@@ -8455,145 +8453,145 @@
 </tbody>
 </table>
 <p>Numeric permissions use three digits:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-141-1"><a id="__codelineno-141-1" name="__codelineno-141-1" href="#__codelineno-141-1"></a>owner group others
+<div class="language-text highlight"><pre><span></span><code><span id="__span-144-1"><a id="__codelineno-144-1" name="__codelineno-144-1" href="#__codelineno-144-1"></a>owner group others
 </span></code></pre></div>
 <h3 id="common-permission-examples">Common permission examples</h3>
 <h4 id="644"><code>644</code></h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-142-1"><a id="__codelineno-142-1" name="__codelineno-142-1" href="#__codelineno-142-1"></a>chmod<span class="w"> </span><span class="m">644</span><span class="w"> </span>file.txt
-</span></code></pre></div>
-<p>Means:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-143-1"><a id="__codelineno-143-1" name="__codelineno-143-1" href="#__codelineno-143-1"></a>owner: read/write
-</span><span id="__span-143-2"><a id="__codelineno-143-2" name="__codelineno-143-2" href="#__codelineno-143-2"></a>group: read
-</span><span id="__span-143-3"><a id="__codelineno-143-3" name="__codelineno-143-3" href="#__codelineno-143-3"></a>others: read
-</span></code></pre></div>
-<p>Displayed as:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-144-1"><a id="__codelineno-144-1" name="__codelineno-144-1" href="#__codelineno-144-1"></a>-rw-r--r--
-</span></code></pre></div>
-<p>Use <code>644</code> for normal text files, documents, and config files.</p>
-<h4 id="600"><code>600</code></h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-145-1"><a id="__codelineno-145-1" name="__codelineno-145-1" href="#__codelineno-145-1"></a>chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>private.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-145-1"><a id="__codelineno-145-1" name="__codelineno-145-1" href="#__codelineno-145-1"></a>chmod<span class="w"> </span><span class="m">644</span><span class="w"> </span>file.txt
 </span></code></pre></div>
 <p>Means:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-146-1"><a id="__codelineno-146-1" name="__codelineno-146-1" href="#__codelineno-146-1"></a>owner: read/write
-</span><span id="__span-146-2"><a id="__codelineno-146-2" name="__codelineno-146-2" href="#__codelineno-146-2"></a>group: none
-</span><span id="__span-146-3"><a id="__codelineno-146-3" name="__codelineno-146-3" href="#__codelineno-146-3"></a>others: none
+</span><span id="__span-146-2"><a id="__codelineno-146-2" name="__codelineno-146-2" href="#__codelineno-146-2"></a>group: read
+</span><span id="__span-146-3"><a id="__codelineno-146-3" name="__codelineno-146-3" href="#__codelineno-146-3"></a>others: read
 </span></code></pre></div>
 <p>Displayed as:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-147-1"><a id="__codelineno-147-1" name="__codelineno-147-1" href="#__codelineno-147-1"></a>-rw-------
+<div class="language-text highlight"><pre><span></span><code><span id="__span-147-1"><a id="__codelineno-147-1" name="__codelineno-147-1" href="#__codelineno-147-1"></a>-rw-r--r--
+</span></code></pre></div>
+<p>Use <code>644</code> for normal text files, documents, and config files.</p>
+<h4 id="600"><code>600</code></h4>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-148-1"><a id="__codelineno-148-1" name="__codelineno-148-1" href="#__codelineno-148-1"></a>chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>private.txt
+</span></code></pre></div>
+<p>Means:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-149-1"><a id="__codelineno-149-1" name="__codelineno-149-1" href="#__codelineno-149-1"></a>owner: read/write
+</span><span id="__span-149-2"><a id="__codelineno-149-2" name="__codelineno-149-2" href="#__codelineno-149-2"></a>group: none
+</span><span id="__span-149-3"><a id="__codelineno-149-3" name="__codelineno-149-3" href="#__codelineno-149-3"></a>others: none
+</span></code></pre></div>
+<p>Displayed as:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-150-1"><a id="__codelineno-150-1" name="__codelineno-150-1" href="#__codelineno-150-1"></a>-rw-------
 </span></code></pre></div>
 <p>Use <code>600</code> for private files such as credentials, secrets, or SSH keys.</p>
 <h4 id="755"><code>755</code></h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-148-1"><a id="__codelineno-148-1" name="__codelineno-148-1" href="#__codelineno-148-1"></a>chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span>script.sh
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-151-1"><a id="__codelineno-151-1" name="__codelineno-151-1" href="#__codelineno-151-1"></a>chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span>script.sh
 </span></code></pre></div>
 <p>Means:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-149-1"><a id="__codelineno-149-1" name="__codelineno-149-1" href="#__codelineno-149-1"></a>owner: read/write/execute
-</span><span id="__span-149-2"><a id="__codelineno-149-2" name="__codelineno-149-2" href="#__codelineno-149-2"></a>group: read/execute
-</span><span id="__span-149-3"><a id="__codelineno-149-3" name="__codelineno-149-3" href="#__codelineno-149-3"></a>others: read/execute
+<div class="language-text highlight"><pre><span></span><code><span id="__span-152-1"><a id="__codelineno-152-1" name="__codelineno-152-1" href="#__codelineno-152-1"></a>owner: read/write/execute
+</span><span id="__span-152-2"><a id="__codelineno-152-2" name="__codelineno-152-2" href="#__codelineno-152-2"></a>group: read/execute
+</span><span id="__span-152-3"><a id="__codelineno-152-3" name="__codelineno-152-3" href="#__codelineno-152-3"></a>others: read/execute
 </span></code></pre></div>
 <p>Displayed as:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-150-1"><a id="__codelineno-150-1" name="__codelineno-150-1" href="#__codelineno-150-1"></a>-rwxr-xr-x
+<div class="language-text highlight"><pre><span></span><code><span id="__span-153-1"><a id="__codelineno-153-1" name="__codelineno-153-1" href="#__codelineno-153-1"></a>-rwxr-xr-x
 </span></code></pre></div>
 <p>Use <code>755</code> for scripts or programs that others can run but only the owner can modify.</p>
 <h4 id="700"><code>700</code></h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-151-1"><a id="__codelineno-151-1" name="__codelineno-151-1" href="#__codelineno-151-1"></a>chmod<span class="w"> </span><span class="m">700</span><span class="w"> </span>private-folder
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-154-1"><a id="__codelineno-154-1" name="__codelineno-154-1" href="#__codelineno-154-1"></a>chmod<span class="w"> </span><span class="m">700</span><span class="w"> </span>private-folder
 </span></code></pre></div>
 <p>Means:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-152-1"><a id="__codelineno-152-1" name="__codelineno-152-1" href="#__codelineno-152-1"></a>owner: full access
-</span><span id="__span-152-2"><a id="__codelineno-152-2" name="__codelineno-152-2" href="#__codelineno-152-2"></a>group: none
-</span><span id="__span-152-3"><a id="__codelineno-152-3" name="__codelineno-152-3" href="#__codelineno-152-3"></a>others: none
+<div class="language-text highlight"><pre><span></span><code><span id="__span-155-1"><a id="__codelineno-155-1" name="__codelineno-155-1" href="#__codelineno-155-1"></a>owner: full access
+</span><span id="__span-155-2"><a id="__codelineno-155-2" name="__codelineno-155-2" href="#__codelineno-155-2"></a>group: none
+</span><span id="__span-155-3"><a id="__codelineno-155-3" name="__codelineno-155-3" href="#__codelineno-155-3"></a>others: none
 </span></code></pre></div>
 <p>Use <code>700</code> for private directories.</p>
 <h4 id="775"><code>775</code></h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-153-1"><a id="__codelineno-153-1" name="__codelineno-153-1" href="#__codelineno-153-1"></a>chmod<span class="w"> </span><span class="m">775</span><span class="w"> </span>shared-folder
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-156-1"><a id="__codelineno-156-1" name="__codelineno-156-1" href="#__codelineno-156-1"></a>chmod<span class="w"> </span><span class="m">775</span><span class="w"> </span>shared-folder
 </span></code></pre></div>
 <p>Means:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-154-1"><a id="__codelineno-154-1" name="__codelineno-154-1" href="#__codelineno-154-1"></a>owner: full access
-</span><span id="__span-154-2"><a id="__codelineno-154-2" name="__codelineno-154-2" href="#__codelineno-154-2"></a>group: full access
-</span><span id="__span-154-3"><a id="__codelineno-154-3" name="__codelineno-154-3" href="#__codelineno-154-3"></a>others: read/execute
+<div class="language-text highlight"><pre><span></span><code><span id="__span-157-1"><a id="__codelineno-157-1" name="__codelineno-157-1" href="#__codelineno-157-1"></a>owner: full access
+</span><span id="__span-157-2"><a id="__codelineno-157-2" name="__codelineno-157-2" href="#__codelineno-157-2"></a>group: full access
+</span><span id="__span-157-3"><a id="__codelineno-157-3" name="__codelineno-157-3" href="#__codelineno-157-3"></a>others: read/execute
 </span></code></pre></div>
 <p>Use carefully for shared project folders.</p>
 <h4 id="777"><code>777</code></h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-155-1"><a id="__codelineno-155-1" name="__codelineno-155-1" href="#__codelineno-155-1"></a>chmod<span class="w"> </span><span class="m">777</span><span class="w"> </span>file
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-158-1"><a id="__codelineno-158-1" name="__codelineno-158-1" href="#__codelineno-158-1"></a>chmod<span class="w"> </span><span class="m">777</span><span class="w"> </span>file
 </span></code></pre></div>
 <p>Means everyone can read, write, and execute.</p>
 <p>Avoid this unless you absolutely understand why. It is often a security risk.</p>
 <h2 id="changing-ownership-with-chown">Changing Ownership with <code>chown</code></h2>
 <p>Use <code>chown</code> to change the owner of a file.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-156-1"><a id="__codelineno-156-1" name="__codelineno-156-1" href="#__codelineno-156-1"></a>chown<span class="w"> </span>newowner<span class="w"> </span>filename
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-159-1"><a id="__codelineno-159-1" name="__codelineno-159-1" href="#__codelineno-159-1"></a>chown<span class="w"> </span>newowner<span class="w"> </span>filename
 </span></code></pre></div>
 <p>Example:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-157-1"><a id="__codelineno-157-1" name="__codelineno-157-1" href="#__codelineno-157-1"></a>sudo<span class="w"> </span>chown<span class="w"> </span>rohit<span class="w"> </span>notes.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-160-1"><a id="__codelineno-160-1" name="__codelineno-160-1" href="#__codelineno-160-1"></a>sudo<span class="w"> </span>chown<span class="w"> </span>rohit<span class="w"> </span>notes.txt
 </span></code></pre></div>
 <p>Usually, changing ownership requires admin privileges, so you often use <code>sudo</code>.</p>
 <h3 id="change-owner-and-group">Change owner and group</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-158-1"><a id="__codelineno-158-1" name="__codelineno-158-1" href="#__codelineno-158-1"></a>sudo<span class="w"> </span>chown<span class="w"> </span>rohit:staff<span class="w"> </span>notes.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-161-1"><a id="__codelineno-161-1" name="__codelineno-161-1" href="#__codelineno-161-1"></a>sudo<span class="w"> </span>chown<span class="w"> </span>rohit:staff<span class="w"> </span>notes.txt
 </span></code></pre></div>
 <p>This sets:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-159-1"><a id="__codelineno-159-1" name="__codelineno-159-1" href="#__codelineno-159-1"></a>owner = rohit
-</span><span id="__span-159-2"><a id="__codelineno-159-2" name="__codelineno-159-2" href="#__codelineno-159-2"></a>group = staff
+<div class="language-text highlight"><pre><span></span><code><span id="__span-162-1"><a id="__codelineno-162-1" name="__codelineno-162-1" href="#__codelineno-162-1"></a>owner = rohit
+</span><span id="__span-162-2"><a id="__codelineno-162-2" name="__codelineno-162-2" href="#__codelineno-162-2"></a>group = staff
 </span></code></pre></div>
 <h3 id="change-only-the-group-using-chown">Change only the group using <code>chown</code></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-160-1"><a id="__codelineno-160-1" name="__codelineno-160-1" href="#__codelineno-160-1"></a>sudo<span class="w"> </span>chown<span class="w"> </span>:staff<span class="w"> </span>notes.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-163-1"><a id="__codelineno-163-1" name="__codelineno-163-1" href="#__codelineno-163-1"></a>sudo<span class="w"> </span>chown<span class="w"> </span>:staff<span class="w"> </span>notes.txt
 </span></code></pre></div>
 <h3 id="change-ownership-recursively">Change ownership recursively</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-161-1"><a id="__codelineno-161-1" name="__codelineno-161-1" href="#__codelineno-161-1"></a>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>rohit:staff<span class="w"> </span>project-folder
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-164-1"><a id="__codelineno-164-1" name="__codelineno-164-1" href="#__codelineno-164-1"></a>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>rohit:staff<span class="w"> </span>project-folder
 </span></code></pre></div>
 <p><code>-R</code> means recursive.</p>
 <p>Use <code>chown</code> when files are owned by the wrong user.</p>
 <p>Common situations:</p>
 <p>You used <code>sudo</code> accidentally and created root-owned files:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-162-1"><a id="__codelineno-162-1" name="__codelineno-162-1" href="#__codelineno-162-1"></a>sudo<span class="w"> </span>touch<span class="w"> </span>file.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-165-1"><a id="__codelineno-165-1" name="__codelineno-165-1" href="#__codelineno-165-1"></a>sudo<span class="w"> </span>touch<span class="w"> </span>file.txt
 </span></code></pre></div>
 <p>Now normal editing may fail.</p>
 <p>Fix it:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-163-1"><a id="__codelineno-163-1" name="__codelineno-163-1" href="#__codelineno-163-1"></a>sudo<span class="w"> </span>chown<span class="w"> </span>rohit:rohit<span class="w"> </span>file.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-166-1"><a id="__codelineno-166-1" name="__codelineno-166-1" href="#__codelineno-166-1"></a>sudo<span class="w"> </span>chown<span class="w"> </span>rohit:rohit<span class="w"> </span>file.txt
 </span></code></pre></div>
 <p>Or for a whole project:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-164-1"><a id="__codelineno-164-1" name="__codelineno-164-1" href="#__codelineno-164-1"></a>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>rohit:rohit<span class="w"> </span>project-folder
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-167-1"><a id="__codelineno-167-1" name="__codelineno-167-1" href="#__codelineno-167-1"></a>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>rohit:rohit<span class="w"> </span>project-folder
 </span></code></pre></div>
 <p>Be careful with recursive ownership changes. Do not run broad commands like this unless you know the path is correct:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-165-1"><a id="__codelineno-165-1" name="__codelineno-165-1" href="#__codelineno-165-1"></a>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>user:user<span class="w"> </span>/
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-168-1"><a id="__codelineno-168-1" name="__codelineno-168-1" href="#__codelineno-168-1"></a>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>user:user<span class="w"> </span>/
 </span></code></pre></div>
 <p>That can break the system.</p>
 <h2 id="changing-groups-with-chgrp">Changing Groups with <code>chgrp</code></h2>
 <p>Use <code>chgrp</code> to change the group of a file.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-166-1"><a id="__codelineno-166-1" name="__codelineno-166-1" href="#__codelineno-166-1"></a>chgrp<span class="w"> </span>groupname<span class="w"> </span>filename
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-169-1"><a id="__codelineno-169-1" name="__codelineno-169-1" href="#__codelineno-169-1"></a>chgrp<span class="w"> </span>groupname<span class="w"> </span>filename
 </span></code></pre></div>
 <p>Example:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-167-1"><a id="__codelineno-167-1" name="__codelineno-167-1" href="#__codelineno-167-1"></a>sudo<span class="w"> </span>chgrp<span class="w"> </span>developers<span class="w"> </span>app.log
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-170-1"><a id="__codelineno-170-1" name="__codelineno-170-1" href="#__codelineno-170-1"></a>sudo<span class="w"> </span>chgrp<span class="w"> </span>developers<span class="w"> </span>app.log
 </span></code></pre></div>
 <p>Recursive group change:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-168-1"><a id="__codelineno-168-1" name="__codelineno-168-1" href="#__codelineno-168-1"></a>sudo<span class="w"> </span>chgrp<span class="w"> </span>-R<span class="w"> </span>developers<span class="w"> </span>project-folder
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-171-1"><a id="__codelineno-171-1" name="__codelineno-171-1" href="#__codelineno-171-1"></a>sudo<span class="w"> </span>chgrp<span class="w"> </span>-R<span class="w"> </span>developers<span class="w"> </span>project-folder
 </span></code></pre></div>
 <p>Use <code>chgrp</code> when a group needs access to a file or directory.</p>
 <p>Example:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-169-1"><a id="__codelineno-169-1" name="__codelineno-169-1" href="#__codelineno-169-1"></a>sudo<span class="w"> </span>chgrp<span class="w"> </span>-R<span class="w"> </span>researchers<span class="w"> </span>shared-data
-</span><span id="__span-169-2"><a id="__codelineno-169-2" name="__codelineno-169-2" href="#__codelineno-169-2"></a>chmod<span class="w"> </span>-R<span class="w"> </span>g+rw<span class="w"> </span>shared-data
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-172-1"><a id="__codelineno-172-1" name="__codelineno-172-1" href="#__codelineno-172-1"></a>sudo<span class="w"> </span>chgrp<span class="w"> </span>-R<span class="w"> </span>researchers<span class="w"> </span>shared-data
+</span><span id="__span-172-2"><a id="__codelineno-172-2" name="__codelineno-172-2" href="#__codelineno-172-2"></a>chmod<span class="w"> </span>-R<span class="w"> </span>g+rw<span class="w"> </span>shared-data
 </span></code></pre></div>
 <p>This gives the <code>researchers</code> group access to the shared data.</p>
 <h2 id="checking-your-user-and-groups">Checking Your User and Groups</h2>
 <p>Check your username:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-170-1"><a id="__codelineno-170-1" name="__codelineno-170-1" href="#__codelineno-170-1"></a>whoami
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-173-1"><a id="__codelineno-173-1" name="__codelineno-173-1" href="#__codelineno-173-1"></a>whoami
 </span></code></pre></div>
 <p>Check your groups:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-171-1"><a id="__codelineno-171-1" name="__codelineno-171-1" href="#__codelineno-171-1"></a>groups
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-174-1"><a id="__codelineno-174-1" name="__codelineno-174-1" href="#__codelineno-174-1"></a>groups
 </span></code></pre></div>
 <p>Check another user’s groups:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-172-1"><a id="__codelineno-172-1" name="__codelineno-172-1" href="#__codelineno-172-1"></a>groups<span class="w"> </span>username
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-175-1"><a id="__codelineno-175-1" name="__codelineno-175-1" href="#__codelineno-175-1"></a>groups<span class="w"> </span>username
 </span></code></pre></div>
 <p>Show user ID and group IDs:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-173-1"><a id="__codelineno-173-1" name="__codelineno-173-1" href="#__codelineno-173-1"></a>id
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-176-1"><a id="__codelineno-176-1" name="__codelineno-176-1" href="#__codelineno-176-1"></a>id
 </span></code></pre></div>
 <p>Example output:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-174-1"><a id="__codelineno-174-1" name="__codelineno-174-1" href="#__codelineno-174-1"></a>uid=1000(rohit) gid=1000(rohit) groups=1000(rohit),27(sudo),1001(researchers)
+<div class="language-text highlight"><pre><span></span><code><span id="__span-177-1"><a id="__codelineno-177-1" name="__codelineno-177-1" href="#__codelineno-177-1"></a>uid=1000(rohit) gid=1000(rohit) groups=1000(rohit),27(sudo),1001(researchers)
 </span></code></pre></div>
 <p>Use these commands when troubleshooting permission problems.</p>
 <h2 id="adding-users-to-groups">Adding Users to Groups</h2>
 <p>This usually requires admin privileges.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-175-1"><a id="__codelineno-175-1" name="__codelineno-175-1" href="#__codelineno-175-1"></a>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>groupname<span class="w"> </span>username
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-178-1"><a id="__codelineno-178-1" name="__codelineno-178-1" href="#__codelineno-178-1"></a>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>groupname<span class="w"> </span>username
 </span></code></pre></div>
 <p>Example:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-176-1"><a id="__codelineno-176-1" name="__codelineno-176-1" href="#__codelineno-176-1"></a>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>developers<span class="w"> </span>rohit
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-179-1"><a id="__codelineno-179-1" name="__codelineno-179-1" href="#__codelineno-179-1"></a>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>developers<span class="w"> </span>rohit
 </span></code></pre></div>
 <p>Important: use <code>-aG</code>, not just <code>-G</code>.</p>
 <p><code>-aG</code> means append to group.</p>
@@ -8601,178 +8599,178 @@
 <p>After changing group membership, the user usually needs to log out and back in.</p>
 <p>Use this when you want a user to gain access to group-owned files, shared directories, Docker, admin tools, or project resources.</p>
 <p>Example:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-177-1"><a id="__codelineno-177-1" name="__codelineno-177-1" href="#__codelineno-177-1"></a>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>docker<span class="w"> </span>rohit
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-180-1"><a id="__codelineno-180-1" name="__codelineno-180-1" href="#__codelineno-180-1"></a>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>docker<span class="w"> </span>rohit
 </span></code></pre></div>
 <p>This allows the user to run Docker commands without <code>sudo</code>, depending on the system configuration.</p>
 <h2 id="using-sudo">Using <code>sudo</code></h2>
 <p><code>sudo</code> runs a command with administrator privileges.</p>
 <p>Example:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-178-1"><a id="__codelineno-178-1" name="__codelineno-178-1" href="#__codelineno-178-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-181-1"><a id="__codelineno-181-1" name="__codelineno-181-1" href="#__codelineno-181-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
 </span></code></pre></div>
 <p>or:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-179-1"><a id="__codelineno-179-1" name="__codelineno-179-1" href="#__codelineno-179-1"></a>sudo<span class="w"> </span>chown<span class="w"> </span>root:root<span class="w"> </span>/etc/example.conf
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-182-1"><a id="__codelineno-182-1" name="__codelineno-182-1" href="#__codelineno-182-1"></a>sudo<span class="w"> </span>chown<span class="w"> </span>root:root<span class="w"> </span>/etc/example.conf
 </span></code></pre></div>
 <p>Use <code>sudo</code> when changing system files, installing packages, managing users, or editing protected directories.</p>
 <p>Do not use <code>sudo</code> casually. It can modify or damage the system.</p>
 <p>If a command says:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-180-1"><a id="__codelineno-180-1" name="__codelineno-180-1" href="#__codelineno-180-1"></a>Permission denied
+<div class="language-text highlight"><pre><span></span><code><span id="__span-183-1"><a id="__codelineno-183-1" name="__codelineno-183-1" href="#__codelineno-183-1"></a>Permission denied
 </span></code></pre></div>
 <p>do not automatically add <code>sudo</code>. First ask:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-181-1"><a id="__codelineno-181-1" name="__codelineno-181-1" href="#__codelineno-181-1"></a>Should I have permission to do this?
-</span><span id="__span-181-2"><a id="__codelineno-181-2" name="__codelineno-181-2" href="#__codelineno-181-2"></a>Am I editing the right file?
-</span><span id="__span-181-3"><a id="__codelineno-181-3" name="__codelineno-181-3" href="#__codelineno-181-3"></a>Am I in the right directory?
+<div class="language-text highlight"><pre><span></span><code><span id="__span-184-1"><a id="__codelineno-184-1" name="__codelineno-184-1" href="#__codelineno-184-1"></a>Should I have permission to do this?
+</span><span id="__span-184-2"><a id="__codelineno-184-2" name="__codelineno-184-2" href="#__codelineno-184-2"></a>Am I editing the right file?
+</span><span id="__span-184-3"><a id="__codelineno-184-3" name="__codelineno-184-3" href="#__codelineno-184-3"></a>Am I in the right directory?
 </span></code></pre></div>
 <h2 id="file-permissions-common-real-life-scenarios">File Permissions: Common Real-Life Scenarios</h2>
 <h3 id="scenario-1-make-a-script-executable">Scenario 1: Make a script executable</h3>
 <p>You have:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-182-1"><a id="__codelineno-182-1" name="__codelineno-182-1" href="#__codelineno-182-1"></a>script.sh
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-185-1"><a id="__codelineno-185-1" name="__codelineno-185-1" href="#__codelineno-185-1"></a>script.sh
 </span></code></pre></div>
 <p>You try:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-183-1"><a id="__codelineno-183-1" name="__codelineno-183-1" href="#__codelineno-183-1"></a>./script.sh
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-186-1"><a id="__codelineno-186-1" name="__codelineno-186-1" href="#__codelineno-186-1"></a>./script.sh
 </span></code></pre></div>
 <p>But get:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-184-1"><a id="__codelineno-184-1" name="__codelineno-184-1" href="#__codelineno-184-1"></a>Permission denied
+<div class="language-text highlight"><pre><span></span><code><span id="__span-187-1"><a id="__codelineno-187-1" name="__codelineno-187-1" href="#__codelineno-187-1"></a>Permission denied
 </span></code></pre></div>
 <p>Fix:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-185-1"><a id="__codelineno-185-1" name="__codelineno-185-1" href="#__codelineno-185-1"></a>chmod<span class="w"> </span>u+x<span class="w"> </span>script.sh
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-188-1"><a id="__codelineno-188-1" name="__codelineno-188-1" href="#__codelineno-188-1"></a>chmod<span class="w"> </span>u+x<span class="w"> </span>script.sh
 </span></code></pre></div>
 <p>or:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-186-1"><a id="__codelineno-186-1" name="__codelineno-186-1" href="#__codelineno-186-1"></a>chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span>script.sh
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-189-1"><a id="__codelineno-189-1" name="__codelineno-189-1" href="#__codelineno-189-1"></a>chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span>script.sh
 </span></code></pre></div>
 <p>Use this when running your own shell script.</p>
 <h3 id="scenario-2-protect-a-private-file">Scenario 2: Protect a private file</h3>
 <p>You have a file:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-187-1"><a id="__codelineno-187-1" name="__codelineno-187-1" href="#__codelineno-187-1"></a>secrets.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-190-1"><a id="__codelineno-190-1" name="__codelineno-190-1" href="#__codelineno-190-1"></a>secrets.txt
 </span></code></pre></div>
 <p>Set it so only you can read/write it:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-188-1"><a id="__codelineno-188-1" name="__codelineno-188-1" href="#__codelineno-188-1"></a>chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>secrets.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-191-1"><a id="__codelineno-191-1" name="__codelineno-191-1" href="#__codelineno-191-1"></a>chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>secrets.txt
 </span></code></pre></div>
 <p>Use this for credentials, tokens, keys, or private notes.</p>
 <h3 id="scenario-3-private-directory">Scenario 3: Private directory</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-189-1"><a id="__codelineno-189-1" name="__codelineno-189-1" href="#__codelineno-189-1"></a>chmod<span class="w"> </span><span class="m">700</span><span class="w"> </span>private-folder
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-192-1"><a id="__codelineno-192-1" name="__codelineno-192-1" href="#__codelineno-192-1"></a>chmod<span class="w"> </span><span class="m">700</span><span class="w"> </span>private-folder
 </span></code></pre></div>
 <p>Only the owner can enter, read, write, or delete files in it.</p>
 <p>Use this for sensitive folders.</p>
 <h3 id="scenario-4-shared-team-folder">Scenario 4: Shared team folder</h3>
 <p>Create a group:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-190-1"><a id="__codelineno-190-1" name="__codelineno-190-1" href="#__codelineno-190-1"></a>sudo<span class="w"> </span>groupadd<span class="w"> </span>projectteam
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-193-1"><a id="__codelineno-193-1" name="__codelineno-193-1" href="#__codelineno-193-1"></a>sudo<span class="w"> </span>groupadd<span class="w"> </span>projectteam
 </span></code></pre></div>
 <p>Add users:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-191-1"><a id="__codelineno-191-1" name="__codelineno-191-1" href="#__codelineno-191-1"></a>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>projectteam<span class="w"> </span>alice
-</span><span id="__span-191-2"><a id="__codelineno-191-2" name="__codelineno-191-2" href="#__codelineno-191-2"></a>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>projectteam<span class="w"> </span>bob
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-194-1"><a id="__codelineno-194-1" name="__codelineno-194-1" href="#__codelineno-194-1"></a>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>projectteam<span class="w"> </span>alice
+</span><span id="__span-194-2"><a id="__codelineno-194-2" name="__codelineno-194-2" href="#__codelineno-194-2"></a>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>projectteam<span class="w"> </span>bob
 </span></code></pre></div>
 <p>Set folder group:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-192-1"><a id="__codelineno-192-1" name="__codelineno-192-1" href="#__codelineno-192-1"></a>sudo<span class="w"> </span>chgrp<span class="w"> </span>-R<span class="w"> </span>projectteam<span class="w"> </span>/shared/project
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-195-1"><a id="__codelineno-195-1" name="__codelineno-195-1" href="#__codelineno-195-1"></a>sudo<span class="w"> </span>chgrp<span class="w"> </span>-R<span class="w"> </span>projectteam<span class="w"> </span>/shared/project
 </span></code></pre></div>
 <p>Give group access:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-193-1"><a id="__codelineno-193-1" name="__codelineno-193-1" href="#__codelineno-193-1"></a>sudo<span class="w"> </span>chmod<span class="w"> </span>-R<span class="w"> </span>g+rw<span class="w"> </span>/shared/project
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-196-1"><a id="__codelineno-196-1" name="__codelineno-196-1" href="#__codelineno-196-1"></a>sudo<span class="w"> </span>chmod<span class="w"> </span>-R<span class="w"> </span>g+rw<span class="w"> </span>/shared/project
 </span></code></pre></div>
 <p>Allow group members to enter directories:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-194-1"><a id="__codelineno-194-1" name="__codelineno-194-1" href="#__codelineno-194-1"></a>sudo<span class="w"> </span>find<span class="w"> </span>/shared/project<span class="w"> </span>-type<span class="w"> </span>d<span class="w"> </span>-exec<span class="w"> </span>chmod<span class="w"> </span>g+rwx<span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-197-1"><a id="__codelineno-197-1" name="__codelineno-197-1" href="#__codelineno-197-1"></a>sudo<span class="w"> </span>find<span class="w"> </span>/shared/project<span class="w"> </span>-type<span class="w"> </span>d<span class="w"> </span>-exec<span class="w"> </span>chmod<span class="w"> </span>g+rwx<span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
 </span></code></pre></div>
 <p>Allow group members to read/write files:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-195-1"><a id="__codelineno-195-1" name="__codelineno-195-1" href="#__codelineno-195-1"></a>sudo<span class="w"> </span>find<span class="w"> </span>/shared/project<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-exec<span class="w"> </span>chmod<span class="w"> </span>g+rw<span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-198-1"><a id="__codelineno-198-1" name="__codelineno-198-1" href="#__codelineno-198-1"></a>sudo<span class="w"> </span>find<span class="w"> </span>/shared/project<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-exec<span class="w"> </span>chmod<span class="w"> </span>g+rw<span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
 </span></code></pre></div>
 <p>Use this when multiple users need to collaborate.</p>
 <h2 id="directory-permissions-matter">Directory Permissions Matter</h2>
 <p>Suppose you have:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-196-1"><a id="__codelineno-196-1" name="__codelineno-196-1" href="#__codelineno-196-1"></a>drwx------ private
+<div class="language-text highlight"><pre><span></span><code><span id="__span-199-1"><a id="__codelineno-199-1" name="__codelineno-199-1" href="#__codelineno-199-1"></a>drwx------ private
 </span></code></pre></div>
 <p>Only the owner can access it.</p>
 <p>Suppose you have:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-197-1"><a id="__codelineno-197-1" name="__codelineno-197-1" href="#__codelineno-197-1"></a>drwxr-xr-x public
+<div class="language-text highlight"><pre><span></span><code><span id="__span-200-1"><a id="__codelineno-200-1" name="__codelineno-200-1" href="#__codelineno-200-1"></a>drwxr-xr-x public
 </span></code></pre></div>
 <p>Others can enter and read contents, but cannot create or delete files.</p>
 <p>Suppose you have:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-198-1"><a id="__codelineno-198-1" name="__codelineno-198-1" href="#__codelineno-198-1"></a>drwxrwx---
+<div class="language-text highlight"><pre><span></span><code><span id="__span-201-1"><a id="__codelineno-201-1" name="__codelineno-201-1" href="#__codelineno-201-1"></a>drwxrwx---
 </span></code></pre></div>
 <p>Owner and group can fully use it. Others have no access.</p>
 <p>A common mistake is giving file permissions but forgetting directory permissions.</p>
 <p>Example:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-199-1"><a id="__codelineno-199-1" name="__codelineno-199-1" href="#__codelineno-199-1"></a>chmod<span class="w"> </span><span class="m">644</span><span class="w"> </span>/shared/report.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-202-1"><a id="__codelineno-202-1" name="__codelineno-202-1" href="#__codelineno-202-1"></a>chmod<span class="w"> </span><span class="m">644</span><span class="w"> </span>/shared/report.txt
 </span></code></pre></div>
 <p>The file is readable, but if the directory <code>/shared</code> does not allow access, users still cannot reach the file.</p>
 <p>They need execute permission on parent directories.</p>
 <h2 id="recursive-permission-changes">Recursive Permission Changes</h2>
 <p>Recursive changes use <code>-R</code>.</p>
 <p>Example:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-200-1"><a id="__codelineno-200-1" name="__codelineno-200-1" href="#__codelineno-200-1"></a>chmod<span class="w"> </span>-R<span class="w"> </span><span class="m">755</span><span class="w"> </span>myfolder
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-203-1"><a id="__codelineno-203-1" name="__codelineno-203-1" href="#__codelineno-203-1"></a>chmod<span class="w"> </span>-R<span class="w"> </span><span class="m">755</span><span class="w"> </span>myfolder
 </span></code></pre></div>
 <p>This changes every file and directory inside.</p>
 <p>Be careful.</p>
 <p>A better approach is often to set directories and files differently.</p>
 <p>Example:</p>
 <p>Directories need execute permission:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-201-1"><a id="__codelineno-201-1" name="__codelineno-201-1" href="#__codelineno-201-1"></a>find<span class="w"> </span>myfolder<span class="w"> </span>-type<span class="w"> </span>d<span class="w"> </span>-exec<span class="w"> </span>chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-204-1"><a id="__codelineno-204-1" name="__codelineno-204-1" href="#__codelineno-204-1"></a>find<span class="w"> </span>myfolder<span class="w"> </span>-type<span class="w"> </span>d<span class="w"> </span>-exec<span class="w"> </span>chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
 </span></code></pre></div>
 <p>Files often do not need execute permission:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-202-1"><a id="__codelineno-202-1" name="__codelineno-202-1" href="#__codelineno-202-1"></a>find<span class="w"> </span>myfolder<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-exec<span class="w"> </span>chmod<span class="w"> </span><span class="m">644</span><span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-205-1"><a id="__codelineno-205-1" name="__codelineno-205-1" href="#__codelineno-205-1"></a>find<span class="w"> </span>myfolder<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-exec<span class="w"> </span>chmod<span class="w"> </span><span class="m">644</span><span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
 </span></code></pre></div>
 <p>Use recursive permission changes when fixing many files, but avoid broad commands on system directories.</p>
 <h2 id="symbolic-links">Symbolic Links</h2>
 <p>A symbolic link is like a shortcut.</p>
 <p>Create one with:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-203-1"><a id="__codelineno-203-1" name="__codelineno-203-1" href="#__codelineno-203-1"></a>ln<span class="w"> </span>-s<span class="w"> </span>target<span class="w"> </span>linkname
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-206-1"><a id="__codelineno-206-1" name="__codelineno-206-1" href="#__codelineno-206-1"></a>ln<span class="w"> </span>-s<span class="w"> </span>target<span class="w"> </span>linkname
 </span></code></pre></div>
 <p>Example:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-204-1"><a id="__codelineno-204-1" name="__codelineno-204-1" href="#__codelineno-204-1"></a>ln<span class="w"> </span>-s<span class="w"> </span>/var/log/syslog<span class="w"> </span>system-log
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-207-1"><a id="__codelineno-207-1" name="__codelineno-207-1" href="#__codelineno-207-1"></a>ln<span class="w"> </span>-s<span class="w"> </span>/var/log/syslog<span class="w"> </span>system-log
 </span></code></pre></div>
 <p>Now:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-205-1"><a id="__codelineno-205-1" name="__codelineno-205-1" href="#__codelineno-205-1"></a>system-log
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-208-1"><a id="__codelineno-208-1" name="__codelineno-208-1" href="#__codelineno-208-1"></a>system-log
 </span></code></pre></div>
 <p>points to:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-206-1"><a id="__codelineno-206-1" name="__codelineno-206-1" href="#__codelineno-206-1"></a>/var/log/syslog
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-209-1"><a id="__codelineno-209-1" name="__codelineno-209-1" href="#__codelineno-209-1"></a>/var/log/syslog
 </span></code></pre></div>
 <p>Use symbolic links when you want convenient access to a file or directory from another location.</p>
 <p>Example:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-207-1"><a id="__codelineno-207-1" name="__codelineno-207-1" href="#__codelineno-207-1"></a>ln<span class="w"> </span>-s<span class="w"> </span>~/Documents/projects/current<span class="w"> </span>~/current-project
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-210-1"><a id="__codelineno-210-1" name="__codelineno-210-1" href="#__codelineno-210-1"></a>ln<span class="w"> </span>-s<span class="w"> </span>~/Documents/projects/current<span class="w"> </span>~/current-project
 </span></code></pre></div>
 <p>Check links with:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-208-1"><a id="__codelineno-208-1" name="__codelineno-208-1" href="#__codelineno-208-1"></a>ls<span class="w"> </span>-l
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-211-1"><a id="__codelineno-211-1" name="__codelineno-211-1" href="#__codelineno-211-1"></a>ls<span class="w"> </span>-l
 </span></code></pre></div>
 <p>Example output:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-209-1"><a id="__codelineno-209-1" name="__codelineno-209-1" href="#__codelineno-209-1"></a>current-project -&gt; /home/rohit/Documents/projects/current
+<div class="language-text highlight"><pre><span></span><code><span id="__span-212-1"><a id="__codelineno-212-1" name="__codelineno-212-1" href="#__codelineno-212-1"></a>current-project -&gt; /home/rohit/Documents/projects/current
 </span></code></pre></div>
 <p>Remove a symbolic link:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-210-1"><a id="__codelineno-210-1" name="__codelineno-210-1" href="#__codelineno-210-1"></a>rm<span class="w"> </span>current-project
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-213-1"><a id="__codelineno-213-1" name="__codelineno-213-1" href="#__codelineno-213-1"></a>rm<span class="w"> </span>current-project
 </span></code></pre></div>
 <p>This removes the link, not the target.</p>
 <h2 id="hard-links">Hard Links</h2>
 <p>A hard link is another name for the same file data.</p>
 <p>Create one:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-211-1"><a id="__codelineno-211-1" name="__codelineno-211-1" href="#__codelineno-211-1"></a>ln<span class="w"> </span>original.txt<span class="w"> </span>hardlink.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-214-1"><a id="__codelineno-214-1" name="__codelineno-214-1" href="#__codelineno-214-1"></a>ln<span class="w"> </span>original.txt<span class="w"> </span>hardlink.txt
 </span></code></pre></div>
 <p>Both names point to the same file content.</p>
 <p>Hard links are less commonly used by beginners.</p>
 <p>Use symbolic links most of the time.</p>
 <h2 id="disk-usage-and-file-sizes">Disk Usage and File Sizes</h2>
 <h3 id="show-file-and-directory-sizes">Show file and directory sizes</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-212-1"><a id="__codelineno-212-1" name="__codelineno-212-1" href="#__codelineno-212-1"></a>du<span class="w"> </span>-h<span class="w"> </span>filename
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-215-1"><a id="__codelineno-215-1" name="__codelineno-215-1" href="#__codelineno-215-1"></a>du<span class="w"> </span>-h<span class="w"> </span>filename
 </span></code></pre></div>
 <h3 id="show-directory-total-size">Show directory total size</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-213-1"><a id="__codelineno-213-1" name="__codelineno-213-1" href="#__codelineno-213-1"></a>du<span class="w"> </span>-sh<span class="w"> </span>foldername
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-216-1"><a id="__codelineno-216-1" name="__codelineno-216-1" href="#__codelineno-216-1"></a>du<span class="w"> </span>-sh<span class="w"> </span>foldername
 </span></code></pre></div>
 <p>Example:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-214-1"><a id="__codelineno-214-1" name="__codelineno-214-1" href="#__codelineno-214-1"></a>du<span class="w"> </span>-sh<span class="w"> </span>~/Downloads
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-217-1"><a id="__codelineno-217-1" name="__codelineno-217-1" href="#__codelineno-217-1"></a>du<span class="w"> </span>-sh<span class="w"> </span>~/Downloads
 </span></code></pre></div>
 <h3 id="show-disk-free-space">Show disk free space</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-215-1"><a id="__codelineno-215-1" name="__codelineno-215-1" href="#__codelineno-215-1"></a>df<span class="w"> </span>-h
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-218-1"><a id="__codelineno-218-1" name="__codelineno-218-1" href="#__codelineno-218-1"></a>df<span class="w"> </span>-h
 </span></code></pre></div>
 <p>Use <code>du</code> to find what is using space.</p>
 <p>Use <code>df</code> to see how full disks or partitions are.</p>
 <h2 id="copying-between-machines">Copying Between Machines</h2>
 <p>For remote machines, use <code>scp</code> or <code>rsync</code>.</p>
 <h3 id="copy-file-to-remote-server">Copy file to remote server</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-216-1"><a id="__codelineno-216-1" name="__codelineno-216-1" href="#__codelineno-216-1"></a>scp<span class="w"> </span>file.txt<span class="w"> </span>user@example.com:/home/user/
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-219-1"><a id="__codelineno-219-1" name="__codelineno-219-1" href="#__codelineno-219-1"></a>scp<span class="w"> </span>file.txt<span class="w"> </span>user@example.com:/home/user/
 </span></code></pre></div>
 <h3 id="copy-file-from-remote-server">Copy file from remote server</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-217-1"><a id="__codelineno-217-1" name="__codelineno-217-1" href="#__codelineno-217-1"></a>scp<span class="w"> </span>user@example.com:/home/user/file.txt<span class="w"> </span>.
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-220-1"><a id="__codelineno-220-1" name="__codelineno-220-1" href="#__codelineno-220-1"></a>scp<span class="w"> </span>user@example.com:/home/user/file.txt<span class="w"> </span>.
 </span></code></pre></div>
 <h3 id="copy-directory-to-remote-server">Copy directory to remote server</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-218-1"><a id="__codelineno-218-1" name="__codelineno-218-1" href="#__codelineno-218-1"></a>scp<span class="w"> </span>-r<span class="w"> </span>project<span class="w"> </span>user@example.com:/home/user/
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-221-1"><a id="__codelineno-221-1" name="__codelineno-221-1" href="#__codelineno-221-1"></a>scp<span class="w"> </span>-r<span class="w"> </span>project<span class="w"> </span>user@example.com:/home/user/
 </span></code></pre></div>
 <h3 id="use-rsync">Use <code>rsync</code></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-219-1"><a id="__codelineno-219-1" name="__codelineno-219-1" href="#__codelineno-219-1"></a>rsync<span class="w"> </span>-av<span class="w"> </span>project/<span class="w"> </span>user@example.com:/home/user/project/
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-222-1"><a id="__codelineno-222-1" name="__codelineno-222-1" href="#__codelineno-222-1"></a>rsync<span class="w"> </span>-av<span class="w"> </span>project/<span class="w"> </span>user@example.com:/home/user/project/
 </span></code></pre></div>
 <p>Useful <code>rsync</code> options:</p>
 <table>
@@ -8802,115 +8800,116 @@
 </tbody>
 </table>
 <p>Example:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-220-1"><a id="__codelineno-220-1" name="__codelineno-220-1" href="#__codelineno-220-1"></a>rsync<span class="w"> </span>-avz<span class="w"> </span>project/<span class="w"> </span>user@example.com:/home/user/project/
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-223-1"><a id="__codelineno-223-1" name="__codelineno-223-1" href="#__codelineno-223-1"></a>rsync<span class="w"> </span>-avz<span class="w"> </span>project/<span class="w"> </span>user@example.com:/home/user/project/
 </span></code></pre></div>
 <p>Use <code>scp</code> for simple copies.</p>
 <p>Use <code>rsync</code> for backups, repeated syncs, or large directories.</p>
 <h2 id="moving-around-faster">Moving Around Faster</h2>
 <h3 id="tab-completion">Tab completion</h3>
 <p>Type part of a file or directory name, then press:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-221-1"><a id="__codelineno-221-1" name="__codelineno-221-1" href="#__codelineno-221-1"></a>Tab
+<div class="language-text highlight"><pre><span></span><code><span id="__span-224-1"><a id="__codelineno-224-1" name="__codelineno-224-1" href="#__codelineno-224-1"></a>Tab
 </span></code></pre></div>
 <p>Example:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-222-1"><a id="__codelineno-222-1" name="__codelineno-222-1" href="#__codelineno-222-1"></a><span class="nb">cd</span><span class="w"> </span>Doc&lt;Tab&gt;
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-225-1"><a id="__codelineno-225-1" name="__codelineno-225-1" href="#__codelineno-225-1"></a><span class="nb">cd</span><span class="w"> </span>Doc&lt;Tab&gt;
 </span></code></pre></div>
 <p>May complete to:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-223-1"><a id="__codelineno-223-1" name="__codelineno-223-1" href="#__codelineno-223-1"></a><span class="nb">cd</span><span class="w"> </span>Documents/
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-226-1"><a id="__codelineno-226-1" name="__codelineno-226-1" href="#__codelineno-226-1"></a><span class="nb">cd</span><span class="w"> </span>Documents/
 </span></code></pre></div>
 <p>Use Tab completion constantly. It saves time and prevents typos.</p>
 <h3 id="command-history">Command history</h3>
 <p>Press:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-224-1"><a id="__codelineno-224-1" name="__codelineno-224-1" href="#__codelineno-224-1"></a>Up Arrow
+<div class="language-text highlight"><pre><span></span><code><span id="__span-227-1"><a id="__codelineno-227-1" name="__codelineno-227-1" href="#__codelineno-227-1"></a>Up Arrow
 </span></code></pre></div>
 <p>to recall previous commands.</p>
 <p>Search command history:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-225-1"><a id="__codelineno-225-1" name="__codelineno-225-1" href="#__codelineno-225-1"></a>Ctrl + R
+<div class="language-text highlight"><pre><span></span><code><span id="__span-228-1"><a id="__codelineno-228-1" name="__codelineno-228-1" href="#__codelineno-228-1"></a>Ctrl + R
 </span></code></pre></div>
 <p>Then type part of an old command.</p>
 <h3 id="clear-the-screen">Clear the screen</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-226-1"><a id="__codelineno-226-1" name="__codelineno-226-1" href="#__codelineno-226-1"></a>clear
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-229-1"><a id="__codelineno-229-1" name="__codelineno-229-1" href="#__codelineno-229-1"></a>clear
 </span></code></pre></div>
 <p>or press:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-227-1"><a id="__codelineno-227-1" name="__codelineno-227-1" href="#__codelineno-227-1"></a>Ctrl + L
+<div class="language-text highlight"><pre><span></span><code><span id="__span-230-1"><a id="__codelineno-230-1" name="__codelineno-230-1" href="#__codelineno-230-1"></a>Ctrl + L
 </span></code></pre></div>
 <h2 id="quoting-file-names-with-spaces">Quoting File Names with Spaces</h2>
 <p>Linux allows spaces in file names, but they can be annoying.</p>
 <p>Example file:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-228-1"><a id="__codelineno-228-1" name="__codelineno-228-1" href="#__codelineno-228-1"></a>my notes.txt
+<div class="language-text highlight"><pre><span></span><code><span id="__span-231-1"><a id="__codelineno-231-1" name="__codelineno-231-1" href="#__codelineno-231-1"></a>my notes.txt
 </span></code></pre></div>
 <p>This will fail:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-229-1"><a id="__codelineno-229-1" name="__codelineno-229-1" href="#__codelineno-229-1"></a>cat<span class="w"> </span>my<span class="w"> </span>notes.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-232-1"><a id="__codelineno-232-1" name="__codelineno-232-1" href="#__codelineno-232-1"></a>cat<span class="w"> </span>my<span class="w"> </span>notes.txt
 </span></code></pre></div>
 <p>Because the shell sees two arguments:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-230-1"><a id="__codelineno-230-1" name="__codelineno-230-1" href="#__codelineno-230-1"></a>my
-</span><span id="__span-230-2"><a id="__codelineno-230-2" name="__codelineno-230-2" href="#__codelineno-230-2"></a>notes.txt
+<div class="language-text highlight"><pre><span></span><code><span id="__span-233-1"><a id="__codelineno-233-1" name="__codelineno-233-1" href="#__codelineno-233-1"></a>my
+</span><span id="__span-233-2"><a id="__codelineno-233-2" name="__codelineno-233-2" href="#__codelineno-233-2"></a>notes.txt
 </span></code></pre></div>
 <p>Use quotes:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-231-1"><a id="__codelineno-231-1" name="__codelineno-231-1" href="#__codelineno-231-1"></a>cat<span class="w"> </span><span class="s2">&quot;my notes.txt&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-234-1"><a id="__codelineno-234-1" name="__codelineno-234-1" href="#__codelineno-234-1"></a>cat<span class="w"> </span><span class="s2">&quot;my notes.txt&quot;</span>
 </span></code></pre></div>
 <p>or escape the space:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-232-1"><a id="__codelineno-232-1" name="__codelineno-232-1" href="#__codelineno-232-1"></a>cat<span class="w"> </span>my<span class="se">\ </span>notes.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-235-1"><a id="__codelineno-235-1" name="__codelineno-235-1" href="#__codelineno-235-1"></a>cat<span class="w"> </span>my<span class="se">\ </span>notes.txt
 </span></code></pre></div>
 <p>Best practice: use names like:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-233-1"><a id="__codelineno-233-1" name="__codelineno-233-1" href="#__codelineno-233-1"></a>my_notes.txt
-</span><span id="__span-233-2"><a id="__codelineno-233-2" name="__codelineno-233-2" href="#__codelineno-233-2"></a>my-notes.txt
+<div class="language-text highlight"><pre><span></span><code><span id="__span-236-1"><a id="__codelineno-236-1" name="__codelineno-236-1" href="#__codelineno-236-1"></a>my_notes.txt
+</span><span id="__span-236-2"><a id="__codelineno-236-2" name="__codelineno-236-2" href="#__codelineno-236-2"></a>my-notes.txt
 </span></code></pre></div>
 <p>instead of spaces.</p>
 <h2 id="environment-variables-related-to-files">Environment Variables Related to Files</h2>
 <h3 id="home"><code>$HOME</code></h3>
 <p>Your home directory:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-234-1"><a id="__codelineno-234-1" name="__codelineno-234-1" href="#__codelineno-234-1"></a><span class="nb">echo</span><span class="w"> </span><span class="nv">$HOME</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-237-1"><a id="__codelineno-237-1" name="__codelineno-237-1" href="#__codelineno-237-1"></a><span class="nb">echo</span><span class="w"> </span><span class="nv">$HOME</span>
 </span></code></pre></div>
 <p>Example output:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-235-1"><a id="__codelineno-235-1" name="__codelineno-235-1" href="#__codelineno-235-1"></a>/home/rohit
+<div class="language-text highlight"><pre><span></span><code><span id="__span-238-1"><a id="__codelineno-238-1" name="__codelineno-238-1" href="#__codelineno-238-1"></a>/home/rohit
 </span></code></pre></div>
 <p>Equivalent to:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-236-1"><a id="__codelineno-236-1" name="__codelineno-236-1" href="#__codelineno-236-1"></a>~
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-239-1"><a id="__codelineno-239-1" name="__codelineno-239-1" href="#__codelineno-239-1"></a>~
 </span></code></pre></div>
 <h3 id="path"><code>$PATH</code></h3>
 <p>Directories where Linux looks for commands:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-237-1"><a id="__codelineno-237-1" name="__codelineno-237-1" href="#__codelineno-237-1"></a><span class="nb">echo</span><span class="w"> </span><span class="nv">$PATH</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-240-1"><a id="__codelineno-240-1" name="__codelineno-240-1" href="#__codelineno-240-1"></a><span class="nb">echo</span><span class="w"> </span><span class="nv">$PATH</span>
 </span></code></pre></div>
 <p>Example:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-238-1"><a id="__codelineno-238-1" name="__codelineno-238-1" href="#__codelineno-238-1"></a>/usr/local/bin:/usr/bin:/bin
+<div class="language-text highlight"><pre><span></span><code><span id="__span-241-1"><a id="__codelineno-241-1" name="__codelineno-241-1" href="#__codelineno-241-1"></a>/usr/local/bin:/usr/bin:/bin
 </span></code></pre></div>
 <p>When you run:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-239-1"><a id="__codelineno-239-1" name="__codelineno-239-1" href="#__codelineno-239-1"></a>ls
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-242-1"><a id="__codelineno-242-1" name="__codelineno-242-1" href="#__codelineno-242-1"></a>ls
 </span></code></pre></div>
 <p>Linux searches directories in <code>$PATH</code> to find the <code>ls</code> program.</p>
 <p>Use <code>$PATH</code> knowledge when installing scripts or troubleshooting “command not found.”</p>
 <h2 id="running-programs-and-scripts">Running Programs and Scripts</h2>
 <p>To run a command already in your <code>$PATH</code>:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-240-1"><a id="__codelineno-240-1" name="__codelineno-240-1" href="#__codelineno-240-1"></a>ls
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-243-1"><a id="__codelineno-243-1" name="__codelineno-243-1" href="#__codelineno-243-1"></a>ls
 </span></code></pre></div>
 <p>To run a script in the current directory:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-241-1"><a id="__codelineno-241-1" name="__codelineno-241-1" href="#__codelineno-241-1"></a>./script.sh
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-244-1"><a id="__codelineno-244-1" name="__codelineno-244-1" href="#__codelineno-244-1"></a>./script.sh
 </span></code></pre></div>
 <p>The <code>./</code> means:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-242-1"><a id="__codelineno-242-1" name="__codelineno-242-1" href="#__codelineno-242-1"></a>current directory
+<div class="language-text highlight"><pre><span></span><code><span id="__span-245-1"><a id="__codelineno-245-1" name="__codelineno-245-1" href="#__codelineno-245-1"></a>current directory
 </span></code></pre></div>
 <p>Linux does not automatically run programs from the current directory unless you specify <code>./</code>.</p>
 <p>If the script is not executable:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-243-1"><a id="__codelineno-243-1" name="__codelineno-243-1" href="#__codelineno-243-1"></a>chmod<span class="w"> </span>u+x<span class="w"> </span>script.sh
-</span><span id="__span-243-2"><a id="__codelineno-243-2" name="__codelineno-243-2" href="#__codelineno-243-2"></a>./script.sh
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-246-1"><a id="__codelineno-246-1" name="__codelineno-246-1" href="#__codelineno-246-1"></a>chmod<span class="w"> </span>u+x<span class="w"> </span>script.sh
+</span><span id="__span-246-2"><a id="__codelineno-246-2" name="__codelineno-246-2" href="#__codelineno-246-2"></a>./script.sh
 </span></code></pre></div>
 <p>Or run it through the shell:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-244-1"><a id="__codelineno-244-1" name="__codelineno-244-1" href="#__codelineno-244-1"></a>bash<span class="w"> </span>script.sh
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-247-1"><a id="__codelineno-247-1" name="__codelineno-247-1" href="#__codelineno-247-1"></a>bash<span class="w"> </span>script.sh
 </span></code></pre></div>
 <p>Use <code>./script.sh</code> when the script has execute permission.</p>
 <p>Use <code>bash script.sh</code> when you want Bash to interpret it directly.</p>
 <h2 id="compressing-and-archiving-files">Compressing and Archiving Files</h2>
+<p>Use archives for backups, transfers, packaging, and saving directory structures.</p>
 <h3 id="create-a-tar-archive">Create a <code>.tar</code> archive</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-245-1"><a id="__codelineno-245-1" name="__codelineno-245-1" href="#__codelineno-245-1"></a>tar<span class="w"> </span>-cf<span class="w"> </span>archive.tar<span class="w"> </span>folder/
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-248-1"><a id="__codelineno-248-1" name="__codelineno-248-1" href="#__codelineno-248-1"></a>tar<span class="w"> </span>-cf<span class="w"> </span>archive.tar<span class="w"> </span>folder/
 </span></code></pre></div>
 <h3 id="extract-a-tar-archive">Extract a <code>.tar</code> archive</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-246-1"><a id="__codelineno-246-1" name="__codelineno-246-1" href="#__codelineno-246-1"></a>tar<span class="w"> </span>-xf<span class="w"> </span>archive.tar
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-249-1"><a id="__codelineno-249-1" name="__codelineno-249-1" href="#__codelineno-249-1"></a>tar<span class="w"> </span>-xf<span class="w"> </span>archive.tar
 </span></code></pre></div>
 <h3 id="create-a-compressed-targz">Create a compressed <code>.tar.gz</code></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-247-1"><a id="__codelineno-247-1" name="__codelineno-247-1" href="#__codelineno-247-1"></a>tar<span class="w"> </span>-czf<span class="w"> </span>archive.tar.gz<span class="w"> </span>folder/
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-250-1"><a id="__codelineno-250-1" name="__codelineno-250-1" href="#__codelineno-250-1"></a>tar<span class="w"> </span>-czf<span class="w"> </span>archive.tar.gz<span class="w"> </span>folder/
 </span></code></pre></div>
 <h3 id="extract-a-targz">Extract a <code>.tar.gz</code></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-248-1"><a id="__codelineno-248-1" name="__codelineno-248-1" href="#__codelineno-248-1"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>archive.tar.gz
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-251-1"><a id="__codelineno-251-1" name="__codelineno-251-1" href="#__codelineno-251-1"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>archive.tar.gz
 </span></code></pre></div>
 <p>Options:</p>
 <table>
@@ -8944,74 +8943,76 @@
 </tbody>
 </table>
 <p>Verbose example:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-249-1"><a id="__codelineno-249-1" name="__codelineno-249-1" href="#__codelineno-249-1"></a>tar<span class="w"> </span>-czvf<span class="w"> </span>backup.tar.gz<span class="w"> </span>Documents/
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-252-1"><a id="__codelineno-252-1" name="__codelineno-252-1" href="#__codelineno-252-1"></a>tar<span class="w"> </span>-czvf<span class="w"> </span>backup.tar.gz<span class="w"> </span>Documents/
 </span></code></pre></div>
-<p>Use archives for backups, transfers, packaging, and saving directory structures.</p>
+<h3 id="exclude-files-from-the-archive">Exclude files from the archive</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-253-1"><a id="__codelineno-253-1" name="__codelineno-253-1" href="#__codelineno-253-1"></a>tar<span class="w"> </span>--exclude-vcs<span class="w"> </span>--exclude-backups<span class="w"> </span>--exclude<span class="o">=</span>._*<span class="w"> </span>--exclude<span class="o">=</span><span class="s1">&#39;Flow_15c&#39;</span><span class="w"> </span>--exclude<span class="o">=</span><span class="s1">&#39;h5n1_3.6_new_enet.sif&#39;</span><span class="w"> </span>--exclude<span class="o">=</span>temp*<span class="w"> </span>-zcvf<span class="w"> </span>h5n1_july_26_2022.tar.gz<span class="w"> </span>h5n1
+</span></code></pre></div>
 <h2 id="comparing-files">Comparing Files</h2>
 <h3 id="compare-two-text-files">Compare two text files</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-250-1"><a id="__codelineno-250-1" name="__codelineno-250-1" href="#__codelineno-250-1"></a>diff<span class="w"> </span>file1.txt<span class="w"> </span>file2.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-254-1"><a id="__codelineno-254-1" name="__codelineno-254-1" href="#__codelineno-254-1"></a>diff<span class="w"> </span>file1.txt<span class="w"> </span>file2.txt
 </span></code></pre></div>
 <h3 id="side-by-side-comparison">Side-by-side comparison</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-251-1"><a id="__codelineno-251-1" name="__codelineno-251-1" href="#__codelineno-251-1"></a>diff<span class="w"> </span>-y<span class="w"> </span>file1.txt<span class="w"> </span>file2.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-255-1"><a id="__codelineno-255-1" name="__codelineno-255-1" href="#__codelineno-255-1"></a>diff<span class="w"> </span>-y<span class="w"> </span>file1.txt<span class="w"> </span>file2.txt
 </span></code></pre></div>
 <p>Use <code>diff</code> when checking what changed between two files.</p>
 <h2 id="counting-lines-words-and-characters">Counting Lines, Words, and Characters</h2>
 <p>Use <code>wc</code>.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-252-1"><a id="__codelineno-252-1" name="__codelineno-252-1" href="#__codelineno-252-1"></a>wc<span class="w"> </span>file.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-256-1"><a id="__codelineno-256-1" name="__codelineno-256-1" href="#__codelineno-256-1"></a>wc<span class="w"> </span>file.txt
 </span></code></pre></div>
 <p>Output:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-253-1"><a id="__codelineno-253-1" name="__codelineno-253-1" href="#__codelineno-253-1"></a>10  50  300 file.txt
+<div class="language-text highlight"><pre><span></span><code><span id="__span-257-1"><a id="__codelineno-257-1" name="__codelineno-257-1" href="#__codelineno-257-1"></a>10  50  300 file.txt
 </span></code></pre></div>
 <p>Meaning:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-254-1"><a id="__codelineno-254-1" name="__codelineno-254-1" href="#__codelineno-254-1"></a>lines words bytes filename
+<div class="language-text highlight"><pre><span></span><code><span id="__span-258-1"><a id="__codelineno-258-1" name="__codelineno-258-1" href="#__codelineno-258-1"></a>lines words bytes filename
 </span></code></pre></div>
 <p>Only lines:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-255-1"><a id="__codelineno-255-1" name="__codelineno-255-1" href="#__codelineno-255-1"></a>wc<span class="w"> </span>-l<span class="w"> </span>file.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-259-1"><a id="__codelineno-259-1" name="__codelineno-259-1" href="#__codelineno-259-1"></a>wc<span class="w"> </span>-l<span class="w"> </span>file.txt
 </span></code></pre></div>
 <p>Only words:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-256-1"><a id="__codelineno-256-1" name="__codelineno-256-1" href="#__codelineno-256-1"></a>wc<span class="w"> </span>-w<span class="w"> </span>file.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-260-1"><a id="__codelineno-260-1" name="__codelineno-260-1" href="#__codelineno-260-1"></a>wc<span class="w"> </span>-w<span class="w"> </span>file.txt
 </span></code></pre></div>
 <p>Use <code>wc</code> for quick file statistics.</p>
 <h2 id="sorting-and-removing-duplicates">Sorting and Removing Duplicates</h2>
 <h3 id="sort-lines">Sort lines</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-257-1"><a id="__codelineno-257-1" name="__codelineno-257-1" href="#__codelineno-257-1"></a>sort<span class="w"> </span>names.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-261-1"><a id="__codelineno-261-1" name="__codelineno-261-1" href="#__codelineno-261-1"></a>sort<span class="w"> </span>names.txt
 </span></code></pre></div>
 <h3 id="save-sorted-output">Save sorted output</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-258-1"><a id="__codelineno-258-1" name="__codelineno-258-1" href="#__codelineno-258-1"></a>sort<span class="w"> </span>names.txt<span class="w"> </span>&gt;<span class="w"> </span>sorted-names.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-262-1"><a id="__codelineno-262-1" name="__codelineno-262-1" href="#__codelineno-262-1"></a>sort<span class="w"> </span>names.txt<span class="w"> </span>&gt;<span class="w"> </span>sorted-names.txt
 </span></code></pre></div>
 <h3 id="remove-duplicate-adjacent-lines">Remove duplicate adjacent lines</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-259-1"><a id="__codelineno-259-1" name="__codelineno-259-1" href="#__codelineno-259-1"></a>uniq<span class="w"> </span>names.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-263-1"><a id="__codelineno-263-1" name="__codelineno-263-1" href="#__codelineno-263-1"></a>uniq<span class="w"> </span>names.txt
 </span></code></pre></div>
 <p>Usually combine with sort:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-260-1"><a id="__codelineno-260-1" name="__codelineno-260-1" href="#__codelineno-260-1"></a>sort<span class="w"> </span>names.txt<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-264-1"><a id="__codelineno-264-1" name="__codelineno-264-1" href="#__codelineno-264-1"></a>sort<span class="w"> </span>names.txt<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq
 </span></code></pre></div>
 <p>Count duplicates:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-261-1"><a id="__codelineno-261-1" name="__codelineno-261-1" href="#__codelineno-261-1"></a>sort<span class="w"> </span>names.txt<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq<span class="w"> </span>-c
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-265-1"><a id="__codelineno-265-1" name="__codelineno-265-1" href="#__codelineno-265-1"></a>sort<span class="w"> </span>names.txt<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq<span class="w"> </span>-c
 </span></code></pre></div>
 <p>Use these when working with lists, logs, or text data.</p>
 <h2 id="pipes-and-redirection">Pipes and Redirection</h2>
 <p>Linux commands become powerful when combined.</p>
 <h3 id="redirect-output-to-a-file">Redirect output to a file</h3>
 <p>Overwrite:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-262-1"><a id="__codelineno-262-1" name="__codelineno-262-1" href="#__codelineno-262-1"></a>ls<span class="w"> </span>&gt;<span class="w"> </span>files.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-266-1"><a id="__codelineno-266-1" name="__codelineno-266-1" href="#__codelineno-266-1"></a>ls<span class="w"> </span>&gt;<span class="w"> </span>files.txt
 </span></code></pre></div>
 <p>Append:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-263-1"><a id="__codelineno-263-1" name="__codelineno-263-1" href="#__codelineno-263-1"></a>ls<span class="w"> </span>&gt;&gt;<span class="w"> </span>files.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-267-1"><a id="__codelineno-267-1" name="__codelineno-267-1" href="#__codelineno-267-1"></a>ls<span class="w"> </span>&gt;&gt;<span class="w"> </span>files.txt
 </span></code></pre></div>
 <h3 id="redirect-errors">Redirect errors</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-264-1"><a id="__codelineno-264-1" name="__codelineno-264-1" href="#__codelineno-264-1"></a><span class="nb">command</span><span class="w"> </span><span class="m">2</span>&gt;<span class="w"> </span>errors.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-268-1"><a id="__codelineno-268-1" name="__codelineno-268-1" href="#__codelineno-268-1"></a><span class="nb">command</span><span class="w"> </span><span class="m">2</span>&gt;<span class="w"> </span>errors.txt
 </span></code></pre></div>
 <h3 id="redirect-output-and-errors">Redirect output and errors</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-265-1"><a id="__codelineno-265-1" name="__codelineno-265-1" href="#__codelineno-265-1"></a><span class="nb">command</span><span class="w"> </span>&gt;<span class="w"> </span>output.txt<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-269-1"><a id="__codelineno-269-1" name="__codelineno-269-1" href="#__codelineno-269-1"></a><span class="nb">command</span><span class="w"> </span>&gt;<span class="w"> </span>output.txt<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
 </span></code></pre></div>
 <h3 id="pipe-output-into-another-command">Pipe output into another command</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-266-1"><a id="__codelineno-266-1" name="__codelineno-266-1" href="#__codelineno-266-1"></a>ls<span class="w"> </span>-l<span class="w"> </span><span class="p">|</span><span class="w"> </span>less
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-270-1"><a id="__codelineno-270-1" name="__codelineno-270-1" href="#__codelineno-270-1"></a>ls<span class="w"> </span>-l<span class="w"> </span><span class="p">|</span><span class="w"> </span>less
 </span></code></pre></div>
 <p>Search command output:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-267-1"><a id="__codelineno-267-1" name="__codelineno-267-1" href="#__codelineno-267-1"></a>ls<span class="w"> </span>-l<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;.txt&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-271-1"><a id="__codelineno-271-1" name="__codelineno-271-1" href="#__codelineno-271-1"></a>ls<span class="w"> </span>-l<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;.txt&quot;</span>
 </span></code></pre></div>
 <p>Count files:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-268-1"><a id="__codelineno-268-1" name="__codelineno-268-1" href="#__codelineno-268-1"></a>ls<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w"> </span>-l
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-272-1"><a id="__codelineno-272-1" name="__codelineno-272-1" href="#__codelineno-272-1"></a>ls<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w"> </span>-l
 </span></code></pre></div>
 <p>Use pipes when one command’s output should become another command’s input.</p>
 <h2 id="common-permission-errors">Common Permission Errors</h2>
@@ -9025,105 +9026,105 @@
 <li>The file system is mounted read-only.</li>
 </ol>
 <p>Troubleshoot:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-269-1"><a id="__codelineno-269-1" name="__codelineno-269-1" href="#__codelineno-269-1"></a>ls<span class="w"> </span>-l<span class="w"> </span>file
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-273-1"><a id="__codelineno-273-1" name="__codelineno-273-1" href="#__codelineno-273-1"></a>ls<span class="w"> </span>-l<span class="w"> </span>file
 </span></code></pre></div>
 <p>Check parent directory:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-270-1"><a id="__codelineno-270-1" name="__codelineno-270-1" href="#__codelineno-270-1"></a>ls<span class="w"> </span>-ld<span class="w"> </span>directory
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-274-1"><a id="__codelineno-274-1" name="__codelineno-274-1" href="#__codelineno-274-1"></a>ls<span class="w"> </span>-ld<span class="w"> </span>directory
 </span></code></pre></div>
 <p>Check your identity:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-271-1"><a id="__codelineno-271-1" name="__codelineno-271-1" href="#__codelineno-271-1"></a>whoami
-</span><span id="__span-271-2"><a id="__codelineno-271-2" name="__codelineno-271-2" href="#__codelineno-271-2"></a>id
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-275-1"><a id="__codelineno-275-1" name="__codelineno-275-1" href="#__codelineno-275-1"></a>whoami
+</span><span id="__span-275-2"><a id="__codelineno-275-2" name="__codelineno-275-2" href="#__codelineno-275-2"></a>id
 </span></code></pre></div>
 <p>Fix depending on cause:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-272-1"><a id="__codelineno-272-1" name="__codelineno-272-1" href="#__codelineno-272-1"></a>chmod<span class="w"> </span>u+x<span class="w"> </span>script.sh
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-276-1"><a id="__codelineno-276-1" name="__codelineno-276-1" href="#__codelineno-276-1"></a>chmod<span class="w"> </span>u+x<span class="w"> </span>script.sh
 </span></code></pre></div>
 <p>or:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-273-1"><a id="__codelineno-273-1" name="__codelineno-273-1" href="#__codelineno-273-1"></a>sudo<span class="w"> </span>chown<span class="w"> </span>user:user<span class="w"> </span>file
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-277-1"><a id="__codelineno-277-1" name="__codelineno-277-1" href="#__codelineno-277-1"></a>sudo<span class="w"> </span>chown<span class="w"> </span>user:user<span class="w"> </span>file
 </span></code></pre></div>
 <p>or:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-274-1"><a id="__codelineno-274-1" name="__codelineno-274-1" href="#__codelineno-274-1"></a>sudo<span class="w"> </span>chmod<span class="w"> </span>g+w<span class="w"> </span>file
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-278-1"><a id="__codelineno-278-1" name="__codelineno-278-1" href="#__codelineno-278-1"></a>sudo<span class="w"> </span>chmod<span class="w"> </span>g+w<span class="w"> </span>file
 </span></code></pre></div>
 <p>Do not blindly use <code>sudo</code>.</p>
 <h2 id="common-beginner-command-patterns">Common Beginner Command Patterns</h2>
 <h3 id="go-home">Go home</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-275-1"><a id="__codelineno-275-1" name="__codelineno-275-1" href="#__codelineno-275-1"></a><span class="nb">cd</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-279-1"><a id="__codelineno-279-1" name="__codelineno-279-1" href="#__codelineno-279-1"></a><span class="nb">cd</span>
 </span></code></pre></div>
 <h3 id="see-where-you-are">See where you are</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-276-1"><a id="__codelineno-276-1" name="__codelineno-276-1" href="#__codelineno-276-1"></a><span class="nb">pwd</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-280-1"><a id="__codelineno-280-1" name="__codelineno-280-1" href="#__codelineno-280-1"></a><span class="nb">pwd</span>
 </span></code></pre></div>
 <h3 id="list-files">List files</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-277-1"><a id="__codelineno-277-1" name="__codelineno-277-1" href="#__codelineno-277-1"></a>ls<span class="w"> </span>-la
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-281-1"><a id="__codelineno-281-1" name="__codelineno-281-1" href="#__codelineno-281-1"></a>ls<span class="w"> </span>-la
 </span></code></pre></div>
 <h3 id="create-folder">Create folder</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-278-1"><a id="__codelineno-278-1" name="__codelineno-278-1" href="#__codelineno-278-1"></a>mkdir<span class="w"> </span>new-folder
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-282-1"><a id="__codelineno-282-1" name="__codelineno-282-1" href="#__codelineno-282-1"></a>mkdir<span class="w"> </span>new-folder
 </span></code></pre></div>
 <h3 id="create-file">Create file</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-279-1"><a id="__codelineno-279-1" name="__codelineno-279-1" href="#__codelineno-279-1"></a>touch<span class="w"> </span>file.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-283-1"><a id="__codelineno-283-1" name="__codelineno-283-1" href="#__codelineno-283-1"></a>touch<span class="w"> </span>file.txt
 </span></code></pre></div>
 <h3 id="copy-file">Copy file</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-280-1"><a id="__codelineno-280-1" name="__codelineno-280-1" href="#__codelineno-280-1"></a>cp<span class="w"> </span>file.txt<span class="w"> </span>backup.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-284-1"><a id="__codelineno-284-1" name="__codelineno-284-1" href="#__codelineno-284-1"></a>cp<span class="w"> </span>file.txt<span class="w"> </span>backup.txt
 </span></code></pre></div>
 <h3 id="move-file">Move file</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-281-1"><a id="__codelineno-281-1" name="__codelineno-281-1" href="#__codelineno-281-1"></a>mv<span class="w"> </span>file.txt<span class="w"> </span>Documents/
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-285-1"><a id="__codelineno-285-1" name="__codelineno-285-1" href="#__codelineno-285-1"></a>mv<span class="w"> </span>file.txt<span class="w"> </span>Documents/
 </span></code></pre></div>
 <h3 id="rename-file">Rename file</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-282-1"><a id="__codelineno-282-1" name="__codelineno-282-1" href="#__codelineno-282-1"></a>mv<span class="w"> </span>old.txt<span class="w"> </span>new.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-286-1"><a id="__codelineno-286-1" name="__codelineno-286-1" href="#__codelineno-286-1"></a>mv<span class="w"> </span>old.txt<span class="w"> </span>new.txt
 </span></code></pre></div>
 <h3 id="delete-file">Delete file</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-283-1"><a id="__codelineno-283-1" name="__codelineno-283-1" href="#__codelineno-283-1"></a>rm<span class="w"> </span>file.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-287-1"><a id="__codelineno-287-1" name="__codelineno-287-1" href="#__codelineno-287-1"></a>rm<span class="w"> </span>file.txt
 </span></code></pre></div>
 <h3 id="delete-folder">Delete folder</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-284-1"><a id="__codelineno-284-1" name="__codelineno-284-1" href="#__codelineno-284-1"></a>rm<span class="w"> </span>-r<span class="w"> </span>folder
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-288-1"><a id="__codelineno-288-1" name="__codelineno-288-1" href="#__codelineno-288-1"></a>rm<span class="w"> </span>-r<span class="w"> </span>folder
 </span></code></pre></div>
 <h3 id="show-file">Show file</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-285-1"><a id="__codelineno-285-1" name="__codelineno-285-1" href="#__codelineno-285-1"></a>cat<span class="w"> </span>file.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-289-1"><a id="__codelineno-289-1" name="__codelineno-289-1" href="#__codelineno-289-1"></a>cat<span class="w"> </span>file.txt
 </span></code></pre></div>
 <h3 id="edit-file">Edit file</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-286-1"><a id="__codelineno-286-1" name="__codelineno-286-1" href="#__codelineno-286-1"></a>nano<span class="w"> </span>file.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-290-1"><a id="__codelineno-290-1" name="__codelineno-290-1" href="#__codelineno-290-1"></a>nano<span class="w"> </span>file.txt
 </span></code></pre></div>
 <h3 id="search-inside-files">Search inside files</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-287-1"><a id="__codelineno-287-1" name="__codelineno-287-1" href="#__codelineno-287-1"></a>grep<span class="w"> </span>-rn<span class="w"> </span><span class="s2">&quot;text&quot;</span><span class="w"> </span>.
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-291-1"><a id="__codelineno-291-1" name="__codelineno-291-1" href="#__codelineno-291-1"></a>grep<span class="w"> </span>-rn<span class="w"> </span><span class="s2">&quot;text&quot;</span><span class="w"> </span>.
 </span></code></pre></div>
 <h3 id="find-file">Find file</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-288-1"><a id="__codelineno-288-1" name="__codelineno-288-1" href="#__codelineno-288-1"></a>find<span class="w"> </span>~<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;file.txt&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-292-1"><a id="__codelineno-292-1" name="__codelineno-292-1" href="#__codelineno-292-1"></a>find<span class="w"> </span>~<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;file.txt&quot;</span>
 </span></code></pre></div>
 <h3 id="change-permissions">Change permissions</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-289-1"><a id="__codelineno-289-1" name="__codelineno-289-1" href="#__codelineno-289-1"></a>chmod<span class="w"> </span><span class="m">644</span><span class="w"> </span>file.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-293-1"><a id="__codelineno-293-1" name="__codelineno-293-1" href="#__codelineno-293-1"></a>chmod<span class="w"> </span><span class="m">644</span><span class="w"> </span>file.txt
 </span></code></pre></div>
 <h3 id="change-owner">Change owner</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-290-1"><a id="__codelineno-290-1" name="__codelineno-290-1" href="#__codelineno-290-1"></a>sudo<span class="w"> </span>chown<span class="w"> </span>user:user<span class="w"> </span>file.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-294-1"><a id="__codelineno-294-1" name="__codelineno-294-1" href="#__codelineno-294-1"></a>sudo<span class="w"> </span>chown<span class="w"> </span>user:user<span class="w"> </span>file.txt
 </span></code></pre></div>
 <h2 id="safer-habits">Safer Habits</h2>
 <p>Use these habits to avoid mistakes:</p>
 <h3 id="check-your-location-before-dangerous-commands">Check your location before dangerous commands</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-291-1"><a id="__codelineno-291-1" name="__codelineno-291-1" href="#__codelineno-291-1"></a><span class="nb">pwd</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-295-1"><a id="__codelineno-295-1" name="__codelineno-295-1" href="#__codelineno-295-1"></a><span class="nb">pwd</span>
 </span></code></pre></div>
 <h3 id="preview-wildcard-matches">Preview wildcard matches</h3>
 <p>Before:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-292-1"><a id="__codelineno-292-1" name="__codelineno-292-1" href="#__codelineno-292-1"></a>rm<span class="w"> </span>*.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-296-1"><a id="__codelineno-296-1" name="__codelineno-296-1" href="#__codelineno-296-1"></a>rm<span class="w"> </span>*.txt
 </span></code></pre></div>
 <p>Run:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-293-1"><a id="__codelineno-293-1" name="__codelineno-293-1" href="#__codelineno-293-1"></a>ls<span class="w"> </span>*.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-297-1"><a id="__codelineno-297-1" name="__codelineno-297-1" href="#__codelineno-297-1"></a>ls<span class="w"> </span>*.txt
 </span></code></pre></div>
 <h3 id="use-interactive-mode">Use interactive mode</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-294-1"><a id="__codelineno-294-1" name="__codelineno-294-1" href="#__codelineno-294-1"></a>rm<span class="w"> </span>-i<span class="w"> </span>file.txt
-</span><span id="__span-294-2"><a id="__codelineno-294-2" name="__codelineno-294-2" href="#__codelineno-294-2"></a>cp<span class="w"> </span>-i<span class="w"> </span>file.txt<span class="w"> </span>destination/
-</span><span id="__span-294-3"><a id="__codelineno-294-3" name="__codelineno-294-3" href="#__codelineno-294-3"></a>mv<span class="w"> </span>-i<span class="w"> </span>file.txt<span class="w"> </span>destination/
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-298-1"><a id="__codelineno-298-1" name="__codelineno-298-1" href="#__codelineno-298-1"></a>rm<span class="w"> </span>-i<span class="w"> </span>file.txt
+</span><span id="__span-298-2"><a id="__codelineno-298-2" name="__codelineno-298-2" href="#__codelineno-298-2"></a>cp<span class="w"> </span>-i<span class="w"> </span>file.txt<span class="w"> </span>destination/
+</span><span id="__span-298-3"><a id="__codelineno-298-3" name="__codelineno-298-3" href="#__codelineno-298-3"></a>mv<span class="w"> </span>-i<span class="w"> </span>file.txt<span class="w"> </span>destination/
 </span></code></pre></div>
 <h3 id="be-careful-with-recursive-commands">Be careful with recursive commands</h3>
 <p>Commands like these can affect many files:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-295-1"><a id="__codelineno-295-1" name="__codelineno-295-1" href="#__codelineno-295-1"></a>rm<span class="w"> </span>-r
-</span><span id="__span-295-2"><a id="__codelineno-295-2" name="__codelineno-295-2" href="#__codelineno-295-2"></a>chmod<span class="w"> </span>-R
-</span><span id="__span-295-3"><a id="__codelineno-295-3" name="__codelineno-295-3" href="#__codelineno-295-3"></a>chown<span class="w"> </span>-R
-</span><span id="__span-295-4"><a id="__codelineno-295-4" name="__codelineno-295-4" href="#__codelineno-295-4"></a>cp<span class="w"> </span>-r
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-299-1"><a id="__codelineno-299-1" name="__codelineno-299-1" href="#__codelineno-299-1"></a>rm<span class="w"> </span>-r
+</span><span id="__span-299-2"><a id="__codelineno-299-2" name="__codelineno-299-2" href="#__codelineno-299-2"></a>chmod<span class="w"> </span>-R
+</span><span id="__span-299-3"><a id="__codelineno-299-3" name="__codelineno-299-3" href="#__codelineno-299-3"></a>chown<span class="w"> </span>-R
+</span><span id="__span-299-4"><a id="__codelineno-299-4" name="__codelineno-299-4" href="#__codelineno-299-4"></a>cp<span class="w"> </span>-r
 </span></code></pre></div>
 <p>Always verify the path first.</p>
 <h3 id="prefer-specific-paths">Prefer specific paths</h3>
 <p>Risky:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-296-1"><a id="__codelineno-296-1" name="__codelineno-296-1" href="#__codelineno-296-1"></a>rm<span class="w"> </span>-rf<span class="w"> </span>*
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-300-1"><a id="__codelineno-300-1" name="__codelineno-300-1" href="#__codelineno-300-1"></a>rm<span class="w"> </span>-rf<span class="w"> </span>*
 </span></code></pre></div>
 <p>Safer:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-297-1"><a id="__codelineno-297-1" name="__codelineno-297-1" href="#__codelineno-297-1"></a>rm<span class="w"> </span>-ri<span class="w"> </span>./temporary-folder
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-301-1"><a id="__codelineno-301-1" name="__codelineno-301-1" href="#__codelineno-301-1"></a>rm<span class="w"> </span>-ri<span class="w"> </span>./temporary-folder
 </span></code></pre></div>
 <h3 id="avoid-unnecessary-sudo">Avoid unnecessary <code>sudo</code></h3>
 <p>Only use <code>sudo</code> when you understand why administrator permissions are needed.</p>
@@ -9283,37 +9284,37 @@
 </table>
 <p>Remember:</p>
 <p>For files:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-298-1"><a id="__codelineno-298-1" name="__codelineno-298-1" href="#__codelineno-298-1"></a>x means executable
+<div class="language-text highlight"><pre><span></span><code><span id="__span-302-1"><a id="__codelineno-302-1" name="__codelineno-302-1" href="#__codelineno-302-1"></a>x means executable
 </span></code></pre></div>
 <p>For directories:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-299-1"><a id="__codelineno-299-1" name="__codelineno-299-1" href="#__codelineno-299-1"></a>x means you can enter/traverse the directory
+<div class="language-text highlight"><pre><span></span><code><span id="__span-303-1"><a id="__codelineno-303-1" name="__codelineno-303-1" href="#__codelineno-303-1"></a>x means you can enter/traverse the directory
 </span></code></pre></div>
 <h2 id="final-mental-model">Final Mental Model</h2>
 <p>Think of Linux file management as answering four questions:</p>
 <ol>
 <li><strong>Where am I?</strong></li>
 </ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-300-1"><a id="__codelineno-300-1" name="__codelineno-300-1" href="#__codelineno-300-1"></a><span class="nb">pwd</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-304-1"><a id="__codelineno-304-1" name="__codelineno-304-1" href="#__codelineno-304-1"></a><span class="nb">pwd</span>
 </span></code></pre></div>
 <ol>
 <li><strong>What is here?</strong></li>
 </ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-301-1"><a id="__codelineno-301-1" name="__codelineno-301-1" href="#__codelineno-301-1"></a>ls<span class="w"> </span>-la
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-305-1"><a id="__codelineno-305-1" name="__codelineno-305-1" href="#__codelineno-305-1"></a>ls<span class="w"> </span>-la
 </span></code></pre></div>
 <ol>
 <li><strong>Where do I want to go?</strong></li>
 </ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-302-1"><a id="__codelineno-302-1" name="__codelineno-302-1" href="#__codelineno-302-1"></a><span class="nb">cd</span><span class="w"> </span>path
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-306-1"><a id="__codelineno-306-1" name="__codelineno-306-1" href="#__codelineno-306-1"></a><span class="nb">cd</span><span class="w"> </span>path
 </span></code></pre></div>
 <ol>
 <li><strong>What do I want to do with this file?</strong></li>
 </ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-303-1"><a id="__codelineno-303-1" name="__codelineno-303-1" href="#__codelineno-303-1"></a>cp
-</span><span id="__span-303-2"><a id="__codelineno-303-2" name="__codelineno-303-2" href="#__codelineno-303-2"></a>mv
-</span><span id="__span-303-3"><a id="__codelineno-303-3" name="__codelineno-303-3" href="#__codelineno-303-3"></a>rm
-</span><span id="__span-303-4"><a id="__codelineno-303-4" name="__codelineno-303-4" href="#__codelineno-303-4"></a>chmod
-</span><span id="__span-303-5"><a id="__codelineno-303-5" name="__codelineno-303-5" href="#__codelineno-303-5"></a>chown
-</span><span id="__span-303-6"><a id="__codelineno-303-6" name="__codelineno-303-6" href="#__codelineno-303-6"></a>chgrp
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-307-1"><a id="__codelineno-307-1" name="__codelineno-307-1" href="#__codelineno-307-1"></a>cp
+</span><span id="__span-307-2"><a id="__codelineno-307-2" name="__codelineno-307-2" href="#__codelineno-307-2"></a>mv
+</span><span id="__span-307-3"><a id="__codelineno-307-3" name="__codelineno-307-3" href="#__codelineno-307-3"></a>rm
+</span><span id="__span-307-4"><a id="__codelineno-307-4" name="__codelineno-307-4" href="#__codelineno-307-4"></a>chmod
+</span><span id="__span-307-5"><a id="__codelineno-307-5" name="__codelineno-307-5" href="#__codelineno-307-5"></a>chown
+</span><span id="__span-307-6"><a id="__codelineno-307-6" name="__codelineno-307-6" href="#__codelineno-307-6"></a>chgrp
 </span></code></pre></div>
 
 
