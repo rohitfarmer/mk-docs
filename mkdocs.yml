@@ -108,6 +108,7 @@ nav:
       - irc/irc.md
       - irc/weechat.md
   - Linux:
+      - linux/navigating-and-managing-the-linux-file-system.md
       - linux/audio-video.md
       - linux/desktop-shortcut.md
       - linux/fail2ban.md

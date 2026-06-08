@@ -19,6 +19,12 @@ ai-hpcsubmit2.niaid.nih.gov
 
 [https://hpcthinlinc.niaid.nih.gov/](https://hpcthinlinc.niaid.nih.gov/)
 
+### Data Mount
+
+```bash
+smb://skylinedata.niaid.nih.gov
+```
+
 ## Running Jobs
 
 ### Claim an Interactive Node using `srun`
