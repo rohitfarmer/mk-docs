@@ -104,6 +104,7 @@ nav:
   - Immunology:
       - immunology/b-cells.md
       - immunology/antibodies.md
+      - immunology/immune-cell-populations.md
       - immunology/sample-types.md
       - immunology/techniques.md
 

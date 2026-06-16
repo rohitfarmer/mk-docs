@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Techniques Used in Immunology Research
 
 Immunology research uses many laboratory techniques to study the immune system. These techniques help scientists detect antibodies, measure immune responses, identify immune cells, and understand how the immune system reacts to infections, vaccines, cancer, autoimmune diseases, and other health conditions.

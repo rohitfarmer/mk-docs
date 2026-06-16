@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Sample Types from Blood and Body Fluids
 
 Researchers and clinicians often study different parts of blood and body fluids to understand health and disease. Some commonly used sample types are plasma, serum, PBMCs, and cerebrospinal fluid. Each sample contains different substances and is useful for different types of tests.

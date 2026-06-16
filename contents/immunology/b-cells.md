@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # B Cell Immune Response
 
 The B cell immune response is an important part of the adaptive immune system. B cells are a type of white blood cell that produce antibodies. Antibodies are proteins that recognize and bind to specific foreign substances called antigens. Antigens can come from viruses, bacteria, parasites, or vaccines.
