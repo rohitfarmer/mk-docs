@@ -6,8 +6,6 @@ The goal of the B cell immune response is to produce antibodies that can recogni
 
 This response happens in several stages, starting from naive B cells and ending with plasma cells and memory B cells.
 
-
-
 ## Naive B Cells
 
 Naive B cells are B cells that have not yet encountered their specific antigen.
@@ -22,6 +20,8 @@ After development, naive B cells travel through the blood and lymphatic system a
 
 Inside these organs, naive B cells wait until they encounter an antigen that matches their receptor.
 
+![](images/naive-b-cells.webp)
+
 ## Antigen Recognition and B Cell Activation
 
 When a pathogen enters the body, fragments of it (antigens) are captured and presented in lymphoid organs.
@@ -34,6 +34,8 @@ Important signals involved in activation include interactions such as CD40 on th
 
 After receiving these signals, the B cell becomes activated and begins to divide.
 
+![](images/antigen-recognition-and-b-cell-activation.webp)
+
 ## Early Antibody Response
 
 Soon after activation, some B cells quickly differentiate into short-lived plasma cells. These plasma cells produce antibodies, mainly of the IgM type.
@@ -42,6 +44,7 @@ This early response helps provide immediate protection while the immune system p
 
 However, these early antibodies usually have lower binding strength for the antigen.
 
+![](images/early-antibody-response.webp)
 
 ## Formation of the Germinal Center
 
@@ -52,6 +55,8 @@ Germinal centers are temporary structures where B cells improve the quality of t
 Inside the germinal center, B cells rapidly divide and change their antibody genes. This allows the immune system to produce antibodies that bind more strongly to the antigen.
 
 Germinal centers are therefore important for generating high-quality antibodies and long-term immune memory.
+
+![](images/formation-of-the-germinal-center.webp)
 
 ## Dark Zone and Light Zone
 
@@ -67,6 +72,8 @@ Only B cells that bind the antigen strongly receive survival signals. The rest d
 
 Some selected B cells return to the dark zone for another round of mutation and selection.
 
+![](images/dark-zone-and-light-zone.webp)
+
 ## Somatic Hypermutation
 
 Somatic hypermutation is a process that introduces mutations into the variable regions of antibody genes.
@@ -77,7 +84,7 @@ The process is started by an enzyme called activation-induced cytidine deaminase
 
 Because of these mutations, each B cell can produce slightly different antibodies. Some of these antibodies bind the antigen better than before.
 
-
+![](images/somatic-hypermutation.webp)
 
 ## Affinity Maturation
 
@@ -90,6 +97,8 @@ B cells that produce antibodies with stronger binding ability are selected to su
 As this cycle continues, the overall population of B cells produces antibodies with higher and higher affinity for the antigen.
 
 This is why antibodies produced later during an infection or after vaccination are usually more effective.
+
+![](images/affinity-maturation.webp)
 
 ## Class-Switch Recombination
 
@@ -107,6 +116,8 @@ IgE is involved in allergic reactions and protection against parasites.
 
 Class switching is also controlled by the AID enzyme and signals from helper T cells.
 
+![](images/class-switch-recombination.webp)
+
 ## Plasma Cells
 
 Some B cells that leave the germinal center become plasma cells.
@@ -114,6 +125,8 @@ Some B cells that leave the germinal center become plasma cells.
 Plasma cells are specialized cells that produce large amounts of antibodies. These antibodies are released into the blood and tissues to fight infection.
 
 Some plasma cells are short-lived and produce antibodies only during the infection. Others become long-lived plasma cells and survive for months or years in the bone marrow while continuing to produce antibodies.
+
+![](images/plasma-cells.webp)
 
 ## Memory B Cells
 
@@ -125,6 +138,8 @@ If the same pathogen enters the body again, memory B cells can quickly recognize
 
 This rapid response is the reason why vaccines provide long-term protection.
 
+![](images/memory-b-cells.webp)
+
 ## Importance of the B Cell Immune Response
 
 The B cell immune response is essential for protecting the body against infections.
@@ -134,6 +149,8 @@ It allows the immune system to produce highly specific antibodies that recognize
 Because processes such as somatic hypermutation involve changes to DNA, they must be tightly controlled. If this process becomes abnormal, it can lead to autoimmune diseases or B cell cancers such as lymphoma.
 
 Overall, the B cell immune response is a highly organized system that allows the body to adapt and improve its defense against pathogens over time.
+
+![](images/importance-of-the-b-cell-immune-response.webp)
 
 ## Further Reading
 
