@@ -301,7 +301,7 @@ E. Oceania
   4. Polynesia
 ```
 
-*NOTE: You may use any sequential numbering system (e.g., [I, A, 1, a, i] or [1, 1.1, 1.1.1]) as long as it makes the hierarchy of the levels clear to your reader.*
+*NOTE: You may use any sequential numbering system (e.g., `[I, A, 1, a, i]` or `[1, 1.1, 1.1.1]`) as long as it makes the hierarchy of the levels clear to your reader.*
 
 As with any list, if the sequence or number of list elements is unimportant, use bullets. Use a different style or size of bullet point to denote each sublevel. (Programs such as Microsoft Word do this automatically for you.)
 

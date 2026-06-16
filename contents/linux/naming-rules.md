@@ -13,12 +13,12 @@ Use styles that are internationally recognized, easy to read by a human eye, and
 5. Use "." only for file extensions.
 6. Use v1, v2, ..., vn to denote file versions.
 7. For a stack of fewer than 100 files, number them as 00, 01, 02, ..., 0n for easier sorting. Accordingly, for a stack of fewer than 1000 files, number them as 000, 001, 002, ..., 00n.
-8. File names should NOT contain punctuation, symbols, or special characters. ” / \ [ ] : ; | = _ , < ? > & $ # ! ‘ { } ( ).
+8. File names should NOT contain punctuation, symbols, or special characters. `” / \ [ ] : ; | = _ , < ? > & $ # ! ‘ { } ( )`.
 
 
 ## Some Examples
 
-```
+```bash
 2022-08-31-labnotebook-for-hdstim.docx
 
 figure-01.png

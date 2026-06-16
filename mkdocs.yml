@@ -71,7 +71,10 @@ markdown_extensions:
   - pymdownx.blocks.caption
   - pymdownx.arithmatex:
       generic: true
-
+  - zensical.extensions.glightbox:
+      auto: true
+      auto_caption: true
+      caption_position: bottom
 nav:
   - index.md
   - AI-ML:

@@ -73,7 +73,7 @@ or to follow the log output as you test:
 tail -f -n 500 /var/log/auth.log | grep 'sshd'
 ```
 
-**NOTE:** for monitoring SSHD related `fail2ban` (if it's active) realtime activity check out [Linux/Fail2Ban](../linux/fail2ban.md#monitor-realtime-activity) page.
+**NOTE:** for monitoring SSHD related `fail2ban` (if it's active) realtime activity check out [Linux/Fail2Ban](https://docs.rohitfarmer.com/linux/fail2ban/#monitor-realtime-activity) page.
 
 ## Allow password login a GCP instance user
 This is to enable password login to a non-sudo/root user on a Google cloud instance.

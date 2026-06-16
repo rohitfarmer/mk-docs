@@ -31,7 +31,7 @@ The bottom part of the antibody is called the constant region. This region deter
 
 Because the variable region is different for each antibody, the immune system can recognize a very large number of different pathogens.
 
-
+![](images/structure-of-an-antibody.webp)
 
 ## How Antibodies Work
 
@@ -55,7 +55,7 @@ These classes are IgM, IgG, IgA, IgE, and IgD.
 
 Each class has a different structure and performs different functions in the immune system.
 
-
+![](images/immunoglobulin-classes.webp)
 
 ### IgM
 

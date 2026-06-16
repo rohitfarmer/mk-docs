@@ -238,7 +238,7 @@ Any nick not on the access list has an access level of `0`.
 People on the AKICK list are automatically kicked and banned when they enter the channel. Bans made as a result of AKICK must be removed manually.
 
 - `/cs akick #channel add host [reason]`
-  - Adds host to #channel's AKICK list [for reason].
+  - Adds host to #channel's AKICK list.
 - `/cs akick #channel del host`
   - Removes host from the AKICK list.
 - `/cs akick #channel list`

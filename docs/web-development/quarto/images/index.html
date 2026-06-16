@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="zensical-0.0.23">
+      <meta name="generator" content="zensical-0.0.45">
     
     
       
@@ -36,7 +36,7 @@
       
         
       
-      <link rel="stylesheet" href="../../../assets/stylesheets/modern/main.1e989742.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/modern/main.fba56155.min.css">
       
         
           
@@ -55,14 +55,14 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
       
     
     
       <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    <script>__md_scope=new URL("../../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
 
@@ -83,7 +83,7 @@
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
     <div data-md-component="skip">
       
         
@@ -109,7 +109,7 @@
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
 
     </a>
-    <label class="md-header__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
       
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
     </label>
@@ -163,7 +163,7 @@
     
       
       
-        <label class="md-header__button md-icon" for="__search">
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
           
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
         </label>
@@ -179,7 +179,7 @@
         <a href="https://github.com/rohitfarmer/mk-docs" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -225,7 +225,7 @@
       <a href="https://github.com/rohitfarmer/mk-docs" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -249,8 +249,7 @@
   <span class="md-ellipsis">
     
   
-    Home
-  
+  Home
 
     
   </span>
@@ -287,8 +286,7 @@
   <span class="md-ellipsis">
     
   
-    AI-ML
-  
+  AI-ML
 
     
   </span>
@@ -303,8 +301,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    AI-ML
-  
+  AI-ML
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -323,8 +320,7 @@
   <span class="md-ellipsis">
     
   
-    Ollama with Open WebUI
-  
+  Ollama with Open WebUI
 
     
   </span>
@@ -369,8 +365,7 @@
   <span class="md-ellipsis">
     
   
-    BASH
-  
+  BASH
 
     
   </span>
@@ -385,8 +380,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    BASH
-  
+  BASH
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -405,8 +399,7 @@
   <span class="md-ellipsis">
     
   
-    A Tutorial on Shell Scripting
-  
+  A Tutorial on Shell Scripting
 
     
   </span>
@@ -451,8 +444,7 @@
   <span class="md-ellipsis">
     
   
-    Bioinformatics
-  
+  Bioinformatics
 
     
   </span>
@@ -467,8 +459,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Bioinformatics
-  
+  Bioinformatics
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -487,8 +478,7 @@
   <span class="md-ellipsis">
     
   
-    Local BLAST
-  
+  Local BLAST
 
     
   </span>
@@ -515,8 +505,7 @@
   <span class="md-ellipsis">
     
   
-    Fetch Taxonomic Information from the NCBI Taxonomy Database
-  
+  Fetch Taxonomic Information from the NCBI Taxonomy Database
 
     
   </span>
@@ -543,8 +532,7 @@
   <span class="md-ellipsis">
     
   
-    Snakemake
-  
+  Snakemake
 
     
   </span>
@@ -571,8 +559,7 @@
   <span class="md-ellipsis">
     
   
-    Next Generation Sequencing Methods
-  
+  Next Generation Sequencing Methods
 
     
   </span>
@@ -617,8 +604,7 @@
   <span class="md-ellipsis">
     
   
-    Containers & Virtual Environments
-  
+  Containers & Virtual Environments
 
     
   </span>
@@ -633,8 +619,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Containers & Virtual Environments
-  
+  Containers & Virtual Environments
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -653,8 +638,7 @@
   <span class="md-ellipsis">
     
   
-    Docker Tutorial
-  
+  Docker Tutorial
 
     
   </span>
@@ -681,8 +665,7 @@
   <span class="md-ellipsis">
     
   
-    Virtual Environments Using Conda and Mamba
-  
+  Virtual Environments Using Conda and Mamba
 
     
   </span>
@@ -709,8 +692,7 @@
   <span class="md-ellipsis">
     
   
-    Run Neovim/VIM &amp; Jupyter inside a Singularity Container for R Programming
-  
+  Run Neovim/VIM &amp; Jupyter inside a Singularity Container for R Programming
 
     
   </span>
@@ -737,8 +719,7 @@
   <span class="md-ellipsis">
     
   
-    Building a Singularity Container for Machine Learning, Data Science, &amp; Chemistry
-  
+  Building a Singularity Container for Machine Learning, Data Science, &amp; Chemistry
 
     
   </span>
@@ -783,8 +764,7 @@
   <span class="md-ellipsis">
     
   
-    Database
-  
+  Database
 
     
   </span>
@@ -799,8 +779,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Database
-  
+  Database
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -819,8 +798,7 @@
   <span class="md-ellipsis">
     
   
-    SQLite
-  
+  SQLite
 
     
   </span>
@@ -847,8 +825,7 @@
   <span class="md-ellipsis">
     
   
-    SQLite Conditional and Logical Operators
-  
+  SQLite Conditional and Logical Operators
 
     
   </span>
@@ -893,8 +870,7 @@
   <span class="md-ellipsis">
     
   
-    Data Science
-  
+  Data Science
 
     
   </span>
@@ -909,8 +885,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Data Science
-  
+  Data Science
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -929,8 +904,7 @@
   <span class="md-ellipsis">
     
   
-    Classification Model Performance Metric
-  
+  Classification Model Performance Metric
 
     
   </span>
@@ -975,8 +949,7 @@
   <span class="md-ellipsis">
     
   
-    Editors
-  
+  Editors
 
     
   </span>
@@ -991,8 +964,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Editors
-  
+  Editors
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -1011,8 +983,7 @@
   <span class="md-ellipsis">
     
   
-    Joplin
-  
+  Joplin
 
     
   </span>
@@ -1039,8 +1010,7 @@
   <span class="md-ellipsis">
     
   
-    How to use Neovim or VIM Editor as an IDE for R
-  
+  How to use Neovim or VIM Editor as an IDE for R
 
     
   </span>
@@ -1085,8 +1055,7 @@
   <span class="md-ellipsis">
     
   
-    HPC
-  
+  HPC
 
     
   </span>
@@ -1101,8 +1070,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    HPC
-  
+  HPC
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -1121,8 +1089,7 @@
   <span class="md-ellipsis">
     
   
-    Skyline
-  
+  Skyline
 
     
   </span>
@@ -1167,8 +1134,7 @@
   <span class="md-ellipsis">
     
   
-    Immunology
-  
+  Immunology
 
     
   </span>
@@ -1183,8 +1149,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Immunology
-  
+  Immunology
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -1203,8 +1168,7 @@
   <span class="md-ellipsis">
     
   
-    B Cell Immune Response
-  
+  B Cell Immune Response
 
     
   </span>
@@ -1231,8 +1195,7 @@
   <span class="md-ellipsis">
     
   
-    Antibodies and Types of Immunoglobulins
-  
+  Antibodies and Types of Immunoglobulins
 
     
   </span>
@@ -1259,8 +1222,7 @@
   <span class="md-ellipsis">
     
   
-    Sample Types from Blood and Body Fluids
-  
+  Sample Types from Blood and Body Fluids
 
     
   </span>
@@ -1287,8 +1249,7 @@
   <span class="md-ellipsis">
     
   
-    Techniques Used in Immunology Research
-  
+  Techniques Used in Immunology Research
 
     
   </span>
@@ -1333,8 +1294,7 @@
   <span class="md-ellipsis">
     
   
-    IRC
-  
+  IRC
 
     
   </span>
@@ -1349,8 +1309,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    IRC
-  
+  IRC
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -1369,8 +1328,7 @@
   <span class="md-ellipsis">
     
   
-    Internet Relay Chat
-  
+  Internet Relay Chat
 
     
   </span>
@@ -1397,8 +1355,7 @@
   <span class="md-ellipsis">
     
   
-    Commands to configure Weechat IRC client
-  
+  Commands to configure Weechat IRC client
 
     
   </span>
@@ -1443,8 +1400,7 @@
   <span class="md-ellipsis">
     
   
-    Linux
-  
+  Linux
 
     
   </span>
@@ -1459,8 +1415,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Linux
-  
+  Linux
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -1479,8 +1434,7 @@
   <span class="md-ellipsis">
     
   
-    Navigating and Managing the Linux File System
-  
+  Navigating and Managing the Linux File System
 
     
   </span>
@@ -1507,8 +1461,7 @@
   <span class="md-ellipsis">
     
   
-    Audio Video Editing
-  
+  Audio Video Editing
 
     
   </span>
@@ -1535,8 +1488,7 @@
   <span class="md-ellipsis">
     
   
-    Creating a Desktop Shortcut Manually
-  
+  Creating a Desktop Shortcut Manually
 
     
   </span>
@@ -1563,8 +1515,7 @@
   <span class="md-ellipsis">
     
   
-    Fail2Ban
-  
+  Fail2Ban
 
     
   </span>
@@ -1591,8 +1542,7 @@
   <span class="md-ellipsis">
     
   
-    Image Manipulation in Linux and Mac
-  
+  Image Manipulation in Linux and Mac
 
     
   </span>
@@ -1619,8 +1569,7 @@
   <span class="md-ellipsis">
     
   
-    Setup MiniDLNA Server
-  
+  Setup MiniDLNA Server
 
     
   </span>
@@ -1647,8 +1596,7 @@
   <span class="md-ellipsis">
     
   
-    Mount External Drive
-  
+  Mount External Drive
 
     
   </span>
@@ -1675,8 +1623,7 @@
   <span class="md-ellipsis">
     
   
-    Rules for Naming Files and Folders that are Cross Platform
-  
+  Rules for Naming Files and Folders that are Cross Platform
 
     
   </span>
@@ -1703,8 +1650,7 @@
   <span class="md-ellipsis">
     
   
-    NGINX Web Server
-  
+  NGINX Web Server
 
     
   </span>
@@ -1731,8 +1677,7 @@
   <span class="md-ellipsis">
     
   
-    Linux Package Management
-  
+  Linux Package Management
 
     
   </span>
@@ -1759,8 +1704,7 @@
   <span class="md-ellipsis">
     
   
-    Syncing Stuff Using rsync
-  
+  Syncing Stuff Using rsync
 
     
   </span>
@@ -1787,8 +1731,7 @@
   <span class="md-ellipsis">
     
   
-    Screen
-  
+  Screen
 
     
   </span>
@@ -1815,8 +1758,7 @@
   <span class="md-ellipsis">
     
   
-    Linux System Monitoring
-  
+  Linux System Monitoring
 
     
   </span>
@@ -1843,8 +1785,7 @@
   <span class="md-ellipsis">
     
   
-    User management
-  
+  User management
 
     
   </span>
@@ -1871,8 +1812,7 @@
   <span class="md-ellipsis">
     
   
-    Downloading Stuff Using Wget
-  
+  Downloading Stuff Using Wget
 
     
   </span>
@@ -1899,8 +1839,7 @@
   <span class="md-ellipsis">
     
   
-    xRDP
-  
+  xRDP
 
     
   </span>
@@ -1945,8 +1884,7 @@
   <span class="md-ellipsis">
     
   
-    Molecular Modelling
-  
+  Molecular Modelling
 
     
   </span>
@@ -1961,8 +1899,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Molecular Modelling
-  
+  Molecular Modelling
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -1981,8 +1918,7 @@
   <span class="md-ellipsis">
     
   
-    Gromacs
-  
+  Gromacs
 
     
   </span>
@@ -2027,8 +1963,7 @@
   <span class="md-ellipsis">
     
   
-    Online Services
-  
+  Online Services
 
     
   </span>
@@ -2043,8 +1978,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Online Services
-  
+  Online Services
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -2063,8 +1997,7 @@
   <span class="md-ellipsis">
     
   
-    Multi Service Hosts
-  
+  Multi Service Hosts
 
     
   </span>
@@ -2091,8 +2024,7 @@
   <span class="md-ellipsis">
     
   
-    Jitsi
-  
+  Jitsi
 
     
   </span>
@@ -2119,8 +2051,7 @@
   <span class="md-ellipsis">
     
   
-    File Sharing
-  
+  File Sharing
 
     
   </span>
@@ -2165,8 +2096,7 @@
   <span class="md-ellipsis">
     
   
-    Python
-  
+  Python
 
     
   </span>
@@ -2181,8 +2111,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Python
-  
+  Python
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -2201,8 +2130,7 @@
   <span class="md-ellipsis">
     
   
-    Getting Back to Python
-  
+  Getting Back to Python
 
     
   </span>
@@ -2229,8 +2157,7 @@
   <span class="md-ellipsis">
     
   
-    NumPy in Practice
-  
+  NumPy in Practice
 
     
   </span>
@@ -2257,8 +2184,7 @@
   <span class="md-ellipsis">
     
   
-    Pandas in Practice
-  
+  Pandas in Practice
 
     
   </span>
@@ -2285,8 +2211,7 @@
   <span class="md-ellipsis">
     
   
-    Matplotlib in Practice
-  
+  Matplotlib in Practice
 
     
   </span>
@@ -2313,8 +2238,7 @@
   <span class="md-ellipsis">
     
   
-    Python Virtual Environments
-  
+  Python Virtual Environments
 
     
   </span>
@@ -2341,8 +2265,7 @@
   <span class="md-ellipsis">
     
   
-    Start a Web Server To Serve Local Pages
-  
+  Start a Web Server To Serve Local Pages
 
     
   </span>
@@ -2387,8 +2310,7 @@
   <span class="md-ellipsis">
     
   
-    R
-  
+  R
 
     
   </span>
@@ -2403,8 +2325,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    R
-  
+  R
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -2423,8 +2344,7 @@
   <span class="md-ellipsis">
     
   
-    Data Frame Manipulation
-  
+  Data Frame Manipulation
 
     
   </span>
@@ -2451,8 +2371,7 @@
   <span class="md-ellipsis">
     
   
-    Files and Folders
-  
+  Files and Folders
 
     
   </span>
@@ -2479,8 +2398,7 @@
   <span class="md-ellipsis">
     
   
-    Machine Learning
-  
+  Machine Learning
 
     
   </span>
@@ -2507,8 +2425,7 @@
   <span class="md-ellipsis">
     
   
-    Non Data Frame Related Manipulations
-  
+  Non Data Frame Related Manipulations
 
     
   </span>
@@ -2535,8 +2452,7 @@
   <span class="md-ellipsis">
     
   
-    Parallel Processing
-  
+  Parallel Processing
 
     
   </span>
@@ -2563,8 +2479,7 @@
   <span class="md-ellipsis">
     
   
-    Plots
-  
+  Plots
 
     
   </span>
@@ -2591,8 +2506,7 @@
   <span class="md-ellipsis">
     
   
-    Display Tables in HTML Reports
-  
+  Display Tables in HTML Reports
 
     
   </span>
@@ -2619,8 +2533,7 @@
   <span class="md-ellipsis">
     
   
-    A Comprehensive List of R Packages for Data Science
-  
+  A Comprehensive List of R Packages for Data Science
 
     
   </span>
@@ -2665,8 +2578,7 @@
   <span class="md-ellipsis">
     
   
-    Remote Access
-  
+  Remote Access
 
     
   </span>
@@ -2681,8 +2593,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Remote Access
-  
+  Remote Access
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -2701,8 +2612,7 @@
   <span class="md-ellipsis">
     
   
-    Jupyter Over Tunneling
-  
+  Jupyter Over Tunneling
 
     
   </span>
@@ -2729,8 +2639,7 @@
   <span class="md-ellipsis">
     
   
-    SSH Setup
-  
+  SSH Setup
 
     
   </span>
@@ -2775,8 +2684,7 @@
   <span class="md-ellipsis">
     
   
-    Tor
-  
+  Tor
 
     
   </span>
@@ -2791,8 +2699,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Tor
-  
+  Tor
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -2811,8 +2718,7 @@
   <span class="md-ellipsis">
     
   
-    Tor
-  
+  Tor
 
     
   </span>
@@ -2839,8 +2745,7 @@
   <span class="md-ellipsis">
     
   
-    How to Access Websites on the Tor Network
-  
+  How to Access Websites on the Tor Network
 
     
   </span>
@@ -2885,8 +2790,7 @@
   <span class="md-ellipsis">
     
   
-    Uses
-  
+  Uses
 
     
   </span>
@@ -2901,8 +2805,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Uses
-  
+  Uses
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -2921,8 +2824,7 @@
   <span class="md-ellipsis">
     
   
-    General Computing Software and Tools that I use
-  
+  General Computing Software and Tools that I use
 
     
   </span>
@@ -2967,8 +2869,7 @@
   <span class="md-ellipsis">
     
   
-    Version Control
-  
+  Version Control
 
     
   </span>
@@ -2983,8 +2884,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Version Control
-  
+  Version Control
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -3003,8 +2903,7 @@
   <span class="md-ellipsis">
     
   
-    Git and GitHub
-  
+  Git and GitHub
 
     
   </span>
@@ -3051,8 +2950,7 @@
   <span class="md-ellipsis">
     
   
-    Web Development
-  
+  Web Development
 
     
   </span>
@@ -3067,8 +2965,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Web Development
-  
+  Web Development
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -3100,8 +2997,7 @@
   <span class="md-ellipsis">
     
   
-    Quarto
-  
+  Quarto
 
     
   </span>
@@ -3116,8 +3012,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Quarto
-  
+  Quarto
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -3132,7 +3027,7 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
       
       
         
@@ -3145,8 +3040,7 @@
   <span class="md-ellipsis">
     
   
-    Embedding Images
-  
+  Embedding Images
 
     
   </span>
@@ -3163,8 +3057,7 @@
   <span class="md-ellipsis">
     
   
-    Embedding Images
-  
+  Embedding Images
 
     
   </span>
@@ -3192,9 +3085,9 @@
         <li class="md-nav__item">
   <a href="#enable-lightbox-effect" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Enable Lightbox Effect
-      
+      </span>
     </span>
   </a>
   
@@ -3203,9 +3096,9 @@
         <li class="md-nav__item">
   <a href="#multiple-images-in-a-gallery" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Multiple Images in a Gallery
-      
+      </span>
     </span>
   </a>
   
@@ -3260,8 +3153,7 @@
   <span class="md-ellipsis">
     
   
-    Writing
-  
+  Writing
 
     
   </span>
@@ -3276,8 +3168,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Writing
-  
+  Writing
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -3296,8 +3187,7 @@
   <span class="md-ellipsis">
     
   
-    Capitalization in Titles and Headings
-  
+  Capitalization in Titles and Headings
 
     
   </span>
@@ -3324,8 +3214,7 @@
   <span class="md-ellipsis">
     
   
-    Lists: Bullets, Numbers, Capitalization, Punctuation
-  
+  Lists: Bullets, Numbers, Capitalization, Punctuation
 
     
   </span>
@@ -3355,6 +3244,19 @@
               
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                      
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
                   <div class="md-sidebar__inner">
                     
 
@@ -3375,9 +3277,9 @@
         <li class="md-nav__item">
   <a href="#enable-lightbox-effect" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Enable Lightbox Effect
-      
+      </span>
     </span>
   </a>
   
@@ -3386,9 +3288,9 @@
         <li class="md-nav__item">
   <a href="#multiple-images-in-a-gallery" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Multiple Images in a Gallery
-      
+      </span>
     </span>
   </a>
   
@@ -3421,6 +3323,7 @@
     <li class="md-path__item">
       <a href="../../.." class="md-path__link">
         
+  
   <span class="md-ellipsis">
     Home
   </span>
@@ -3436,14 +3339,21 @@
   
     
     
+    
+    
+    
       
   
   
     
     
+    
+    
+    
       <li class="md-path__item">
         <a href="././" class="md-path__link">
           
+  
   <span class="md-ellipsis">
     Web Development
   </span>
@@ -3462,9 +3372,13 @@
   
     
     
+    
+    
+    
       <li class="md-path__item">
         <a href="././" class="md-path__link">
           
+  
   <span class="md-ellipsis">
     Quarto
   </span>
@@ -3660,7 +3574,7 @@
       
     
     <a href="https://fosstodon.org/@rohitfarmer" target="_blank" rel="noopener me" title="fosstodon.org" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54-.6-4.6-.9-9.3-.9-13.9 85.6 20.9 158.7 9.1 178.7 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6V190.1c0-49.7-64-51.6-64 6.9v62.5H201V197c0-58.5-64-56.6-64-6.9v114.2H90.3c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54-.6-4.6-.9-9.3-.9-13.9 85.6 20.9 158.7 9.1 178.7 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6V190.1c0-49.7-64-51.6-64 6.9v62.5H201V197c0-58.5-64-56.6-64-6.9v114.2H90.3c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175"/></svg>
     </a>
   
     
@@ -3671,7 +3585,7 @@
       
     
     <a href="https://bsky.app/profile/rohitfarmer.com" target="_blank" rel="noopener" title="bsky.app" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M407.8 294.7c-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3M288 227.1c-26.1-50.7-97.1-145.2-163.1-191.8C61.6-9.4 37.5-1.7 21.6 5.5 3.3 13.8 0 41.9 0 58.4S9.1 194 15 213.9c19.5 65.7 89.1 87.9 153.2 80.7 3.3-.5 6.6-.9 10-1.4-3.3.5-6.6 1-10 1.4-93.9 14-177.3 48.2-67.9 169.9C220.6 589.1 265.1 437.8 288 361.1c22.9 76.7 49.2 222.5 185.6 103.4 102.4-103.4 28.1-156-65.8-169.9-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3 64.1 7.1 133.6-15.1 153.2-80.7C566.9 194 576 75 576 58.4s-3.3-44.7-21.6-52.9c-15.8-7.1-40-14.9-103.2 29.8C385.1 81.9 314.1 176.4 288 227.1"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M407.8 294.7c-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3M288 227.1c-26.1-50.7-97.1-145.2-163.1-191.8C61.6-9.4 37.5-1.7 21.6 5.5 3.3 13.8 0 41.9 0 58.4S9.1 194 15 213.9c19.5 65.7 89.1 87.9 153.2 80.7 3.3-.5 6.6-.9 10-1.4-3.3.5-6.6 1-10 1.4-93.9 14-177.3 48.2-67.9 169.9C220.6 589.1 265.1 437.8 288 361.1c22.9 76.7 49.2 222.5 185.6 103.4 102.4-103.4 28.1-156-65.8-169.9-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3 64.1 7.1 133.6-15.1 153.2-80.7C566.9 194 576 75 576 58.4s-3.3-44.7-21.6-52.9c-15.8-7.1-40-14.9-103.2 29.8C385.1 81.9 314.1 176.4 288 227.1"/></svg>
     </a>
   
     
@@ -3682,7 +3596,7 @@
       
     
     <a href="https://github.com/rohitfarmer" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
     
@@ -3693,7 +3607,7 @@
       
     
     <a href="https://www.linkedin.com/in/rohitfarmer" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
     </a>
   
     
@@ -3704,7 +3618,7 @@
       
     
     <a href="https://www.reddit.com/user/rohitfarmer/" target="_blank" rel="noopener" title="www.reddit.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M0 256C0 114.6 114.6 0 256 0s256 114.6 256 256-114.6 256-256 256H37.1c-13.7 0-20.5-16.5-10.9-26.2L75 437C28.7 390.7 0 326.7 0 256m349.6-102.4c23.6 0 42.7-19.1 42.7-42.7s-19.1-42.7-42.7-42.7c-20.6 0-37.8 14.6-41.8 34-34.5 3.7-61.4 33-61.4 68.4v.2c-37.5 1.6-71.8 12.3-99 29.1-10.1-7.8-22.8-12.5-36.5-12.5-33 0-59.8 26.8-59.8 59.8 0 24 14.1 44.6 34.4 54.1 2 69.4 77.6 125.2 170.6 125.2s168.7-55.9 170.6-125.3c20.2-9.6 34.1-30.2 34.1-54 0-33-26.8-59.8-59.8-59.8-13.7 0-26.3 4.6-36.4 12.4-27.4-17-62.1-27.7-100-29.1v-.2c0-25.4 18.9-46.5 43.4-49.9 4.4 18.8 21.3 32.8 41.5 32.8zm-172.5 93.3c16.7 0 29.5 17.6 28.5 39.3s-13.5 29.6-30.3 29.6-31.4-8.8-30.4-30.5S160.3 247 177 247zm190.1 38.3c1 21.7-13.7 30.5-30.4 30.5s-29.3-7.9-30.3-29.6 11.8-39.3 28.5-39.3 31.2 16.6 32.1 38.3zm-48.1 56.7c-10.3 24.6-34.6 41.9-63 41.9s-52.7-17.3-63-41.9c-1.2-2.9.8-6.2 3.9-6.5 18.4-1.9 38.3-2.9 59.1-2.9s40.7 1 59.1 2.9c3.1.3 5.1 3.6 3.9 6.5"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M0 256C0 114.6 114.6 0 256 0s256 114.6 256 256-114.6 256-256 256H37.1c-13.7 0-20.5-16.5-10.9-26.2L75 437C28.7 390.7 0 326.7 0 256m349.6-102.4c23.6 0 42.7-19.1 42.7-42.7s-19.1-42.7-42.7-42.7c-20.6 0-37.8 14.6-41.8 34-34.5 3.7-61.4 33-61.4 68.4v.2c-37.5 1.6-71.8 12.3-99 29.1-10.1-7.8-22.8-12.5-36.5-12.5-33 0-59.8 26.8-59.8 59.8 0 24 14.1 44.6 34.4 54.1 2 69.4 77.6 125.2 170.6 125.2s168.7-55.9 170.6-125.3c20.2-9.6 34.1-30.2 34.1-54 0-33-26.8-59.8-59.8-59.8-13.7 0-26.3 4.6-36.4 12.4-27.4-17-62.1-27.7-100-29.1v-.2c0-25.4 18.9-46.5 43.4-49.9 4.4 18.8 21.3 32.8 41.5 32.8zm-172.5 93.3c16.7 0 29.5 17.6 28.5 39.3s-13.5 29.6-30.3 29.6-31.4-8.8-30.4-30.5S160.3 247 177 247zm190.1 38.3c1 21.7-13.7 30.5-30.4 30.5s-29.3-7.9-30.3-29.6 11.8-39.3 28.5-39.3 31.2 16.6 32.1 38.3zm-48.1 56.7c-10.3 24.6-34.6 41.9-63 41.9s-52.7-17.3-63-41.9c-1.2-2.9.8-6.2 3.9-6.5 18.4-1.9 38.3-2.9 59.1-2.9s40.7 1 59.1 2.9c3.1.3 5.1 3.6 3.9 6.5"/></svg>
     </a>
   
 </div>
@@ -3722,11 +3636,10 @@
     
       
       
-      
       <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["navigation.path","navigation.top","navigation.tracking","navigation.footer","content.code.copy"],"search":"../../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.5fcf0de6.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.6e5f0216.min.js"></script>
       
         <script src="../../../javascripts/katex.js"></script>
       
