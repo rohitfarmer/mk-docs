@@ -79,6 +79,8 @@ nav:
   - index.md
   - AI-ML:
       - ai-ml/ollama.md
+  - Audio Video Editing:
+      - audio-video-editing/kdenlive.md
   - BASH:
       - bash/basic-tutorial.md
   - Bioinformatics:
