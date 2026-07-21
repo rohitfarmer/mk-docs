@@ -1,10 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <url>
+        <loc>https://docs.rohitfarmer.com/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/ai-ml/ollama/</loc>
+      </url>
+      <url>
         <loc>https://docs.rohitfarmer.com/audio-video-editing/kdenlive/</loc>
       </url>
       <url>
         <loc>https://docs.rohitfarmer.com/bash/basic-tutorial/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/bioinformatics/blast/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/bioinformatics/taxonomy/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/bioinformatics/snakemake/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/bioinformatics/sequencing-methods/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/containers/docker/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/containers/mamba-environment/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/containers/nvim-singularity/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/containers/build-singularity/</loc>
       </url>
       <url>
         <loc>https://docs.rohitfarmer.com/database/sqlite/</loc>
@@ -25,10 +55,85 @@
         <loc>https://docs.rohitfarmer.com/hpc/skyline/</loc>
       </url>
       <url>
+        <loc>https://docs.rohitfarmer.com/immunology/b-cells/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/immunology/antibodies/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/immunology/immune-cell-populations/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/immunology/sample-types/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/immunology/techniques/</loc>
+      </url>
+      <url>
         <loc>https://docs.rohitfarmer.com/irc/irc/</loc>
       </url>
       <url>
         <loc>https://docs.rohitfarmer.com/irc/weechat/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/linux/navigating-and-managing-the-linux-file-system/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/linux/audio-video/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/linux/desktop-shortcut/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/linux/fail2ban/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/linux/images/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/linux/mini-dlna-server/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/linux/mount-drive/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/linux/naming-rules/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/linux/nginx/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/linux/package-management/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/linux/rsync/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/linux/screen/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/linux/system-monitoring/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/linux/user-management/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/linux/wget/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/linux/xrdp/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/molecular-modelling/gromacs/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/online-services/multi-service-hosts/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/online-services/jitsi/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/online-services/file-sharing/</loc>
       </url>
       <url>
         <loc>https://docs.rohitfarmer.com/python/getting-back-to-python/</loc>
@@ -79,6 +184,24 @@
         <loc>https://docs.rohitfarmer.com/remote-access/ssh-setup/</loc>
       </url>
       <url>
+        <loc>https://docs.rohitfarmer.com/tor/tor/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/tor/how-to-access-websites-on-the-tor-network/</loc>
+      </url>
+      <url>
         <loc>https://docs.rohitfarmer.com/uses/general-computing/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/vcs/git-github/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/web-development/quarto/images/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/writing/capitalization-titles-headings/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/writing/lists/</loc>
       </url>
 </urlset>
