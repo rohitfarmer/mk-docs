@@ -25,6 +25,9 @@ A bigger list is available at [https://framatalk.org/abc/en/info](https://framat
 
 I have organized them by country of origin based on their domain names. 
 
+### Jitsimeter
+* [Jitsimeter Which instance of Jitsi should I use?](https://ladatano.partidopirata.com.ar/jitsimeter/)
+
 ### .Net
 * [https://meet.greenhost.net](https://meet.greenhost.net/)
 * [https://talk.greenhost.net](https://talk.greenhost.net)

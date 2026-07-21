@@ -79,7 +79,7 @@ Most modern video LUTs are **3D LUTs**, which means they transform red, green, a
 
 ### In Kdenlive
 
-Kdenlive has an **Apply LUT** effect under **Color and Image Correction**. You add the effect to a clip, choose a LUT file, and Kdenlive applies that color transform to the clip. Kdenlive’s manual lists common supported LUT formats including `.cube`, `.3dl`, `.dat`, and `.m3d`. ([Kdenlive Documentation][1])
+Kdenlive has an **Apply LUT** effect under **Color and Image Correction**. You add the effect to a clip, choose a LUT file, and Kdenlive applies that color transform to the clip. Kdenlive’s manual lists common supported LUT formats including `.cube`, `.3dl`, `.dat`, and `.m3d`.
 
 A common workflow is:
 
