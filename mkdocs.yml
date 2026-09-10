@@ -152,6 +152,8 @@ nav:
       - r/plots.md
       - r/table-html-display.md
       - r/list-of-r-packages-data-science.md
+  - Radio:
+      - radio/gmrs.md
   - Remote Access:
       - remote-access/jupyter-ssh-tunneling.md
       - remote-access/ssh-setup.md
