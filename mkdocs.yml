@@ -101,6 +101,7 @@ nav:
   - Editors:
       - editors/joplin.md
       - editors/nvimr-r-ide.md
+      - editors/positron.md
   - HPC:
       - hpc/skyline.md
   - Immunology:
