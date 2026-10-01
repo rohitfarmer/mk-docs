@@ -13,3 +13,9 @@ comments: true
 * [Temp.sh](https://temp.sh/): For quick and handy file and text sharing. Current (2026-03-27) file size limit is 4GB.
 * [Termbin](https://termbin.com/): Can upload from command line using NC.
 * [Uguu~](https://uguu.se/): Max upload size is 128 MiB & files expire after 3 hours.
+
+## To upload a file from command line to Uguu
+
+```bash
+curl -F "files[]=@file.jpg" https://uguu.se/upload | jq -r '.files[0].url'
+```

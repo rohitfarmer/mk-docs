@@ -2215,6 +2215,23 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  File Sharing
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="././" class="md-nav__link md-nav__link--active">
         
   
@@ -2230,6 +2247,37 @@
   
 
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#to-upload-a-file-from-command-line-to-uguu" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        To upload a file from command line to Uguu
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3477,6 +3525,11 @@
                       
                     
                     
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
                   
                   <div class="md-sidebar__inner">
                     
@@ -3488,6 +3541,25 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#to-upload-a-file-from-command-line-to-uguu" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        To upload a file from command line to Uguu
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -3572,6 +3644,9 @@
 <li><a href="https://termbin.com/">Termbin</a>: Can upload from command line using NC.</li>
 <li><a href="https://uguu.se/">Uguu~</a>: Max upload size is 128 MiB &amp; files expire after 3 hours.</li>
 </ul>
+<h2 id="to-upload-a-file-from-command-line-to-uguu">To upload a file from command line to Uguu</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl<span class="w"> </span>-F<span class="w"> </span><span class="s2">"files[]=@file.jpg"</span><span class="w"> </span>https://uguu.se/upload<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span>-r<span class="w"> </span><span class="s1">'.files[0].url'</span>
+</span></code></pre></div>
 
 
 
