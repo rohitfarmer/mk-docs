@@ -12,34 +12,36 @@
         <meta name="author" content="Rohit Farmer">
       
       
-        <link rel="canonical" href="https://docs.rohitfarmer.com/">
+        <link rel="canonical" href="https://docs.rohitfarmer.com/remote-access/vpn/">
       
       
+        <link rel="prev" href="../ssh-setup/">
       
-        <link rel="next" href="./ai-ml/ollama/">
+      
+        <link rel="next" href="../../tor/tor/">
       
       
         
       
       
-      <link rel="icon" href="./assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="zensical-0.0.67">
     
     
       
-        <title>Home - Documentations by Rohit Farmer</title>
+        <title>VPN - Documentations by Rohit Farmer</title>
       
     
     
       
         
       
-      <link rel="stylesheet" href="./assets/stylesheets/modern/main.4ae390e2.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.4ae390e2.min.css">
       
         
           
         
-        <link rel="stylesheet" href="./assets/stylesheets/modern/palette.96d1a7e4.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.96d1a7e4.min.css">
       
       
 
@@ -60,7 +62,7 @@
     
       <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
     
-    <script>__md_scope=new URL(".",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
 
@@ -85,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#home" class="md-skip">
+        <a href="#vpn" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +103,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="" title="Documentations by Rohit Farmer" class="md-header__button md-logo" aria-label="Documentations by Rohit Farmer" data-md-component="logo">
+    <a href="../.." title="Documentations by Rohit Farmer" class="md-header__button md-logo" aria-label="Documentations by Rohit Farmer" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 5v16M20.001 19A2 2 0 0 0 22 17V5a2 2 0 0 0-1.999-2L16 3.002A5 5 0 0 0 12 5a5 5 0 0 0-4-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 1.999 2H8a5 5 0 0 1 4 2 5 5 0 0 1 4-2z"/></svg>
@@ -121,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              VPN
             
           </span>
         </div>
@@ -210,7 +212,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="" title="Documentations by Rohit Farmer" class="md-nav__button md-logo" aria-label="Documentations by Rohit Farmer" data-md-component="logo">
+    <a href="../.." title="Documentations by Rohit Farmer" class="md-nav__button md-logo" aria-label="Documentations by Rohit Farmer" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 5v16M20.001 19A2 2 0 0 0 22 17V5a2 2 0 0 0-1.999-2L16 3.002A5 5 0 0 0 12 5a5 5 0 0 0-4-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 1.999 2H8a5 5 0 0 1 4 2 5 5 0 0 1 4-2z"/></svg>
@@ -237,36 +239,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Home
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -281,38 +257,6 @@
   
 
       </a>
-      
-        
-
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#disclaimer" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Disclaimer
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -370,7 +314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./ai-ml/ollama/" class="md-nav__link">
+      <a href="../../ai-ml/ollama/" class="md-nav__link">
         
   
   
@@ -451,7 +395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./audio-video-editing/kdenlive/" class="md-nav__link">
+      <a href="../../audio-video-editing/kdenlive/" class="md-nav__link">
         
   
   
@@ -532,7 +476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./bash/basic-tutorial/" class="md-nav__link">
+      <a href="../../bash/basic-tutorial/" class="md-nav__link">
         
   
   
@@ -613,7 +557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./bioinformatics/blast/" class="md-nav__link">
+      <a href="../../bioinformatics/blast/" class="md-nav__link">
         
   
   
@@ -640,7 +584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./bioinformatics/taxonomy/" class="md-nav__link">
+      <a href="../../bioinformatics/taxonomy/" class="md-nav__link">
         
   
   
@@ -667,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./bioinformatics/snakemake/" class="md-nav__link">
+      <a href="../../bioinformatics/snakemake/" class="md-nav__link">
         
   
   
@@ -694,7 +638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./bioinformatics/sequencing-methods/" class="md-nav__link">
+      <a href="../../bioinformatics/sequencing-methods/" class="md-nav__link">
         
   
   
@@ -775,7 +719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./containers/docker/" class="md-nav__link">
+      <a href="../../containers/docker/" class="md-nav__link">
         
   
   
@@ -802,7 +746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./containers/mamba-environment/" class="md-nav__link">
+      <a href="../../containers/mamba-environment/" class="md-nav__link">
         
   
   
@@ -829,7 +773,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./containers/nvim-singularity/" class="md-nav__link">
+      <a href="../../containers/nvim-singularity/" class="md-nav__link">
         
   
   
@@ -856,7 +800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./containers/build-singularity/" class="md-nav__link">
+      <a href="../../containers/build-singularity/" class="md-nav__link">
         
   
   
@@ -937,7 +881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./database/sqlite/" class="md-nav__link">
+      <a href="../../database/sqlite/" class="md-nav__link">
         
   
   
@@ -964,7 +908,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./database/sqlite-where/" class="md-nav__link">
+      <a href="../../database/sqlite-where/" class="md-nav__link">
         
   
   
@@ -1045,7 +989,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./data-science/classification-performance-metrics/" class="md-nav__link">
+      <a href="../../data-science/classification-performance-metrics/" class="md-nav__link">
         
   
   
@@ -1126,7 +1070,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./editors/joplin/" class="md-nav__link">
+      <a href="../../editors/joplin/" class="md-nav__link">
         
   
   
@@ -1153,7 +1097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./editors/nvimr-r-ide/" class="md-nav__link">
+      <a href="../../editors/nvimr-r-ide/" class="md-nav__link">
         
   
   
@@ -1180,7 +1124,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./editors/positron/" class="md-nav__link">
+      <a href="../../editors/positron/" class="md-nav__link">
         
   
   
@@ -1261,7 +1205,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./hpc/skyline/" class="md-nav__link">
+      <a href="../../hpc/skyline/" class="md-nav__link">
         
   
   
@@ -1342,7 +1286,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./immunology/b-cells/" class="md-nav__link">
+      <a href="../../immunology/b-cells/" class="md-nav__link">
         
   
   
@@ -1369,7 +1313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./immunology/antibodies/" class="md-nav__link">
+      <a href="../../immunology/antibodies/" class="md-nav__link">
         
   
   
@@ -1396,7 +1340,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./immunology/immune-cell-populations/" class="md-nav__link">
+      <a href="../../immunology/immune-cell-populations/" class="md-nav__link">
         
   
   
@@ -1423,7 +1367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./immunology/sample-types/" class="md-nav__link">
+      <a href="../../immunology/sample-types/" class="md-nav__link">
         
   
   
@@ -1450,7 +1394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./immunology/techniques/" class="md-nav__link">
+      <a href="../../immunology/techniques/" class="md-nav__link">
         
   
   
@@ -1531,7 +1475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./irc/irc/" class="md-nav__link">
+      <a href="../../irc/irc/" class="md-nav__link">
         
   
   
@@ -1558,7 +1502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./irc/weechat/" class="md-nav__link">
+      <a href="../../irc/weechat/" class="md-nav__link">
         
   
   
@@ -1639,7 +1583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./linux/navigating-and-managing-the-linux-file-system/" class="md-nav__link">
+      <a href="../../linux/navigating-and-managing-the-linux-file-system/" class="md-nav__link">
         
   
   
@@ -1666,7 +1610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./linux/audio-video/" class="md-nav__link">
+      <a href="../../linux/audio-video/" class="md-nav__link">
         
   
   
@@ -1693,7 +1637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./linux/desktop-shortcut/" class="md-nav__link">
+      <a href="../../linux/desktop-shortcut/" class="md-nav__link">
         
   
   
@@ -1720,7 +1664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./linux/fail2ban/" class="md-nav__link">
+      <a href="../../linux/fail2ban/" class="md-nav__link">
         
   
   
@@ -1747,7 +1691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./linux/images/" class="md-nav__link">
+      <a href="../../linux/images/" class="md-nav__link">
         
   
   
@@ -1774,7 +1718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./linux/mini-dlna-server/" class="md-nav__link">
+      <a href="../../linux/mini-dlna-server/" class="md-nav__link">
         
   
   
@@ -1801,7 +1745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./linux/mount-drive/" class="md-nav__link">
+      <a href="../../linux/mount-drive/" class="md-nav__link">
         
   
   
@@ -1828,7 +1772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./linux/naming-rules/" class="md-nav__link">
+      <a href="../../linux/naming-rules/" class="md-nav__link">
         
   
   
@@ -1855,7 +1799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./linux/nginx/" class="md-nav__link">
+      <a href="../../linux/nginx/" class="md-nav__link">
         
   
   
@@ -1882,7 +1826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./linux/package-management/" class="md-nav__link">
+      <a href="../../linux/package-management/" class="md-nav__link">
         
   
   
@@ -1909,7 +1853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./linux/rsync/" class="md-nav__link">
+      <a href="../../linux/rsync/" class="md-nav__link">
         
   
   
@@ -1936,7 +1880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./linux/screen/" class="md-nav__link">
+      <a href="../../linux/screen/" class="md-nav__link">
         
   
   
@@ -1963,7 +1907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./linux/system-monitoring/" class="md-nav__link">
+      <a href="../../linux/system-monitoring/" class="md-nav__link">
         
   
   
@@ -1990,7 +1934,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./linux/user-management/" class="md-nav__link">
+      <a href="../../linux/user-management/" class="md-nav__link">
         
   
   
@@ -2017,7 +1961,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./linux/wget/" class="md-nav__link">
+      <a href="../../linux/wget/" class="md-nav__link">
         
   
   
@@ -2044,7 +1988,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./linux/xrdp/" class="md-nav__link">
+      <a href="../../linux/xrdp/" class="md-nav__link">
         
   
   
@@ -2125,7 +2069,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./molecular-modelling/gromacs/" class="md-nav__link">
+      <a href="../../molecular-modelling/gromacs/" class="md-nav__link">
         
   
   
@@ -2206,7 +2150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./online-services/multi-service-hosts/" class="md-nav__link">
+      <a href="../../online-services/multi-service-hosts/" class="md-nav__link">
         
   
   
@@ -2233,7 +2177,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./online-services/jitsi/" class="md-nav__link">
+      <a href="../../online-services/jitsi/" class="md-nav__link">
         
   
   
@@ -2260,7 +2204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./online-services/file-sharing/" class="md-nav__link">
+      <a href="../../online-services/file-sharing/" class="md-nav__link">
         
   
   
@@ -2341,7 +2285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./python/getting-back-to-python/" class="md-nav__link">
+      <a href="../../python/getting-back-to-python/" class="md-nav__link">
         
   
   
@@ -2368,7 +2312,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./python/numpy/" class="md-nav__link">
+      <a href="../../python/numpy/" class="md-nav__link">
         
   
   
@@ -2395,7 +2339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./python/pandas/" class="md-nav__link">
+      <a href="../../python/pandas/" class="md-nav__link">
         
   
   
@@ -2422,7 +2366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./python/matplotlib/" class="md-nav__link">
+      <a href="../../python/matplotlib/" class="md-nav__link">
         
   
   
@@ -2449,7 +2393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./python/environments/" class="md-nav__link">
+      <a href="../../python/environments/" class="md-nav__link">
         
   
   
@@ -2476,7 +2420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./python/web-server/" class="md-nav__link">
+      <a href="../../python/web-server/" class="md-nav__link">
         
   
   
@@ -2557,7 +2501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./r/data-manipulation/" class="md-nav__link">
+      <a href="../../r/data-manipulation/" class="md-nav__link">
         
   
   
@@ -2584,7 +2528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./r/files-folders/" class="md-nav__link">
+      <a href="../../r/files-folders/" class="md-nav__link">
         
   
   
@@ -2611,7 +2555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./r/machine-learning/" class="md-nav__link">
+      <a href="../../r/machine-learning/" class="md-nav__link">
         
   
   
@@ -2638,7 +2582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./r/non-dataframe-manipulations/" class="md-nav__link">
+      <a href="../../r/non-dataframe-manipulations/" class="md-nav__link">
         
   
   
@@ -2665,7 +2609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./r/parallel-processing/" class="md-nav__link">
+      <a href="../../r/parallel-processing/" class="md-nav__link">
         
   
   
@@ -2692,7 +2636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./r/plots/" class="md-nav__link">
+      <a href="../../r/plots/" class="md-nav__link">
         
   
   
@@ -2719,7 +2663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./r/table-html-display/" class="md-nav__link">
+      <a href="../../r/table-html-display/" class="md-nav__link">
         
   
   
@@ -2746,7 +2690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./r/list-of-r-packages-data-science/" class="md-nav__link">
+      <a href="../../r/list-of-r-packages-data-science/" class="md-nav__link">
         
   
   
@@ -2827,7 +2771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./radio/gmrs/" class="md-nav__link">
+      <a href="../../radio/gmrs/" class="md-nav__link">
         
   
   
@@ -2859,18 +2803,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_19" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_19" checked>
         
           
           <label class="md-nav__link" for="__nav_19" id="__nav_19_label" tabindex="0">
@@ -2891,7 +2837,7 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_19_label" aria-expanded="false">
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_19_label" aria-expanded="true">
             <label class="md-nav__title" for="__nav_19">
               <span class="md-nav__icon md-icon"></span>
               
@@ -2908,7 +2854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./remote-access/jupyter-ssh-tunneling/" class="md-nav__link">
+      <a href="../jupyter-ssh-tunneling/" class="md-nav__link">
         
   
   
@@ -2935,7 +2881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./remote-access/ssh-setup/" class="md-nav__link">
+      <a href="../ssh-setup/" class="md-nav__link">
         
   
   
@@ -2959,10 +2905,36 @@
                   
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="./remote-access/vpn/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  VPN
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2977,6 +2949,66 @@
   
 
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-openvpn" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Install OpenVPN
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Install OpenVPN">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-a-vpn-connection-using-a-config-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Start a VPN connection using a config file
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-the-ip-location" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Check the IP location
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3043,7 +3075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./tor/tor/" class="md-nav__link">
+      <a href="../../tor/tor/" class="md-nav__link">
         
   
   
@@ -3070,7 +3102,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./tor/how-to-access-websites-on-the-tor-network/" class="md-nav__link">
+      <a href="../../tor/how-to-access-websites-on-the-tor-network/" class="md-nav__link">
         
   
   
@@ -3151,7 +3183,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./uses/general-computing/" class="md-nav__link">
+      <a href="../../uses/general-computing/" class="md-nav__link">
         
   
   
@@ -3232,7 +3264,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./vcs/git-github/" class="md-nav__link">
+      <a href="../../vcs/git-github/" class="md-nav__link">
         
   
   
@@ -3359,7 +3391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./web-development/quarto/images/" class="md-nav__link">
+      <a href="../../web-development/quarto/images/" class="md-nav__link">
         
   
   
@@ -3449,7 +3481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./writing/capitalization-titles-headings/" class="md-nav__link">
+      <a href="../../writing/capitalization-titles-headings/" class="md-nav__link">
         
   
   
@@ -3476,7 +3508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./writing/lists/" class="md-nav__link">
+      <a href="../../writing/lists/" class="md-nav__link">
         
   
   
@@ -3545,10 +3577,38 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#disclaimer" class="md-nav__link">
+  <a href="#install-openvpn" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Disclaimer
+        Install OpenVPN
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Install OpenVPN">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-a-vpn-connection-using-a-config-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Start a VPN connection using a config file
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-the-ip-location" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Check the IP location
       </span>
     </span>
   </a>
@@ -3573,6 +3633,51 @@
   
 
 
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+    
+    
+    
+      <li class="md-path__item">
+        <a href="../jupyter-ssh-tunneling/" class="md-path__link">
+          
+  
+  <span class="md-ellipsis">
+    Remote Access
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
               
               <article class="md-content__inner md-typeset">
                 
@@ -3582,14 +3687,20 @@
   
 
 
-<h1 id="home">Home</h1>
-<blockquote>
-<p>I basically wrote the code and the specs and documentation for how the client and server talked to each other. - Tim Berners-Lee</p>
-</blockquote>
-<p>Welcome to my cookbook-style documentation site, where I collect frequently used software notes and practical code snippets. All documentation is written in Markdown and published using <a href="https://zensical.org/">Zensical</a>.</p>
-<p>I’m always happy to hear suggestions or collaborate — feel free to reach out at <a href="mailto:rohit@rohitfarmer.com">rohit@rohitfarmer.com</a>.</p>
-<h2 id="disclaimer">Disclaimer</h2>
-<p>All documentation and materials published on this website are intended solely for educational, hobbyist, and research use. The information is provided “as is,” without warranties of any kind, express or implied. The author disclaims any and all liability for actions taken based on this content, including but not limited to direct, indirect, incidental, or consequential damages. Users are responsible for ensuring that any application of the information is appropriate, lawful, and safe for their specific circumstances.</p>
+<h1 id="vpn">VPN</h1>
+<h2 id="install-openvpn">Install OpenVPN</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>openvpn<span class="w"> </span>network-manager-openvpn<span class="w"> </span>network-manager-openvpn-gnome
+</span></code></pre></div>
+<p><strong>Restart network manager</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>NetworkManager
+</span></code></pre></div>
+<h3 id="start-a-vpn-connection-using-a-config-file">Start a VPN connection using a config file</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>openvpn<span class="w"> </span>--config<span class="w"> </span>~/OpenVPN-Config.ovpn
+</span></code></pre></div>
+<h2 id="check-the-ip-location">Check the IP location</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>curl<span class="w"> </span>https://ipinfo.io
+</span></code></pre></div>
 
 
 
@@ -3599,10 +3710,68 @@
 
 
 
+  
+  
 
 
 
 
+
+
+  <h2 id="__comments">Comments</h2>
+  <!-- Insert generated snippet here -->
+   <script src="https://giscus.app/client.js"
+        data-repo="rohitfarmer/rohitfarmer-com-comments"
+        data-repo-id="R_kgDOQ-g51g"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOQ-g51s4C1P-D"
+        data-mapping="title"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 
                 
               </article>
@@ -3626,15 +3795,31 @@
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
+          
+          <a href="../ssh-setup/" class="md-footer__link md-footer__link--prev" aria-label="Previous: SSH Setup">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                SSH Setup
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="./ai-ml/ollama/" class="md-footer__link md-footer__link--next" aria-label="Next: Ollama with Open WebUI">
+          <a href="../../tor/tor/" class="md-footer__link md-footer__link--next" aria-label="Next: Tor">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Ollama with Open WebUI
+                Tor
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -3736,12 +3921,12 @@
       
         
         
-      <script id="__config" type="application/json">{"annotate":null,"base":".","features":["navigation.path","navigation.top","navigation.tracking","navigation.footer","content.code.copy"],"redirect":null,"search":"./assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.path","navigation.top","navigation.tracking","navigation.footer","content.code.copy"],"redirect":null,"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="./assets/javascripts/bundle.67a597eb.min.js"></script>
+      <script src="../../assets/javascripts/bundle.67a597eb.min.js"></script>
       
-        <script src="./javascripts/katex.js"></script>
+        <script src="../../javascripts/katex.js"></script>
       
         <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
       

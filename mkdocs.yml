@@ -158,6 +158,7 @@ nav:
   - Remote Access:
       - remote-access/jupyter-ssh-tunneling.md
       - remote-access/ssh-setup.md
+      - remote-access/vpn.md
   - Tor:
       - tor/tor.md
       - tor/how-to-access-websites-on-the-tor-network.md

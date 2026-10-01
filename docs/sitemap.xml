@@ -16,13 +16,16 @@
         <loc>https://docs.rohitfarmer.com/bioinformatics/blast/</loc>
       </url>
       <url>
-        <loc>https://docs.rohitfarmer.com/bioinformatics/taxonomy/</loc>
+        <loc>https://docs.rohitfarmer.com/bioinformatics/sequencing-methods/</loc>
       </url>
       <url>
         <loc>https://docs.rohitfarmer.com/bioinformatics/snakemake/</loc>
       </url>
       <url>
-        <loc>https://docs.rohitfarmer.com/bioinformatics/sequencing-methods/</loc>
+        <loc>https://docs.rohitfarmer.com/bioinformatics/taxonomy/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/containers/build-singularity/</loc>
       </url>
       <url>
         <loc>https://docs.rohitfarmer.com/containers/docker/</loc>
@@ -34,16 +37,13 @@
         <loc>https://docs.rohitfarmer.com/containers/nvim-singularity/</loc>
       </url>
       <url>
-        <loc>https://docs.rohitfarmer.com/containers/build-singularity/</loc>
-      </url>
-      <url>
-        <loc>https://docs.rohitfarmer.com/database/sqlite/</loc>
+        <loc>https://docs.rohitfarmer.com/data-science/classification-performance-metrics/</loc>
       </url>
       <url>
         <loc>https://docs.rohitfarmer.com/database/sqlite-where/</loc>
       </url>
       <url>
-        <loc>https://docs.rohitfarmer.com/data-science/classification-performance-metrics/</loc>
+        <loc>https://docs.rohitfarmer.com/database/sqlite/</loc>
       </url>
       <url>
         <loc>https://docs.rohitfarmer.com/editors/joplin/</loc>
@@ -58,10 +58,10 @@
         <loc>https://docs.rohitfarmer.com/hpc/skyline/</loc>
       </url>
       <url>
-        <loc>https://docs.rohitfarmer.com/immunology/b-cells/</loc>
+        <loc>https://docs.rohitfarmer.com/immunology/antibodies/</loc>
       </url>
       <url>
-        <loc>https://docs.rohitfarmer.com/immunology/antibodies/</loc>
+        <loc>https://docs.rohitfarmer.com/immunology/b-cells/</loc>
       </url>
       <url>
         <loc>https://docs.rohitfarmer.com/immunology/immune-cell-populations/</loc>
@@ -77,9 +77,6 @@
       </url>
       <url>
         <loc>https://docs.rohitfarmer.com/irc/weechat/</loc>
-      </url>
-      <url>
-        <loc>https://docs.rohitfarmer.com/linux/navigating-and-managing-the-linux-file-system/</loc>
       </url>
       <url>
         <loc>https://docs.rohitfarmer.com/linux/audio-video/</loc>
@@ -101,6 +98,9 @@
       </url>
       <url>
         <loc>https://docs.rohitfarmer.com/linux/naming-rules/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/linux/navigating-and-managing-the-linux-file-system/</loc>
       </url>
       <url>
         <loc>https://docs.rohitfarmer.com/linux/nginx/</loc>
@@ -130,28 +130,28 @@
         <loc>https://docs.rohitfarmer.com/molecular-modelling/gromacs/</loc>
       </url>
       <url>
-        <loc>https://docs.rohitfarmer.com/online-services/multi-service-hosts/</loc>
+        <loc>https://docs.rohitfarmer.com/online-services/file-sharing/</loc>
       </url>
       <url>
         <loc>https://docs.rohitfarmer.com/online-services/jitsi/</loc>
       </url>
       <url>
-        <loc>https://docs.rohitfarmer.com/online-services/file-sharing/</loc>
+        <loc>https://docs.rohitfarmer.com/online-services/multi-service-hosts/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/python/environments/</loc>
       </url>
       <url>
         <loc>https://docs.rohitfarmer.com/python/getting-back-to-python/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/python/matplotlib/</loc>
       </url>
       <url>
         <loc>https://docs.rohitfarmer.com/python/numpy/</loc>
       </url>
       <url>
         <loc>https://docs.rohitfarmer.com/python/pandas/</loc>
-      </url>
-      <url>
-        <loc>https://docs.rohitfarmer.com/python/matplotlib/</loc>
-      </url>
-      <url>
-        <loc>https://docs.rohitfarmer.com/python/environments/</loc>
       </url>
       <url>
         <loc>https://docs.rohitfarmer.com/python/web-server/</loc>
@@ -161,6 +161,9 @@
       </url>
       <url>
         <loc>https://docs.rohitfarmer.com/r/files-folders/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/r/list-of-r-packages-data-science/</loc>
       </url>
       <url>
         <loc>https://docs.rohitfarmer.com/r/machine-learning/</loc>
@@ -178,9 +181,6 @@
         <loc>https://docs.rohitfarmer.com/r/table-html-display/</loc>
       </url>
       <url>
-        <loc>https://docs.rohitfarmer.com/r/list-of-r-packages-data-science/</loc>
-      </url>
-      <url>
         <loc>https://docs.rohitfarmer.com/radio/gmrs/</loc>
       </url>
       <url>
@@ -190,10 +190,13 @@
         <loc>https://docs.rohitfarmer.com/remote-access/ssh-setup/</loc>
       </url>
       <url>
-        <loc>https://docs.rohitfarmer.com/tor/tor/</loc>
+        <loc>https://docs.rohitfarmer.com/remote-access/vpn/</loc>
       </url>
       <url>
         <loc>https://docs.rohitfarmer.com/tor/how-to-access-websites-on-the-tor-network/</loc>
+      </url>
+      <url>
+        <loc>https://docs.rohitfarmer.com/tor/tor/</loc>
       </url>
       <url>
         <loc>https://docs.rohitfarmer.com/uses/general-computing/</loc>
