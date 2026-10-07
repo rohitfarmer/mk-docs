@@ -137,6 +137,7 @@ nav:
       - online-services/multi-service-hosts.md
       - online-services/jitsi.md
       - online-services/file-sharing.md
+      - online-services/live-cameras.md
   - Python:
       - python/getting-back-to-python.md
       - python/numpy.md

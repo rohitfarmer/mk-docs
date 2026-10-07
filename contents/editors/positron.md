@@ -20,3 +20,23 @@ To use a conda environment on the compute node, update the remote settings (JSON
 ```
 
 Then run `cmd + shift + p` > `Developer: Reload Window`.
+
+## Clear interpreter cache and rediscover interpreters
+
+If you see this error, epsecially in a remote session:
+
+```bash
+R 4.5.3 failed to start up (exit code -1)
+
+The kernel exited before a connection could be established
+
+thread 'main' (860840) panicked at crates/ark/src/start.rs:46:21:
+Can't set up `R_HOME`: The `R_HOME` path '/Users/farmerr2/bin/miniforge3/lib/R' does not exist.
+stack backtrace:
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+```
+
+```
+cmd + shift + p Interpreter: Clear Interpreter Cache
+cmd + shift + P Interpreter: Discover All Interpreters
+```
